@@ -1,13 +1,12 @@
 
-import logo from "./images/logo.png";
+// import logo from "./images/logo.png";
+
+import Logo from "./components/Logo";
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <img src={logo} alt="logo"/>
-        <h1>hello</h1>
-      </div>
+    <div>
+      <Logo />
     </div>
   );
 }
