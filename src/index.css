@@ -1,0 +1,9 @@
+body{
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat ;
+    text-align: center;
+    color: white;
+    font-family: fantasy;
+    font-size: large;
+}
