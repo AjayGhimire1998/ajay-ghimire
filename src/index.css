@@ -1,7 +1,7 @@
 body{
     text-align: center;
     color: white;
-    font-family: fantasy;
+    /* font-family: fantasy; */
     font-size: large;
     background-image: url('./images/background.png');
     background-repeat: no-repeat center center cover;

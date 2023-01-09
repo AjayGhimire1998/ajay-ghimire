@@ -1,13 +1,12 @@
 
-
-import Background from "./components/Background";
+import HelloMsg from "./components/HelloMsg";
 import Logo from "./components/Logo";
 
 function App() {
   return (
     <div>
-      <Background />
       <Logo />
+      <HelloMsg/>
     </div>
   );
 }
