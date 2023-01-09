@@ -1,11 +1,15 @@
 .logo{
-    width: 250px;
-    height: 250px;
-    border: 2px solid white;
+    width: 200px;
+    height: 200px;
     margin-top: 5%;
     max-width: 100%;
+    border: 2px ridge white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px whitesmoke;
     
+   
+}  
+.logo-div{
     -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-   
-}   
+} 
