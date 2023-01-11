@@ -1,5 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import"./hello-world.css";
 
 function HelloMsg() {
   return (

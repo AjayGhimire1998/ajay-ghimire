@@ -1,13 +1,10 @@
 
-import HelloMsg from "./components/HelloMsg";
-import Logo from "./components/Logo";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
-      <Logo />
-      <br/>
-      <HelloMsg/>
+      <Home />
     </div>
   );
 }
