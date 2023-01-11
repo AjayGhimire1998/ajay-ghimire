@@ -4,22 +4,20 @@ import "./navbar.css";
 
 function Navbar() {
   return (
-    <div className="navbar">
-      <nav>
-        <ul>
-          <img src={logo} alt="logo" className="logo" />
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/projects">Projects</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav className="navbar">
+      <img src={logo} alt="logo" className="logo" />
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
