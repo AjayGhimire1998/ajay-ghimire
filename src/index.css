@@ -1,29 +1,22 @@
+@import url('http://fonts.googleapis.com/css?family=Press+Start+2P');
+
 *{
     color: white;
+    font-family: 'Press Start 2P', cursive !important;
 }
 body{
     height: 100%;
     width: 100%;
     margin: 0;
     background-color: rgb(26, 26, 26) !important;
-    font-family: 'Cascadia Code',Consolas, monospace;
+
     }
 .main{
-    position: absolute;
+    position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* @media screen and (max-width: 480px) {
-
-    .main{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    }
-    
-} */
 
 

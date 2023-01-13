@@ -2,27 +2,31 @@
 .logo{ 
     height: 290px;
     width: 300px;
-    /* -webkit-filter: drop-shadow(5px 5px 5px #ff8400); */
-        /* filter: drop-shadow(5px 5px 5px #ff8400); */
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+
 }  
 
-
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 760px){
     .logo{
-        height: 230px;
-        width: 240px;
+        height: 250px;
+        width: 260px;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: -webkit-optimize-contrast;
     }
 }
 
-@media screen and (max-width: 760px){
-    .typewriter{
-        font-size: 1.8vh;
-    }
-
-    .wave{
-        margin-top: -10px;
-        height: 3.5vh;
-        width: 3.5vh;
+@media screen and (max-width: 480px){
+    .logo{
+        height: 220px;
+        width: 230px;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: -webkit-optimize-contrast;
     }
 }

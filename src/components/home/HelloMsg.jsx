@@ -5,7 +5,7 @@ import wave from "../../images/wave.gif"
 
 function HelloMsg() {
   return (
-    <div className="typewriter">
+    <div className="typewriter" >
       
       <Typewriter
         options={{
