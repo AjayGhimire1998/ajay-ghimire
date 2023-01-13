@@ -5,7 +5,7 @@ import "./hello-world.css";
 function HelloMsg() {
   return (
     <div className="hello-world" style={{ fontSize: "20px" }}>
-        <p>
+  
         <Typewriter
           options={{
             strings: [
@@ -18,7 +18,7 @@ function HelloMsg() {
             deleteSpeed: 25
           }}
         />
-      </p>
+  
     </div>
   );
 }
