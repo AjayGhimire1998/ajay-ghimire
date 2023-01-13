@@ -1,9 +1,20 @@
 .typewriter{
-    font-size: 20px;
+    font-size: 2vh;
+    display: flex;
+}
+
+.wave{
+    height: 3.2vh;
+    width: 3.2vh;
 }
 
 @media screen and (max-width: 480px){
     .typewriter{
-        font-size: 14px;
+        font-size: 1.8vh;
+    }
+
+    .wave{
+        height: 2.5vh;
+        width: 2.5vh;
     }
 }

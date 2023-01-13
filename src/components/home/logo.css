@@ -2,6 +2,8 @@
 .logo{ 
     height: 290px;
     width: 300px;
+    -webkit-filter: drop-shadow(5px 5px 5px #ffab51);
+        filter: drop-shadow(5px 5px 5px #ffab51);
 }  
 
 @media screen and (max-width: 480px){
