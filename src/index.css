@@ -11,12 +11,21 @@ body{
     background-color: rgb(26, 26, 26) !important;
 
     }
-.main{
-    position: fixed;
+.main {
+position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.main > * {
+    width: 600px;
+}
+
+@media screen and (max-width: 460px) {
+    .main > *{
+        width: 300px;
+    }
+}
 
 

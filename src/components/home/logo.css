@@ -2,21 +2,16 @@
 .logo{ 
     height: 290px;
     width: 300px;
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-    image-rendering: -webkit-optimize-contrast;
-
 }  
 
 @media screen and (max-width: 760px){
     .logo{
         height: 250px;
         width: 260px;
-        image-rendering: auto;
+        /* image-rendering: auto;
         image-rendering: crisp-edges;
         image-rendering: pixelated;
-        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -webkit-optimize-contrast; */
     }
 }
 
@@ -24,9 +19,9 @@
     .logo{
         height: 220px;
         width: 230px;
-        image-rendering: auto;
+        /* image-rendering: auto;
         image-rendering: crisp-edges;
         image-rendering: pixelated;
-        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -webkit-optimize-contrast; */
     }
 }

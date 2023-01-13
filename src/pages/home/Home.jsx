@@ -3,6 +3,7 @@ import Logo from "../../components/home/Logo";
 import HelloMsg from "../../components/home/HelloMsg";
 import Navbar from "../../components/navbar/Navbar";
 import "./home.css";
+import Intro from "../../components/home/Intro";
 
 function Home() {
   return (
@@ -12,22 +13,11 @@ function Home() {
         <HelloMsg />
         <br />
         <br />
+        <Intro />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <br/>
+        <Navbar />
       </div>
-      <Navbar />
     </>
   );
 }

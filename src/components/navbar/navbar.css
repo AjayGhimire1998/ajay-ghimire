@@ -1,6 +1,6 @@
 .navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
-    width: 100%;
+    /* width: 300px; */
+     display: flex;
+    flex-direction: row; 
+    /* justify-content: space-around;  */ 
 }

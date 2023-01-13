@@ -1,0 +1,14 @@
+.intro-container{
+    width: 390px;
+    text-align: center;
+}
+
+.intro-container > p{
+    font-size: small;
+} 
+
+.intro-container > strong {
+    font-size: larger;
+
+}
+
