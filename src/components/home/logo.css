@@ -2,13 +2,27 @@
 .logo{ 
     height: 290px;
     width: 300px;
-    -webkit-filter: drop-shadow(5px 5px 5px #ffab51);
-        filter: drop-shadow(5px 5px 5px #ffab51);
+    /* -webkit-filter: drop-shadow(5px 5px 5px #ff8400); */
+        /* filter: drop-shadow(5px 5px 5px #ff8400); */
 }  
+
+
 
 @media screen and (max-width: 480px){
     .logo{
         height: 230px;
         width: 240px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .typewriter{
+        font-size: 1.8vh;
+    }
+
+    .wave{
+        margin-top: -10px;
+        height: 3.5vh;
+        width: 3.5vh;
     }
 }

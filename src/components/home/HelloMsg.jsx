@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import "./hello-message.css"
-import wave from "./wave.gif"
+import wave from "../../images/wave.gif"
 
 function HelloMsg() {
   return (
@@ -14,6 +14,7 @@ function HelloMsg() {
             `<span style="color:#00ccff">console</span>.<span style="color:#ffff00">log</span><span style="color:#ff00ff">(</span><span style="color:#cc6600 ">"Hello World !"</span><span style="color:#ff00ff">)</span>;`,
             `<span style="color:#ffff00">puts</span> <span style="color:#ff9900 ">"Hello World !"</span>`,
           ],
+          delay: 60,
           autoStart: true,
           loop: true,
           deleteSpeed: 25,

@@ -1,19 +1,33 @@
 .typewriter{
-    font-size: 2vh;
+    font-size: 2.3vh;
     display: flex;
 }
 
 .wave{
-    height: 3.2vh;
-    width: 3.2vh;
+    margin-top: -23px;
+    height: 6vh;
+    width: 6vh;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 760px){
     .typewriter{
         font-size: 1.8vh;
     }
 
     .wave{
+        margin-top: -10px;
+        height: 3.5vh;
+        width: 3.5vh;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .typewriter{
+        font-size: 1.4vh;
+    }
+
+    .wave{
+        margin-top: -3px;
         height: 2.5vh;
         width: 2.5vh;
     }
