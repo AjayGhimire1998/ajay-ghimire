@@ -6,16 +6,14 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 
 .my-picture{
-    /* width: 700px; */
     max-width: 100%;
     object-fit: contain;
 }
 .my-picture-container{
-    width: 690px;
+    width: 700px;
 }
 
 .desc-container{

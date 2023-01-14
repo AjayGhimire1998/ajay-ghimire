@@ -6,6 +6,8 @@ import Home from "./pages/home/Home";
 import Logo from "./components/home/Logo";
 import Navbar from "./components/navbar/Navbar";
 import About from "./pages/about/About";
+import Projects from "./pages/projects/Projects";
+import Contact from "./pages/contact/Contact";
 import Resume from "./pages/resume/Resume";
 
 function App() {
@@ -53,26 +55,29 @@ function App() {
       <div className="space"></div>
       <div className="main">
         <div>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <Logo logo={logo} shadow={shadow} />
         </div>
         <Routes>
           <Route path="/" element={<Home shadow={shadow} />} />
-          <Route
-            path="/about"
-            element={<About shadow={shadow} />}
-          />
-          <Route
-            path="/resume"
-            element={<Resume shadow={shadow} />}
-          />
+          <Route path="/about" element={<About shadow={shadow} />} />
+          <Route path="/projects" element={<Projects shadow={shadow} />} />
+          <Route path="/contact" element={<Contact shadow={shadow} />} />
+          <Route path="/resume" element={<Resume shadow={shadow} />} />
+          
         </Routes>
         <br />
         <br />
         <Navbar />
+        <br />
+        <br />
+        <br />
+        <br />
+        <footer className="footer">
+          <p>© 2022 Ajay Ghimire</p>
+        </footer>
       </div>
-      <footer></footer>
     </>
   );
 }

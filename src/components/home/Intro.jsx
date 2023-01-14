@@ -9,7 +9,7 @@ function Intro({shadow}) {
       </div>
       <br />
       <br/>
-      <div style={{filter: `drop-shadow(2px 2px 2px #ff9900)`}}>
+      <div style={{filter: `drop-shadow(2px 2px 2px ${shadow})`}}>
         <strong>Ajay Ghimire</strong>
       </div>
       <br />
