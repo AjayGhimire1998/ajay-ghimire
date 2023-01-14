@@ -1,0 +1,31 @@
+.pictures-container{
+    height: 100%;
+    width: 700px;
+    text-align: center;
+    background-color: rgb(18, 18, 18);
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.my-picture{
+    width: 200px;
+}
+
+@media screen and (max-width: 760px) {
+    .pictures-container{
+        width: 70%;
+    }
+
+} 
+
+@media screen and(max-width: 480px) {
+    .pictures-container{
+        width: 60%;
+    }
+ 
+    
+} 

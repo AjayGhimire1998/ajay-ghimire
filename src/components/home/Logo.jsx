@@ -4,7 +4,7 @@ import "./logo.css";
 function Logo({logo, shadow}) {
   
   return (
-    <div>
+    <div className="logo-container">
       <img
         src={logo}
         alt="logo"

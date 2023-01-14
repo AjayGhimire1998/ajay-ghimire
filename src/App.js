@@ -1,9 +1,11 @@
 import { useEffect, useState, useMemo } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import logo1 from "./images/logo.png";
 import logo2 from "./images/logo2.png";
 import Home from "./pages/home/Home";
+import Logo from "./components/home/Logo";
 import Navbar from "./components/navbar/Navbar";
+import About from "./pages/about/About";
 
 function App() {
   let shadows = useMemo(() => [], []);
@@ -49,12 +51,18 @@ function App() {
     <>
       <div className="space"></div>
       <div className="main">
-          <Routes>
-            <Route path="/" element={<Home shadow={shadow} logo={logo} />} />
-            <Route path="/about" element={<Home shadow={shadow} logo={logo} />} />
-          </Routes>
-        <br/>
-        <br/>
+        <div>
+          <Logo logo={logo} shadow={shadow} />
+        </div>
+        <Routes>
+          <Route path="/" element={<Home shadow={shadow} />} />
+          <Route
+            path="/about"
+            element={<About shadow={shadow} />}
+          />
+        </Routes>
+        <br />
+        <br />
         <Navbar />
       </div>
       <footer></footer>
