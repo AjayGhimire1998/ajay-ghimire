@@ -1,14 +1,16 @@
-import React from 'react'
-import "./navbar.css"
-function navbar() {
+import React from "react";
+import {Link} from "react-router-dom";
+import "./navbar.css";
+function Navbar() {
+  // const navigate = useNavigate();
   return (
-    <div className='navbar'>
-        <button className='ui button secondary red'>Home</button>
-        <button className='ui button secondary red'>About</button>
-        <button className='ui  button secondary red'>Projects</button>
-        <button className='ui  button secondary red'>Resume</button>
+    <div className="navbar">
+      <Link to="/about" className="nav-button">About</Link>
+      <Link to="/projects" className="nav-button">Projects</Link>
+      <Link to="/contact" className="nav-button">Contact</Link>
+      <Link to="/resume" className="nav-button">Resume</Link>
     </div>
-  )
+  );
 }
 
-export default navbar
+export default Navbar;

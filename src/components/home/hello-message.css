@@ -1,5 +1,6 @@
 .typewriter{
     font-size: 1.8vh;
+    background-color: black;
     display: flex;
     font-family: 'Press Start 2P', cursive;
 }
