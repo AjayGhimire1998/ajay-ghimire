@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 480px){
     .navbar{
-        width: 400px;
+        width: 350px;
      }
      .nav-button{
         flex: 30%;

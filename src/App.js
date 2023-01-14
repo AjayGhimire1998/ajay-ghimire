@@ -55,8 +55,6 @@ function App() {
       <div className="space"></div>
       <div className="main">
         <div>
-          <br />
-          <br />
           <Logo logo={logo} shadow={shadow} />
         </div>
         <Routes>
@@ -70,8 +68,6 @@ function App() {
         <br />
         <br />
         <Navbar />
-        <br />
-        <br />
         <br />
         <br />
         <footer className="footer">

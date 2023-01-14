@@ -5,7 +5,7 @@ import click from "../../sounds/click.wav";
 import "./navbar.css";
 function Navbar() {
   const [play] = useSound(click);
-  const [currentPage, SetCurrentPage] = useState("");
+  const [currentPage, setCurrentPage] = useState("");
   const [pages, setPages] = useState([
     "About",
     "Projects",
@@ -17,11 +17,12 @@ function Navbar() {
     play();
   };
   const onLinkClick = (page) => {
-    SetCurrentPage(page);
+    setCurrentPage(page);
     localStorage.setItem("current_page", JSON.stringify(page));
   };
 
   useEffect(() => {
+    setCurrentPage(JSON.parse(localStorage.getItem("current_page")))
     if (currentPage === "") {
       setPages(["About", "Projects", "Contact", "Resume"]);
     }

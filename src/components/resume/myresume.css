@@ -1,11 +1,11 @@
 .resume-container{
-    width: 700px;
+    width: 800px;
     text-align: center;
     background-color: rgb(18, 18, 18);
     border: 5px solid white;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
 }
 .my-resume{
