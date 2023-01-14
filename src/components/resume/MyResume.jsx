@@ -13,16 +13,13 @@ function MyResume({ shadow }) {
         className="resume-container"
         style={{ boxShadow: `5px -5px 8px ${shadow}` }}
       >
-        <div className="my-resume-container">
-          <iframe
-            src={myResume + "#toolbar=0"}
-            title="Ajay_Ghimire_Resume"
-            className="my-resume"
-          />
-        </div>
+        <iframe
+          src={myResume + "#toolbar=0"}
+          title="Ajay_Ghimire_Resume"
+          className="my-resume"
+        />
       </div>
       <br />
-
       <a
         href={myResume}
         className="nav-button"

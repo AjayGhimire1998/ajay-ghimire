@@ -1,17 +1,16 @@
 .resume-container{
-    width: 800px;
+    width: 700px;
     text-align: center;
     background-color: rgb(18, 18, 18);
     border: 5px solid white;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 .my-resume{
     height: 420px;
     max-width: 100%;
-    object-fit: contain;
 }
 
 @media screen and (max-width: 760px){
