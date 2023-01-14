@@ -1,5 +1,4 @@
 .pictures-container{
-    height: 100%;
     width: 700px;
     text-align: center;
     background-color: rgb(18, 18, 18);
@@ -7,13 +6,22 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
-
 
 .my-picture{
-    width: 200px;
+    /* width: 700px; */
+    max-width: 100%;
+    object-fit: contain;
 }
+.my-picture-container{
+    width: 690px;
+}
+
+.desc-container{
+
+}
+
 
 @media screen and (max-width: 760px) {
     .pictures-container{

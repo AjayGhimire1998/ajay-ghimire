@@ -6,6 +6,7 @@ import Home from "./pages/home/Home";
 import Logo from "./components/home/Logo";
 import Navbar from "./components/navbar/Navbar";
 import About from "./pages/about/About";
+import Resume from "./pages/resume/Resume";
 
 function App() {
   let shadows = useMemo(() => [], []);
@@ -52,6 +53,8 @@ function App() {
       <div className="space"></div>
       <div className="main">
         <div>
+          <br/>
+          <br/>
           <Logo logo={logo} shadow={shadow} />
         </div>
         <Routes>
@@ -59,6 +62,10 @@ function App() {
           <Route
             path="/about"
             element={<About shadow={shadow} />}
+          />
+          <Route
+            path="/resume"
+            element={<Resume shadow={shadow} />}
           />
         </Routes>
         <br />
