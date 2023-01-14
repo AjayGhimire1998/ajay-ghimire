@@ -5,16 +5,15 @@ import Navbar from "../../components/navbar/Navbar";
 import "./home.css";
 import Intro from "../../components/home/Intro";
 
-function Home() {
+function Home({shadow, logo}) {
   return (
     <>
       <div className="home">
-        <Logo />
+        <Logo logo={logo} shadow={shadow}/>
         <HelloMsg />
         <br />
-        <br />
-        <Intro />
-        <br />
+        <Intro shadow={shadow}/>
+        <br/>
         <br/>
         <Navbar />
       </div>
