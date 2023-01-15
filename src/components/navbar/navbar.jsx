@@ -52,7 +52,7 @@ function Navbar() {
                 onLinkClick(page === "Home" ? "" : page);
                 playSound();
               }}
-              // onMouseEnter={play}
+              // onMouseOver={play}
               key={index}
             >
               {page}
