@@ -8,17 +8,21 @@
     flex-direction: column;
 }
 
-.my-picture{
-    max-width: 50%;
-    object-fit: contain;
-}
+
 .my-picture-container{
     display: flex;
     flex-direction: row;
 }
 
-.desc-container{
+.my-picture{
+    max-width: 35%;
+    object-fit: cover ;
+    background-position: center;
+}
 
+.desc-container{
+    max-width: 65%;
+    object-fit: cover;
 }
 
 
@@ -27,8 +31,9 @@
         width: 70%;
     }
     .my-picture{
-        max-width: 100%;
-        object-fit: contain;
+        max-width: 35%;
+        object-fit: cover ;
+        background-position: center;
     }
 
 } 
@@ -38,8 +43,9 @@
         width: 80%;
     }
     .my-picture{
-        max-width: 100%;
-        object-fit: contain;
+        max-width: 35%;
+        object-fit: cover ;
+        background-position: center;
     }
  
     

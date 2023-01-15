@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
 
 function Desc() {
   return (
-    <div>Desc</div>
-  )
+    <div>
+      <p>fsagfkjasgfgasjhfgjhasgfjhafghj</p>
+      <p>fsagfkjasgfgasjhfgjhasgfjhafghj</p>
+      <p>fsagfkjasgfgasjhfgjhasgfjhafghj</p>
+      <p>fsagfkjasgfgasjhfgjhasgfjhafghj</p>
+      <p>fsagfkjasgfgasjhfgjhasgfjhafghj</p>
+
+      <p>fsagfkjasgfgasjhfgjhasgfjhafghj</p>
+      <p>fsagfkjasgfgasjhfgjhasgfjhafghj</p>
+      <p>fsagfkjasgfgasjhfgjhasgfjhafghj</p>
+    </div>
+  );
 }
 
-export default Desc
+export default Desc;

@@ -9,7 +9,7 @@ function Navbar() {
   const [pages, setPages] = useState([
     "About",
     "Projects",
-    "Contact",
+    "Blogs",
     "Resume",
   ]);
 
@@ -24,19 +24,19 @@ function Navbar() {
   useEffect(() => {
     setCurrentPage(JSON.parse(localStorage.getItem("current_page")))
     if (currentPage === "") {
-      setPages(["About", "Projects", "Contact", "Resume"]);
+      setPages(["About", "Projects", "Blogs", "Resume"]);
     }
     if (currentPage === "About") {
-      setPages(["Home", "Projects", "Contact", "Resume"]);
+      setPages(["Home", "Projects", "Blogs", "Resume"]);
     }
     if (currentPage === "Projects") {
-      setPages(["Home", "About", "Contact", "Resume"]);
+      setPages(["Home", "About", "Blogs", "Resume"]);
     }
-    if (currentPage === "Contact") {
+    if (currentPage === "Blogs") {
       setPages(["Home", "About", "Projects", "Resume"]);
     }
     if (currentPage === "Resume") {
-      setPages(["Home", "About", "Projects", "Contact"]);
+      setPages(["Home", "About", "Projects", "Blogs"]);
     }
   }, [currentPage]);
 
@@ -52,6 +52,7 @@ function Navbar() {
                 onLinkClick(page === "Home" ? "" : page);
                 playSound();
               }}
+              // onMouseEnter={play}
               key={index}
             >
               {page}
