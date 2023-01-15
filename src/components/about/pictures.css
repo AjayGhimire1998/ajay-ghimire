@@ -9,12 +9,13 @@
 }
 
 .my-picture{
-    max-width: 100%;
+    max-width: 50%;
     object-fit: contain;
 }
-/* .my-picture-container{
-    width: 700px;
-} */
+.my-picture-container{
+    display: flex;
+    flex-direction: row;
+}
 
 .desc-container{
 
@@ -34,7 +35,7 @@
 
 @media screen and(max-width: 480px) {
     .pictures-container{
-        width: 60%;
+        width: 80%;
     }
     .my-picture{
         max-width: 100%;

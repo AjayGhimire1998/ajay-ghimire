@@ -1,5 +1,6 @@
 import React from "react";
 import ajay1 from "../../images/my-pictures/ajay1.jpeg";
+import Desc from "./Desc";
 import "./pictures.css";
 function Pictures({ shadow }) {
   return (
@@ -11,6 +12,7 @@ function Pictures({ shadow }) {
         className="my-picture-container"
       >
         <img src={ajay1} alt="ajay1" className="my-picture"/>
+        <Desc />
       </div>
 
     </div>
