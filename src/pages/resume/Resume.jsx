@@ -2,10 +2,10 @@ import React from "react";
 import MyResume from "../../components/resume/MyResume";
 import "./resume.css"
 
-function Resume({shadow}) {
+function Resume({shadow, play, hover}) {
   return (
     <div className="resume">
-        <MyResume shadow={shadow}/>
+        <MyResume shadow={shadow} play={play} hover={hover}/>
     </div>
   );
 }

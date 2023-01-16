@@ -44,12 +44,12 @@ body{
 }
 
 .main > * {
-    width: 800px;
+    width: 900px;
 }
 
 .footer{
     font-size: 1.8vh;
-    position:relative;
+    position: relative;
     bottom:0;
     width:100%;
     color: white;
@@ -77,7 +77,7 @@ body{
         overflow-x: hidden;
     }
     .main > *{
-        width: 380px;
+        width: 400px;
 
     }
     .footer{

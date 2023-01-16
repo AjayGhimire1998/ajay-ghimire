@@ -1,0 +1,15 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    /* font-size: 1.8vh; */
+}
+
+.profile > h3{
+    font-style: bold;
+    font-size: 2.4vh;
+}
+
+.profile > p {
+    font-size: 1.4vh;
+    line-height: 1.8;
+}
