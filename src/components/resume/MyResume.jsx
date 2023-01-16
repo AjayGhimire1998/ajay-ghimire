@@ -5,17 +5,18 @@ import Profile from "./resume-contents/Profile";
 import Quote from "./resume-contents/Quote";
 
 function MyResume({ shadow, play, hover }) {
-  const [isDisabled, SetIsDisabled] = useState(false);
   const [pageCount, setPageCount] = useState(0);
-
   const pages = [<Quote />, <Profile />];
 
-  const onNextClick = ()=> {
+  const onNextClick = () => {
+    play();
+    setPageCount(pageCount + 1);
+  };
 
-  }
-
-
-
+  const onPrevClick = () => {
+    play();
+    setPageCount(pageCount - 1);
+  };
 
   return (
     <>
@@ -23,19 +24,22 @@ function MyResume({ shadow, play, hover }) {
         className="resume-container"
         style={{ boxShadow: `5px -5px 8px ${shadow}` }}
       >
- 
-        {/* <Quote/> */}
         {pages[pageCount]}
-        {/* <iframe
-          src={myResume + "#toolbar=0"}
-          title="Ajay_Ghimire_Resume"
-          className="my-resume"
-        /> */}
         <div className="resume-buttons">
-          <button className="nav-button previous" onMouseOver={hover}>
+          <button
+            className="nav-button previous"
+            onMouseOver={hover}
+            onClick={onPrevClick}
+            disabled={pageCount === 0}
+          >
             Previous
           </button>
-          <button className="nav-button next" onMouseOver={hover}>
+          <button
+            className="nav-button next"
+            onMouseOver={hover}
+            onClick={onNextClick}
+            disabled={pageCount === pages.length - 1}
+          >
             Next
           </button>
         </div>

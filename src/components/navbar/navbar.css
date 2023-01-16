@@ -39,9 +39,12 @@
 }
 
 .nav-button:disabled{
-    color: rgb(71, 69, 69);
+    color: rgb(255, 255, 255);
     position: none;
     top: 0em;
+    box-shadow: none; 
+    background-color: rgb(175, 171, 171);
+
 }
 
 @media screen and (max-width: 760px){

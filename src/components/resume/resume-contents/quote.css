@@ -1,4 +1,5 @@
 .quote{
+    display: flex;
     text-align: center;
 }
 
