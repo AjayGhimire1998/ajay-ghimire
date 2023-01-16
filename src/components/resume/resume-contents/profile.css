@@ -1,15 +1,51 @@
 .profile{
     display: flex;
     flex-direction: column;
-    /* font-size: 1.8vh; */
 }
 
 .profile > h3{
+    text-align: center;
+    line-height: 2.5;
     font-style: bold;
     font-size: 2.4vh;
 }
 
-.profile > p {
-    font-size: 1.4vh;
-    line-height: 1.8;
+.profile > h3 > span {
+    background-color: rgb(110, 107, 107); 
 }
+
+.profile > p {
+    font-size: 1.5vh;
+    line-height: 1.5;
+}
+
+
+
+@media screen and (max-width: 760px) {
+    .profile{
+        text-align: center;
+    }
+    .profile > h3{
+        line-height: 2.1;
+        font-size: 2vh;
+        
+    } 
+    .profile > p{
+        font-size: 1.3vh;
+      
+    } 
+} 
+
+@media screen and(max-width: 480px) {
+    .profile{
+        text-align: center;
+    }
+    .profile > h3{
+        font-size: 1.6vh;
+        line-height: 1.2;
+    } 
+    .profile > p{
+        font-size: 0.9vh;
+    } 
+    
+} 

@@ -22,10 +22,10 @@ function MyResume({ shadow, play, hover }) {
           className="my-resume"
         /> */}
         <div className="resume-buttons">
-          <button className="nav-button" onMouseOver={hover}>
+          <button className="nav-button previous" onMouseOver={hover}>
             Previous
           </button>
-          <button className="nav-button" onMouseOver={hover}>
+          <button className="nav-button next" onMouseOver={hover}>
             Next
           </button>
         </div>

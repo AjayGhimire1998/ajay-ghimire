@@ -10,6 +10,17 @@
 }
 .resume-buttons{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 100%;
+}
+
+.previous{
+    width: 40%;
+}
+
+.next{
+    width: 40%;
 }
 
 .my-resume{

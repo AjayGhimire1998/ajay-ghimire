@@ -1,9 +1,10 @@
 import React from "react";
+import "./profile.css"
 
 function Profile() {
   return (
     <div className="profile">
-      <h3>Professional Profile</h3>
+      <h3><span>Profile</span></h3>
       <p>
         Highly motivated and talented former Cook with 4+ years of work
         experience in high pressure and fast paced team environment, seeking an
