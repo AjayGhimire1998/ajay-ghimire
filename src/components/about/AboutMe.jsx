@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./about-me.css";
-import myResume from "../../images/Resume_Ajay_Ghimire.pdf";
 import Profile from "./about-contents/Profile";
 import Quote from "./about-contents/Quote";
 

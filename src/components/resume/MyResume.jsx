@@ -8,9 +8,12 @@ function MyResume({ shadow, play, hover }) {
       className="resume-container"
       style={{ boxShadow: `5px -5px 8px ${shadow}` }}
     >
-      <div className="my-resume-container">
-        <iframe src={myResume} title="Resume_Ajay_Ghimire" />
-      </div>
+      <iframe
+        src={myResume + "#toolbar=0"}
+        title="Resume_Ajay_Ghimire"
+        className="my-resume"
+      />
+
       <div className="download-button-container">
         <a
           href={myResume}
