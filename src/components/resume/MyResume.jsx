@@ -18,6 +18,10 @@ function MyResume({ shadow }) {
           title="Ajay_Ghimire_Resume"
           className="my-resume"
         />
+        <div className="resume-buttons">
+          <button className="nav-button">Previous</button>
+          <button className="nav-button">Next</button>
+        </div>
       </div>
       <br />
       <a
