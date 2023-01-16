@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useSound from "use-sound";
 import click from "../../sounds/click.wav";
+import hover from "../../sounds/hover.mp3";
 import "./navbar.css";
 function Navbar() {
   const [play] = useSound(click);
+  const [onHover] = useSound(hover);
   const [currentPage, setCurrentPage] = useState("");
   const [pages, setPages] = useState([
     "About",
@@ -52,7 +54,7 @@ function Navbar() {
                 onLinkClick(page === "Home" ? "" : page);
                 playSound();
               }}
-              // onMouseOver={play}
+              onMouseOver={onHover}
               key={index}
             >
               {page}
