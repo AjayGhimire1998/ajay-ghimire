@@ -1,6 +1,6 @@
 import React from "react";
 import "./quote.css";
-import ajay1 from "../../../images/my-pictures/ajay1.jpeg";
+// import ajay1 from "../../../images/my-pictures/ajay1.jpeg";
 function Quote() {
   return (
     <div className="quote">
