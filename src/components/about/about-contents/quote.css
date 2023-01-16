@@ -1,6 +1,7 @@
 .quote{
     display: flex;
     text-align: center;
+    margin-bottom: -5%;
 }
 
 .quote > h4 {
