@@ -6,6 +6,16 @@ import Quote from "./resume-contents/Quote";
 
 function MyResume({ shadow, play, hover }) {
   const [isDisabled, SetIsDisabled] = useState(false);
+  const [pageCount, setPageCount] = useState(0);
+
+  const pages = [<Quote />, <Profile />];
+
+  const onNextClick = ()=> {
+
+  }
+
+
+
 
   return (
     <>
@@ -15,7 +25,7 @@ function MyResume({ shadow, play, hover }) {
       >
  
         {/* <Quote/> */}
-        <Profile />
+        {pages[pageCount]}
         {/* <iframe
           src={myResume + "#toolbar=0"}
           title="Ajay_Ghimire_Resume"

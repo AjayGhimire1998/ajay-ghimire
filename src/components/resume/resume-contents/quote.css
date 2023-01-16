@@ -1,0 +1,22 @@
+.quote{
+    text-align: center;
+}
+
+.quote > h4 {
+    font-size: 2.4vh;
+    line-height: 1.8;
+}
+
+
+@media screen and (max-width: 760px) {
+    .quote > h4 {
+        font-size: 1.7vh;
+      
+    } 
+} 
+
+@media screen and(max-width: 480px) {
+    .quote > h4 {
+        font-size: 1.2vh;
+    } 
+} 

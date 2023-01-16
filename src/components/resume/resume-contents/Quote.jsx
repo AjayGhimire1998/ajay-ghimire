@@ -1,17 +1,13 @@
 import React from "react";
-
+import "./quote.css";
 function Quote() {
   return (
-    <div>
+    <div className="quote">
       <h4>
         <blockquote>
           <i>
             “I have gone from slicing
-            <br />
-            <br />
             sashimis to slicing
-            <br />
-            <br />
             arrays”
           </i>
         </blockquote>
