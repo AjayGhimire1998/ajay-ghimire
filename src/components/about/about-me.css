@@ -1,0 +1,38 @@
+.about-container{
+    width: 700px;
+    text-align: center;
+    background-color: rgb(18, 18, 18);
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.about-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 100%;
+}
+
+.previous{
+    width: 40%;
+}
+
+.next{
+    width: 40%;
+}
+
+
+
+@media screen and (max-width: 760px){
+    .about-container{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .about-container{
+        width: 80%;
+    }
+}

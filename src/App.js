@@ -65,7 +65,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Home shadow={shadow} />} />
-          <Route path="/about" element={<About shadow={shadow} />} />
+          <Route path="/about" element={<About shadow={shadow} play={play} hover={onHover}/>} />
           <Route path="/projects" element={<Projects shadow={shadow} />} />
           <Route path="/contact" element={<Contact shadow={shadow} />} />
           <Route path="/resume" element={<Resume shadow={shadow} play={play} hover={onHover}/>} />

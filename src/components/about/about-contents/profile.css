@@ -5,7 +5,7 @@
 
 .profile > h3{
     text-align: center;
-    line-height: 2.5;
+    /* line-height: 1.5; */
     font-style: bold;
     font-size: 2.4vh;
 }
@@ -15,8 +15,12 @@
 }
 
 .profile > p {
+    display: flex;
+    text-align: center;
     font-size: 1.5vh;
     line-height: 1.5;
+    /* margin: 10px; */
+    
 }
 
 

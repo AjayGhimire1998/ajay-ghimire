@@ -6,43 +6,46 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-
 }
-.resume-buttons{
+.my-resume-container{
+    height: 420px;
+    max-width: 100%;
+    object-fit: fill;
+}
+.my-resume{
+    height: 420px;
+    max-width: 100%;
+    object-fit: fill;
+}
+
+
+.download-button-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex: 100%;
 }
-
-.previous{
+.download{
     width: 40%;
-}
-
-.next{
-    width: 40%;
-}
-
-.my-resume{
-    height: 420px;
-    max-width: 100%;
 }
 
 @media screen and (max-width: 760px){
     .resume-container{
-        width: 70%;
+        width: 60%;
     }
     .my-resume{
         width: 100%;
+        object-fit: contain;
     }
 
 }
 
 @media screen and (max-width: 480px){
     .resume-container{
-        width: 60%;
+        width: 80%;
     }
     .my-resume{
         width: 100%;
+        object-fit: contain;
     }
 }

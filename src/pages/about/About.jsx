@@ -1,11 +1,11 @@
 import React from "react";
-import Pictures from "../../components/about/Pictures";
 import "./about.css";
+import AboutMe from "../../components/about/AboutMe";
 
-function About({ shadow }) {
+function About({ shadow, play, hover }) {
   return (
     <div className="about">
-      <Pictures shadow={shadow} />
+      <AboutMe shadow={shadow} play={play} hover={hover} />
     </div>
   );
 }
