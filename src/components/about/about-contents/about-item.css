@@ -25,24 +25,36 @@
     
 }
 
-.preview{
- 
-    background-color: rgb(62, 61, 61);
-    
+.preview-button{
+    background-color: rgb(62, 61, 61); 
 }
 
-
-.preview-reverse{
+.preview-reverse-button{
     background-color: rgb(62, 61, 61);
+}
+
+.preview-image-container {
+    width:100%;
+    overflow:hidden;
 }
 
 .preview-image{
     height: 100%;
     max-width: 100%; 
-    
+    animation: preview-image-container 2s;
+    margin-top:0%;
 }
 
+@keyframes preview-image-container {
+    from {
+        margin-left: -100%;
+    }
+  
+    to {
+        margin-left: 0%;
 
+    }
+  }
 
 @media screen and (max-width: 760px) {
     .about-item{

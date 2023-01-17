@@ -12,32 +12,27 @@ function Profile({ title, desc, image }) {
     <>
       {isPreviewOn ? (
         <div className="about-item-container">
-          <div className="about-item">
+          <div className="about-item preview-image-container">
             <img src={image} className="preview-image" alt="ajay" />
           </div>
-          <button className="preview-reverse" onClick={onPreviewClick}>
-            <span> &lt;</span>
-          </button>
+          <div className="preview-reverse-container">
+            <button className="preview-reverse-button" onClick={onPreviewClick}>
+              <span> &lt;</span>
+            </button>
+          </div>
         </div>
       ) : (
         <div className="about-item-container">
-          <button className="preview" onClick={onPreviewClick}>
-            <span> &gt;</span>{" "}
-          </button>
+          <div className="preview-button-container">
+            <button className="preview-button" onClick={onPreviewClick}>
+              <span> &gt;</span>{" "}
+            </button>
+          </div>
           <div className="about-item">
             <h3>
               <span>{title}</span>
             </h3>
             <p>{desc}</p>
-            {/* <img
-          src={image}
-          style={{
-            imageRendering: " crisp-edges",
-            height: "200px",
-            width: "300px",
-          }}
-          alt="ajay"
-        /> */}
           </div>
         </div>
       )}
