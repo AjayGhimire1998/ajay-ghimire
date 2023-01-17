@@ -13,7 +13,7 @@ function Profile({title, desc}) {
       </p>
       <img
         src={ajay1}
-        style={{ imageRendering: "pixelated", height: "200px", width: "300px" }}
+        style={{imageRendering:" crisp-edges", height: "200px", width: "300px" }}
         alt="ajay"
       />
     </div>
