@@ -15,8 +15,7 @@ function AboutMe({ shadow, play, hover }) {
   const pages = [
     <AboutItem
       title="Profile"
-      desc="
-    I am a highly motivated and results-driven software developer with a 
+      desc="I am a highly motivated and results-driven software developer with a 
       strong background in IT and a passion for creating innovative
       solutions. I have recently graduated with a Bachelor's
       degree in IT and completed a software engineering bootcamp.
