@@ -1,7 +1,7 @@
 import React from "react";
 import "./about-item.css";
 
-function Profile({ title, desc, image, isPreviewOn, onPreviewClick }) {
+function Profile({ title, desc, quote, image, isPreviewOn, onPreviewClick }) {
   return (
     <>
       {isPreviewOn ? (
@@ -26,6 +26,11 @@ function Profile({ title, desc, image, isPreviewOn, onPreviewClick }) {
             <h3>
               <span>{title}</span>
             </h3>
+            <p>
+              <blockquote>
+                <i>{quote}</i>
+              </blockquote>
+            </p>
             <p>{desc}</p>
           </div>
         </div>

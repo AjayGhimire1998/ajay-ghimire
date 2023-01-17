@@ -6,7 +6,8 @@
 .about-item{
     display: flex;
     flex-direction: column;
-   
+    margin-left: -12px;
+    margin-right: 12px;
 }
 
 .about-item > h3{
@@ -115,6 +116,8 @@
 @media screen and (max-width: 760px) {
     .about-item{
         text-align: center;
+        margin-left: -2px;
+    margin-right: 6px;
     }
     .about-item > h3{
         line-height: 2.1;
@@ -130,6 +133,7 @@
 @media screen and(max-width: 480px) {
     .about-item{
         text-align: center;
+        margin: 5%;
     }
     .about-item > h3{
         font-size: 1.6vh;

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./about-me.css";
 import AboutItem from "./about-contents/AboutItem";
-import Quote from "./about-contents/Quote";
-// import ajay1 from "../../images/my-pictures/ajay1.jpeg";
 import profile from "../../images/my-pictures/profile.jpeg";
 import background from "../../images/my-pictures/chocho.JPG";
 
@@ -17,7 +15,8 @@ function AboutMe({ shadow, play, hover }) {
   const pages = [
     <AboutItem
       title="Profile"
-      desc="I am a highly motivated and results-driven software developer with a 
+      desc="
+    I am a highly motivated and results-driven software developer with a 
       strong background in IT and a passion for creating innovative
       solutions. I have recently graduated with a Bachelor's
       degree in IT and completed a software engineering bootcamp.
@@ -40,11 +39,11 @@ function AboutMe({ shadow, play, hover }) {
       My hard work, ability to get noticed & become a positive presence 
       in the workplace & ability to learn quickly, identify & solve problems 
       led me to get promoted as a cook in just six months."
+      quote="“I have gone from slicing sashimis to slicing arrays”"
       image={background}
       isPreviewOn={isPreviewOn}
       onPreviewClick={onPreviewClick}
     />,
-    <Quote />,
   ];
 
   const onNextClick = () => {
