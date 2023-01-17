@@ -67,7 +67,6 @@ body{
     }
     .footer{
         font-size: 1.4vh;
-        /* position:fixed; */
         bottom: -10%;
     }
 }
@@ -82,7 +81,6 @@ body{
     }
     .footer{
         font-size: 1.vh;
-        /* position:fixed;ß */
         bottom: -10%;
     }
 }

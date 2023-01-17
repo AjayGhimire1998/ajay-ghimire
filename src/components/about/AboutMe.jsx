@@ -2,11 +2,18 @@ import React, { useState } from "react";
 import "./about-me.css";
 import AboutItem from "./about-contents/AboutItem";
 import Quote from "./about-contents/Quote";
-import ajay1 from "../../images/my-pictures/ajay1.jpeg";
-import profile from "../../images/my-pictures/profile.jpeg"
+// import ajay1 from "../../images/my-pictures/ajay1.jpeg";
+import profile from "../../images/my-pictures/profile.jpeg";
+import background from "../../images/my-pictures/chocho.JPG";
 
 function AboutMe({ shadow, play, hover }) {
   const [pageCount, setPageCount] = useState(0);
+  const [isPreviewOn, setIsPreviewOn] = useState(false);
+
+  const onPreviewClick = () => {
+    setIsPreviewOn(!isPreviewOn);
+  };
+
   const pages = [
     <AboutItem
       title="Profile"
@@ -23,6 +30,19 @@ function AboutMe({ shadow, play, hover }) {
       where I can utilize my skills and continue to grow
       as a professional."
       image={profile}
+      isPreviewOn={isPreviewOn}
+      onPreviewClick={onPreviewClick}
+    />,
+    <AboutItem
+      title="Background"
+      desc="During my bachelor's,
+      I started working as a kitchen hand in a super busy Japanese restaurant. 
+      My hard work, ability to get noticed & become a positive presence 
+      in the workplace & ability to learn quickly, identify & solve problems 
+      led me to get promoted as a cook in just six months."
+      image={background}
+      isPreviewOn={isPreviewOn}
+      onPreviewClick={onPreviewClick}
     />,
     <Quote />,
   ];
@@ -30,11 +50,13 @@ function AboutMe({ shadow, play, hover }) {
   const onNextClick = () => {
     play();
     setPageCount(pageCount + 1);
+    setIsPreviewOn(false);
   };
 
   const onPrevClick = () => {
     play();
     setPageCount(pageCount - 1);
+    setIsPreviewOn(false);
   };
 
   return (

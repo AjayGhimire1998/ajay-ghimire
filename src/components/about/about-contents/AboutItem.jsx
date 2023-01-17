@@ -1,13 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./about-item.css";
 
-function Profile({ title, desc, image }) {
-  const [isPreviewOn, setIsPreviewOn] = useState(false);
-
-  const onPreviewClick = () => {
-    setIsPreviewOn(!isPreviewOn);
-  };
-
+function Profile({ title, desc, image, isPreviewOn, onPreviewClick }) {
   return (
     <>
       {isPreviewOn ? (

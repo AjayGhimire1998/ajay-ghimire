@@ -1,11 +1,12 @@
 .about-item-container{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .about-item{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+   
 }
 
 .about-item > h3{
@@ -93,10 +94,11 @@
 }
 
 .preview-image{
-    height: 100%;
-    max-width: 100%; 
     animation: preview-image-container 2s;
     margin-top:0%;
+    object-fit: cover;
+    height: 450px;
+    max-width: 100%; 
 }
 
 @keyframes preview-image-container {
@@ -127,7 +129,6 @@
 
 @media screen and(max-width: 480px) {
     .about-item{
-        /* margin-left: 5px; */
         text-align: center;
     }
     .about-item > h3{
