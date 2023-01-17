@@ -5,6 +5,7 @@
 .about-item{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .about-item > h3{
@@ -30,7 +31,6 @@
     overflow:hidden;
 }
 .preview-button{
-    /* background-color: rgb(62, 61, 61);  */
     animation: preview-button-container 2s;
     margin-top:0%;
     font-size: 1.7vh;

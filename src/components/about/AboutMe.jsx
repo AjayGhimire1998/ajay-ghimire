@@ -3,6 +3,7 @@ import "./about-me.css";
 import AboutItem from "./about-contents/AboutItem";
 import Quote from "./about-contents/Quote";
 import ajay1 from "../../images/my-pictures/ajay1.jpeg";
+import profile from "../../images/my-pictures/profile.jpeg"
 
 function AboutMe({ shadow, play, hover }) {
   const [pageCount, setPageCount] = useState(0);
@@ -21,7 +22,7 @@ function AboutMe({ shadow, play, hover }) {
       I am seeking a challenging software developer role 
       where I can utilize my skills and continue to grow
       as a professional."
-      image={ajay1}
+      image={profile}
     />,
     <Quote />,
   ];
