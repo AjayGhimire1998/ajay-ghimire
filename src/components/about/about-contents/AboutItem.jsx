@@ -16,7 +16,7 @@ function Profile({ title, desc, image }) {
             <img src={image} className="preview-image" alt="ajay" />
           </div>
           <div className="preview-reverse-container">
-            <button className="preview-reverse-button" onClick={onPreviewClick}>
+            <button className="preview-button reverse" onClick={onPreviewClick}>
               <span> &lt;</span>
             </button>
           </div>

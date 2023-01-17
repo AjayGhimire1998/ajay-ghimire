@@ -26,17 +26,67 @@
 }
 .preview-button-container{
     display: flex;
+    width: 100%; 
+    overflow:hidden;
 }
 .preview-button{
-    background-color: rgb(62, 61, 61); 
-}
-.preview-reverse-container {
-    display: flex;
-}
-.preview-reverse-button{
-    background-color: rgb(62, 61, 61);
+    /* background-color: rgb(62, 61, 61);  */
+    animation: preview-button-container 2s;
+    margin-top:0%;
+    font-size: 1.7vh;
+    text-align: center;
+	display: inline-block;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	 border-radius: 5px;
+    box-shadow: 0 .2em rgb(202, 201, 201); 
+    cursor: pointer;
+    text-decoration: none;
 }
 
+.preview-button:hover{
+    cursor: pointer;
+    box-shadow: none;
+	position: relative;
+	top: .3em;
+}
+
+.preview-button > span {
+    color: black;
+}
+
+@keyframes preview-button-container {
+    from {
+        margin-left: -100%;
+    }
+  
+    to {
+        margin-left: 0%;
+
+    }
+  }
+.preview-reverse-container {
+    display: flex;
+    overflow:hidden;
+}
+.reverse{
+    animation: preview-reverse-container 2s;
+    margin-top:0%;
+}
+@keyframes preview-reverse-container {
+    from {
+        margin-left: 100%;
+    }
+  
+    to {
+        margin-left: 0%;
+
+    }
+  }
 .preview-image-container {
     width:100%;
     overflow:hidden;
@@ -77,6 +127,7 @@
 
 @media screen and(max-width: 480px) {
     .about-item{
+        /* margin-left: 5px; */
         text-align: center;
     }
     .about-item > h3{
@@ -86,5 +137,6 @@
     .about-item > p{
         font-size: 0.9vh;
     } 
+
     
 } 
