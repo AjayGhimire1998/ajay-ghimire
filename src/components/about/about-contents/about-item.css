@@ -24,11 +24,15 @@
     line-height: 1.5;
     
 }
-
+.preview-button-container{
+    display: flex;
+}
 .preview-button{
     background-color: rgb(62, 61, 61); 
 }
-
+.preview-reverse-container {
+    display: flex;
+}
 .preview-reverse-button{
     background-color: rgb(62, 61, 61);
 }
