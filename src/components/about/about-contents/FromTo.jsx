@@ -2,7 +2,7 @@ import "./from-to.css";
 import { HiAcademicCap } from "react-icons/hi";
 import { CgWorkAlt } from "react-icons/cg";
 
-function FromTo() {
+function FromTo({edu}) {
   return (
     <div className="from-to-container">
       <h3 style={{ textAlign: "center" }}>
@@ -12,6 +12,7 @@ function FromTo() {
         <div className="edu-container">
           <div className="edu">
             <HiAcademicCap size="30px" />
+            {/* {edu.map(() => )} */}
             <div className="edu-item">
               <div className="edu-contents">
                 <div className="edu-desc">
