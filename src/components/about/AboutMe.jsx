@@ -3,6 +3,7 @@ import "./about-me.css";
 import AboutItem from "./about-contents/AboutItem";
 import profile from "../../images/my-pictures/profile.jpeg";
 import background from "../../images/my-pictures/chocho.JPG";
+import academyXi from "../../images/my-pictures/academyXi.png";
 
 function AboutMe({ shadow, play, hover }) {
   const [pageCount, setPageCount] = useState(0);
@@ -50,9 +51,34 @@ function AboutMe({ shadow, play, hover }) {
       onPreviewClick={onPreviewClick}
       hover={hover}
     />,
-    <AboutItem 
-    title=""
-    />
+    <AboutItem
+      title="Academic Evolution"
+      desc="I began my academic journey with a Bachelor of IT 
+    degree, where I gained a strong foundation in computer 
+    science and software development. However, I
+     realized that I wanted to specialize in software 
+     engineering and decided to take a bootcamp to 
+     further my skills in this field. 
+     The bootcamp provided me with a more hands-on and 
+     practical approach to software engineering, and 
+     I was able to work on real-world projects and learn 
+     from experienced industry professionals."
+      desc2="This experience allowed me to apply the 
+     theoretical knowledge I had learned in my Bachelor's 
+     degree to real-world situations and helped me to become more
+     well-rounded as a software engineer. It also helped 
+     me to become more confident in my abilities and 
+     pursue a career in the field. I am now ready to apply the
+      skills and knowledge I've gained in both 
+      my Bachelor's degree and bootcamp to my future job as 
+      a software engineer. This academic journey has been 
+      a great opportunity for me to develop my skills
+      and pursue my passion for software engineering."
+      image={academyXi}
+      isPreviewOn={isPreviewOn}
+      onPreviewClick={onPreviewClick}
+      hover={hover}
+    />,
   ];
 
   const onNextClick = () => {
