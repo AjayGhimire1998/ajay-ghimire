@@ -1,0 +1,11 @@
+.from-to-container{
+    display: flex; 
+     flex-direction: row;
+    width: 100%;
+}
+
+
+
+.line{
+    border-left: 6px solid green;
+}

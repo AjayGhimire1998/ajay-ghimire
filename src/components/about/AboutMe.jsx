@@ -4,6 +4,7 @@ import AboutItem from "./about-contents/AboutItem";
 import profile from "../../images/my-pictures/profile.jpeg";
 import background from "../../images/my-pictures/chocho.JPG";
 import academyXi from "../../images/my-pictures/academyXi.png";
+import FromTo from "./about-contents/FromTo";
 
 function AboutMe({ shadow, play, hover }) {
   const [pageCount, setPageCount] = useState(0);
@@ -79,6 +80,7 @@ function AboutMe({ shadow, play, hover }) {
       onPreviewClick={onPreviewClick}
       hover={hover}
     />,
+    <FromTo />,
   ];
 
   const onNextClick = () => {
