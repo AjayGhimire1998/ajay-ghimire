@@ -27,9 +27,7 @@ function Profile({ title, desc, quote, image, isPreviewOn, onPreviewClick }) {
               <span>{title}</span>
             </h3>
             <p>
-              <blockquote>
-                <i>{quote}</i>
-              </blockquote>
+              <i>{quote}</i>
             </p>
             <p>{desc}</p>
           </div>
