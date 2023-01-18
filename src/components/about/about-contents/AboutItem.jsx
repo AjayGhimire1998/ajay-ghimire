@@ -1,7 +1,17 @@
 import React from "react";
 import "./about-item.css";
 
-function Profile({ title, desc, desc2, quote, image, isPreviewOn, onPreviewClick }) {
+function Profile({
+  title,
+  desc,
+  desc2,
+  quote,
+  image,
+  isPreviewOn,
+  onPreviewClick,
+  play,
+  hover,
+}) {
   return (
     <>
       {isPreviewOn ? (
@@ -10,16 +20,24 @@ function Profile({ title, desc, desc2, quote, image, isPreviewOn, onPreviewClick
             <img src={image} className="preview-image" alt="ajay" />
           </div>
           <div className="preview-reverse-container">
-            <button className="preview-button reverse" onClick={onPreviewClick}>
-              <span> &#8679;</span>
+            <button
+              className="preview-button reverse"
+              onClick={onPreviewClick}
+              onMouseOver={hover}
+            >
+              <span> &uarr;</span>
             </button>
           </div>
         </div>
       ) : (
         <div className="about-item-container">
           <div className="preview-button-container">
-            <button className="preview-button" onClick={onPreviewClick}>
-              <span> &#8681; </span>
+            <button
+              className="preview-button"
+              onClick={onPreviewClick}
+              onMouseOver={hover}
+            >
+              <span> &darr; </span>
             </button>
           </div>
           <div className="about-item">

@@ -9,6 +9,7 @@ function AboutMe({ shadow, play, hover }) {
   const [isPreviewOn, setIsPreviewOn] = useState(false);
 
   const onPreviewClick = () => {
+    play();
     setIsPreviewOn(!isPreviewOn);
   };
 
@@ -21,8 +22,8 @@ function AboutMe({ shadow, play, hover }) {
       degree in IT and completed a software engineering bootcamp.
       I have proven ability to quickly learn and 
       master new technologies, and a track record of delivering
-      high-quality web applications on time.
-      I have strong problem-solving skills and ability
+      high-quality web applications on time."
+      desc2="I have strong problem-solving skills and ability
       to work well in a team environment.
       I am seeking a challenging software developer role 
       where I can utilize my skills and continue to grow
@@ -30,6 +31,7 @@ function AboutMe({ shadow, play, hover }) {
       image={profile}
       isPreviewOn={isPreviewOn}
       onPreviewClick={onPreviewClick}
+      hover={hover}
     />,
     <AboutItem
       title="Background"
@@ -38,13 +40,19 @@ function AboutMe({ shadow, play, hover }) {
       to support my tuition. 
       My hard work, ability to get noticed & become a positive presence 
       in the workplace & ability to learn quickly, identify & solve problems 
-      led me to get promoted as a cook in just six months. 
+      led me to get promoted as a 'Cook' in just six months. 
       That is where I gained experience working in a high-speed or fast-paced environment."
+      desc2="I quit the job at the end of '2022' and started working in a pharmacy retail as a 
+      'Retail Assistant' to enhance my communication and customer service skill."
       quote="“I have gone from slicing sashimis to slicing arrays”"
       image={background}
       isPreviewOn={isPreviewOn}
       onPreviewClick={onPreviewClick}
+      hover={hover}
     />,
+    <AboutItem 
+    title="Meanwhile"
+    />
   ];
 
   const onNextClick = () => {
