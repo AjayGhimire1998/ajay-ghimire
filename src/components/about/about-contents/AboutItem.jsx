@@ -1,5 +1,6 @@
 import React from "react";
 import "./about-item.css";
+import { HiArrowCircleDown, HiArrowCircleUp } from "react-icons/hi";
 
 function Profile({
   title,
@@ -20,25 +21,23 @@ function Profile({
             <img src={image} className="preview-image" alt="ajay" />
           </div>
           <div className="preview-reverse-container">
-            <button
-              className="preview-button reverse"
+          <HiArrowCircleUp
+              size="30px"
+              className="preview-button"
               onClick={onPreviewClick}
               onMouseOver={hover}
-            >
-              <span> &uarr;</span>
-            </button>
+            />
           </div>
         </div>
       ) : (
         <div className="about-item-container">
           <div className="preview-button-container">
-            <button
+            <HiArrowCircleDown
+              size="30px"
               className="preview-button"
               onClick={onPreviewClick}
               onMouseOver={hover}
-            >
-              <span> &darr; </span>
-            </button>
+            />
           </div>
           <div className="about-item">
             <h3>

@@ -1,4 +1,6 @@
 import "./from-to.css";
+import { HiAcademicCap } from "react-icons/hi";
+import { CgWorkAlt } from "react-icons/cg";
 
 function FromTo() {
   return (
@@ -9,6 +11,7 @@ function FromTo() {
       <div className="edu-exp-container">
         <div className="edu-container">
           <div className="edu">
+            <HiAcademicCap size="20px" />
             <div className="edu-item">
               <div className="edu-contents">
                 <div className="edu-desc">
@@ -26,6 +29,7 @@ function FromTo() {
         <div className="line"></div>
         <div className="edu-container">
           <div className="edu">
+            <CgWorkAlt size="20px" />
             <div className="edu-item">
               <div className="edu-contents">
                 <div className="edu-desc">

@@ -38,13 +38,11 @@
     text-align: center;
 	display: inline-block;
     font-weight: bold;
-    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
 	 border-radius: 5px;
-    box-shadow: 0 .2em rgb(202, 201, 201); 
     cursor: pointer;
     text-decoration: none;
 }
