@@ -13,6 +13,8 @@
 .edu-container{
     display: flex;
     flex-direction: column;
+    border: 0px solid white;
+    border-radius: 20px;
 }
 
 .edu-item{
@@ -51,7 +53,7 @@
 .edu-time{
     text-align: right;
     margin-right: 5px;
-    width: 70%;
+    width: 100%;
 }
 
 .edu-time > span {
@@ -60,14 +62,79 @@
     font-size: 1vh;
 }
 
-.exp-container{
+/* .exp-container{
     display: flex;
     flex-direction: column;
-}
-
-
+} */
 
 .line{
     border-left: 3px solid white;
     border-radius: 10px;
 }
+
+
+@media screen and (max-width: 760px) {
+    .edu-desc > h4{
+        color: black;
+        font-weight: bolder;
+        font-size: 1.6vh;
+    }
+    
+    .edu-desc > p{
+        color: black;
+        font-size: 1.3vh;
+    
+    }
+    
+    .edu-desc > span{
+        color: black;
+        font-style: italic;
+        font-size: 1.1vh;
+    }
+    
+    .edu-time{
+        text-align: right;
+        margin-right: 5px;
+        width: 80%;
+    }
+    
+    .edu-time > span {
+        color: black;
+        font-style: italic;
+        font-size: 0.8vh;
+    }
+} 
+
+@media screen and(max-width: 480px) {
+    .edu-desc > h4{
+        color: black;
+        font-weight: bolder;
+        font-size: 1.3vh;
+    }
+    
+    .edu-desc > p{
+        color: black;
+        font-size: 1vh;
+    
+    }
+    
+    .edu-desc > span{
+        color: black;
+        font-style: italic;
+        font-size: 0.8vh;
+    }
+    
+    .edu-time{
+        text-align: right;
+        margin-right: 5px;
+        width: 80%;
+    }
+    
+    .edu-time > span {
+        color: black;
+        font-style: italic;
+        font-size: 0.6vh;
+    }
+
+    
+} 

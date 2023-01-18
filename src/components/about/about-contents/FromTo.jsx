@@ -11,7 +11,7 @@ function FromTo() {
       <div className="edu-exp-container">
         <div className="edu-container">
           <div className="edu">
-            <HiAcademicCap size="20px" />
+            <HiAcademicCap size="30px" />
             <div className="edu-item">
               <div className="edu-contents">
                 <div className="edu-desc">
@@ -20,7 +20,7 @@ function FromTo() {
                   <span>Course</span>
                 </div>
                 <div className="edu-time">
-                  <span>Feb 2022 - Jul 2022</span>
+                  <span>Feb 2022-Jul 2022</span>
                 </div>
               </div>
             </div>
@@ -29,7 +29,7 @@ function FromTo() {
         <div className="line"></div>
         <div className="edu-container">
           <div className="edu">
-            <CgWorkAlt size="20px" />
+            <CgWorkAlt size="30px" />
             <div className="edu-item">
               <div className="edu-contents">
                 <div className="edu-desc">
