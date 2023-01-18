@@ -34,7 +34,7 @@ function AboutMe({ shadow, play, hover }) {
       hover={hover}
     />,
     <AboutItem
-      title="Background"
+      title="Professional Evolution"
       desc="During my bachelor's,
       I started working as a kitchen hand in a super busy Japanese restaurant
       to support my tuition. 
@@ -51,7 +51,7 @@ function AboutMe({ shadow, play, hover }) {
       hover={hover}
     />,
     <AboutItem 
-    title="Meanwhile"
+    title=""
     />
   ];
 
