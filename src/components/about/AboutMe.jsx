@@ -34,10 +34,12 @@ function AboutMe({ shadow, play, hover }) {
     <AboutItem
       title="Background"
       desc="During my bachelor's,
-      I started working as a kitchen hand in a super busy Japanese restaurant. 
+      I started working as a kitchen hand in a super busy Japanese restaurant
+      to support my tuition. 
       My hard work, ability to get noticed & become a positive presence 
       in the workplace & ability to learn quickly, identify & solve problems 
-      led me to get promoted as a cook in just six months."
+      led me to get promoted as a cook in just six months. 
+      That is where I gained experience working in a high-speed or fast-paced environment."
       quote="“I have gone from slicing sashimis to slicing arrays”"
       image={background}
       isPreviewOn={isPreviewOn}

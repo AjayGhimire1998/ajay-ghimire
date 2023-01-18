@@ -1,13 +1,12 @@
 .about-item-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
 }
 .about-item{
     display: flex;
     flex-direction: column;
-    margin-left: -12px;
-    margin-right: 12px;
+    
 }
 
 .about-item > h3{
@@ -25,16 +24,16 @@
     text-align: center;
     font-size: 1.5vh;
     line-height: 1.5;
+    margin: 10px; 
     
 }
 .preview-button-container{
     display: flex;
+    justify-content: center;
     width: 100%; 
     overflow:hidden;
 }
 .preview-button{
-    /* animation: preview-button-container 2s;
-    margin-top:0%; */
     font-size: 1.7vh;
     text-align: center;
 	display: inline-block;
@@ -61,42 +60,20 @@
     color: black;
 }
 
-/* @keyframes preview-button-container {
-    from {
-        margin-left: -100%;
-    }
-  
-    to {
-        margin-left: 0%;
-
-    }
-  } */
 .preview-reverse-container {
     display: flex;
+    justify-content: center;
     overflow:hidden;
 } 
-/*.reverse{
-    animation: preview-reverse-container 2s;
-    margin-top:0%;
-}
-@keyframes preview-reverse-container {
-    from {
-        margin-left: 100%;
-    }
-  
-    to {
-        margin-left: 0%;
 
-    }
-  } */
 .preview-image-container {
     width:100%;
     overflow:hidden;
 }
 
 .preview-image{
-    /* animation: preview-image-container 2s;
-    margin-top:0%; */
+    animation: preview-image-container 1s;
+    margin-top:0%;
     object-fit: cover;
     height: 450px;
     max-width: 100%; 
@@ -104,11 +81,11 @@
 
 @keyframes preview-image-container {
     from {
-        margin-left: -100%;
+        margin-top: -100%;
     }
   
     to {
-        margin-left: 0%;
+        margin-top: 0%;
 
     }
   }
@@ -116,8 +93,6 @@
 @media screen and (max-width: 760px) {
     .about-item{
         text-align: center;
-        margin-left: -2px;
-    margin-right: 6px;
     }
     .about-item > h3{
         line-height: 2.1;
@@ -133,7 +108,6 @@
 @media screen and(max-width: 480px) {
     .about-item{
         text-align: center;
-        margin: 5%;
     }
     .about-item > h3{
         font-size: 1.6vh;
