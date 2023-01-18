@@ -25,6 +25,11 @@
     flex-direction: row;
 }
 
+.edu-desc{
+    text-align: left;
+    margin-left: 5px;
+}
+
 .edu-desc > h4{
     color: black;
     font-weight: bolder;
@@ -41,6 +46,12 @@
     color: black;
     font-style: italic;
     font-size: 1.4vh;
+}
+
+.edu-time{
+    text-align: right;
+    margin-right: 5px;
+    width: 70%;
 }
 
 .edu-time > span {

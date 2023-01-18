@@ -24,12 +24,20 @@ function FromTo() {
           </div>
         </div>
         <div className="line"></div>
-        <div className="exp-container">
-          <div className="exp">
-            <h3>exp</h3>
-            <h3>exp</h3>
-            <h3>exp</h3>
-            <h3>exp</h3>
+        <div className="edu-container">
+          <div className="edu">
+            <div className="edu-item">
+              <div className="edu-contents">
+                <div className="edu-desc">
+                  <h4>Company</h4>
+                  <p>Company Adrress</p>
+                  <span>Job title</span>
+                </div>
+                <div className="edu-time">
+                  <span>Feb 2022 - Jul 2022</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
