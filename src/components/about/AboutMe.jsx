@@ -5,7 +5,7 @@ import profile from "../../images/my-pictures/profile.jpeg";
 import background from "../../images/my-pictures/chocho.JPG";
 import academyXi from "../../images/my-pictures/academyXi.png";
 import FromTo from "./about-contents/FromTo";
-import { eduExp } from "./about-contents/eduExp";
+import { edu } from "./about-contents/eduExp";
 
 
 function AboutMe({ shadow, play, hover }) {
@@ -82,7 +82,7 @@ function AboutMe({ shadow, play, hover }) {
       onPreviewClick={onPreviewClick}
       hover={hover}
     />,
-    <FromTo edu={eduExp.edu}/>,
+    <FromTo edu={edu}/>,
   ];
 
   const onNextClick = () => {
