@@ -1,5 +1,6 @@
 .from-to-container{
-    /* display: flex;  */
+    display: flex; 
+    flex-direction: column;
     width: 100%;
 }
 
@@ -12,6 +13,40 @@
 .edu-container{
     display: flex;
     flex-direction: column;
+}
+
+.edu-item{
+ background-color: white;
+ margin: 10px;
+}
+
+.edu-contents{
+    display: flex;
+    flex-direction: row;
+}
+
+.edu-desc > h4{
+    color: black;
+    font-weight: bolder;
+    font-size: 1.8vh;
+}
+
+.edu-desc > p{
+    color: black;
+    font-size: 1.5vh;
+
+}
+
+.edu-desc > span{
+    color: black;
+    font-style: italic;
+    font-size: 1.4vh;
+}
+
+.edu-time > span {
+    color: black;
+    font-style: italic;
+    font-size: 1vh;
 }
 
 .exp-container{

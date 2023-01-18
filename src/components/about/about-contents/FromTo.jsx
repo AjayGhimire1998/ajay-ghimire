@@ -9,10 +9,18 @@ function FromTo() {
       <div className="edu-exp-container">
         <div className="edu-container">
           <div className="edu">
-            <h3>edu</h3>
-            <h3>edu</h3>
-            <h3>edu</h3>
-            <h3>edu</h3>
+            <div className="edu-item">
+              <div className="edu-contents">
+                <div className="edu-desc">
+                  <h4>School</h4>
+                  <p>School Adrress</p>
+                  <span>Course</span>
+                </div>
+                <div className="edu-time">
+                  <span>Feb 2022 - Jul 2022</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="line"></div>
