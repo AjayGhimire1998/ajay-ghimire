@@ -6,9 +6,11 @@ function FromTo({ edu, exp, shadow }) {
   return (
     <div className="from-to-container">
       <h3 style={{ textAlign: "center" }}>
-        <span style={{filter: `drop-shadow(5px -5px 7px ${shadow})`}}>Timeline</span>
+        <span style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
+          Timeline
+        </span>
       </h3>
-      <br/>
+      <br />
       <div className="edu-exp-container">
         <div className="edu-container">
           <div className="edu">
@@ -22,7 +24,9 @@ function FromTo({ edu, exp, shadow }) {
                     <span>{ed.course}</span>
                   </div>
                   <div className="edu-time">
-                    <span>{ed.startTime} - {ed.endTime}</span>
+                    <span>
+                      {ed.startTime} - {ed.endTime}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -42,7 +46,9 @@ function FromTo({ edu, exp, shadow }) {
                     <span>{ex.jobTitle}</span>
                   </div>
                   <div className="edu-time">
-                  <span>{ex.startTime} - {ex.endTime}</span>
+                    <span>
+                      {ex.startTime} - {ex.endTime}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -50,7 +56,7 @@ function FromTo({ edu, exp, shadow }) {
           </div>
         </div>
       </div>
-      <br/>
+      <br />
     </div>
   );
 }
