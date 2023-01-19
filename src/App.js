@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { Routes, Route } from "react-router-dom";
 import useSound from "use-sound";
-import click from "./sounds/click.wav"
+import click from "./sounds/click.wav";
 import hover from "./sounds/hover.mp3";
 import logo1 from "./images/logo.png";
 import logo2 from "./images/logo2.png";
@@ -36,25 +36,44 @@ function App() {
   const [logoIndex, setLogoIndex] = useState(0);
   const [logo, setLogo] = useState(logos[logoIndex]);
 
-  useEffect(() => {
-    const shadowInterval = setInterval(() => {
-      setShadow(shadows[index]);
-      setIndex(index + 1);
-    }, 2000);
-
-    setInterval(() => {
-      setLogoIndex(logoIndex + 1);
-      setLogo(logos[logoIndex]);
-      if (logoIndex === 1) {
-        setLogoIndex(0);
-      }
-    }, 2000);
-
+  const changeColors = () => {
+    setShadow(shadows[index]);
+    setIndex(index + 1);
+    setLogoIndex(logoIndex + 1);
+    setLogo(logos[logoIndex]);
+    if (logoIndex === 1) {
+      setLogoIndex(0);
+    }
     if (index === 6) {
       setIndex(0);
-      return () => clearInterval(shadowInterval);
     }
-  }, [index, shadows, logoIndex, logos]);
+  };
+
+  setInterval(() => {
+    changeColors();
+  }, 1000);
+
+
+  //for future reference
+  // useEffect(() => {
+  //   const shadowInterval = setInterval(() => {
+  //     setShadow(shadows[index]);
+  //     setIndex(index + 1);
+  //   }, 2000);
+
+  //   setInterval(() => {
+  //     setLogoIndex(logoIndex + 1);
+  //     setLogo(logos[logoIndex]);
+  //     if (logoIndex === 1) {
+  //       setLogoIndex(0);
+  //     }
+  //   }, 2000);
+
+  //   if (index === 6) {
+  //     setIndex(0);
+  //     return () => clearInterval(shadowInterval);
+  //   }
+  // }, [index, shadows, logoIndex, logos]);
 
   return (
     <>
@@ -65,15 +84,20 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Home shadow={shadow} />} />
-          <Route path="/about" element={<About shadow={shadow} play={play} hover={onHover}/>} />
+          <Route
+            path="/about"
+            element={<About shadow={shadow} play={play} hover={onHover} />}
+          />
           <Route path="/projects" element={<Projects shadow={shadow} />} />
           <Route path="/contact" element={<Contact shadow={shadow} />} />
-          <Route path="/resume" element={<Resume shadow={shadow} play={play} hover={onHover}/>} />
-          
+          <Route
+            path="/resume"
+            element={<Resume shadow={shadow} play={play} hover={onHover} />}
+          />
         </Routes>
         <br />
         <br />
-        <Navbar play={play} hover={onHover}/>
+        <Navbar play={play} hover={onHover} />
         <br />
         <br />
         <footer className="footer">
