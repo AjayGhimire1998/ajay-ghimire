@@ -13,6 +13,7 @@
 .intro-container > div > p{
     font-size: 1.5vh;
     filter: contrast(200%);
+    color: rgb(7, 218, 42);
 } 
 
 .intro-container > div> span{
@@ -20,6 +21,7 @@
     font-style: italic;
     filter: contrast(200%);
     line-height: 1.5;
+    color: rgb(7, 218, 42);
     
 } 
 
@@ -28,6 +30,10 @@
     filter: contrast(200%);
     line-height: 1.5;
 
+}
+
+.intro-container > div> span > i {
+    color: rgb(7, 218, 42);
 }
 
  @media screen and (max-width: 760px) {

@@ -7,7 +7,9 @@ function Intro({ shadow }) {
       // style={{ boxShadow: `5px -5px 7px ${shadow}` }}
     >
       <br />
-      <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
+      <div
+      // style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}
+      >
         <p>I am</p>
       </div>
       <br />
@@ -15,19 +17,27 @@ function Intro({ shadow }) {
         <strong>Ajay Ghimire</strong>
       </div>
       <br />
-      <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
+      <div
+      // style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}
+      >
         <p>a </p>
       </div>
       <br />
-      <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
+      <div
+      // style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}
+      >
         <span>Full Stack Software Developer </span>
       </div>
       <br />
-      <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
+      <div
+      // style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}
+      >
         <p> from </p>
       </div>
       <br />
-      <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
+      <div
+      // style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}
+      >
         <span>
           <i> Sydney, Australia.</i>
         </span>
