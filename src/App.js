@@ -77,7 +77,9 @@ function App() {
         <br />
         <br />
         <footer className="footer">
-          <p>© 2022 Ajay Ghimire</p>
+          <p style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
+            © 2022 Ajay Ghimire
+          </p>
         </footer>
       </div>
     </>

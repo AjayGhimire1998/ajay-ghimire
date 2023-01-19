@@ -11,11 +11,9 @@ function Intro({ shadow }) {
         <p>I am</p>
       </div>
       <br />
-      <br />
       <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
         <strong>Ajay Ghimire</strong>
       </div>
-      <br />
       <br />
       <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
         <p>a </p>

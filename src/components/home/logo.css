@@ -1,7 +1,6 @@
 .logo-container{
     display: flex;
     justify-content: center;
-    margin-bottom: -15px;
 }
 .logo{ 
     height: 280px;

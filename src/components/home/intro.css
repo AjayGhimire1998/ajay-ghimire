@@ -19,12 +19,14 @@
     font-size: 1.8vh;
     font-style: italic;
     filter: contrast(200%);
+    line-height: 1.5;
     
 } 
 
 .intro-container> div > strong {
-    font-size: 2.5vh;
+    font-size: 2.9vh;
     filter: contrast(200%);
+    line-height: 1.5;
 
 }
 
@@ -44,7 +46,7 @@
     } 
     
     .intro-container> div > strong {
-        font-size: 2vh;
+        font-size: 2.5vh;
     
     }
 } 
@@ -65,7 +67,7 @@
     } 
     
     .intro-container> div > strong {
-        font-size: 1.7vh;
+        font-size: 2vh;
     
     }
     

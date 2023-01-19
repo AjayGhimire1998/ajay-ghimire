@@ -52,12 +52,11 @@ body{
     position: relative;
     bottom:0;
     width:100%;
- 
     text-align: center;
-    background-color: black;
+
 }
 .footer > p{
-    color: rgb(0, 255, 43);
+    color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 760px) {
