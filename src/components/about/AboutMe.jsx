@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./about-me.css";
 import AboutItem from "./about-contents/AboutItem";
 import profile from "../../images/my-pictures/profile.jpeg";
@@ -88,14 +88,21 @@ function AboutMe({ shadow, play, hover }) {
   const onNextClick = () => {
     play();
     setPageCount(pageCount + 1);
+    localStorage.setItem("page", JSON.stringify(pageCount))
     setIsPreviewOn(false);
   };
 
   const onPrevClick = () => {
     play();
     setPageCount(pageCount - 1);
+    localStorage.setItem("page", JSON.stringify(pageCount))
     setIsPreviewOn(false);
   };
+
+  useEffect(() => {
+    localStorage.setItem("page", JSON.stringify(pageCount))
+
+  },[pageCount])
 
   return (
     <>
