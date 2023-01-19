@@ -18,10 +18,12 @@ function Profile({
       {isPreviewOn ? (
         <div className="about-item-container">
           <div className="about-item preview-image-container">
-            <img src={image} className="preview-image" alt="ajay" />
+            <div>
+              <img src={image} className="preview-image" alt="ajay" />
+            </div>
           </div>
           <div className="preview-reverse-container">
-          <HiArrowCircleUp
+            <HiArrowCircleUp
               size="30px"
               className="preview-button"
               onClick={onPreviewClick}

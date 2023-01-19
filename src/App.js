@@ -32,60 +32,26 @@ function App() {
   logos = [logo1, logo2];
 
   const [shadow, setShadow] = useState("");
-  // const [index, setIndex] = useState(0);
-  // const [logoIndex, setLogoIndex] = useState(0);
   const [logo, setLogo] = useState(logos[0]);
 
   const changeColors = () => {
     setTimeout(() => {
       setShadow(shadows[Math.floor(Math.random() * (7 - 0) + 0)]);
       changeColors();
-    }, 1000)
-    
+    }, 1000);
   };
 
   const changeLogo = () => {
     setTimeout(() => {
       setLogo(logos[Math.floor(Math.random() * (2 - 0) + 0)]);
       changeLogo();
-    }, 1000)
-
+    }, 1000);
   };
 
   useEffect(() => {
     changeColors();
     changeLogo();
-  },[]);
- 
-
-  // setInterval(() => {
-  //   changeColors();
-  // }, Math.floor(Math.random() * (5000 - 2000) + 2000));
-
-  // setInterval(() => {
-  //   changeLogo();
-  // }, Math.floor(Math.random() * (5000 - 2000) + 2000));
-
-  //for future reference
-  // useEffect(() => {
-  //   const shadowInterval = setInterval(() => {
-  //     setShadow(shadows[index]);
-  //     setIndex(index + 1);
-  //   }, 2000);
-
-  //   setInterval(() => {
-  //     setLogoIndex(logoIndex + 1);
-  //     setLogo(logos[logoIndex]);
-  //     if (logoIndex === 1) {
-  //       setLogoIndex(0);
-  //     }
-  //   }, 2000);
-
-  //   if (index === 6) {
-  //     setIndex(0);
-  //     return () => clearInterval(shadowInterval);
-  //   }
-  // }, [index, shadows, logoIndex, logos]);
+  }, []);
 
   return (
     <>
