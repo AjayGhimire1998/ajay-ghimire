@@ -1,37 +1,34 @@
 .from-to-container{
     display: flex; 
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .edu-exp-container{
     display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    
+    flex-direction: row; 
 }
 
 .edu-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     border: 0px solid white;
-    border-radius: 20px;
 }
-
 
 .edu-item{
  background-color: white;
  margin: 20px;
- 
 }
 
 .edu-contents{
     display: flex;
     flex-direction: row; 
+    justify-content: space-between;
 }
 
 .edu-desc{
     text-align: left;
+    float: left;
     margin-left: 5px;
 }
 .edu-desc > * {
@@ -40,8 +37,8 @@
 .edu-desc > h4{
     color: black;
     font-weight: bolder;
-    font-size: 1.8vh;
-   
+    font-size: 1.8vh; 
+    width: 100%;
 }
 
 .edu-desc > p{
@@ -54,10 +51,12 @@
     color: black;
     font-style: italic;
     font-size: 1.4vh;
+    
 }
 
 .edu-time{
     text-align: right;
+    float: right;
     margin-right: 5px;
    
 }
@@ -72,11 +71,17 @@
 
 .line{
     border-left: 3px solid white;
+    max-width: 100%;
     border-radius: 10px;
 }
 
 
 @media screen and (max-width: 760px) {
+    .edu-time{
+        float: right;
+        margin-right: 5px;
+        width: 100%;
+    }
     .edu-desc > h4{
         color: black;
         font-weight: bolder;
@@ -95,12 +100,6 @@
         font-size: 1.1vh;
     }
     
-    .edu-time{
-        text-align: right;
-        margin-right: 5px;
-        width: 80%;
-    }
-    
     .edu-time > span {
         color: black;
         font-style: italic;
@@ -109,6 +108,11 @@
 } 
 
 @media screen and(max-width: 480px) {
+    .edu-time{
+        float: right;
+        margin-right: 5px;
+        width: 100%;
+    }
     .edu-desc > h4{
         color: black;
         font-weight: bolder;
