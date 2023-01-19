@@ -88,21 +88,20 @@ function AboutMe({ shadow, play, hover }) {
   const onNextClick = () => {
     play();
     setPageCount(pageCount + 1);
-    localStorage.setItem("page", JSON.stringify(pageCount))
+    localStorage.setItem("about_page_count", JSON.stringify(pageCount + 1))
     setIsPreviewOn(false);
   };
 
   const onPrevClick = () => {
     play();
     setPageCount(pageCount - 1);
-    localStorage.setItem("page", JSON.stringify(pageCount))
+    localStorage.setItem("about_page_count", JSON.stringify(pageCount -1))
     setIsPreviewOn(false);
   };
 
   useEffect(() => {
-    localStorage.setItem("page", JSON.stringify(pageCount))
-
-  },[pageCount])
+    setPageCount(JSON.parse(localStorage.getItem("about_page_count")) || 0)
+  },[])
 
   return (
     <>

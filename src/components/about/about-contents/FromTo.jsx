@@ -12,8 +12,8 @@ function FromTo({ edu }) {
         <div className="edu-container">
           <div className="edu">
             <HiAcademicCap size="30px" />
-            {edu.map((ed) => (
-              <div className="edu-item">
+            {edu.map((ed, index) => (
+              <div className="edu-item" key={index}>
                 <div className="edu-contents">
                   <div className="edu-desc">
                     <h4>{ed.school}</h4>
