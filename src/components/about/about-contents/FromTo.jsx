@@ -32,18 +32,20 @@ function FromTo({ edu }) {
         <div className="edu-container">
           <div className="edu">
             <CgWorkAlt size="30px" />
-            <div className="edu-item">
-              <div className="edu-contents">
-                <div className="edu-desc">
-                  <h4>Company</h4>
-                  <p>Company Adrress</p>
-                  <span>Job title</span>
-                </div>
-                <div className="edu-time">
-                  <span>Feb 2022 - Jul 2022</span>
+            {edu.map((ed, index) => (
+              <div className="edu-item" key={index}>
+                <div className="edu-contents">
+                  <div className="edu-desc">
+                    <h4>{ed.school}</h4>
+                    <p>{ed.address}</p>
+                    <span>{ed.course}</span>
+                  </div>
+                  <div className="edu-time">
+                    <span>{ed.time}</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
