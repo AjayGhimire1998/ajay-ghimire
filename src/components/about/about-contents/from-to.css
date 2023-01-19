@@ -19,7 +19,6 @@
 .edu-item{
  background-color: white;
  margin: 20px;
- /* width: 250px; */
 }
 
 .edu-contents{
@@ -78,11 +77,6 @@
 
 
 @media screen and (max-width: 760px) {
-    /* .edu-item{
-        background-color: white;
-        margin: 15px;
-        width: 200px;
-       } */
     .edu-time{
         float: right;
         margin-right: 5px;

@@ -48,18 +48,16 @@ function App() {
     }, 1000);
   };
 
-  // useEffect(() => {
-  //   changeColors();
-  //   changeLogo();
-  // }, []);
+  useEffect(() => {
+    changeColors();
+    changeLogo();
+  }, []);
 
   return (
     <>
       <div className="space"></div>
       <div className="main">
-        <div>
-          <Logo logo={logo} shadow={shadow} />
-        </div>
+        <Logo logo={logo} shadow={shadow} />
         <Routes>
           <Route path="/" element={<Home shadow={shadow} />} />
           <Route

@@ -30,7 +30,7 @@ function AboutMe({ shadow, play, hover }) {
       to work well in a team environment.
       I am seeking a challenging software developer role 
       where I can utilize my skills and continue to grow
-      as a professional."
+      as a professional, along with actively learning 'Java'."
       image={profile}
       isPreviewOn={isPreviewOn}
       onPreviewClick={onPreviewClick}
@@ -104,6 +104,7 @@ function AboutMe({ shadow, play, hover }) {
 
   return (
     <>
+      {/* <h2 style={{ textAlign: "center", display: "flex" }}>About Me</h2> */}
       <div
         className="about-container"
         style={{ boxShadow: `5px -5px 8px ${shadow}` }}

@@ -40,6 +40,7 @@ body{
   top: 10%;
   left: 50%;
   transform: translate(-50%, -10%);
+    margin-top: 3%;
 }
 
 .main > * {
@@ -62,6 +63,7 @@ body{
     }
     .main > *{
         width: 720px;
+        margin-top: 4%;
 
     }
     .footer{
@@ -72,7 +74,11 @@ body{
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
     body{
+      
         overflow-x: hidden;
+    }
+    .main {
+        margin-top: 8%;
     }
     .main > *{
         width: 400px;

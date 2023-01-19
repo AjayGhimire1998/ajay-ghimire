@@ -1,13 +1,12 @@
 .logo-container{
     display: flex;
     justify-content: center;
+    margin-bottom: -15px;
 }
 .logo{ 
-
     height: 280px;
     width: 290px;
     filter: contrast(200%);
-   
 }  
 
 @media screen and (max-width: 760px){
