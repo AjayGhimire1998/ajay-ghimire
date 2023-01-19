@@ -5,8 +5,7 @@ import profile from "../../images/my-pictures/profile.jpeg";
 import background from "../../images/my-pictures/chocho.JPG";
 import academyXi from "../../images/my-pictures/academyXi.png";
 import FromTo from "./about-contents/FromTo";
-import { edu } from "./about-contents/eduExp";
-
+import { edu, exp } from "./about-contents/eduExp";
 
 function AboutMe({ shadow, play, hover }) {
   const [pageCount, setPageCount] = useState(0);
@@ -82,26 +81,26 @@ function AboutMe({ shadow, play, hover }) {
       onPreviewClick={onPreviewClick}
       hover={hover}
     />,
-    <FromTo edu={edu}/>,
+    <FromTo edu={edu} exp={exp} />,
   ];
 
   const onNextClick = () => {
     play();
     setPageCount(pageCount + 1);
-    localStorage.setItem("about_page_count", JSON.stringify(pageCount + 1))
+    localStorage.setItem("about_page_count", JSON.stringify(pageCount + 1));
     setIsPreviewOn(false);
   };
 
   const onPrevClick = () => {
     play();
     setPageCount(pageCount - 1);
-    localStorage.setItem("about_page_count", JSON.stringify(pageCount -1))
+    localStorage.setItem("about_page_count", JSON.stringify(pageCount - 1));
     setIsPreviewOn(false);
   };
 
   useEffect(() => {
-    setPageCount(JSON.parse(localStorage.getItem("about_page_count")) || 0)
-  },[])
+    setPageCount(JSON.parse(localStorage.getItem("about_page_count")) || 0);
+  }, []);
 
   return (
     <>
