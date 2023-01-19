@@ -7,7 +7,7 @@
 .edu-exp-container{
     display: flex; 
     flex-direction: row;
-    justify-content: center;
+    
 }
 
 .edu-container{
@@ -20,16 +20,19 @@
 .edu-item{
  background-color: white;
  margin: 10px;
+ 
 }
 
 .edu-contents{
     display: flex;
     flex-direction: row;
+    
 }
 
 .edu-desc{
     text-align: left;
     margin-left: 5px;
+    /* flex: 1; */
     
 }
 
@@ -54,7 +57,8 @@
 .edu-time{
     text-align: right;
     margin-right: 5px;
-    width: 100%;
+    /* width: 100%; */
+    /* flex: 0; */
 }
 
 .edu-time > span {
