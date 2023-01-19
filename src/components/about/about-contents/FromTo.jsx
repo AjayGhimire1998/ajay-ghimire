@@ -21,7 +21,7 @@ function FromTo({ edu }) {
                     <span>{ed.course}</span>
                   </div>
                   <div className="edu-time">
-                    <span>{ed.time}</span>
+                    <span>{ed.startTime} - {ed.endTime}</span>
                   </div>
                 </div>
               </div>
@@ -41,7 +41,7 @@ function FromTo({ edu }) {
                     <span>{ed.course}</span>
                   </div>
                   <div className="edu-time">
-                    <span>{ed.time}</span>
+                  <span>{ed.startTime} - {ed.endTime}</span>
                   </div>
                 </div>
               </div>
