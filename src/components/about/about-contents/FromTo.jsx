@@ -8,6 +8,7 @@ function FromTo({ edu, exp }) {
       <h3 style={{ textAlign: "center" }}>
         <span>Timeline</span>
       </h3>
+      <br/>
       <div className="edu-exp-container">
         <div className="edu-container">
           <div className="edu">
@@ -49,6 +50,7 @@ function FromTo({ edu, exp }) {
           </div>
         </div>
       </div>
+      <br/>
     </div>
   );
 }

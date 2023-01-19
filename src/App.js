@@ -48,10 +48,10 @@ function App() {
     }, 1000);
   };
 
-  useEffect(() => {
-    changeColors();
-    changeLogo();
-  }, []);
+  // useEffect(() => {
+  //   changeColors();
+  //   changeLogo();
+  // }, []);
 
   return (
     <>

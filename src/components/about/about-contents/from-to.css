@@ -1,23 +1,25 @@
 .from-to-container{
     display: flex; 
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .edu-exp-container{
     display: flex; 
-    flex-direction: row; 
+    justify-content: center;
 }
 
 .edu-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border: 0px solid white;
 }
+
 
 .edu-item{
  background-color: white;
  margin: 20px;
+ /* width: 250px; */
 }
 
 .edu-contents{
@@ -38,7 +40,6 @@
     color: black;
     font-weight: bolder;
     font-size: 1.8vh; 
-    width: 100%;
 }
 
 .edu-desc > p{
@@ -56,8 +57,9 @@
 
 .edu-time{
     text-align: right;
-    float: right;
+    float: right !important;
     margin-right: 5px;
+    width: 100%;
    
 }
 
@@ -71,12 +73,16 @@
 
 .line{
     border-left: 3px solid white;
-    max-width: 100%;
     border-radius: 10px;
 }
 
 
 @media screen and (max-width: 760px) {
+    /* .edu-item{
+        background-color: white;
+        margin: 15px;
+        width: 200px;
+       } */
     .edu-time{
         float: right;
         margin-right: 5px;
@@ -108,11 +114,7 @@
 } 
 
 @media screen and(max-width: 480px) {
-    .edu-time{
-        float: right;
-        margin-right: 5px;
-        width: 100%;
-    }
+
     .edu-desc > h4{
         color: black;
         font-weight: bolder;
