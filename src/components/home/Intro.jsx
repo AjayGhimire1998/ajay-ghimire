@@ -1,32 +1,35 @@
 import React from "react";
 import "./intro.css";
-function Intro({shadow}) {
+function Intro({ shadow }) {
   return (
-    <div className="intro-container" style={{boxShadow: `5px -5px 8px ${shadow}`}}>
-      <br/>
-      <div style={{filter: `drop-shadow(2px 2px 2px #80dfff)` }}>
-        <p >I am</p>
+    <div
+      className="intro-container"
+      // style={{ boxShadow: `5px -5px 7px ${shadow}` }}
+    >
+      <br />
+      <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
+        <p>I am</p>
       </div>
       <br />
-      <br/>
-      <div style={{filter: `drop-shadow(2px 2px 2px ${shadow})`}}>
+      <br />
+      <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
         <strong>Ajay Ghimire</strong>
       </div>
       <br />
-      <br/>
-      <div style={{filter: `drop-shadow(2px 2px 2px #80dfff)` }}>
+      <br />
+      <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
         <p>a </p>
       </div>
-      <br/>
-      <div style={{filter: `drop-shadow(2px 2px 2px #00cc00)` }}>
+      <br />
+      <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
         <span>Full Stack Software Developer </span>
       </div>
       <br />
-      <div style={{filter: `drop-shadow(2px 2px 2px #80dfff)` }}>
+      <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
         <p> from </p>
       </div>
-      <br/>
-      <div style={{filter: `drop-shadow(2px 2px 2px #cc6600)` }}>
+      <br />
+      <div style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
         <span>
           <i> Sydney, Australia.</i>
         </span>

@@ -10,7 +10,7 @@ function Profile({
   image,
   isPreviewOn,
   onPreviewClick,
-  play,
+  shadow,
   hover,
 }) {
   return (
@@ -43,7 +43,7 @@ function Profile({
           </div>
           <div className="about-item">
             <h3>
-              <span>{title}</span>
+              <span style={{filter: `drop-shadow(5px -5px 7px ${shadow})`}}>{title}</span>
             </h3>
             <p>
               <i>{quote}</i>

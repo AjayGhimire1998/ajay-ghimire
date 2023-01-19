@@ -2,11 +2,11 @@ import "./from-to.css";
 import { HiAcademicCap } from "react-icons/hi";
 import { CgWorkAlt } from "react-icons/cg";
 
-function FromTo({ edu, exp }) {
+function FromTo({ edu, exp, shadow }) {
   return (
     <div className="from-to-container">
       <h3 style={{ textAlign: "center" }}>
-        <span>Timeline</span>
+        <span style={{filter: `drop-shadow(5px -5px 7px ${shadow})`}}>Timeline</span>
       </h3>
       <br/>
       <div className="edu-exp-container">

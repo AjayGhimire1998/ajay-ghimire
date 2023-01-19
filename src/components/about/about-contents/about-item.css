@@ -14,9 +14,6 @@
     font-size: 2.4vh;
 }
 
-.about-item > h3 > span {
-    background-color: rgb(110, 107, 107); 
-}
 
 .about-item > p {
     display: flex;
@@ -24,6 +21,7 @@
     font-size: 1.5vh;
     line-height: 1.5;
     margin: 10px; 
+    color: rgb(7, 218, 42);
     
 }
 .preview-button-container{

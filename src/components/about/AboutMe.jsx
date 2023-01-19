@@ -35,6 +35,7 @@ function AboutMe({ shadow, play, hover }) {
       isPreviewOn={isPreviewOn}
       onPreviewClick={onPreviewClick}
       hover={hover}
+      shadow={shadow}
     />,
     <AboutItem
       title="Professional Evolution"
@@ -52,6 +53,7 @@ function AboutMe({ shadow, play, hover }) {
       isPreviewOn={isPreviewOn}
       onPreviewClick={onPreviewClick}
       hover={hover}
+      shadow={shadow}
     />,
     <AboutItem
       title="Academic Evolution"
@@ -80,8 +82,9 @@ function AboutMe({ shadow, play, hover }) {
       isPreviewOn={isPreviewOn}
       onPreviewClick={onPreviewClick}
       hover={hover}
+      shadow={shadow}
     />,
-    <FromTo edu={edu} exp={exp} />,
+    <FromTo edu={edu} exp={exp} shadow={shadow}/>,
   ];
 
   const onNextClick = () => {
@@ -107,9 +110,10 @@ function AboutMe({ shadow, play, hover }) {
       {/* <h2 style={{ textAlign: "center", display: "flex" }}>About Me</h2> */}
       <div
         className="about-container"
-        style={{ boxShadow: `5px -5px 8px ${shadow}` }}
+        // style={{ boxShadow: `5px -5px 7px ${shadow}` }}
       >
         {pages[pageCount]}
+        <br/>
         <div className="about-buttons">
           <button
             className="nav-button previous"
