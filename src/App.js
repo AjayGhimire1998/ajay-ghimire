@@ -37,20 +37,34 @@ function App() {
   const [logo, setLogo] = useState(logos[0]);
 
   const changeColors = () => {
-    setShadow(shadows[Math.floor(Math.random() * (7 - 0) + 0)]);
+    setTimeout(() => {
+      setShadow(shadows[Math.floor(Math.random() * (7 - 0) + 0)]);
+      changeColors();
+    }, 1000)
+    
   };
 
   const changeLogo = () => {
-    setLogo(logos[Math.floor(Math.random() * (2 - 0) + 0)]);
+    setTimeout(() => {
+      setLogo(logos[Math.floor(Math.random() * (2 - 0) + 0)]);
+      changeLogo();
+    }, 1000)
+
   };
 
-  setInterval(() => {
+  useEffect(() => {
     changeColors();
-  }, Math.floor(Math.random() * (5000 - 2000) + 2000));
-
-  setInterval(() => {
     changeLogo();
-  }, Math.floor(Math.random() * (5000 - 2000) + 2000));
+  },[]);
+ 
+
+  // setInterval(() => {
+  //   changeColors();
+  // }, Math.floor(Math.random() * (5000 - 2000) + 2000));
+
+  // setInterval(() => {
+  //   changeLogo();
+  // }, Math.floor(Math.random() * (5000 - 2000) + 2000));
 
   //for future reference
   // useEffect(() => {
