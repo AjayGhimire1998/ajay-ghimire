@@ -70,7 +70,6 @@
     float: right !important;
     margin-right: 5px;
     width: 100%;
-    /* flex: 1; */
    
 }
 
@@ -83,10 +82,9 @@
 
 
 .line{
-    margin-top: 8%;
+    margin-top: 5%;
     border-left: 3px solid white;
     border-radius: 10px;
-    /* height: 800px; */
 }
 
 
@@ -98,7 +96,7 @@
     }
     .edu-desc > p > strong{
         color: black;
-        font-weight: bolder;
+        font-weight: 700;
         font-size: 1.6vh;
     }
     
@@ -120,7 +118,7 @@
         font-size: 0.8vh;
     }
     .line{
-        margin-top: 11%;
+        margin-top: 8%;
     }
 } 
 
@@ -155,7 +153,7 @@
         font-size: 0.5vh;
     }
     .line{
-        margin-top: 14%;
+        margin-top: 12%;
     }
 
 } 
