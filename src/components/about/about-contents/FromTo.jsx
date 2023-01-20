@@ -1,57 +1,65 @@
 import "./from-to.css";
 import { HiAcademicCap } from "react-icons/hi";
 import { CgWorkAlt } from "react-icons/cg";
-import { useEffect, useState } from "react";
 
 function FromTo({ edu, exp, shadow }) {
-  const [timelineHeight, setTimelineHeight] = useState(0);
+  // const [timelineHeight, setTimelineHeight] = useState(0);
 
-  const years = [
-    "2024",
-    "2023",
-    "2022",
-    "2021",
-    "2020",
-    "2019",
-    "2018",
-    "2017",
-  ];
-  const months = [
-    "Dec",
-    "Nov",
-    "Oct",
-    "Sep",
-    "Aug",
-    "Jul",
-    "Jun",
-    "May",
-    "Apr",
-    "Mar",
-    "Feb",
-    "Jan",
-  ];
-  const marginCalc = (item) => {
-    const eachYearMargin = timelineHeight / years.length;
-    const eachMonthMargin = eachYearMargin / months.length;
+  // const years = [
+  //   "2023",
+  //   "2022",
+  //   "2021",
+  //   "2020",
+  //   "2019",
+  //   "2018",
+  //   "2017",
+  // ];
+  // const months = [
+  //   "Dec",
+  //   "Nov",
+  //   "Oct",
+  //   "Sep",
+  //   "Aug",
+  //   "Jul",
+  //   "Jun",
+  //   "May",
+  //   "Apr",
+  //   "Mar",
+  //   "Feb",
+  //   "Jan",
+  // ];
+  // const marginTopCalc = (item) => {
+    // const eachYearMargin = timelineHeight / years.length;
+    // const eachMonthMargin = eachYearMargin / months.length;
 
-    const yearIndex = years.indexOf(item?.startTime.slice(4));
-    const monthIndex = months.indexOf(item?.startTime.slice(0, 3));
-    console.log("year: " + years[yearIndex]);
-    console.log("month: " + months[monthIndex]);
-    let yearMargin = eachYearMargin + eachYearMargin * yearIndex;
+    // const yearIndex = years.indexOf(item?.startTime.slice(4));
+    // const monthIndex = months.indexOf(item?.startTime.slice(0, 3));
+    // console.log("year: " + years[yearIndex]);
+    // console.log("month: " + months[monthIndex]);
+    // let yearMargin = eachYearMargin + eachYearMargin * yearIndex;
 
-    let monthMargin = eachMonthMargin + eachMonthMargin * monthIndex;
-    console.log("Year margin: " + yearMargin);
-    console.log("Month margin: " + monthMargin);
-    console.log("Total margin: " + (yearMargin + monthMargin));
+    // let monthMargin = eachMonthMargin + eachMonthMargin * monthIndex;
+    // console.log("Year margin: " + yearMargin);
+    // console.log("Month margin: " + monthMargin);
+    // console.log("Total margin: " + (yearMargin + monthMargin));
 
-    return yearMargin + monthMargin;
-  };
+    // return yearMargin + monthMargin;
+  //   let marginTop;
+  //   if(item.startTime === "Feb 2022"){
+  //     marginTop = "450px";
+  //   }
 
-  useEffect(() => {
-    setTimelineHeight(document.querySelector(".line").offsetHeight);
-    console.log(document.querySelector(".line").offsetHeight);
-  }, []);
+  //   if(item.startTime === "Feb 2022"){
+  //     marginTop = "450px";
+  //   }
+    
+  //   return marginTop;
+  // };
+
+  // useEffect(() => {
+  //   setTimelineHeight(document.querySelector(".line").offsetHeight);
+  //   console.log(document.querySelector(".line").offsetHeight);
+  // }, []);
 
   return (
     <div className="from-to-container">
@@ -69,7 +77,9 @@ function FromTo({ edu, exp, shadow }) {
               <div
                 className="edu-item"
                 key={index}
-                style={{ marginTop: (marginCalc(ed) - marginCalc(edu[index - 1])) }}
+                style={{
+                  marginTop: ed.marginTop,
+                }}
               >
                 <p style={{ color: "white", marginRight: "-100%" }}>-&rarr;</p>
                 <div className="edu-contents">
@@ -100,7 +110,9 @@ function FromTo({ edu, exp, shadow }) {
               <div
                 className="exp-item"
                 key={index}
-                style={{ marginTop: (marginCalc(ex) - marginCalc(exp[index - 1])) }}
+                style={{
+                  marginTop: ex.marginTop
+                }}
               >
                 <p
                   style={{ color: "white", marginLeft: "-100%", height: "0px" }}

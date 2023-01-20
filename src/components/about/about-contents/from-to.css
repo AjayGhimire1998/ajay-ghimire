@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     border: 0px solid white;
+    overflow: hidden;
 }
 
 
@@ -20,6 +21,7 @@
  margin: 20px;
  max-width: auto;
 }
+
 
 .exp-item{
     background-color: white;
@@ -30,6 +32,7 @@
 .edu-contents{
     display: flex;
     flex-direction: row; 
+    justify-content: space-evenly;
 }
 
 .edu-desc{
@@ -93,7 +96,7 @@
         margin-right: 5px;
         width: 100%;
     }
-    .edu-desc > h4{
+    .edu-desc > p > strong{
         color: black;
         font-weight: bolder;
         font-size: 1.6vh;
@@ -123,9 +126,9 @@
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
 
-    .edu-desc > h4{
+    .edu-desc > p > strong{
         color: black;
-        font-weight: bolder;
+        font-weight: 700;
         font-size: 1.3vh;
     }
     
