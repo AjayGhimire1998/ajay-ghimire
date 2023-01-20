@@ -1,5 +1,5 @@
 .resume-container{
-    width: 700px;
+    width: 600px;
     text-align: center;
     background-color: rgb(18, 18, 18);
     /* border: 5px solid white; */
@@ -8,20 +8,16 @@
     flex-direction: column;
 }
 .my-resume-container{
-    position: relative;
-  overflow-y: hidden;
-  width: 100%;
-  padding-top: 56.25%;
+  display: flex;
+    justify-content: center;
+    height: 450px;
+    width:100%;
 
 }
 .my-resume{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    /* object-fit: contain; */
 }
 
 
@@ -29,30 +25,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    flex: 100%;
-}
-.download{
-    width: 40%;
 }
 
 @media screen and (max-width: 760px){
     .resume-container{
-        width: 60%;
+        width: 80%;
+        
     }
     .my-resume{
         max-width: 100%;
-        object-fit: cover;
     }
 
 }
 
 @media screen and (max-width: 480px){
     .resume-container{
-        
-        width: 80%;
+        width: 90%;
     }
     .my-resume{
         max-width: 100%;
-        object-fit: contain;
+
+        
     }
 }
