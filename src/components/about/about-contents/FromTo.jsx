@@ -8,28 +8,31 @@ function FromTo({ edu, exp, shadow }) {
 
   const years = ["2023", "2022", "2021", "2020", "2019", "2018", "2017"];
   const months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
     "Dec",
+    "Nov",
+    "Oct",
+    "Sep",
+    "Aug",
+    "Jul",
+    "Jun",
+    "May",
+    "Apr",
+    "Mar",
+    "Feb",
+    "Jan",
   ];
   const marginCalc = (item) => {
-    let margin = 0;
+  
     let marginYear = timelineHeight / years.length;
     let marginMonth = marginYear / months.length;
 
-    margin =
-      // marginYear +
+    console.log("marginYear: " +marginYear)
+    console.log("marginMotnht: " + marginMonth)
+
+    const margin =
+      marginYear +
       marginYear * years.indexOf(item.startTime.slice(4)) +
-      // marginMonth +
+      marginMonth +
       marginMonth * months.indexOf(item.startTime.slice(0, 3));
     return margin;
   };
@@ -55,7 +58,7 @@ function FromTo({ edu, exp, shadow }) {
               <div
                 className="edu-item"
                 key={index}
-                style={{ marginTop: marginCalc(ed) }}
+                style={{ marginTop: (timelineHeight - marginCalc(ed)) }}
               >
                 <p style={{ color: "white", marginRight: "-100%" }}>-&rarr;</p>
                 <div className="edu-contents">
@@ -86,7 +89,7 @@ function FromTo({ edu, exp, shadow }) {
               <div
                 className="exp-item"
                 key={index}
-                style={{ marginTop: marginCalc(ex) }}
+                style={{ marginTop: (timelineHeight - marginCalc(ex)) }}
               >
                 <p
                   style={{ color: "white", marginLeft: "-100%", height: "0px" }}
