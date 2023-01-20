@@ -7,6 +7,7 @@ import background from "../../images/my-pictures/chocho.JPG";
 import academyXi from "../../images/my-pictures/academyXi.png";
 import FromTo from "./about-contents/FromTo";
 import { edu, exp } from "./about-contents/eduExp";
+import Skills from "./about-contents/Skills";
 
 function AboutMe({ shadow, play, hover }) {
   const [pageCount, setPageCount] = useState(0);
@@ -50,6 +51,7 @@ function AboutMe({ shadow, play, hover }) {
       shadow={shadow}
     />,
     <FromTo edu={edu} exp={exp} shadow={shadow} />,
+    <Skills shadow={shadow} />,
   ];
 
   const onNextClick = () => {
