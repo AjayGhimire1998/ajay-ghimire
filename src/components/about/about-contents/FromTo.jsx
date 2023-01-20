@@ -6,7 +6,16 @@ import { useEffect, useState } from "react";
 function FromTo({ edu, exp, shadow }) {
   const [timelineHeight, setTimelineHeight] = useState(0);
 
-  const years = ["2023", "2022", "2021", "2020", "2019", "2018", "2017"];
+  const years = [
+    "2024",
+    "2023",
+    "2022",
+    "2021",
+    "2020",
+    "2019",
+    "2018",
+    "2017",
+  ];
   const months = [
     "Dec",
     "Nov",
@@ -22,19 +31,20 @@ function FromTo({ edu, exp, shadow }) {
     "Jan",
   ];
   const marginCalc = (item) => {
-  
-    let marginYear = timelineHeight / years.length;
-    let marginMonth = marginYear / months.length;
+    const eachYearMargin = timelineHeight / years.length;
+    const eachMonthMargin = eachYearMargin / months.length;
 
-    console.log("marginYear: " +marginYear)
-    console.log("marginMotnht: " + marginMonth)
+    const yearIndex = years.indexOf(item.startTime.slice(4));
+    const monthIndex = months.indexOf(item.startTime.slice(0, 3));
+    console.log("year: " + years[yearIndex])
+    console.log("month: " + months[monthIndex])
+    let yearMargin = eachYearMargin + eachYearMargin * yearIndex;
 
-    const margin =
-      marginYear +
-      marginYear * years.indexOf(item.startTime.slice(4)) +
-      marginMonth +
-      marginMonth * months.indexOf(item.startTime.slice(0, 3));
-    return margin;
+    let monthMargin = eachMonthMargin + eachMonthMargin * monthIndex;
+    console.log("Year margin: " + yearMargin);
+    console.log("Month margin: " + monthMargin);
+    console.log("Total margin: " + (yearMargin + monthMargin));
+    return yearMargin + monthMargin;
   };
 
   useEffect(() => {
@@ -58,7 +68,7 @@ function FromTo({ edu, exp, shadow }) {
               <div
                 className="edu-item"
                 key={index}
-                style={{ marginTop: (timelineHeight - marginCalc(ed)) }}
+                style={{ marginTop:  marginCalc(ed) }}
               >
                 <p style={{ color: "white", marginRight: "-100%" }}>-&rarr;</p>
                 <div className="edu-contents">
@@ -89,7 +99,7 @@ function FromTo({ edu, exp, shadow }) {
               <div
                 className="exp-item"
                 key={index}
-                style={{ marginTop: (timelineHeight - marginCalc(ex)) }}
+                style={{ marginTop: marginCalc(ex) }}
               >
                 <p
                   style={{ color: "white", marginLeft: "-100%", height: "0px" }}
