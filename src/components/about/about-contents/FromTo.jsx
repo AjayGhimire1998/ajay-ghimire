@@ -17,7 +17,10 @@ function FromTo({ edu, exp, shadow }) {
             <HiAcademicCap size="30px" />
             {edu.map((ed, index) => (
               <div className="edu-item" key={index}>
-                <p style={{color: "white", marginRight: "-100%"}}> -&rarr; </p>
+                <p style={{ color: "white", marginRight: "-100%" }}>
+                  {" "}
+                  -&rarr;{" "}
+                </p>
                 <div className="edu-contents">
                   <div className="edu-desc">
                     <h4>{ed.school}</h4>
@@ -40,7 +43,11 @@ function FromTo({ edu, exp, shadow }) {
             <CgWorkAlt size="30px" />
             {exp.map((ex, index) => (
               <div className="edu-item" key={index}>
-                <p style={{color: "white", marginLeft: "-100%", height:"0px"}}>&larr;- </p>
+                <p
+                  style={{ color: "white", marginLeft: "-100%", height: "0px" }}
+                >
+                  &larr;-{" "}
+                </p>
                 <div className="edu-contents">
                   <div className="edu-desc">
                     <h4>{ex.company}</h4>
