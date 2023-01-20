@@ -6,9 +6,33 @@ import { useEffect, useState } from "react";
 function FromTo({ edu, exp, shadow }) {
   const [timelineHeight, setTimelineHeight] = useState(0);
 
+  const years = ["2023", "2022", "2021", "2020", "2019", "2018", "2017"];
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
   const marginCalc = (item) => {
-    
+    let margin = 0;
+    let marginYear = timelineHeight / years.length;
+    let marginMonth = timelineHeight / years.length / months.length;
+
+    margin =
+      margin +
+      marginYear * years.indexOf(item.startTime.slice(4)) +
+      marginMonth * months.indexOf(item.startTime.slice(0, 3));
+    return margin;
   };
+
 
   useEffect(() => {
     setTimelineHeight(document.querySelector(".line").offsetHeight);
@@ -28,7 +52,7 @@ function FromTo({ edu, exp, shadow }) {
           <div className="edu">
             <HiAcademicCap size="30px" />
             {edu.map((ed, index) => (
-              <div className="edu-item" key={index}>
+              <div className="edu-item" key={index} style={{marginTop: marginCalc(ed)}}>
                 <p style={{ color: "white", marginRight: "-100%" }}>-&rarr;</p>
                 <div className="edu-contents">
                   <div className="edu-desc">

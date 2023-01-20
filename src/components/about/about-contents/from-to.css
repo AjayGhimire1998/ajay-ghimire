@@ -46,7 +46,6 @@
     font-weight: bolder;
     font-size: 1.8vh; 
     font-weight: 700;
-    /* width: 100%; */
 }
 
 
@@ -75,6 +74,7 @@
 
 
 .line{
+    margin-top: 8%;
     border-left: 3px solid white;
     border-radius: 10px;
 }
@@ -103,20 +103,18 @@
         font-style: italic;
         font-size: 1.1vh;
     }
-    /* .edu-time{
-        max-width: 100%;
-        flex: 1;
-       
-    } */
     
     .edu-time > span {
         color: black;
         font-style: italic;
         font-size: 0.8vh;
     }
+    .line{
+        margin-top: 11%;
+    }
 } 
 
-@media screen and(max-width: 480px) {
+@media screen and (min-width: 300px) and (max-width: 480px) {
 
     .edu-desc > h4{
         color: black;
@@ -146,6 +144,8 @@
         font-style: italic;
         font-size: 0.5vh;
     }
+    .line{
+        margin-top: 14%;
+    }
 
-    
 } 
