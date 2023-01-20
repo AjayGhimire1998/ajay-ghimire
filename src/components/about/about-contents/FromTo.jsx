@@ -27,7 +27,9 @@ function FromTo({ edu, exp, shadow }) {
     let marginMonth = marginYear / months.length;
 
     margin =
+      // marginYear +
       marginYear * years.indexOf(item.startTime.slice(4)) +
+      // marginMonth +
       marginMonth * months.indexOf(item.startTime.slice(0, 3));
     return margin;
   };
@@ -53,7 +55,7 @@ function FromTo({ edu, exp, shadow }) {
               <div
                 className="edu-item"
                 key={index}
-                style={{ marginTop: marginCalc(ed)  }}
+                style={{ marginTop: marginCalc(ed) }}
               >
                 <p style={{ color: "white", marginRight: "-100%" }}>-&rarr;</p>
                 <div className="edu-contents">
