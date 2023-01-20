@@ -24,29 +24,33 @@
 .edu-contents{
     display: flex;
     flex-direction: row; 
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .edu-desc{
     text-align: left;
     float: left;
     margin-left: 5px;
+    /* margin-bottom: 20px; */
 }
 .edu-desc > * {
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.edu-desc > h4{
-    
+.edu-desc > p{
+    font-size: 1.5vh;
+    font-weight: 200;
+}
+.edu-desc > p > h4{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
     font-size: 1.8vh; 
+    font-weight: 700;
     /* width: 100%; */
 }
 
-.edu-desc > p{
-    font-size: 1.5vh;
 
-}
 
 .edu-desc > span{
     font-style: italic;
@@ -59,6 +63,7 @@
     float: right !important;
     margin-right: 5px;
     width: 100%;
+    /* flex: 1; */
    
 }
 
@@ -99,6 +104,11 @@
         font-style: italic;
         font-size: 1.1vh;
     }
+    /* .edu-time{
+        max-width: 100%;
+        flex: 1;
+       
+    } */
     
     .edu-time > span {
         color: black;

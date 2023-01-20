@@ -9,46 +9,46 @@ export const edu = [
   {
     school: "Victorian Institute of Technology",
     address: "Sydney, Australia",
-    course: "Software Engineering Transform",
-    startTime: "Feb 2022",
-    endTime: "Jul 2022"
+    course: "Bachelors of Information Technology ",
+    startTime: "Jun 2018",
+    endTime: "Aug 201"
   }
 ];
 
 export const exp = [
   {
     company: "Brand Easy Australia",
-    address: "Sydney, Australia",
-    jobTitle: "Software Engineering Transform",
-    startTime: "Feb 2022",
-    endTime: "Jul 2022"
+    address: "Campsie, Sydney",
+    jobTitle: "Intern Web Developer",
+    startTime: "Dec 2022",
+    endTime: "Present"
   },
   {
     company: "Chemist Warehouse",
-    address: "Sydney, Australia",
-    jobTitle: "Software Engineering Transform",
-    startTime: "Feb 2022",
-    endTime: "Jul 2022"
+    address: "Brookvale, Sydney",
+    jobTitle: "Retail Assistant",
+    startTime: "Jan 2023",
+    endTime: "Present"
   },
   {
     company: "Woolworths CFC",
-    address: "Sydney, Australia",
-    jobTitle: "Software Engineering Transform",
-    startTime: "Feb 2022",
-    endTime: "Jul 2022"
+    address: "Lidcombe, Sydney",
+    jobTitle: "Online Dispatch Member",
+    startTime: "Dec 2022",
+    endTime: "Present"
   },
   {
     company: "Cho Cho San",
-    address: "Sydney, Australia",
-    jobTitle: "Software Engineering Transform",
-    startTime: "Feb 2022",
-    endTime: "Jul 2022"
+    address: "Potts Point, Sydney",
+    jobTitle: "Cook",
+    startTime: "Jan 2018",
+    endTime: "Nov 2022"
   },
   {
     company: "MacDonald's",
-    address: "Sydney, Australia",
-    jobTitle: "Software Engineering Transform",
-    startTime: "Feb 2022",
-    endTime: "Jul 2022"
+    address: "Cremorne, Sydney",
+    jobTitle: "Customer Service",
+    startTime: "Dec 2017",
+    endTime: "Feb 2019"
   }
 ]

@@ -3,6 +3,10 @@ import { HiAcademicCap } from "react-icons/hi";
 import { CgWorkAlt } from "react-icons/cg";
 
 function FromTo({ edu, exp, shadow }) {
+  const marginCalc = (item) => {
+    
+  }
+
   return (
     <div className="from-to-container">
       <h3 style={{ textAlign: "center" }}>
@@ -17,14 +21,14 @@ function FromTo({ edu, exp, shadow }) {
             <HiAcademicCap size="30px" />
             {edu.map((ed, index) => (
               <div className="edu-item" key={index}>
-                <p style={{ color: "white", marginRight: "-100%" }}>
-                  {" "}
-                  -&rarr;{" "}
-                </p>
+                <p style={{ color: "white", marginRight: "-100%" }}>-&rarr;</p>
                 <div className="edu-contents">
                   <div className="edu-desc">
-                    <h4>{ed.school}</h4>
-                    <p>{ed.address}</p>
+                    <p>
+                      <h4>{ed.school},</h4>
+                      {ed.address}
+                    </p>
+
                     <span>{ed.course}</span>
                   </div>
                   <div className="edu-time">
@@ -46,12 +50,15 @@ function FromTo({ edu, exp, shadow }) {
                 <p
                   style={{ color: "white", marginLeft: "-100%", height: "0px" }}
                 >
-                  &larr;-{" "}
+                  &larr;-
                 </p>
                 <div className="edu-contents">
                   <div className="edu-desc">
-                    <h4>{ex.company}</h4>
-                    <p>{ex.address}</p>
+                  <p>
+                      <h4>{ex.company},</h4>
+                      {ex.address}
+                    </p>
+
                     <span>{ex.jobTitle}</span>
                   </div>
                   <div className="edu-time">
