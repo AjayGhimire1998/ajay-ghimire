@@ -1,11 +1,19 @@
 import "./from-to.css";
 import { HiAcademicCap } from "react-icons/hi";
 import { CgWorkAlt } from "react-icons/cg";
+import { useEffect, useState } from "react";
 
 function FromTo({ edu, exp, shadow }) {
+  const [timelineHeight, setTimelineHeight] = useState(0);
+
   const marginCalc = (item) => {
     
-  }
+  };
+
+  useEffect(() => {
+    setTimelineHeight(document.querySelector(".line").offsetHeight);
+    console.log(document.querySelector(".line").offsetHeight);
+  }, [timelineHeight]);
 
   return (
     <div className="from-to-container">
@@ -25,7 +33,8 @@ function FromTo({ edu, exp, shadow }) {
                 <div className="edu-contents">
                   <div className="edu-desc">
                     <p>
-                      <h4>{ed.school},</h4>
+                      <strong>{ed.school}</strong>
+                      <br />
                       {ed.address}
                     </p>
 
@@ -54,8 +63,9 @@ function FromTo({ edu, exp, shadow }) {
                 </p>
                 <div className="edu-contents">
                   <div className="edu-desc">
-                  <p>
-                      <h4>{ex.company},</h4>
+                    <p>
+                      <strong>{ex.company}</strong>
+                      <br />
                       {ex.address}
                     </p>
 
