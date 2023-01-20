@@ -21,6 +21,12 @@
  max-width: auto;
 }
 
+.exp-item{
+    background-color: white;
+ margin: 20px;
+ max-width: auto;
+}
+
 .edu-contents{
     display: flex;
     flex-direction: row; 
@@ -77,6 +83,7 @@
     margin-top: 8%;
     border-left: 3px solid white;
     border-radius: 10px;
+    /* height: 800px; */
 }
 
 

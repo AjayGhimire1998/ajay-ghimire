@@ -24,20 +24,18 @@ function FromTo({ edu, exp, shadow }) {
   const marginCalc = (item) => {
     let margin = 0;
     let marginYear = timelineHeight / years.length;
-    let marginMonth = timelineHeight / years.length / months.length;
+    let marginMonth = marginYear / months.length;
 
     margin =
-      margin +
       marginYear * years.indexOf(item.startTime.slice(4)) +
       marginMonth * months.indexOf(item.startTime.slice(0, 3));
     return margin;
   };
 
-
   useEffect(() => {
     setTimelineHeight(document.querySelector(".line").offsetHeight);
     console.log(document.querySelector(".line").offsetHeight);
-  }, [timelineHeight]);
+  }, []);
 
   return (
     <div className="from-to-container">
@@ -52,7 +50,11 @@ function FromTo({ edu, exp, shadow }) {
           <div className="edu">
             <HiAcademicCap size="30px" />
             {edu.map((ed, index) => (
-              <div className="edu-item" key={index} style={{marginTop: marginCalc(ed)}}>
+              <div
+                className="edu-item"
+                key={index}
+                style={{ marginTop: marginCalc(ed)  }}
+              >
                 <p style={{ color: "white", marginRight: "-100%" }}>-&rarr;</p>
                 <div className="edu-contents">
                   <div className="edu-desc">
@@ -79,7 +81,11 @@ function FromTo({ edu, exp, shadow }) {
           <div className="edu">
             <CgWorkAlt size="30px" />
             {exp.map((ex, index) => (
-              <div className="edu-item" key={index}>
+              <div
+                className="exp-item"
+                key={index}
+                style={{ marginTop: marginCalc(ex) }}
+              >
                 <p
                   style={{ color: "white", marginLeft: "-100%", height: "0px" }}
                 >
