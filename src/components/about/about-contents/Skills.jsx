@@ -1,6 +1,6 @@
 import React from "react";
 import "./skills.css";
-import { DiHtml5, DiCss3, DiJavascript1 } from "react-icons/di";
+import { DiHtml5, DiCss3, DiJavascript1, DiJava } from "react-icons/di";
 
 function Skills({ shadow }) {
   return (
@@ -18,6 +18,7 @@ function Skills({ shadow }) {
           <DiHtml5 style={{ fontSize: "50px" }} />
           <DiCss3 style={{ fontSize: "50px" }} />
           <DiJavascript1 style={{ fontSize: "50px" }} />
+          <DiJava style={{ fontSize: "50px" }} />
         </div>
       </div>
     </div>
