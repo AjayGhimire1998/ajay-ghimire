@@ -11,7 +11,7 @@ function Skills({ shadow }) {
       </h3>
       <br />
       <div className="languages">
-        <h5>Languages</h5>
+        <h5>Languages:</h5>
       </div>
       
     </div>
