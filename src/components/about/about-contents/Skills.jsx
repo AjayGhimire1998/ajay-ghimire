@@ -1,5 +1,7 @@
 import React from "react";
-import "./skills.css"
+import "./skills.css";
+import { IconContext } from "react-icons";
+import { DiHtml5 } from "react-icons/di";
 
 function Skills({ shadow }) {
   return (
@@ -12,8 +14,9 @@ function Skills({ shadow }) {
       <br />
       <div className="languages">
         <h5>Languages:</h5>
+        <br/>
+        <DiHtml5 style={{fontSize: "50px"}}/>
       </div>
-      
     </div>
   );
 }
