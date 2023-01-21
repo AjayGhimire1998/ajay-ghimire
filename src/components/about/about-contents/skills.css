@@ -7,10 +7,15 @@
 .languages{
     display: flex;
     flex-direction: column;
-    text-align: left;
+    justify-content: center;
 }
 
 .languages > h5 {
-    text-align: left;
+    line-height: 1.7;
     color: rgb(7, 218, 42);
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-evenly;
 }

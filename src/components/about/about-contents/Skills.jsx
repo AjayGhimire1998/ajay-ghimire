@@ -1,6 +1,7 @@
 import React from "react";
 import "./skills.css";
 import { DiHtml5, DiCss3, DiJavascript1, DiJava, DiReact, DiNodejs, DiRubyRough, DiGrails, DiRuby, DiWordpress } from "react-icons/di";
+import {CSSSvg, HTMLSvg, JAVASvg, JSSvg, MONGOSvg, MYSQLSvg, NODESvg, POSTGRESSvg, RAILSSvg, REACTSvg, RUBYSvg} from "./devIcons.js";
 
 function Skills({ shadow }) {
   return (
@@ -12,25 +13,37 @@ function Skills({ shadow }) {
       </h3>
       <br />
       <div className="languages">
-        <h5>Languages:</h5>
+        <h5 >Languages, I can code on:</h5>
         <br />
         <div className="icons-container">
-          <DiHtml5 style={{ fontSize: "50px" }} />
-          <DiCss3 style={{ fontSize: "50px" }} />
-          <DiJavascript1 style={{ fontSize: "50px" }} />
-          <DiRuby style={{ fontSize: "50px" }} />
-          <DiJava style={{ fontSize: "50px" }} />
+          <HTMLSvg />
+          <CSSSvg />
+          <JSSvg />
+          <RUBYSvg/>
+          <JAVASvg/>
           
         </div>
       </div>
       <br/>
+      <br/>
       <div className="languages">
-        <h5>Frameworks:</h5>
+        <h5>Frameworks, I am familiar with:</h5>
         <br />
         <div className="icons-container">
-          <DiReact style={{ fontSize: "50px" }} />
-          <DiNodejs style={{ fontSize: "50px" }} />
-          <DiRubyRough style={{ fontSize: "50px" }} />
+          <REACTSvg />
+          <NODESvg />
+          <RAILSSvg />
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div className="languages">
+        <h5>Database, I use:</h5>
+        <br />
+        <div className="icons-container">
+          <MYSQLSvg/>
+          <MONGOSvg />
+          <POSTGRESSvg />
         </div>
       </div>
     </div>
