@@ -14,12 +14,11 @@ function Skills({ shadow }) {
       <div className="languages">
         <h5>Languages:</h5>
         <br />
-        <div className="icons-container">
+
           <DiHtml5 style={{ fontSize: "50px" }} />
           <DiCss3 style={{ fontSize: "50px" }} />
           <DiJavascript1 style={{ fontSize: "50px" }} />
           <DiJava style={{ fontSize: "50px" }} />
-        </div>
       </div>
     </div>
   );
