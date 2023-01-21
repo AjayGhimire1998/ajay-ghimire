@@ -1,6 +1,5 @@
 import React from "react";
 import "./skills.css";
-import { DiHtml5, DiCss3, DiJavascript1, DiJava, DiReact, DiNodejs, DiRubyRough, DiGrails, DiRuby, DiWordpress } from "react-icons/di";
 import {CSSSvg, HTMLSvg, JAVASvg, JSSvg, MONGOSvg, MYSQLSvg, NODESvg, POSTGRESSvg, RAILSSvg, REACTSvg, RUBYSvg} from "./devIcons.js";
 
 function Skills({ shadow }) {
