@@ -1,4 +1,5 @@
 import React from "react";
+import "./skills.css"
 
 function Skills({ shadow }) {
   return (
@@ -9,6 +10,9 @@ function Skills({ shadow }) {
         </span>
       </h3>
       <br />
+      <div className="languages">
+        <h5>Languages</h5>
+      </div>
       
     </div>
   );
