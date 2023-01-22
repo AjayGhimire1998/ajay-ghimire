@@ -74,10 +74,8 @@ function AboutMe({ shadow, play, hover }) {
 
   return (
     <>
-      {/* <h2 style={{ textAlign: "center", display: "flex" }}>About Me</h2> */}
       <div
         className="about-container"
-        // style={{ boxShadow: `5px -5px 7px ${shadow}` }}
       >
         {pages[pageCount]}
         <br />

@@ -9,7 +9,7 @@ import Home from "./pages/home/Home";
 import Logo from "./components/home/Logo";
 import Navbar from "./components/navbar/Navbar";
 import About from "./pages/about/About";
-import Projects from "./pages/projects/Projects";
+import Project from "./pages/project/Project";
 import Contact from "./pages/contact/Contact";
 import Resume from "./pages/resume/Resume";
 
@@ -64,7 +64,7 @@ function App() {
             path="/about"
             element={<About shadow={shadow} play={play} hover={onHover} />}
           />
-          <Route path="/projects" element={<Projects shadow={shadow} />} />
+          <Route path="/projects" element={<Project shadow={shadow} />} />
           <Route path="/contact" element={<Contact shadow={shadow} />} />
           <Route
             path="/resume"
