@@ -1,13 +1,45 @@
 .project-item-container{
-
+    width: 100%;
 }
 
 .project-video{
+    display: flex;
+    justify-content: center;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-button{
+	display: inline-block;
+    padding: 15px 15px 0px 15px ;
+ 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-button:hover{
+    cursor: pointer;
+    box-shadow: none;
+	position: relative;
+	top: .3em;
+}
+
+.tools-used{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 
 }
 
-.languages-used{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+
+@media screen and (max-width: 760px){
+
+
+}
+
+@media screen and (max-width: 480px){
+
 }

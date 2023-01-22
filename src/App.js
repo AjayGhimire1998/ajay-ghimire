@@ -51,6 +51,9 @@ function App() {
   useEffect(() => {
     changeColors();
     changeLogo();
+    window.onbeforeunload = () => {
+      localStorage.clear();
+    };
   }, []);
 
   return (

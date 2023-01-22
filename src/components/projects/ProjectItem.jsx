@@ -1,9 +1,11 @@
 import "./project-item.css"
 import ReactPlayer from 'react-player';
 import AboutItem from "../about/about-contents/AboutItem"
-import { DiReact } from "react-icons/di"
+import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-function ProjectItem({ name, link, desc, desc2, tools, shadow }) {
+function ProjectItem({ name, url, desc, desc2, links, tools, shadow }) {
 
   return (
     <div className='project-item-container'>
@@ -14,13 +16,25 @@ function ProjectItem({ name, link, desc, desc2, tools, shadow }) {
       </h3>
       <br />
       <div className="project-video">
-        <ReactPlayer url={link} className="video" playing={true} muted={true} controls={true} />
+        <ReactPlayer url={url} className="video"
+          playing={true} muted={true}
+          controls={true} />
+      </div>
+      <br />
+      <div className="links">
+        <AiOutlineLink size={40}
+          onClick={onLinkClick(links.live)}
+          className="link-button" />
+        <AiOutlineGithub size={40}
+          onClick={onLinkClick(links.git)}
+          className="link-button" />
       </div>
       <div className="project-desc">
         <AboutItem desc={desc} desc2={desc2} />
       </div>
+      <br />
       <div className='languages-used'>
-        <h5 style={{ textAlign: "left" }}>Tools Used:</h5>
+        <h5 style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>Tools Used:</h5>
         {tools.map((lan) => lan)}
       </div>
     </div>
