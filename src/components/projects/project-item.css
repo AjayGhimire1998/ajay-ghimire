@@ -1,0 +1,13 @@
+.project-item-container{
+
+}
+
+.project-video{
+
+}
+
+.languages-used{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

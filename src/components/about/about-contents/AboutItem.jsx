@@ -33,14 +33,14 @@ function Profile({
         </div>
       ) : (
         <div className="about-item-container">
-          <div className="preview-button-container">
+          {image ? <div className="preview-button-container">
             <HiArrowCircleDown
               size="30px"
               className="preview-button"
               onClick={onPreviewClick}
               onMouseOver={hover}
             />
-          </div>
+          </div> : null}
           <div className="about-item">
             <h3>
               <span style={{filter: `drop-shadow(5px -5px 7px ${shadow})`}}>{title}</span>
