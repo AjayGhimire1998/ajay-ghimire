@@ -76,9 +76,11 @@ function App() {
         <Navbar play={play} hover={onHover} />
         <br />
         <br />
+        <br />
+        <br />
         <footer className="footer">
           <p style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
-            © 2022 Ajay Ghimire
+            © 2023 Ajay Ghimire
           </p>
         </footer>
       </div>

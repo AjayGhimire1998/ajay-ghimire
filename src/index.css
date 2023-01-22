@@ -48,15 +48,17 @@ body{
 }
 
 .footer{
-    font-size: 1.8vh;
-    position: relative;
-    bottom:0;
-    width:100%;
-    text-align: center;
+   position: relative;
+   left: 0;
+   bottom: 0;
+  width: 100%;
+    top: auto;
+   text-align: center;
 
 }
 .footer > p{
     color: rgb(255, 255, 255);
+    font-size: x-small;
 }
 
 @media screen and (max-width: 760px) {
@@ -68,10 +70,9 @@ body{
         margin-top: 4%;
 
     }
-    .footer{
+    /* .footer{
         font-size: 1.4vh;
-        bottom: -10%;
-    }
+    } */
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
@@ -87,8 +88,8 @@ body{
 
     }
     .footer{
-        font-size: 1.vh;
-        bottom: -10%;
+        font-size: xx-small;
+
     }
 }
 
