@@ -2,8 +2,7 @@ import "./project-item.css"
 import ReactPlayer from 'react-player';
 import AboutItem from "../about/about-contents/AboutItem"
 import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 
 function ProjectItem({ name, url, desc, desc2, links, tools, shadow }) {
 
