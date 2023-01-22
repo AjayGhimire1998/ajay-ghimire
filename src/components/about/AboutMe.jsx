@@ -50,8 +50,8 @@ function AboutMe({ shadow, play, hover }) {
       hover={hover}
       shadow={shadow}
     />,
-    <FromTo edu={edu} exp={exp} shadow={shadow} />,
     <Skills shadow={shadow} />,
+    <FromTo edu={edu} exp={exp} shadow={shadow} />
   ];
 
   const onNextClick = () => {

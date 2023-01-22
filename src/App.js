@@ -42,9 +42,9 @@ function App() {
 	useEffect(() => {
 		changeColors();
 		changeLogo();
-		window.onbeforeunload = () => {
-			localStorage.clear();
-		};
+		// window.onbeforeunload = () => {
+		// 	localStorage.clear();
+		// };
 	}, []);
 
 	return (

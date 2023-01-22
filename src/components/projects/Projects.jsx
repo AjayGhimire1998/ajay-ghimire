@@ -26,7 +26,7 @@ function Projects({ shadow, hover, play }) {
   }
 
   useEffect(() => {
-    setPageCount(JSON.parse(localStorage.getItem("projects_page_count")) || 1)
+    setPageCount(JSON.parse(localStorage.getItem("projects_page_count")) || 0)
   }, [])
   return (
     <div className="projects-container">
