@@ -8,8 +8,9 @@ function Projects({ shadow, hover, play }) {
   const [pageCount, setPageCount] = useState(0);
 
   const projects = [
-    <ProjectItem shadow={shadow} name={videoLinks[0].name} url={videoLinks[0].url} desc={videoLinks[0].desc} desc2={videoLinks[0].desc2} links={videoLinks[0].links} tools={videoLinks[0].tools} />,
-    <ProjectItem shadow={shadow} name={videoLinks[1].name} url={videoLinks[1].url} desc={videoLinks[1].desc} desc2={videoLinks[1].desc2} links={videoLinks[1].links} tools={videoLinks[1].tools} />
+    <ProjectItem shadow={shadow} name={videoLinks[0].name} url={videoLinks[0].url} desc={videoLinks[0].desc} desc2={videoLinks[0].desc2} links={videoLinks[0].links} tools={videoLinks[0].tools} play={play} hover={hover}/>,
+    <ProjectItem shadow={shadow} name={videoLinks[1].name} url={videoLinks[1].url} desc={videoLinks[1].desc} desc2={videoLinks[1].desc2} links={videoLinks[1].links} tools={videoLinks[1].tools} play={play} hover={hover}/>,
+    <ProjectItem shadow={shadow} name={videoLinks[2].name} url={videoLinks[2].url} desc={videoLinks[2].desc} desc2={videoLinks[2].desc2} links={videoLinks[2].links} tools={videoLinks[2].tools} play={play} hover={hover}/>
   ]
 
   const onPrevClick = () => {

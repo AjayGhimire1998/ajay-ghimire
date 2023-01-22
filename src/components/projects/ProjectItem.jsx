@@ -2,12 +2,13 @@ import "./project-item.css"
 import ReactPlayer from 'react-player';
 import AboutItem from "../about/about-contents/AboutItem"
 import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
-import { useCallback } from "react";
 
 
-function ProjectItem({ name, url, desc, desc2, links, tools, shadow }) {
+
+function ProjectItem({ name, url, desc, desc2, links, tools, shadow, play, hover }) {
 
   const onLinkClick = (link) => {
+    play();
     window.open(link, '_blank');
   };
 
@@ -27,9 +28,11 @@ function ProjectItem({ name, url, desc, desc2, links, tools, shadow }) {
       <br />
       <div className="links">
         <AiOutlineLink size={40}
+          onMouseOver={hover}
           onClick={() => { onLinkClick(links.live) }}
           className="link-button" />
         <AiOutlineGithub size={40}
+          onMouseOver={hover}
           onClick={() => { onLinkClick(links.git) }}
           className="link-button" />
       </div>
