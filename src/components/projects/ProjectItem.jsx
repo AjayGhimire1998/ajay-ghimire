@@ -22,10 +22,10 @@ function ProjectItem({ name, url, desc, desc2, links, tools, shadow }) {
       <br />
       <div className="links">
         <AiOutlineLink size={40}
-          onClick={onLinkClick(links.live)}
+          // onClick={onLinkClick(links.live)}
           className="link-button" />
         <AiOutlineGithub size={40}
-          onClick={onLinkClick(links.git)}
+          // onClick={onLinkClick(links.git)}
           className="link-button" />
       </div>
       <div className="project-desc">
