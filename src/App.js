@@ -12,6 +12,7 @@ import About from './pages/about/About';
 import Project from './pages/project/Project';
 import Contact from './pages/contact/Contact';
 import Resume from './pages/resume/Resume';
+import Blog from './pages/blog/Blog';
 
 function App() {
 	const [play] = useSound(click);
@@ -57,6 +58,7 @@ function App() {
 					<Route path="/about" element={<About shadow={shadow} play={play} hover={onHover} />} />
 					<Route path="/projects" element={<Project shadow={shadow} play={play} hover={onHover} />} />
 					<Route path="/contact" element={<Contact shadow={shadow} play={play} hover={onHover} />} />
+					<Route path="/blogs" element={<Blog shadow={shadow} play={play} hover={onHover} />} />
 					<Route path="/resume" element={<Resume shadow={shadow} play={play} hover={onHover} />} />
 				</Routes>
 				<br />
