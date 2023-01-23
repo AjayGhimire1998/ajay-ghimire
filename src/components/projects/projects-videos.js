@@ -1,4 +1,4 @@
-import { DiMongodb, DiReact, DiNodejs, DiRuby, DiFirebase } from 'react-icons/di';
+import { DiMongodb, DiReact, DiNodejs, DiRuby, DiFirebase, DiGrails } from 'react-icons/di';
 import { SiRubygems } from 'react-icons/si';
 
 import { v4 as uuidv4 } from 'uuid';
@@ -31,13 +31,24 @@ export const videoLinks = [
 	},
 	{
 		name: 'MemeBook',
-		url: 'https://youtu.be/LEZi-Xbr_U0',
+		url: 'https://youtu.be/JTJ3IyiqIqk',
 		desc: 'A react app for viewing, uploading, and creating memes, bulit using Jokes Rapid API, Reddit API and ImgFlip API and Firebase to handle Authentication and storage.',
-		desc2: 'You can register and login using your email and view the memes in the news feed, set up your profile and be able to upload memes of your own and also create memes with the help of templates generated from FLIPImg API and adding texts of your own or automated jokes from Rapid/JOKES API and also download the newly created meme to your local device and upload it back to the feed for others to see.',
+		desc2: 'You can register and login using their email and view the memes in the news feed, set up their profile and be able to upload memes of their own and also create memes with the help of templates generated from FLIPImg API and adding texts of their own or automated jokes from Rapid/JOKES API and also download the newly created meme to their local device and upload it back to the feed for others to see.',
 		links: {
 			live: 'https://ajayghimire1998.github.io/memebook/',
 			git: 'https://github.com/AjayGhimire1998/memebook',
 		},
 		tools: [<DiReact size={50} key={uuidv4()} />, <DiFirebase size={50} key={uuidv4()} />],
+	},
+	{
+		name: 'PlayMates',
+		url: 'https://youtu.be/HV8v0qiuvtI',
+		desc: 'A Ruby on Rails app with authentication that allows users to view and upload gaming contents like images and videos as posts and live chat with other users to team up to play video games of their similar choices.',
+		desc2: 'The users can register and login using their email and view the gaming contents posted in the news feed, set up their profile and be able to contents of their own, create a category their posts would belong to, and use it to filter the relative contents on that category. They can also team up with others directly through a chat system.',
+		links: {
+			live: 'https://github.com/AjayGhimire1998/Play-Mates',
+			git: 'https://github.com/AjayGhimire1998/Play-Mates',
+		},
+		tools: [<DiRuby size={50} key={uuidv4()} />, <DiGrails size={50} key={uuidv4()} />],
 	},
 ];
