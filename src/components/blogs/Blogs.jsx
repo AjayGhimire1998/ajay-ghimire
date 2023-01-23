@@ -6,6 +6,7 @@ function Blogs() {
         Blogsssss....
         afjsgfj
         afsjhfjkaskjf
+        on mediummmm
     </div>
   )
 }
