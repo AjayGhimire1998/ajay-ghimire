@@ -5,6 +5,7 @@ function Blogs() {
     <div className="blogs-container">
         Blogsssss....
         afjsgfj
+        afsjhfjkaskjf
     </div>
   )
 }
