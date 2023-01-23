@@ -7,6 +7,7 @@ function Blogs() {
         afjsgfj
         afsjhfjkaskjf
         on mediummmm
+        I have had like 6 already
     </div>
   )
 }
