@@ -26,11 +26,8 @@
 	top: .3em;
 }
 
-.tools-used{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+.tools-used > *{
+margin: 20px;
 
 }
 

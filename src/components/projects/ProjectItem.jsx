@@ -40,7 +40,7 @@ function ProjectItem({ name, url, desc, desc2, links, tools, shadow, play, hover
         <AboutItem desc={desc} desc2={desc2} />
       </div>
       <br />
-      <div className='languages-used'>
+      <div className='tools-used'>
         <h5 style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>Tools Used:</h5>
         {tools.map((lan) => lan)}
       </div>

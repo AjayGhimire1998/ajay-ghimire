@@ -1,5 +1,5 @@
-import { DiMongodb, DiReact, DiNodejs, DiRuby, DiFirebase, DiGrails } from 'react-icons/di';
-import { SiRubygems } from 'react-icons/si';
+import { DiMongodb, DiReact, DiNodejs, DiRuby, DiFirebase, DiJavascript, DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
+import { SiRubygems, SiRubyonrails } from 'react-icons/si';
 
 import { v4 as uuidv4 } from 'uuid';
 export const videoLinks = [
@@ -49,6 +49,28 @@ export const videoLinks = [
 			live: 'https://github.com/AjayGhimire1998/Play-Mates',
 			git: 'https://github.com/AjayGhimire1998/Play-Mates',
 		},
-		tools: [<DiRuby size={50} key={uuidv4()} />, <DiGrails size={50} key={uuidv4()} />],
+		tools: [<DiRuby size={50} key={uuidv4()} />, <SiRubyonrails size={50} key={uuidv4()} />],
+	},
+	{
+		name: 'Movie-Finder',
+		url: 'https://youtu.be/L78bUwIzYYo',
+		desc: 'A JavaScript web application built with OMDB and YOUTUBE API.',
+		desc2: 'The users can search for a movie with its title name and get all information about the selected movie and also watch the trailer of the movie from youtube.',
+		links: {
+			live: 'https://ajayghimire1998.github.io/Movie-Finder/',
+			git: 'https://github.com/AjayGhimire1998/Movie-Finder',
+		},
+		tools: [<DiJavascript1 size={50} key={uuidv4()} />, <DiHtml5 size={50} key={uuidv4()} />, <DiCss3 size={50} key={uuidv4()} />],
+	},
+	{
+		name: 'WithLoveFromHome',
+		url: 'https://youtu.be/L78bUwIzYYo',
+		desc: 'A JavaScript web application built with OMDB and YOUTUBE API.',
+		desc2: 'The users can search for a movie with its title name and get all information about the selected movie and also watch the trailer of the movie from youtube.',
+		links: {
+			live: 'https://ajayghimire1998.github.io/Movie-Finder/',
+			git: 'https://github.com/AjayGhimire1998/Movie-Finder',
+		},
+		tools: [<DiJavascript1 size={50} key={uuidv4()} />, <DiHtml5 size={50} key={uuidv4()} />, <DiCss3 size={50} key={uuidv4()} />],
 	},
 ];
