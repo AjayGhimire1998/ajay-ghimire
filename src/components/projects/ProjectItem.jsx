@@ -27,13 +27,19 @@ function ProjectItem({ name, url, desc, desc2, links, tools, shadow, play, hover
       </div>
       <br />
       <div className="links">
-        <AiOutlineLink size={40}
-          onMouseOver={hover}
-          onClick={() => { onLinkClick(links.live) }}
-          className="link-button" />
+        {links.live ?
+          <AiOutlineLink size={40}
+            onMouseOver={hover}
+            onClick={() => { onLinkClick(links.live) }}
+            className="link-button" />
+          :
+          <AiOutlineGithub size={40}
+            onMouseOver={hover}
+            onClick={() => { onLinkClick(links.frontEnd) }}
+            className="link-button" />}
         <AiOutlineGithub size={40}
           onMouseOver={hover}
-          onClick={() => { onLinkClick(links.git) }}
+          onClick={() => { onLinkClick(links.git || links.backEnd) }}
           className="link-button" />
       </div>
       <div className="project-desc">
