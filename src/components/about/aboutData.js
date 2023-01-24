@@ -9,7 +9,7 @@ export const aboutData = [
     title: "Professional Evolution",
     desc: "During my bachelor's, I started working as a kitchen hand in a super busy Japanese restaurant to support my tuition. My hard work, ability to get noticed & become a positive presence in the workplace & ability to learn quickly, identify & solve problems led me to get promoted as a 'Cook' in just six months. That is where I gained experience working in a high-speed or fast-paced environment.",
     desc2:
-      "I quit the job at the end of '2022' and started working in a pharmacy retail as a 'Retail Assistant' to enhance my communication and customer service skill.",
+      "I quit the job at the end of '2022' and started working in a pharmacy retail as a 'Retail Assistant', where I am enhancing my communication and customer service skill.",
   },
   {
     title: "Academic Evolution",
