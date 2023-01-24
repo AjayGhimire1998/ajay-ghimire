@@ -1,3 +1,15 @@
 .blog-item-container{
-    
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.title > h5{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.desc > p {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
