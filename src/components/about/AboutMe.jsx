@@ -14,8 +14,12 @@ function AboutMe({ shadow, play, hover }) {
 	const [isPreviewOn, setIsPreviewOn] = useState(false);
 
 	const onPreviewClick = () => {
-		play();
+		hover();
 		setIsPreviewOn(!isPreviewOn);
+	};
+
+	const onPrevImageClick = () => {
+		hover();
 	};
 
 	const pages = [
@@ -26,7 +30,7 @@ function AboutMe({ shadow, play, hover }) {
 			image={profile}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
-			hover={hover}
+			onPrevImageClick={onPrevImageClick}
 			shadow={shadow}
 		/>,
 		<AboutItem
@@ -37,7 +41,7 @@ function AboutMe({ shadow, play, hover }) {
 			image={background}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
-			hover={hover}
+			onPrevImageClick={onPrevImageClick}
 			shadow={shadow}
 		/>,
 		<AboutItem
@@ -47,7 +51,7 @@ function AboutMe({ shadow, play, hover }) {
 			image={academyXi}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
-			hover={hover}
+			// hover={hover}
 			shadow={shadow}
 		/>,
 		<Skills shadow={shadow} />,

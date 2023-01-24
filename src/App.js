@@ -74,7 +74,7 @@ function App() {
           />
           <Route
             path="/blogs"
-            element={<Blog shadow={shadow} play={play} hover={onHover} />}
+            element={<Blog shadow={shadow} />}
           />
           <Route
             path="/resume"
