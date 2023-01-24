@@ -9,8 +9,12 @@ function Profile({ title, desc, desc2, quote, image, isPreviewOn, onPreviewClick
 				<div className="about-item-container">
 					<div className="about-item preview-image-container">
 						<div className="next-image">
-							<span className="lt">&lt;</span>
-							<span className="gt">&gt;</span>
+							<span className="lt" onClick={hover}>
+								&lt;
+							</span>
+							<span className="gt " onClick={hover}>
+								&gt;
+							</span>
 							<img src={image} className="preview-image" alt="ajay" />
 						</div>
 					</div>
