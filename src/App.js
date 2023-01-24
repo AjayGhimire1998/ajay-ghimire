@@ -12,6 +12,7 @@ import About from './pages/about/About';
 import Project from './pages/project/Project';
 import Resume from './pages/resume/Resume';
 import Blog from './pages/blog/Blog';
+import Contact from './components/contact/Contact';
 
 function App() {
 	const [play] = useSound(click);
@@ -65,7 +66,8 @@ function App() {
 				<br />
 				<br />
 				<br />
-				<br />
+				<Contact />
+
 				<footer className="footer">
 					<p style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>© 2023 Ajay Ghimire</p>
 				</footer>

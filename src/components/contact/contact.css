@@ -1,3 +1,12 @@
 .contact-container{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+}
+
+.contact-container > * {
+    margin: 10px;
+    height: 35px;
+    width:  35px;
 }
