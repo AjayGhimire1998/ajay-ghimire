@@ -2,7 +2,7 @@ import React from 'react'
 
 function BlogItem() {
   return (
-    <div>BlogItem</div>
+    <div className='blog-item-container'></div>
   )
 }
 
