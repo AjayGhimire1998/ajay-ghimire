@@ -1,6 +1,6 @@
 import React from 'react';
 import './about-item.css';
-import { ImEye } from 'react-icons/im';
+import { IoIosImages } from 'react-icons/io';
 import { CgReadme } from 'react-icons/cg';
 
 function Profile({ title, desc, desc2, quote, image, isPreviewOn, onPrevImageClick, onPreviewClick, shadow }) {
@@ -19,6 +19,7 @@ function Profile({ title, desc, desc2, quote, image, isPreviewOn, onPrevImageCli
 							<img src={image} className="preview-image" alt="ajay" />
 						</div>
 					</div>
+					<br />
 					<div className="preview-reverse-container">
 						<CgReadme size="30px" className="preview-button" onClick={onPreviewClick} />
 					</div>
@@ -35,9 +36,10 @@ function Profile({ title, desc, desc2, quote, image, isPreviewOn, onPrevImageCli
 						<p>{desc}</p>
 						<p>{desc2}</p>
 					</div>
+					<br />
 					{image ? (
 						<div className="preview-button-container">
-							<ImEye size="30px" className="preview-button" onClick={onPreviewClick} />
+							<IoIosImages size="30px" className="preview-button" onClick={onPreviewClick} />
 						</div>
 					) : null}
 				</div>
