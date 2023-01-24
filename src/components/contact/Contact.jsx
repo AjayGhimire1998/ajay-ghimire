@@ -1,9 +1,11 @@
 import "./contact.css"
 
 function Contact() {
-  return (
-    <div>Contact</div>
-  )
+    return (
+        <section className="contact-container">
+
+        </section>
+    )
 }
 
 export default Contact
