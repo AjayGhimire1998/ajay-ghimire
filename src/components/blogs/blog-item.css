@@ -4,12 +4,9 @@
     flex-direction: column;
 }
 
-.title > h5{
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.desc > p {
+.blog-item-container > *{
+    margin: 5px;
+    text-align: left;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
