@@ -1,12 +1,43 @@
-.contact-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: black;
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
 }
 
 .contact-container > * {
-    margin: 10px;
-    height: 35px;
-    width:  35px;
+  margin: 10px;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
+
+
+/*Bounce*/
+@keyframes kreep {
+  0% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+  50% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.kreep {
+  animation: none;
+}
+
+.kreep:hover {
+  display: inline-block;
+
+  animation: kreep 0.7s ease 2s infinite alternate;
+}
+/*END BOUNCER*/
