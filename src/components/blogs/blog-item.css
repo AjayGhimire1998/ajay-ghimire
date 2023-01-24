@@ -1,12 +1,17 @@
 .blog-item-container{
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    margin: 10px;
 }
 
 .blog-item-container > *{
-    margin: 5px;
+    margin: 10px;
     text-align: left;
     color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 100%;
+}
+
+.blog-item-container > p > a{
+    color: blue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

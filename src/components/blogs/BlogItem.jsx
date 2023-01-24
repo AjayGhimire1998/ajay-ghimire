@@ -1,11 +1,11 @@
 import React from 'react'
 import "./blog-item.css"
 
-function BlogItem() {
+function BlogItem({blog}) {
     return (
         <div className='blog-item-container'>
-                <h5>Intor TO JAVA</h5>
-                <p>Hello and welscome everyone to java</p>
+                <h4>{blog.title}</h4>
+                <p>{blog.desc}<a href={blog.url} target="_blank" rel="noreferrer">Read More</a></p>
         </div>
     )
 }
