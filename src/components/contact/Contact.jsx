@@ -1,14 +1,14 @@
-import { EmailSvg, FacebookSvg, GithubSvg, InstaSvg, LinkedInSvg } from "./contact-svg"
+import { SiFacebook, SiGithub, SiGmail, SiInstagram, SiLinkedin } from "react-icons/si"
 import "./contact.css"
 
-function Contact() {
+function Contact({ play, hover }) {
     return (
         <section className="contact-container">
-            <span className="kreep"><LinkedInSvg className=" linkedin" /></span>
-            <span className="kreep"><GithubSvg className=" github" /></span>
-            <span className="kreep"><EmailSvg className=" email" /></span>
-            <span className="kreep"><FacebookSvg className=" facebook" /></span>
-            <span className="kreep"><InstaSvg className=" insta" /></span>
+            <span className="kreep"><SiLinkedin size={35}  /></span>
+            <span className="kreep"><SiGithub size={35}  /></span>
+            <span className="kreep"><SiGmail size={35}  /></span>
+            <span className="kreep"><SiFacebook size={35}  /></span>
+            <span className="kreep"><SiInstagram size={35}  /></span>
         </section>
     )
 }

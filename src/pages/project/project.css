@@ -1,5 +1,5 @@
-.projects{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

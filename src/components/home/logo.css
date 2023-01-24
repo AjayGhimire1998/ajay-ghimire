@@ -1,23 +1,23 @@
-.logo-container{
-    display: flex;
-    justify-content: center;
+.logo-container {
+  display: flex;
+  justify-content: center;
 }
-.logo{ 
-    height: 280px;
-    width: 290px;
-    filter: contrast(200%);
-}  
-
-@media screen and (max-width: 760px){
-    .logo{
-        height: 250px;
-        width: 260px;
-    }
+.logo {
+  height: 280px;
+  width: 290px;
+  filter: contrast(200%);
 }
 
-@media screen and (max-width: 480px){
-    .logo{
-        height: 220px;
-        width: 230px;
-     }
+@media screen and (max-width: 760px) {
+  .logo {
+    height: 250px;
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    height: 220px;
+    width: 230px;
+  }
 }

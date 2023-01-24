@@ -6,17 +6,12 @@
 }
 
 .contact-container > * {
-  margin: 10px;
-  height: 35px;
-  width: 35px;
+  margin: 15px;
   cursor: pointer;
-  display: inline-block;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
 }
 
-
-/*Bounce*/
 @keyframes kreep {
   0% {
     -webkit-transform: scale(1.1, 0.9);
@@ -32,12 +27,22 @@
 }
 
 .kreep {
+ 
   animation: none;
 }
 
 .kreep:hover {
-  display: inline-block;
-
-  animation: kreep 0.7s ease 2s infinite alternate;
+  animation: kreep 0.7s ease 0s infinite alternate;
 }
-/*END BOUNCER*/
+
+@media screen and (max-width: 760px) {
+  .contact-container > * {
+    margin: 12px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .contact-container > * {
+    margin: 10px;
+  }
+}

@@ -15,8 +15,8 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./components/contact/Contact";
 
 function App() {
-  const [play] = useSound(click);
-  const [onHover] = useSound(hover);
+  const [play] = useSound(click,  {volume: 0.4});
+  const [onHover] = useSound(hover, {volume: 0.4});
 
   let shadows = useMemo(() => [], []);
   shadows = [
@@ -87,12 +87,14 @@ function App() {
         <br />
         <br />
         <br />
-        <Contact />
-        <footer className="footer">
-          <p style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
-            © 2023 Ajay Ghimire
-          </p>
-        </footer>
+        <div className="footer">
+          <Contact play={play}/>
+          <footer>
+            <p style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
+              © 2023 Ajay Ghimire
+            </p>
+          </footer>
+        </div>
       </div>
     </>
   );
