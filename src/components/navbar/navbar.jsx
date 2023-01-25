@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import './navbar.css';
 function Navbar({ play, hover }) {
+	const location = useLocation();
+	console.log(location);
 	const [currentPage, setCurrentPage] = useState('');
 	const [pages, setPages] = useState(['About', 'Projects', 'Blogs', 'Resume']);
 
@@ -13,9 +15,15 @@ function Navbar({ play, hover }) {
 		setCurrentPage(page);
 		localStorage.setItem('current_page', JSON.stringify(page));
 	};
+	useEffect(() => {
+		localStorage.setItem(
+			'current_page',
+			JSON.stringify(location.pathname.slice(1).charAt(0).toUpperCase() + location.pathname.slice(2))
+		);
+		setCurrentPage(JSON.parse(localStorage.getItem('current_page')));
+	}, [location.pathname]);
 
 	useEffect(() => {
-		setCurrentPage(JSON.parse(localStorage.getItem('current_page')));
 		if (currentPage === '') {
 			setPages(['About', 'Projects', 'Blogs', 'Resume']);
 		}
