@@ -19,9 +19,7 @@ function AboutMe({ shadow, play, hover }) {
 		setIsPreviewOn(!isPreviewOn);
 	};
 
-	const onPrevImageClick = () => {
-		hover();
-	};
+
 
 	const pages = [
 		<AboutItem
@@ -29,9 +27,10 @@ function AboutMe({ shadow, play, hover }) {
 			desc={aboutData[0].desc}
 			desc2={aboutData[0].desc2}
 			image={[profile, ajay1]}
+			hover = {hover}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
-			onPrevImageClick={onPrevImageClick}
+			// onPrevImageClick={onPrevImageClick}
 			shadow={shadow}
 		/>,
 		<AboutItem
@@ -40,19 +39,21 @@ function AboutMe({ shadow, play, hover }) {
 			desc2={aboutData[1].desc2}
 			quote="“I have gone from slicing sashimis to slicing arrays”"
 			image={background}
+			hover = {hover}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
-			onPrevImageClick={onPrevImageClick}
+			// onPrevImageClick={onPrevImageClick}
 			shadow={shadow}
 		/>,
 		<AboutItem
 			title={aboutData[2].title}
 			desc={aboutData[2].desc}
 			desc2={aboutData[2].desc2}
+			hover = {hover}
 			image={academyXi}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
-			onPrevImageClick={onPrevImageClick}
+			// onPrevImageClick={onPrevImageClick}
 			shadow={shadow}
 		/>,
 		<Skills shadow={shadow} />,

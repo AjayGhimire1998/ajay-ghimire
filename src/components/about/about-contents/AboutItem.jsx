@@ -2,21 +2,36 @@ import React from 'react';
 import './about-item.css';
 import { IoIosImages } from 'react-icons/io';
 import { CgReadme } from 'react-icons/cg';
+import { useState } from 'react';
 
-function Profile({ title, desc, desc2, quote, image, isPreviewOn, onPrevImageClick, onPreviewClick, shadow }) {
+function Profile({ title, desc, desc2, quote, image, isPreviewOn, onPreviewClick, shadow, hover }) {
+	const [imageCount, setImageCount] = useState(0);
+	const onPrevImageClick = () => {
+		hover();
+		setImageCount(imageCount - 1);
+	};
+
+	const onNextImageClick = () => {
+		hover();
+		setImageCount(imageCount + 1);
+	};
 	return (
 		<>
 			{isPreviewOn ? (
 				<div className="about-item-container">
 					<div className="about-item preview-image-container">
 						<div className="next-image">
-							<span className="lt" onClick={onPrevImageClick}>
-								&lt;
-							</span>
-							<span className="gt " onClick={onPrevImageClick}>
-								&gt;
-							</span>
-							<img src={image} className="preview-image" alt="ajay" />
+							{imageCount > 0 && (
+								<span className="lt" onClick={onPrevImageClick}>
+									&lt;
+								</span>
+							)}
+							{imageCount === 0 && (
+								<span className="gt " onClick={onNextImageClick}>
+									&gt;
+								</span>
+							)}
+							<img src={image[imageCount]} className="preview-image" alt="ajay" />
 						</div>
 					</div>
 					<br />
