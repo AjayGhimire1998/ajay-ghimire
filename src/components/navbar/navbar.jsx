@@ -22,7 +22,7 @@ function Navbar({play, hover}) {
   };
 
   useEffect(() => {
-    localStorage.setItem("current_page", JSON.stringify(currentPage))
+    setCurrentPage(JSON.parse(localStorage.getItem("current_page")))
     if (currentPage === "") {
       setPages(["About", "Projects", "Blogs", "Resume"]);
     }
