@@ -7,7 +7,7 @@ export const videoLinks = [
 		name: 'WithLoveFromHome',
 		url: 'https://youtu.be/IEl0hS8OP2k',
 		desc: 'A full-stack E-commerce web application built using React for the front end and Rails to develop the server.',
-		desc2: 'It allows users to register as a store to create products to sell and to register as a customer to choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email.',
+		desc2: 'It allows users to register as a store who can create products to sell and also allows users to register as a customer who can choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email.',
 		links: {
 			frontEnd: 'https://github.com/AjayGhimire1998/with-love-from-home-frontend',
 			backEnd: 'https://github.com/AjayGhimire1998/with-love-from-home-server',
