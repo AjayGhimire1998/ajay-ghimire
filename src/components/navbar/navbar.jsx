@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 function Navbar({play, hover}) {
  
-  const [currentPage, setCurrentPage] = useState("");
+  const [currentPage, setCurrentPage] = useState("/ajay-ghimire");
   const [pages, setPages] = useState([
     "About",
     "Projects",
@@ -23,7 +23,7 @@ function Navbar({play, hover}) {
 
   useEffect(() => {
     setCurrentPage(JSON.parse(localStorage.getItem("current_page")))
-    if (currentPage === "") {
+    if (currentPage === "/ajay-ghimire") {
       setPages(["About", "Projects", "Blogs", "Resume"]);
     }
     if (currentPage === "About") {
@@ -46,10 +46,10 @@ function Navbar({play, hover}) {
         {pages.map((page, index) => {
           return (
             <Link
-              to={page === "Home" ? "/" : `/${page.toLowerCase()}`}
+              to={page === "Home" ? "/ajay-ghimire" : `/ajay-ghimire/${page.toLowerCase()}`}
               className="nav-button"
               onClick={() => {
-                onLinkClick(page === "Home" ? "" : page);
+                onLinkClick(page === "Home" ? "/ajay-ghimire" : page);
                 playSound();
               }}
               onMouseOver={hover}

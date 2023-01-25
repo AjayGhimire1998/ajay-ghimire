@@ -63,21 +63,21 @@ function App() {
       <div className="main">
         <Logo logo={logo} shadow={shadow} />
         <Routes>
-          <Route path="/" element={<Home shadow={shadow} />} />
+          <Route path="/ajay-ghimire" element={<Home shadow={shadow} />} />
           <Route
-            path="/about"
+            path="/ajay-ghimire/about"
             element={<About shadow={shadow} play={play} hover={onHover} />}
           />
           <Route
-            path="/projects"
+            path="/ajay-ghimire/projects"
             element={<Project shadow={shadow} play={play} hover={onHover} />}
           />
           <Route
-            path="/blogs"
+            path="/ajay-ghimire/blogs"
             element={<Blog shadow={shadow} />}
           />
           <Route
-            path="/resume"
+            path="/ajay-ghimire/resume"
             element={<Resume shadow={shadow} play={play} hover={onHover} />}
           />
         </Routes>
