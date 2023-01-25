@@ -47,9 +47,7 @@ function App() {
 		changeLogo();
 		if (localStorage.getItem("current_page")) {
       navigate(`${localStorage.getItem("current_page").slice(1, -1).toLocaleLowerCase()}`)
-		} else {
-      navigate("")
-    }
+		} 
 	}, []);
 
 
