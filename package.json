@@ -1,7 +1,7 @@
 {
 	"name": "ajay-ghimire",
 	"version": "0.1.0",
-	"homepage": "https://AjayGhimire1998.github.io/#",
+	"homepage": "https://AjayGhimire1998.github.io/ajay-ghimire",
 	"private": true,
 	"dependencies": {
 		"@emotion/react": "^11.10.5",
