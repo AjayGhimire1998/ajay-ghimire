@@ -12,20 +12,14 @@ function Blogs() {
 	const onSeeMore = () => {
 		setBlogCount(blogItem.length);
 	};
+
+	const onSeeLess = () => {
+		setBlogCount(4);
+	};
 	return (
 		<div className="blogs-container">
 			{blogItem.slice(0, blogCount)}
-			<p
-				onClick={
-					blogCount === 4
-						? onSeeMore
-						: () => {
-								setBlogCount(4);
-						  }
-				}
-			>
-				See More
-			</p>
+			{blogCount === 4 ? <p onClick={onSeeMore}>View More</p> : <p onClick={onSeeLess}>View Less</p>}
 		</div>
 	);
 }

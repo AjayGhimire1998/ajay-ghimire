@@ -3,6 +3,7 @@ import './about-me.css';
 import { aboutData } from './aboutData.js';
 import AboutItem from './about-contents/AboutItem';
 import profile from '../../images/my-pictures/profile.jpeg';
+import ajay1 from "../../images/my-pictures/ajay1.jpeg";
 import background from '../../images/my-pictures/chocho.JPG';
 import academyXi from '../../images/my-pictures/academyXi.png';
 import FromTo from './about-contents/FromTo';
@@ -27,7 +28,7 @@ function AboutMe({ shadow, play, hover }) {
 			title={aboutData[0].title}
 			desc={aboutData[0].desc}
 			desc2={aboutData[0].desc2}
-			image={profile}
+			image={[profile, ajay1]}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
 			onPrevImageClick={onPrevImageClick}
@@ -51,7 +52,7 @@ function AboutMe({ shadow, play, hover }) {
 			image={academyXi}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
-			// hover={hover}
+			onPrevImageClick={onPrevImageClick}
 			shadow={shadow}
 		/>,
 		<Skills shadow={shadow} />,
