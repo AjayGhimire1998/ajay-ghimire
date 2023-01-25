@@ -2,19 +2,20 @@ import React from 'react';
 import './about-item.css';
 import { IoIosImages } from 'react-icons/io';
 import { CgReadme } from 'react-icons/cg';
-import { useState } from 'react';
 
-function Profile({ title, desc, desc2, quote, image, isPreviewOn, onPreviewClick, shadow, hover }) {
-	const [imageCount, setImageCount] = useState(0);
-	const onPrevImageClick = () => {
-		hover();
-		setImageCount(imageCount - 1);
-	};
-
-	const onNextImageClick = () => {
-		hover();
-		setImageCount(imageCount + 1);
-	};
+function Profile({
+	title,
+	desc,
+	desc2,
+	quote,
+	image,
+	isPreviewOn,
+	onPreviewClick,
+	imageCount,
+	onPrevImageClick,
+	onNextImageClick,
+	shadow,
+}) {
 	return (
 		<>
 			{isPreviewOn ? (
