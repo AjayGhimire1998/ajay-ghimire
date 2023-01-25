@@ -34,7 +34,7 @@ function AboutMe({ shadow, play, hover }) {
 			image={aboutData[0].images}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
-			imageCount = {imageCount}
+			imageCount={imageCount}
 			onPrevImageClick={onPrevImageClick}
 			onNextImageClick={onNextImageClick}
 			shadow={shadow}
@@ -47,7 +47,7 @@ function AboutMe({ shadow, play, hover }) {
 			image={aboutData[1].images}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
-			imageCount = {imageCount}
+			imageCount={imageCount}
 			onPrevImageClick={onPrevImageClick}
 			onNextImageClick={onNextImageClick}
 			shadow={shadow}
@@ -59,7 +59,7 @@ function AboutMe({ shadow, play, hover }) {
 			image={aboutData[2].images}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
-			imageCount = {imageCount}
+			imageCount={imageCount}
 			onPrevImageClick={onPrevImageClick}
 			onNextImageClick={onNextImageClick}
 			shadow={shadow}

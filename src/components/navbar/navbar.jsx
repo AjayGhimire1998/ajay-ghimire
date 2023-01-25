@@ -4,7 +4,6 @@ import { Link, useLocation } from 'react-router-dom';
 import './navbar.css';
 function Navbar({ play, hover }) {
 	const location = useLocation();
-	console.log(location);
 	const [currentPage, setCurrentPage] = useState('');
 	const [pages, setPages] = useState(['About', 'Projects', 'Blogs', 'Resume']);
 
