@@ -26,7 +26,7 @@ function Profile({ title, desc, desc2, quote, image, isPreviewOn, onPreviewClick
 									&lt;
 								</span>
 							)}
-							{imageCount === 0 && (
+							{(imageCount === 0 || imageCount < image.length - 1) && (
 								<span className="gt " onClick={onNextImageClick}>
 									&gt;
 								</span>
