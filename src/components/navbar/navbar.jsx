@@ -22,7 +22,7 @@ function Navbar({play, hover}) {
   };
 
   useEffect(() => {
-    setCurrentPage(JSON.parse(localStorage.getItem("current_page")))
+    localStorage.setItem("current_page", JSON.stringify(currentPage))
     if (currentPage === "/ajay-ghimire") {
       setPages(["About", "Projects", "Blogs", "Resume"]);
     }
