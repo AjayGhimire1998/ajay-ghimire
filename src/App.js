@@ -66,7 +66,7 @@ function App() {
 				<br />
 				<br />
 				<br />
-        <CheerPlayer />
+				<button style={{display: "inline-block", width: "50%", color: "black"}}>Cheer Me Up!</button>
 				<div className="footer">
 					<Contact play={play} />
 					<footer>
