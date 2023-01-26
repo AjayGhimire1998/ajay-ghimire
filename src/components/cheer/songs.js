@@ -1,11 +1,11 @@
-export const songsUrl = [
-	'https://youtu.be/dQw4w9WgXcQ',
-	'https://youtu.be/4fndeDfaWCg',
-	'https://youtu.be/PpsUOOfb-vE',
-	'https://youtu.be/e1FN047_LT0',
-    "https://youtu.be/l_IsV3IjoBM",
-    "https://youtu.be/851e5KqXrpA",
-    "https://youtu.be/BN1WwnEDWAM",
-    "https://youtu.be/ABfQuZqq8wg",
-    "https://youtu.be/-eHJ12Vhpyc"
-];
+import aintNo from './songs/aint-no.mp3';
+import houndDog from './songs/hound-dog.mp3';
+import iWantIt from './songs/i-want-it.mp3';
+import jailHouse from './songs/jailhouse-rock.mp3';
+import neverGonna from './songs/never-gonna.mp3';
+import sexDrugs from './songs/sex-drugs.mp3';
+import shouldI from './songs/should-i.mp3';
+import sweetHome from './songs/sweet-home.mp3';
+import whatA from './songs/what-a.mp3';
+
+export const songsUrl = [jailHouse, aintNo, houndDog, iWantIt, neverGonna, sexDrugs, shouldI, sweetHome, whatA];
