@@ -4,8 +4,8 @@ import { songsUrl } from './songs';
 
 function CheerPlayer() {
 	return (
-		<div>
-			<ReactPlayer url={songsUrl[0]} controls={true} />
+		<div style={{display: "none"}}>
+			<ReactPlayer playing url={songsUrl} volume={0.2} />
 		</div>
 	);
 }
