@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import ReactPlayer from 'react-player';
+import { songsUrl } from './songs';
 
 function CheerPlayer() {
-  return (
-    <div>CheerPlayer</div>
-  )
+	return (
+		<div>
+			<ReactPlayer url={songsUrl[0]} controls={true} />
+		</div>
+	);
 }
 
-export default CheerPlayer
+export default CheerPlayer;

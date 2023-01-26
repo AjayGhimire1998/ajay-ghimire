@@ -14,6 +14,7 @@ import Resume from './pages/resume/Resume';
 import Blog from './pages/blog/Blog';
 import Contact from './components/contact/Contact';
 import { useNavigate } from 'react-router-dom';
+import CheerPlayer from './components/cheer/CheerPlayer';
 
 function App() {
 	const [play] = useSound(click, { volume: 0.4 });
@@ -65,6 +66,7 @@ function App() {
 				<br />
 				<br />
 				<br />
+        <CheerPlayer />
 				<div className="footer">
 					<Contact play={play} />
 					<footer>
