@@ -11,16 +11,17 @@
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^13.5.0",
 		"react": "^18.2.0",
+		"react-audio-player": "^0.17.0",
 		"react-dom": "^18.2.0",
 		"react-icons": "^4.7.1",
 		"react-player": "^2.11.0",
 		"react-router-dom": "^6.6.2",
 		"react-scripts": "5.0.1",
-		"react-youtube": "^10.1.0",
 		"typewriter-effect": "^2.19.0",
 		"use-sound": "^4.0.1",
 		"uuid": "^9.0.0",
-		"web-vitals": "^2.1.4"
+		"web-vitals": "^2.1.4",
+		"ytdl-core": "^4.11.2"
 	},
 	"scripts": {
 		"predeploy": "npm run build",

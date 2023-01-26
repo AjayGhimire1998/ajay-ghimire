@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import YouTube from "react-youtube";
+import  AudioPlayer from "react-audio-player";
 import { songsUrl } from './songs';
 
 function CheerPlayer() {
@@ -10,17 +10,14 @@ function CheerPlayer() {
         playerVars: {
           autoplay: 1,
           controls: 1,
+          start: 0,
+          origin: 'http://localhost:3001/#/'
         }
       };
-      const playerRef = React.createRef();
-      useEffect(() => {
-        playerRef.current.internalPlayer.playVideo();
-      }, [])
       return (
-        <YouTube 
+        <AudioPlayer 
           videoId={songsUrl[0]}
           opts={opts}
-          ref={playerRef}
         />
 	);
 }
