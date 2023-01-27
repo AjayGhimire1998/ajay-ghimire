@@ -17,8 +17,8 @@ import { useNavigate } from 'react-router-dom';
 import CheerPlayer from './components/cheer/CheerPlayer';
 
 function App() {
-	const [play] = useSound(click, { volume: 0.4 });
-	const [onHover] = useSound(hover, { volume: 0.4 });
+	const [play] = useSound(click, { volume: 0.1 });
+	const [onHover] = useSound(hover, { volume: 0.1 });
 	// const navigate = useNavigate();
 
 	let shadows = useMemo(() => [], []);
