@@ -1,4 +1,4 @@
-import { DiMongodb, DiReact, DiNodejs, DiRuby, DiFirebase, DiJavascript, DiHtml5, DiCss3, DiJavascript1, DiPostgresql } from 'react-icons/di';
+import { DiMongodb, DiReact, DiNodejs, DiRuby, DiFirebase, DiHtml5, DiCss3, DiJavascript1, DiPostgresql } from 'react-icons/di';
 import { SiRubygems, SiRubyonrails } from 'react-icons/si';
 
 import { v4 as uuidv4 } from 'uuid';

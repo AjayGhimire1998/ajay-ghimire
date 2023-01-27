@@ -19,7 +19,7 @@ import CheerPlayer from './components/cheer/CheerPlayer';
 function App() {
 	const [play] = useSound(click, { volume: 0.4 });
 	const [onHover] = useSound(hover, { volume: 0.4 });
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 
 	let shadows = useMemo(() => [], []);
 	shadows = ['#80dfff', '#cc6600', '#00ccff', '#cc6600', '#00cc00', '#ffff00', '#ff00ff', '#ff9900'];
