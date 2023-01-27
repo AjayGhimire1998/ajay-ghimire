@@ -8,4 +8,4 @@ import shouldI from './songs/should-i.mp3';
 import sweetHome from './songs/sweet-home.mp3';
 import whatA from './songs/what-a.mp3';
 
-export const songsUrl = [jailHouse, aintNo, houndDog, iWantIt, neverGonna, sexDrugs, shouldI, sweetHome, whatA];
+export const songsUrl = [jailHouse, aintNo, houndDog, iWantIt, neverGonna, shouldI, sweetHome, whatA];
