@@ -9,14 +9,13 @@ function Intro({ shadow }) {
 			</div>
 			<div className='contents'>
 				<p>I am</p>
-				<br />
 				<div>
 					<strong>Ajay Ghimire</strong>
 				</div>
 				<br />
-				<p>a </p>
 				<span>Full Stack Software Developer </span>
-				<p> from </p>
+				<br/>
+				<br/>
 				<span>
 					<i> Sydney, Australia.</i>
 				</span>
