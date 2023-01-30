@@ -31,7 +31,7 @@ function CheerPlayer() {
 	useEffect(() => {
 		if (isPlaying) {
 			songRef.current.play();
-			songRef.current.volume = 0.5;
+			songRef.current.volume = 0.2;
 		} else {
 			songRef.current.pause();
 		}
@@ -48,7 +48,7 @@ function CheerPlayer() {
 
 		if (isReady.current) {
 			songRef.current.play();
-			songRef.current.volume = 0.5;
+			songRef.current.volume = 0.2;
 			setIsPlaying(true);
 		} else {
 			isReady.current = true;
