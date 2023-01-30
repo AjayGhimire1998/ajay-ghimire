@@ -1,7 +1,8 @@
 import React from 'react';
 import './intro.css';
 import ajay from '../../images/my-pictures/ajay1.jpeg';
-import { HiLocationMarker } from 'react-icons/hi';
+import pin  from "../../images/my-pictures/pin.png"
+import { FaMapMarkerAlt } from 'react-icons/fa';
 function Intro({ shadow }) {
 	return (
 		<div className="intro-container" style={{ filter: `drop-shadow(2px -2px 4px ${shadow})` }}>
@@ -18,10 +19,8 @@ function Intro({ shadow }) {
 				<br />
 				<br />
 				<span>
-					<i>
-						<HiLocationMarker size={20} />
-						Sydney, Australia.
-					</i>
+					
+					<i><img src={pin} alt="pin" />Sydney, Australia.</i>
 				</span>
 			</div>
 			<br />
