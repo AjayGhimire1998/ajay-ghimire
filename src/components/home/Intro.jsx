@@ -1,13 +1,23 @@
 import React from 'react';
 import './intro.css';
 import ajay from '../../images/my-pictures/ajay1.jpeg';
-import pin  from "../../images/my-pictures/pin.png"
-import { FaMapMarkerAlt } from 'react-icons/fa';
-function Intro({ shadow }) {
+import cover from '../../images/background.png';
+import pin from '../../images/my-pictures/pin.png';
+import { useNavigate } from 'react-router-dom';
+function Intro({ shadow, play}) {
+	const navigate = useNavigate();
+	function goToAbout() {
+		play();
+		navigate('/about')
+	}
+
 	return (
-		<div className="intro-container" style={{ filter: `drop-shadow(2px -2px 4px ${shadow})` }}>
-			<div className="avatar" style={{ backgroundImage: `url(${ajay})` }}>
-				<img src={ajay} alt="avatar" className="avatar-image" />
+		<div className="intro-container" style={{ filter: `drop-shadow(3px -3px 5px ${shadow})` }}>
+			<div
+				className="avatar"
+				style={{ backgroundImage: `url(${cover})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
+			>
+				<img src={ajay} alt="avatar" className="avatar-image" onClick={goToAbout}/>
 			</div>
 			<div className="contents">
 				<p>I am</p>
@@ -19,8 +29,10 @@ function Intro({ shadow }) {
 				<br />
 				<br />
 				<span>
-					
-					<i><img src={pin} alt="pin" />Sydney, Australia.</i>
+					<i>
+						<img src={pin} alt="pin" />
+						Sydney, Australia.
+					</i>
 				</span>
 			</div>
 			<br />
