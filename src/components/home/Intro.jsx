@@ -1,23 +1,27 @@
 import React from 'react';
 import './intro.css';
 import ajay from '../../images/my-pictures/ajay1.jpeg';
+import { HiLocationMarker } from 'react-icons/hi';
 function Intro({ shadow }) {
 	return (
 		<div className="intro-container" style={{ filter: `drop-shadow(2px -2px 4px ${shadow})` }}>
 			<div className="avatar" style={{ backgroundImage: `url(${ajay})` }}>
 				<img src={ajay} alt="avatar" className="avatar-image" />
 			</div>
-			<div className='contents'>
+			<div className="contents">
 				<p>I am</p>
 				<div>
-					<strong>Ajay Ghimire</strong>
+					<strong>Ajay Ghimire.</strong>
 				</div>
 				<br />
 				<span>Full Stack Software Developer </span>
-				<br/>
-				<br/>
+				<br />
+				<br />
 				<span>
-					<i> Sydney, Australia.</i>
+					<i>
+						<HiLocationMarker size={20} />
+						Sydney, Australia.
+					</i>
 				</span>
 			</div>
 			<br />

@@ -10,7 +10,7 @@
 }
 
 .avatar {
-	height: 100px;
+	height: 130px;
 	padding: 10px;
 	border-radius: 5px;
 	display: flex;
@@ -24,7 +24,7 @@
 	border-radius: 50%;
 	object-fit: cover;
 	position: fixed;
-	margin-top: 30px;
+	margin-top: 65px;
 	
 }
 
@@ -43,7 +43,6 @@
 	font-size: 2.3vh;
 	font-style: italic;
 	filter: contrast(200%);
-	/* line-height: 1.5; */
 	color: black;
 	font-family: Futura;
 }
@@ -79,7 +78,7 @@
 		border-radius: 50%;
 		object-fit: cover;
 		position: fixed;
-		margin-top: 35px;
+		margin-top: 70px;
 		
 	}
 	.contents > p {
@@ -108,7 +107,7 @@
 		border-radius: 50%;
 		object-fit: cover;
 		position: fixed;
-		margin-top: 50px;
+		margin-top: 80px;
 		
 	}
 	.contents > p {
