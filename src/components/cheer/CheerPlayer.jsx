@@ -6,30 +6,39 @@ import { songsUrl } from './songs';
 
 function CheerPlayer() {
 	const [isPlaying, setIsPlaying] = useState(false);
-	const [song, setSong] = useState(new Audio(songsUrl[0]));
+	const [song, setSong] = useState(new Audio(songsUrl[Math.floor(Math.random() * 9)]));
 
 	const nextClick = () => {
-		setSong(new Audio(songsUrl[Math.floor(Math.random() * 9)]));
-		song.play()
-	};
-	const onPlayPauseClick = () => {
 		if (isPlaying) {
-			song.pause();
-		} else {
-			song.play();
+			setSong(null);
 		}
-		setIsPlaying(!isPlaying);
+		setSong(new Audio(songsUrl[Math.floor(Math.random() * 9)]));
+		onPlay(song);
+	};
+	const onPlay = (music) => {
+		music.play();
+		setIsPlaying(true);
+	};
+	const onPause = (music) => {
+		music.pause();
+		setIsPlaying(false);
 	};
 
 	useEffect(() => {
-		setIsPlaying(false)
-	}, [song])
+		setSong(song)
+	}, [song, nextClick]);
 	return (
 		<>
 			{/* <ReactAudioPlayer url={} volume={0.05} playing={true} controls/> */}
-			<button style={{ display: 'inline-block', width: '50%', color: 'black' }} onClick={onPlayPauseClick}>
-				{isPlaying ? 'Pause' : 'Cheer Me Up'}
-			</button>
+			{isPlaying ? (
+				<button style={{ display: 'inline-block', width: '50%', color: 'black' }} onClick={() => onPause(song)}>
+					Pause
+				</button>
+			) : (
+				<button style={{ display: 'inline-block', width: '50%', color: 'black' }} onClick={() => onPlay(song)}>
+					Play
+				</button>
+			)}
 			<button onClick={nextClick} style={{ display: 'inline-block', width: '50%', color: 'black' }}>
 				Next
 			</button>
