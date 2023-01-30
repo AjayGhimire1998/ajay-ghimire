@@ -7,7 +7,7 @@ import { songsUrl } from './songs';
 
 function CheerPlayer() {
 	const [isPlaying, setIsPlaying] = useState(false);
-	const [trackIndex, setTrackIndex] = useState(Math.floor(Math.random() * 9));
+	const [trackIndex, setTrackIndex] = useState(0);
 
 	const songRef = useRef(new Audio(songsUrl[trackIndex]));
 	const intervalRef = useRef();
@@ -24,6 +24,7 @@ function CheerPlayer() {
 	useEffect(() => {
 		if (isPlaying) {
 			songRef.current.play();
+			songRef.current.volume = 0.5;
 		} else {
 			songRef.current.pause();
 		}
@@ -40,6 +41,7 @@ function CheerPlayer() {
 
 		if (isReady.current) {
 			songRef.current.play();
+			songRef.current.volume = 0.5;
 			setIsPlaying(true);
 		} else {
 			isReady.current = true;
