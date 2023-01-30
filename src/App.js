@@ -53,6 +53,7 @@ function App() {
 			<div className="space"></div>
 			<div className="main">
 				<Logo logo={logo} shadow={shadow} />
+				<br/>
 				<Routes>
 					<Route path="/" element={<Home shadow={shadow} />} />
 					<Route path="/about" element={<About shadow={shadow} play={play} hover={onHover} />} />
@@ -66,7 +67,7 @@ function App() {
 				<br />
 				<br />
 				<br />
-				<CheerPlayer />
+				{/* <CheerPlayer /> */}
 				<div className="footer">
 					<Contact play={play} />
 					<footer>

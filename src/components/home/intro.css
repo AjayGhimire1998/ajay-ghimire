@@ -1,19 +1,33 @@
 .intro-container {
-	width: 580px;
+	width: 400px;
 	text-align: center;
-	background-color: rgb(0, 0, 0);
+	background-color: white;
 	border: 0px solid white;
-	border-radius: 10px;
+	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-top: 5%;
+}
+
+.avatar{
+	margin-top: 10%;
+}
+
+.avatar-image{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	
 }
 
 .intro-container > p {
 	font-size: 1.4vh;
 	filter: contrast(200%);
-	color: #39ff14;
+	color: black;
 	line-height: 1.9;
+	font-family: Futura;
 }
 
 .intro-container > span {
@@ -21,29 +35,34 @@
 	font-style: italic;
 	filter: contrast(200%);
 	line-height: 1.5;
-	color: #39ff14;
+	color: black;
+	font-family: Futura;
 }
 
 .intro-container > div > strong {
+	font-family: Futura;
 	font-size: 2.9vh;
 	filter: contrast(200%);
 	line-height: 1.9;
+	color: black;
 }
 
 .intro-container > span {
   font-size: 2vh;
   font-style: italic;
+ 
 }
 
 .intro-container > span > i {
-	color: #39ff14;
+	color: black;
 	font-size: 2vh;
 	line-height: 1.9;
+	font-family: Futura;
 }
 
 @media screen and (max-width: 760px) {
 	.intro-container {
-		width: 60%;
+		width: 50%;
 		text-align: center;
 	}
 	.intro-container > p {
