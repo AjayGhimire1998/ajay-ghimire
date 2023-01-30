@@ -2,61 +2,67 @@
 	width: 400px;
 	text-align: center;
 	background-color: white;
-	/* border: 0px solid white; */
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: 5%;
+	margin-top: 3%;
 }
 
-.avatar{
+.avatar {
+	height: 100px;
 	padding: 10px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
 }
 
-.avatar-image{
-	height: 120px;
-	width: 120px;
+.avatar-image {
+	border: 4px solid white;
+	height: 150px;
+	width: 150px;
 	border-radius: 50%;
 	object-fit: cover;
-	z-index: 100;
+	position: fixed;
+	margin-top: 30px;
+	
 }
 
-.intro-container > p {
-	font-size: 1.4vh;
+.contents{
+	margin-top: 20%;
+}
+
+.contents > p {
+	font-size: 2vh;
 	filter: contrast(200%);
 	color: black;
-	line-height: 1.9;
 	font-family: Futura;
 }
 
-.intro-container > span {
-	font-size: 2vh;
+.contents > span {
+	font-size: 2.3vh;
 	font-style: italic;
 	filter: contrast(200%);
-	line-height: 1.5;
+	/* line-height: 1.5; */
 	color: black;
 	font-family: Futura;
 }
 
-.intro-container > div > strong {
+.contents > div > strong {
 	font-family: Futura;
-	font-size: 2.9vh;
-	filter: contrast(200%);
-	line-height: 1.9;
+	font-size: 3.5vh;
 	color: black;
 }
 
-.intro-container > span {
-  font-size: 2vh;
-  font-style: italic;
- 
+.contents > span {
+	font-size: 2.3vh;
+	font-style: italic;
 }
 
-.intro-container > span > i {
+.contents > span > i {
 	color: black;
 	font-size: 2vh;
-	line-height: 1.9;
+	/* line-height: 1.9; */
 	font-family: Futura;
 }
 
@@ -65,16 +71,34 @@
 		width: 50%;
 		text-align: center;
 	}
-	.intro-container > p {
+	/* .avatar {
+		height: 100px;
+		padding: 10px;
+		border-radius: 5px;
+		display: flex;
+		justify-content: center;
+	} */
+	
+	.avatar-image {
+		border: 4px solid white;
+		height: 130px;
+		width: 130px;
+		border-radius: 50%;
+		object-fit: cover;
+		position: fixed;
+		margin-top: 35px;
+		
+	}
+	.contents > p {
 		font-size: 1.3vh;
 	}
-	.intro-container > span {
+	.contents > span {
 		font-size: 1.5vh;
 		font-style: italic;
 	}
 
-	.intro-container > div > strong {
-		font-size: 2.5vh;
+	.contents > div > strong {
+		font-size: 2.8vh;
 	}
 }
 
@@ -83,19 +107,30 @@
 		width: 60%;
 		text-align: center;
 	}
-	.intro-container > p {
+
+	.avatar-image {
+		border: 4px solid white;
+		height: 110px;
+		width: 110px;
+		border-radius: 50%;
+		object-fit: cover;
+		position: fixed;
+		margin-top: 50px;
+		
+	}
+	.contents > p {
 		font-size: 0.9vh;
 	}
-	.intro-container > span {
+	.contents > span {
 		font-size: 1.2vh;
 		font-style: italic;
 	}
-  .intro-container > span > i {
-    font-size: 1.2vh;
+	.contents > span > i {
+		font-size: 1.2vh;
 		font-style: italic;
-  }
+	}
 
-	.intro-container > div > strong {
-		font-size: 2vh;
+	.contents > div > strong {
+		font-size: 2.3vh;
 	}
 }
