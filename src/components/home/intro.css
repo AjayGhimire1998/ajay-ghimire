@@ -60,7 +60,7 @@
 
 .contents > span > i {
 	color: black;
-	font-size: 2vh;
+	font-size: 1.8vh;
 	font-family: Futura;
 }
 .contents > span > i > img {
@@ -90,6 +90,9 @@
 	.contents > span {
 		font-size: 1.8vh;
 	}
+	.contents > span > i {
+		font-size: 1.5vh;
+	}
 
 	.contents > div > strong {
 		font-size: 2.8vh;
@@ -115,12 +118,11 @@
 		font-size: 0.9vh;
 	}
 	.contents > span {
-		font-size: 1.2vh;
+		font-size: 1.4vh;
 		font-style: italic;
 	}
 	.contents > span > i {
 		font-size: 1.2vh;
-		font-style: italic;
 	}
 
 	.contents > div > strong {

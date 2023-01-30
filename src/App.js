@@ -67,7 +67,7 @@ function App() {
 				<br />
 				<br />
 				<br />
-				{/* <CheerPlayer /> */}
+				<CheerPlayer />
 				<div className="footer">
 					<Contact play={play} />
 					<footer>

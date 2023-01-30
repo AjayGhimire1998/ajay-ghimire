@@ -1,19 +1,31 @@
-import React, {  useState } from 'react';
-import AudioPlayer from 'react-audio-player';
+import React, { useState } from 'react';
+// import AudioPlayer from 'react-audio-player';
+import ReactAudioPlayer from 'react-player';
 import { songsUrl } from './songs';
 
 function CheerPlayer() {
 	const [isPlaying, setIsPlaying] = useState(false);
+	const [song, setSong] = useState(new Audio(songsUrl[0]));
 
+
+	const nextClick = () => {
+		setSong(new Audio(songsUrl[Math.floor(Math.random() * 9)]));
+	};
 	const onPlayPauseClick = () => {
+		if (isPlaying) {
+			song.pause();
+		} else {
+			song.play();
+		}
 		setIsPlaying(!isPlaying);
 	};
 	return (
 		<>
-			<AudioPlayer src={songsUrl[4]} volume={0.05} onPlay={isPlaying} autoPlay={true}/>
+			{/* <ReactAudioPlayer url={} volume={0.05} playing={true} controls/> */}
 			<button style={{ display: 'inline-block', width: '50%', color: 'black' }} onClick={onPlayPauseClick}>
 				{isPlaying ? 'Pause' : 'Cheer Me Up'}
 			</button>
+			<button onClick={nextClick} >Next</button>
 		</>
 	);
 }
