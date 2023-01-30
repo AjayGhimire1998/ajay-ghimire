@@ -21,7 +21,11 @@ function CheerPlayer() {
 	};
 
 	const onNextClick = () => {
-		setTrackIndex(Math.floor(Math.random() * 9));
+		if (trackIndex < songsUrl.length - 1) {
+			setTrackIndex(trackIndex + 1);
+		} else if (trackIndex === songsUrl.length - 1) {
+			setTrackIndex(0);
+		}
 	};
 
 	const onPlayPauseClick = (value) => {
