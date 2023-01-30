@@ -99,9 +99,11 @@ function AboutMe({ shadow, play, hover }) {
 						onMouseOver={hover}
 						onClick={onPrevClick}
 						disabled={pageCount === 0}
+						
 					>
 						Previous
 					</button>
+
 					<button
 						className="nav-button next"
 						onMouseOver={hover}
