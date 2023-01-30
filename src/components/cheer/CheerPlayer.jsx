@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { useRef } from 'react';
 import { useEffect } from 'react';
-
-import ReactAudioPlayer from 'react-player';
 import { songsUrl } from './songs';
+import { BsPlayCircle, BsPauseCircle } from 'react-icons/bs';
+import { BiShuffle } from 'react-icons/bi';
 
 function CheerPlayer() {
+	const [cheerUp, setCheerUp] = useState(false);
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [trackIndex, setTrackIndex] = useState(0);
 
@@ -13,6 +14,11 @@ function CheerPlayer() {
 	const intervalRef = useRef();
 	const isReady = useRef(false);
 
+
+	const onCheerUpClick = () => {
+		setIsPlaying(true);
+		setCheerUp(true);
+	}
 	const onNextClick = () => {
 		setTrackIndex(Math.floor(Math.random() * 9));
 	};
@@ -49,24 +55,18 @@ function CheerPlayer() {
 	}, [trackIndex]);
 	return (
 		<>
-			{isPlaying ? (
-				<button
-					style={{ display: 'inline-block', width: '50%', color: 'black' }}
-					onClick={() => onPlayPauseClick(false)}
-				>
-					Pause
-				</button>
+			{cheerUp ? (
+				<>
+					{isPlaying ? (
+						<BsPauseCircle onClick={() => onPlayPauseClick(false)} />
+					) : (
+						<BsPlayCircle onClick={() => onPlayPauseClick(true)} />
+					)}
+					<BiShuffle onClick={() => onNextClick()} />
+				</>
 			) : (
-				<button
-					style={{ display: 'inline-block', width: '50%', color: 'black' }}
-					onClick={() => onPlayPauseClick(true)}
-				>
-					Play
-				</button>
+				<button className='cheer-up' onClick={onCheerUpClick}>Cheer Up</button>
 			)}
-			<button onClick={onNextClick} style={{ display: 'inline-block', width: '50%', color: 'black' }}>
-				Next
-			</button>
 		</>
 	);
 }

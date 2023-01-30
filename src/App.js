@@ -13,13 +13,12 @@ import Project from './pages/project/Project';
 import Resume from './pages/resume/Resume';
 import Blog from './pages/blog/Blog';
 import Contact from './components/contact/Contact';
-import { useNavigate } from 'react-router-dom';
 import CheerPlayer from './components/cheer/CheerPlayer';
 
 function App() {
 	const [play] = useSound(click, { volume: 0.1 });
 	const [onHover] = useSound(hover, { volume: 0.1 });
-	// const navigate = useNavigate();
+
 
 	let shadows = useMemo(() => [], []);
 	shadows = ['#80dfff', '#cc6600', '#00ccff', '#cc6600', '#00cc00', '#ffff00', '#ff00ff', '#ff9900'];
