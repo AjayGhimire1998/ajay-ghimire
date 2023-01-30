@@ -64,9 +64,9 @@ function App() {
 				<br />
 				<Navbar play={play} hover={onHover} />
 				<br />
-				<br />
-				<br />
+				<br/>
 				<CheerPlayer />
+				<br/>
 				<div className="footer">
 					<Contact play={play} />
 					<footer>

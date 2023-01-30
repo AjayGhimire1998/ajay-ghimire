@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './cheer.css';
 import { useRef } from 'react';
 import { useEffect } from 'react';
 import { songsUrl } from './songs';
@@ -14,11 +15,11 @@ function CheerPlayer() {
 	const intervalRef = useRef();
 	const isReady = useRef(false);
 
-
 	const onCheerUpClick = () => {
 		setIsPlaying(true);
 		setCheerUp(true);
-	}
+	};
+
 	const onNextClick = () => {
 		setTrackIndex(Math.floor(Math.random() * 9));
 	};
@@ -54,20 +55,26 @@ function CheerPlayer() {
 		}
 	}, [trackIndex]);
 	return (
-		<>
+		<div className="cheer-container">
 			{cheerUp ? (
-				<>
-					{isPlaying ? (
-						<BsPauseCircle onClick={() => onPlayPauseClick(false)} />
-					) : (
-						<BsPlayCircle onClick={() => onPlayPauseClick(true)} />
-					)}
-					<BiShuffle onClick={() => onNextClick()} />
-				</>
+				<div className="player">
+					<div>
+						{isPlaying ? (
+							<BsPauseCircle size={30} onClick={() => onPlayPauseClick(false)} />
+						) : (
+							<BsPlayCircle size={30} onClick={() => onPlayPauseClick(true)} />
+						)}
+					</div>
+					<div>
+						<BiShuffle size={30} onClick={() => onNextClick()} />
+					</div>
+				</div>
 			) : (
-				<button className='cheer-up' onClick={onCheerUpClick}>Cheer Up</button>
+				<p className="cheer-up" onClick={onCheerUpClick}>
+					Click to Cheer Up
+				</p>
 			)}
-		</>
+		</div>
 	);
 }
 

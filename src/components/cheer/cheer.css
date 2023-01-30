@@ -1,0 +1,31 @@
+.cheer-container{
+    display: flex;
+    justify-content: center;
+}
+.player{
+    display: flex;
+    flex-direction: row;
+}
+.player > * {
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(107, 105, 105);
+    border: 0px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.player > *:hover{
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.cheer-up{
+    font-size: 1.2vh;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: black;
+}
+
+.cheer-up:hover{
+    color: #39ff14;
+}
