@@ -1,6 +1,6 @@
 import React from 'react';
 import './about-item.css';
-import { IoIosImages } from 'react-icons/io';
+import { BsImages } from 'react-icons/bs';
 import { CgReadme } from 'react-icons/cg';
 
 function Profile({
@@ -55,7 +55,7 @@ function Profile({
 					<br />
 					{image ? (
 						<div className="preview-button-container">
-							<IoIosImages size="30px" className="preview-button" onClick={onPreviewClick} />
+							<BsImages size="30px" className="preview-button" onClick={onPreviewClick} />
 						</div>
 					) : null}
 				</div>
