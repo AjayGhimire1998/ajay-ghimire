@@ -56,7 +56,7 @@ function Profile({
 					{image ? (
 						<div className="preview-button-container">
 							<svg
-								fill="currentColor"
+								fill="white"
 								viewBox="0 0 16 16"
 								height="30px"
 								width="30px"
