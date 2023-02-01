@@ -58,6 +58,7 @@ function CheerPlayer() {
 			isReady.current = true;
 		}
 	}, [trackIndex]);
+
 	return (
 		<div className="cheer-container">
 			{cheerUp ? (
