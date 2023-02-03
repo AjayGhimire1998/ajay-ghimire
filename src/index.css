@@ -11,8 +11,6 @@ body {
 	background-color: rgb(0, 0, 0) !important;
 	min-height: 100vh;
   overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
 }
 .space {
 	position: fixed;
@@ -69,6 +67,7 @@ body {
 }
 
 .footer {
+  position: relative;
   bottom: 0;
   width: 100%;
 	text-align: center;
