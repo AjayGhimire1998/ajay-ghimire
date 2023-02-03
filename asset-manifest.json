@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ajay-ghimire/static/css/main.d860c70d.css",
-    "main.js": "/ajay-ghimire/static/js/main.9c0147ec.js",
+    "main.css": "/ajay-ghimire/static/css/main.e69ddcf5.css",
+    "main.js": "/ajay-ghimire/static/js/main.ceebba99.js",
     "static/js/845.fe94479c.chunk.js": "/ajay-ghimire/static/js/845.fe94479c.chunk.js",
     "static/js/787.caccb356.chunk.js": "/ajay-ghimire/static/js/787.caccb356.chunk.js",
     "static/media/sweet-home.mp3": "/ajay-ghimire/static/media/sweet-home.41fa62f68287a1599180.mp3",
@@ -13,7 +13,6 @@
     "static/media/jailhouse-rock.mp3": "/ajay-ghimire/static/media/jailhouse-rock.eb51b441a22d8adc7da7.mp3",
     "static/media/hound-dog.mp3": "/ajay-ghimire/static/media/hound-dog.b29e0981f4a1457c31ce.mp3",
     "static/media/ajay1.jpeg": "/ajay-ghimire/static/media/ajay1.b5d5b97177315cdd614f.jpeg",
-    "static/media/background.png": "/ajay-ghimire/static/media/background.5b83d3ca507037840f23.png",
     "static/media/chocho.JPG": "/ajay-ghimire/static/media/chocho.29750590fe20636dab8b.JPG",
     "static/media/academyXi.png": "/ajay-ghimire/static/media/academyXi.b103134480f01f370b60.png",
     "static/media/react-redux-cert.png": "/ajay-ghimire/static/media/react-redux-cert.d83c1d4ea1cea2932d52.png",
@@ -24,18 +23,18 @@
     "static/media/Resume_Ajay_Ghimire.pdf": "/ajay-ghimire/static/media/Resume_Ajay_Ghimire.b2882b23efef965e9830.pdf",
     "static/media/logo2.png": "/ajay-ghimire/static/media/logo2.54f43cbc28034ff02ed2.png",
     "static/media/ajay2.jpeg": "/ajay-ghimire/static/media/ajay2.2405465bcf45520c7dd5.jpeg",
+    "static/media/cover.jpeg": "/ajay-ghimire/static/media/cover.61cfe96eacd8f57fb566.jpeg",
     "static/media/profile.jpeg": "/ajay-ghimire/static/media/profile.12d57907473888320e37.jpeg",
     "static/media/logo.png": "/ajay-ghimire/static/media/logo.ff8cea5461a50d73344d.png",
-    "static/media/pin.png": "/ajay-ghimire/static/media/pin.ce384e2e0eabcc1cd671.png",
     "static/media/hover.mp3": "/ajay-ghimire/static/media/hover.f6990f20ecc0699fc881.mp3",
     "index.html": "/ajay-ghimire/index.html",
-    "main.d860c70d.css.map": "/ajay-ghimire/static/css/main.d860c70d.css.map",
-    "main.9c0147ec.js.map": "/ajay-ghimire/static/js/main.9c0147ec.js.map",
+    "main.e69ddcf5.css.map": "/ajay-ghimire/static/css/main.e69ddcf5.css.map",
+    "main.ceebba99.js.map": "/ajay-ghimire/static/js/main.ceebba99.js.map",
     "845.fe94479c.chunk.js.map": "/ajay-ghimire/static/js/845.fe94479c.chunk.js.map",
     "787.caccb356.chunk.js.map": "/ajay-ghimire/static/js/787.caccb356.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d860c70d.css",
-    "static/js/main.9c0147ec.js"
+    "static/css/main.e69ddcf5.css",
+    "static/js/main.ceebba99.js"
   ]
 }
