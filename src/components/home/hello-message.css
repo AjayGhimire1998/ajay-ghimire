@@ -1,12 +1,13 @@
 .typewriter {
-  font-size: 1.2vh;
+  font-size: 1vh;
   background-color: black;
   display: flex;
   font-family: "Press Start 2P", cursive;
+  margin-top: 5px;
 }
 
 .wave {
-  margin-top: -17px;
+  margin-top: -20px;
   height: 4.5vh;
   width: 4.5vh;
 }
