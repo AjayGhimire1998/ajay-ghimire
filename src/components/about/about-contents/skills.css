@@ -1,20 +1,36 @@
 .skills-container {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+}
+
+.skills-container > h3 > span {
+	font-size: 2vh;
 }
 
 .languages {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.languages > h5 {
-  line-height: 1.7;
-  color: #39ff14;
+.languages > h6 {
+	line-height: 1.7;
+	color: #39ff14;
 }
 
 .icons-container {
-  display: flex;
-  justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+@media screen and (max-width: 760px) {
+	.skills-container > h3 > span {
+		font-size: 1.8vh;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+	.skills-container > h3 > span {
+		font-size: 1.6vh;
+	}
 }
