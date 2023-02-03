@@ -19,7 +19,6 @@ function App() {
 	const [play] = useSound(click, { volume: 0.1 });
 	const [onHover] = useSound(hover, { volume: 0.1 });
 
-
 	let shadows = useMemo(() => [], []);
 	shadows = ['#80dfff', '#cc6600', '#00ccff', '#cc6600', '#00cc00', '#ffff00', '#ff00ff', '#ff9900'];
 	let logos = useMemo(() => [], []);
@@ -52,7 +51,7 @@ function App() {
 			<div className="space"></div>
 			<div className="main">
 				<Logo logo={logo} shadow={shadow} />
-				<br/>
+
 				<Routes>
 					<Route path="/" element={<Home shadow={shadow} play={play} />} />
 					<Route path="/about" element={<About shadow={shadow} play={play} hover={onHover} />} />
@@ -61,12 +60,9 @@ function App() {
 					<Route path="/resume" element={<Resume shadow={shadow} play={play} hover={onHover} />} />
 				</Routes>
 				<br />
-				<br />
 				<Navbar play={play} hover={onHover} />
 				<br />
-				<br/>
 				<CheerPlayer />
-				<br/>
 				<div className="footer">
 					<Contact play={play} />
 					<footer>
