@@ -1,7 +1,7 @@
 import React from 'react';
 import './intro.css';
 import ajay from '../../images/my-pictures/ajay1.jpeg';
-import cover from '../../images/cover.png';
+import cover from '../../images/cover.jpeg';
 import pin from '../../images/my-pictures/pin.png';
 import { useNavigate } from 'react-router-dom';
 function Intro({ shadow, play}) {
