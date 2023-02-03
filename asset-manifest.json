@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ajay-ghimire/static/css/main.e7e78cc8.css",
-    "main.js": "/ajay-ghimire/static/js/main.ceebba99.js",
+    "main.css": "/ajay-ghimire/static/css/main.e73335d5.css",
+    "main.js": "/ajay-ghimire/static/js/main.740face2.js",
     "static/js/845.fe94479c.chunk.js": "/ajay-ghimire/static/js/845.fe94479c.chunk.js",
     "static/js/787.caccb356.chunk.js": "/ajay-ghimire/static/js/787.caccb356.chunk.js",
     "static/media/sweet-home.mp3": "/ajay-ghimire/static/media/sweet-home.41fa62f68287a1599180.mp3",
@@ -28,13 +28,13 @@
     "static/media/logo.png": "/ajay-ghimire/static/media/logo.ff8cea5461a50d73344d.png",
     "static/media/hover.mp3": "/ajay-ghimire/static/media/hover.f6990f20ecc0699fc881.mp3",
     "index.html": "/ajay-ghimire/index.html",
-    "main.e7e78cc8.css.map": "/ajay-ghimire/static/css/main.e7e78cc8.css.map",
-    "main.ceebba99.js.map": "/ajay-ghimire/static/js/main.ceebba99.js.map",
+    "main.e73335d5.css.map": "/ajay-ghimire/static/css/main.e73335d5.css.map",
+    "main.740face2.js.map": "/ajay-ghimire/static/js/main.740face2.js.map",
     "845.fe94479c.chunk.js.map": "/ajay-ghimire/static/js/845.fe94479c.chunk.js.map",
     "787.caccb356.chunk.js.map": "/ajay-ghimire/static/js/787.caccb356.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7e78cc8.css",
-    "static/js/main.ceebba99.js"
+    "static/css/main.e73335d5.css",
+    "static/js/main.740face2.js"
   ]
 }
