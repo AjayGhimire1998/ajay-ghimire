@@ -59,7 +59,7 @@ body {
 	top: 7%;
 	left: 50%;
 	transform: translate(-50%, -7%);
-	margin-top: 3%;
+	/* margin-top: 3%; */
 }
 
 .main > * {
