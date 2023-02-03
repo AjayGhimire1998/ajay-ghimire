@@ -1,7 +1,7 @@
 .intro-container {
 	width: 400px;
 	text-align: center;
-	background-color: white;
+	/* background-color: white; */
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
@@ -35,7 +35,7 @@
 .contents > p {
 	font-size: 1.8vh;
 	filter: contrast(200%);
-	color: black;
+	color: white;
 	font-family: Futura;
 }
 
@@ -43,7 +43,7 @@
 	font-size: 2.3vh;
 	font-style: italic;
 	filter: contrast(200%);
-	color: black;
+	color: white;
 	font-family: Futura;
 }
 
@@ -51,7 +51,7 @@
 	font-family: Futura;
 	font-size: 3.5vh;
 	line-height: 2;
-	color: black;
+	color: white;
 }
 
 .contents > span {
@@ -59,7 +59,7 @@
 }
 
 .contents > span > i {
-	color: black;
+	color: white;
 	font-size: 1.8vh;
 	font-family: Futura;
 }
