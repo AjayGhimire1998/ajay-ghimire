@@ -113,9 +113,9 @@
 	}
 
 	.avatar-image {
-		height: 75px;
-		width: 75px;
-		margin-top: 37px;
+		height: 90px;
+		width: 90px;
+		margin-top: 25px;
 	}
 	.contents > p {
 		font-size: 0.9vh;
