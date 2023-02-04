@@ -4,22 +4,17 @@ import ajay from '../../images/my-pictures/ajay1.jpeg';
 import cover from '../../images/coverr.png';
 import pin from '../../images/my-pictures/pin.png';
 import { useNavigate } from 'react-router-dom';
-function Intro({ shadow, play}) {
+function Intro({ shadow, play }) {
 	const navigate = useNavigate();
 	function goToAbout() {
 		play();
-		navigate('/about')
+		navigate('/about');
 	}
 
 	return (
-		<div className="intro-container" 
-		// style={{ filter: `drop-shadow(3px -3px 5px ${shadow})` }}
-		>
-			<div
-				className="avatar"
-				style={{ backgroundImage: `url(${cover})`, backgroundSize: '100% 100%'}}
-			>
-				<img src={ajay} alt="avatar" className="avatar-image" onClick={goToAbout}/>
+		<div className="intro-container">
+			<div className="avatar" style={{ backgroundImage: `url(${cover})`, backgroundSize: '100% 100%' }}>
+				<img src={ajay} alt="avatar" className="avatar-image" onClick={goToAbout} />
 			</div>
 			<div className="contents">
 				<p>I am</p>
