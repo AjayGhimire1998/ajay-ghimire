@@ -12,7 +12,9 @@ function Intro({ shadow, play}) {
 	}
 
 	return (
-		<div className="intro-container" style={{ filter: `drop-shadow(3px -3px 5px ${shadow})` }}>
+		<div className="intro-container" 
+		// style={{ filter: `drop-shadow(3px -3px 5px ${shadow})` }}
+		>
 			<div
 				className="avatar"
 				style={{ backgroundImage: `url(${cover})`, backgroundSize: '100% 100%'}}
