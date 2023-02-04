@@ -46,9 +46,6 @@ function Profile({
 						<h3>
 							<span style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>{title}</span>
 						</h3>
-						<p>
-							<i>{quote}</i>
-						</p>
 						<p>{desc}</p>
 						<p>{desc2}</p>
 					</div>

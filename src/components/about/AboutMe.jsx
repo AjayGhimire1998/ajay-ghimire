@@ -43,7 +43,6 @@ function AboutMe({ shadow, play, hover }) {
 			title={aboutData[1].title}
 			desc={aboutData[1].desc}
 			desc2={aboutData[1].desc2}
-			quote="“I have gone from slicing sashimis to slicing arrays”"
 			image={aboutData[1].images}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
