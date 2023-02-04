@@ -1,8 +1,7 @@
 .intro-container {
 	width: 400px;
 	text-align: center;
-	/* background-color: black; */
-	/* border: 2px solid white; */
+
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
@@ -16,7 +15,7 @@
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
-	/* border-bottom: 2px solid white; */
+
 	background-size: auto;
 }
 
@@ -33,10 +32,9 @@
 
 .contents {
 	margin-top: 16%;
-
 }
 
-.contents > *{
+.contents > * {
 	background-color: black;
 }
 
@@ -73,7 +71,6 @@
 .contents > span > i > img {
 	height: 15px;
 	width: 15px;
-	
 }
 
 @media screen and (max-width: 760px) {
