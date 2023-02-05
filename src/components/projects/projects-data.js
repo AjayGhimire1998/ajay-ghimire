@@ -1,4 +1,14 @@
-import { DiMongodb, DiReact, DiNodejs, DiRuby, DiFirebase, DiHtml5, DiCss3, DiJavascript1, DiPostgresql } from 'react-icons/di';
+import {
+	DiMongodb,
+	DiReact,
+	DiNodejs,
+	DiRuby,
+	DiFirebase,
+	DiHtml5,
+	DiCss3,
+	DiJavascript1,
+	DiPostgresql,
+} from 'react-icons/di';
 import { SiRubygems, SiRubyonrails } from 'react-icons/si';
 
 import { v4 as uuidv4 } from 'uuid';
@@ -9,10 +19,13 @@ export const videoLinks = [
 		desc: 'A full-stack E-commerce web application built using React for the front end and Rails to develop the server.',
 		desc2: 'It allows users to register as a store who can create products to sell and also allows users to register as a customer who can choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email.',
 		links: {
-			frontEnd: 'https://github.com/AjayGhimire1998/with-love-from-home-frontend',
-			backEnd: 'https://github.com/AjayGhimire1998/with-love-from-home-server',
+			git: 'https://github.com/AjayGhimire1998/with-love-from-home',
 		},
-		tools: [<DiReact size={50} key={uuidv4()} />, <SiRubyonrails size={50} key={uuidv4()} />, <DiPostgresql size={50} key={uuidv4()} />],
+		tools: [
+			<DiReact size={50} key={uuidv4()} />,
+			<SiRubyonrails size={50} key={uuidv4()} />,
+			<DiPostgresql size={50} key={uuidv4()} />,
+		],
 	},
 	{
 		name: 'GoalsToScore',
@@ -32,7 +45,7 @@ export const videoLinks = [
 	{
 		name: 'MemeBook',
 		url: 'https://youtu.be/JTJ3IyiqIqk',
-		desc: 'A react app for viewing, uploading, and creating memes, bulit using Jokes Rapid API, Reddit API and ImgFlip API and Firebase to handle Authentication and storage.',
+		desc: 'A react app for viewing, uploading, and creating memes, built using Jokes Rapid API, Reddit API and ImgFlip API and Firebase to handle Authentication and storage.',
 		desc2: 'Users can register and login using their email and view the memes in the news feed, set up their profile and be able to upload memes of their own and also create memes with the help of templates generated from FLIPImg API and adding texts of their own or automated jokes from Rapid/JOKES API and also download the newly created meme to their local device and upload it back to the feed for others to see.',
 		links: {
 			live: 'https://ajayghimire1998.github.io/memebook/',
@@ -57,7 +70,6 @@ export const videoLinks = [
 		desc: 'A Ruby on Rails app with authentication that allows users to view and upload gaming contents like images and videos as posts and live chat with other users to team up to play video games of their similar choices.',
 		desc2: 'The users can register and login using their email and view the gaming contents posted in the feed, set up their profile and be able to contents of their own, create a category their posts would belong to, and use it to filter the relative contents on that category. They can also team up with others directly through a chat system.',
 		links: {
-			live: 'https://github.com/AjayGhimire1998/Play-Mates',
 			git: 'https://github.com/AjayGhimire1998/Play-Mates',
 		},
 		tools: [<DiRuby size={50} key={uuidv4()} />, <SiRubyonrails size={50} key={uuidv4()} />],
@@ -71,7 +83,10 @@ export const videoLinks = [
 			live: 'https://ajayghimire1998.github.io/Movie-Finder/',
 			git: 'https://github.com/AjayGhimire1998/Movie-Finder',
 		},
-		tools: [<DiJavascript1 size={50} key={uuidv4()} />, <DiHtml5 size={50} key={uuidv4()} />, <DiCss3 size={50} key={uuidv4()} />],
+		tools: [
+			<DiJavascript1 size={50} key={uuidv4()} />,
+			<DiHtml5 size={50} key={uuidv4()} />,
+			<DiCss3 size={50} key={uuidv4()} />,
+		],
 	},
-	
 ];
