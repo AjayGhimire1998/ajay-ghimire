@@ -58,7 +58,7 @@ function Skills({ shadow }) {
 					<POSTGRESSvg />
 				</div>
 			</div>
-			<br/>
+			<br />
 			<div className="languages">
 				<h6>Tools:</h6>
 				<div className="icons-container">
