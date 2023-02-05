@@ -22,14 +22,31 @@
 	justify-content: space-evenly;
 }
 
+.icons-container > *{
+	height: 50px;
+	width: 50px;
+	font-size: 50px;
+}
+
 @media screen and (max-width: 760px) {
 	.skills-container > h3 > span {
 		font-size: 1.8vh;
+	}
+
+	.icons-container > *{
+		height: 40px;
+		width: 40px;
+		font-size: 40px;
 	}
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
 	.skills-container > h3 > span {
 		font-size: 1.6vh;
+	}
+	.icons-container > *{
+		height: 30px;
+		width: 30px;
+		font-size: 40px;
 	}
 }

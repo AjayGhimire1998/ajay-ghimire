@@ -1,8 +1,11 @@
 import React from 'react';
 import './skills.css';
 import {
+	AESvg,
+	CHATGPTSvg,
 	CSSSvg,
 	EXPRESSSvg,
+	GITSvg,
 	HTMLSvg,
 	JAVASvg,
 	JSSvg,
@@ -10,10 +13,12 @@ import {
 	MYSQLSvg,
 	NEXTSvg,
 	POSTGRESSvg,
+	POSTMANSvg,
 	RAILSSvg,
 	REACTSvg,
 	RUBYSvg,
 	SVELTESvg,
+	VSCODESvg,
 } from './devIcons.js';
 
 function Skills({ shadow }) {
@@ -55,11 +60,13 @@ function Skills({ shadow }) {
 			</div>
 			<br/>
 			<div className="languages">
-				<h6>Database:</h6>
+				<h6>Tools:</h6>
 				<div className="icons-container">
-					<MYSQLSvg />
-					<MONGOSvg />
-					<POSTGRESSvg />
+					<VSCODESvg />
+					<GITSvg />
+					<POSTMANSvg />
+					<CHATGPTSvg />
+					<AESvg />
 				</div>
 			</div>
 		</div>
