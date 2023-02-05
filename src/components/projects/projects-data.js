@@ -67,7 +67,7 @@ export const videoLinks = [
 	{
 		name: 'PlayMates',
 		url: 'https://youtu.be/HV8v0qiuvtI',
-		desc: 'A Ruby on Rails app with authentication that allows users to view and upload gaming contents like images and videos as posts and live chat with other users to team up to play video games of their similar choices.',
+		desc: 'A Ruby on Rails app with user authentication that allows users to view and upload gaming contents like images and videos as posts and live chat with other users to team up to play video games of their similar choices.',
 		desc2: 'The users can register and login using their email and view the gaming contents posted in the feed, set up their profile and be able to contents of their own, create a category their posts would belong to, and use it to filter the relative contents on that category. They can also team up with others directly through a chat system.',
 		links: {
 			git: 'https://github.com/AjayGhimire1998/Play-Mates',
