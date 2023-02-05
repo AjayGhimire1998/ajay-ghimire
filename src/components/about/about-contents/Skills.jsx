@@ -2,16 +2,18 @@ import React from 'react';
 import './skills.css';
 import {
 	CSSSvg,
+	EXPRESSSvg,
 	HTMLSvg,
 	JAVASvg,
 	JSSvg,
 	MONGOSvg,
 	MYSQLSvg,
-	NODESvg,
+	NEXTSvg,
 	POSTGRESSvg,
 	RAILSSvg,
 	REACTSvg,
 	RUBYSvg,
+	SVELTESvg,
 } from './devIcons.js';
 
 function Skills({ shadow }) {
@@ -22,8 +24,7 @@ function Skills({ shadow }) {
 			</h3>
 			<br />
 			<div className="languages">
-				<h6>Languages, I can code on:</h6>
-				<br />
+				<h6>Languages:</h6>
 				<div className="icons-container">
 					<HTMLSvg />
 					<CSSSvg />
@@ -33,21 +34,28 @@ function Skills({ shadow }) {
 				</div>
 			</div>
 			<br />
-			<br />
 			<div className="languages">
-				<h6>Frameworks, I am familiar with:</h6>
-				<br />
+				<h6>Frameworks:</h6>
 				<div className="icons-container">
 					<REACTSvg />
-					<NODESvg />
 					<RAILSSvg />
+					<EXPRESSSvg />
+					<NEXTSvg />
+					<SVELTESvg />
 				</div>
 			</div>
 			<br />
-			<br />
 			<div className="languages">
-				<h6>Database, I use:</h6>
-				<br />
+				<h6>Database:</h6>
+				<div className="icons-container">
+					<MYSQLSvg />
+					<MONGOSvg />
+					<POSTGRESSvg />
+				</div>
+			</div>
+			<br/>
+			<div className="languages">
+				<h6>Database:</h6>
 				<div className="icons-container">
 					<MYSQLSvg />
 					<MONGOSvg />
