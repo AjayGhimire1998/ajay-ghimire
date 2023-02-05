@@ -69,6 +69,7 @@ function Skills({ shadow }) {
 					<AESvg />
 				</div>
 			</div>
+			<br />
 		</div>
 	);
 }

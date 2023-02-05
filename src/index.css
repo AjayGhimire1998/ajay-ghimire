@@ -10,7 +10,7 @@ body {
 	margin: 10px;
 	background-color: rgb(0, 0, 0) !important;
 	min-height: 100vh;
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 .space {
 	position: fixed;
@@ -60,16 +60,18 @@ body {
 	left: 50%;
 	transform: translate(-50%, -10%);
 	margin-top: 4%;
+	overflow-x: hidden;
 }
 
 .main > * {
 	width: 900px;
+	overflow-x: hidden;
 }
 
 .footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
+	position: relative;
+	bottom: 0;
+	width: 100%;
 	text-align: center;
 }
 .footer > footer > p {
@@ -84,6 +86,7 @@ body {
 	.main > * {
 		width: 720px;
 		margin-top: 3%;
+		overflow-x: hidden;
 	}
 	.footer > footer > p {
 		font-size: xx-small;
@@ -96,6 +99,7 @@ body {
 	}
 	.main {
 		margin-top: 5%;
+		overflow-x: hidden;
 	}
 	.main > * {
 		width: 420px;
