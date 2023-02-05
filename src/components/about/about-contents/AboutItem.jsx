@@ -1,13 +1,11 @@
 import React from 'react';
 import './about-item.css';
-import { BsImages } from 'react-icons/bs';
 import { CgReadme } from 'react-icons/cg';
 
 function Profile({
 	title,
 	desc,
 	desc2,
-	quote,
 	image,
 	isPreviewOn,
 	onPreviewClick,
