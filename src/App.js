@@ -14,6 +14,7 @@ import Resume from './pages/resume/Resume';
 import Blog from './pages/blog/Blog';
 import Contact from './components/contact/Contact';
 import CheerPlayer from './components/cheer/CheerPlayer';
+import NoMatch from './components/NoMatch';
 
 function App() {
 	const [play] = useSound(click, { volume: 0.1 });
@@ -44,7 +45,7 @@ function App() {
 	useEffect(() => {
 		changeColors();
 		changeLogo();
-	}, []);
+	});
 
 	return (
 		<>
@@ -58,6 +59,7 @@ function App() {
 					<Route path="/projects" element={<Project shadow={shadow} play={play} hover={onHover} />} />
 					<Route path="/blogs" element={<Blog shadow={shadow} />} />
 					<Route path="/resume" element={<Resume shadow={shadow} play={play} hover={onHover} />} />
+					<Route path="*" element={<NoMatch />} />
 				</Routes>
 				<br />
 				<Navbar play={play} hover={onHover} />
