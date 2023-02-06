@@ -5,9 +5,8 @@
 	font-family: 'Press Start 2P', cursive;
 }
 body {
-	height: 100%;
 	width: 100%;
-	margin: 10px;
+	/* margin: 10px; */
 	background-color: rgb(0, 0, 0) !important;
 	min-height: 100vh;
 	overflow-x: hidden;
@@ -20,6 +19,7 @@ body {
 	width: 1px;
 	background-color: #fff;
 	border-radius: 50%;
+	z-index: -1;
 	box-shadow: 43vw -10vh 0px 3px #fff, -23vw -5vh 3px 3px #fff, 22vw -48vh 2px 0px #fff, 1vw 28vh 2px 1px #fff,
 		8vw -33vh 2px 3px #fff, 8vw -3vh 1px 1px #fff, -23vw -47vh 0px 1px #fff, 16vw -21vh 1px 2px #fff,
 		-46vw -2vh 3px 0px #fff, 25vw -43vh 3px 1px #fff, -6vw -13vh 1px 0px #fff, 27vw -40vh 3px 0px #fff,
@@ -55,23 +55,26 @@ body {
 }
 
 .main {
-	position: absolute;
+	/* position: absolute;
 	top: 10%;
 	left: 50%;
-	transform: translate(-50%, -10%);
+	transform: translate(-50%, -10%); */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	margin-top: 4%;
 	overflow-x: hidden;
 }
 
 .main > * {
-	width: 900px;
-	overflow-x: hidden;
+	/* width: 900px; */
+	width: auto;
 }
 
 .footer {
 	position: relative;
 	bottom: 0;
-	width: 100%;
+	width: auto;
 	text-align: center;
 }
 .footer > footer > p {
@@ -84,9 +87,8 @@ body {
 		overflow-x: hidden;
 	}
 	.main > * {
-		width: 720px;
-		margin-top: 3%;
-		overflow-x: hidden;
+		width: auto;
+		/* margin-top: 3%; */
 	}
 	.footer > footer > p {
 		font-size: xx-small;
@@ -98,11 +100,10 @@ body {
 		overflow-x: hidden;
 	}
 	.main {
-		margin-top: 5%;
-		overflow-x: hidden;
+		/* margin-top: 5%; */
 	}
 	.main > * {
-		width: 420px;
+		width: auto;
 	}
 	.footer > footer > p {
 		font-size: xx-small;

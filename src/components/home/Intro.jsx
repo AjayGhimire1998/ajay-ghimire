@@ -4,7 +4,7 @@ import ajay from '../../images/my-pictures/ajay1.jpeg';
 import cover from '../../images/coverr.png';
 import pin from '../../images/my-pictures/pin.png';
 import { useNavigate } from 'react-router-dom';
-function Intro({ shadow, play }) {
+function Intro({ play }) {
 	const navigate = useNavigate();
 	function goToAbout() {
 		play();

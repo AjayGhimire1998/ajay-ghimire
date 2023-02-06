@@ -1,7 +1,6 @@
 .intro-container {
 	width: 400px;
 	text-align: center;
-
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
@@ -15,7 +14,6 @@
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
-
 	background-size: auto;
 }
 
@@ -25,13 +23,12 @@
 	width: 130px;
 	border-radius: 50%;
 	object-fit: cover;
-	position: fixed;
 	margin-top: 42px;
 	cursor: pointer;
 }
 
 .contents {
-	margin-top: 16%;
+	margin-top: 19%;
 }
 
 .contents > * {
