@@ -25,7 +25,7 @@ function Projects({ shadow, hover, play }) {
 	// });
 
 	const projects = videoLinks.map((project) => {
-		return <ProjectItem project={project} />;
+		return <ProjectItem project={project} hover={hover}/>;
 	});
 
 	const onPrevClick = () => {

@@ -60,7 +60,7 @@ export const videoLinks = [
 		name: 'CryptoMania',
 		url: 'https://youtu.be/EYW5ZX8XiWk',
 		videoId: 'EYW5ZX8XiWk',
-		desc: 'A Ruby CLI gem game that simulates investment in historical cryptocurrencies with the aim to double funds and win the game, which runs on Terminal',
+		desc: 'A Ruby CLI gem game that simulates investment in historical cryptocurrencies with the aim to double funds and win the game, which runs on Terminal.',
 		desc2: "It allows players to enter the past dates and invest given initial balance into their favourite crypto currencies, read about the currencies, and checkout in any future date they like to, and the program calculates the total earning at last to finalize a winner. It uses 'Nokogiri' to scrape details about the crypto and a crypto API to fetch rates data.",
 		links: {
 			live: 'https://rubygems.org/search?query=cryptomania',
@@ -72,7 +72,7 @@ export const videoLinks = [
 		name: 'PlayMates',
 		url: 'https://youtu.be/HV8v0qiuvtI',
 		videoId: 'HV8v0qiuvtI',
-		desc: 'A Ruby on Rails gaming platform with user authentication, enabling users to post, share and chat about gaming contents, facilitating team-ups for like-minded players',
+		desc: 'A Ruby on Rails gaming platform with user authentication, enabling users to post, share and chat about gaming contents, facilitating team-ups for like-minded players.',
 		desc2: 'The users can register and login using their email and view the gaming contents posted in the feed, set up their profile and be able to contents of their own, create a category their posts would belong to, and use it to filter the relative contents on that category. They can also team up with others directly through a chat system.',
 		links: {
 			git: 'https://github.com/AjayGhimire1998/Play-Mates',

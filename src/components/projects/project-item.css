@@ -2,12 +2,17 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: top;
-	background-color: rgb(45, 45, 45);
+	background-color: rgb(27, 25, 25);
 
 	height: 380px;
 	width: 300px;
-	margin: 20px;
+	margin: 25px;
 	cursor: pointer;
+}
+
+.project-item-card:hover{
+	position: relative;
+  top: 0.3em;
 }
 
 .video-player {
@@ -19,9 +24,11 @@
 
 .video-player:hover {
 	z-index: 1000;
-	transform: scale(1.4);
+	transform: scale(1.3);
 	background-color: transparent;
-	filter: blur(9px);
+	/* transform: translateY(-5px); */
+  box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.25);
+	
 }
 
 .card-contents {

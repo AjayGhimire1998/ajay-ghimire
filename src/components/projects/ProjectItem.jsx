@@ -1,9 +1,8 @@
 import './project-item.css';
 import ReactPlayer from 'react-player';
 import { useState } from 'react';
-import ajay1 from '../../images/my-pictures/ajay1.jpeg';
 
-function ProjectItem({ project }) {
+function ProjectItem({ project, hover, play }) {
 	const [isPlaying, setIsPlaying] = useState(false);
 
 	return (
@@ -27,7 +26,7 @@ function ProjectItem({ project }) {
 							showsearch: 0,
 							rel: 0,
 							iv_load_policy: 3,
-							end: 10,
+							// end: 10,
 							playlist: project.videoId,
 							loop: 1,
 						},
@@ -37,9 +36,10 @@ function ProjectItem({ project }) {
 				onMouseLeave={() => setIsPlaying(false)}
 			/>
 
-			<div className="card-contents">
+			<div className="card-contents" onMouseOver={() => hover()}>
 				<h4>{project.name}</h4>
 				<span>{project.desc}</span>
+				<br />
 			</div>
 		</div>
 	);
