@@ -66,7 +66,7 @@ function Projects({ shadow, hover, play }) {
 					Next
 				</button>
 			</div> */}
-			{projects}
+			<div className="projects">{projects}</div>
 		</div>
 	);
 }
