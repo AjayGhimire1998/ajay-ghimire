@@ -61,7 +61,7 @@ function App() {
 
 					<Route
 						path="/projects/:name"
-						element={<EachProject shadow={shadow} play={play} hover={hover} />}
+						element={<EachProject shadow={shadow} play={play} hover={onHover} />}
 					/>
 
 					<Route path="/blogs" element={<Blog shadow={shadow} />} />
