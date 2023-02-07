@@ -1,21 +1,27 @@
+import { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import './each-project-item.css';
 import ReactPlayer from 'react-player';
 import AboutItem from '../about/about-contents/AboutItem';
 import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
-import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { videoLinks } from './projects-data';
 
-function EachProjectItem({  shadow, play, hover }) {
-	const [project, setProject] = useState([]);
+function EachProjectItem({ shadow, play, hover }) {
+	const [project, setProject] = useState(videoLinks[0]);
 	const navigate = useNavigate();
+	const { name } = useParams();
+	console.log(name)
 	const onLinkClick = (link) => {
 		play();
 		window.open(link, '_blank');
 	};
 
 	useEffect(() => {
-		
-	}, [])
+		const video = videoLinks[0]
+		setProject(video);
+	}, [name]);
+
+	console.log(project);
 
 	return (
 		<>
