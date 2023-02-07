@@ -58,7 +58,7 @@ function App() {
 					<Route path="/" element={<Home shadow={shadow} play={play} />} />
 					<Route path="/about" element={<About shadow={shadow} play={play} hover={onHover} />} />
 					<Route path="/projects" element={<Project shadow={shadow} play={play} hover={onHover} />} />
-					<Route path="/projects/:name" element={<EachProjectItem shadow={shadow} play={play} hover={onHover} />} />
+					<Route path="/projects/:name" element={<EachProjectItem />} />
 					<Route path="/blogs" element={<Blog shadow={shadow} />} />
 					<Route path="/resume" element={<Resume shadow={shadow} play={play} hover={onHover} />} />
 					<Route path="*" element={<NoMatch />} />

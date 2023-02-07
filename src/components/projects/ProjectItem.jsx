@@ -1,9 +1,11 @@
 import './project-item.css';
 import ReactPlayer from 'react-player';
 import { useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 
 function ProjectItem({ project, hover, play }) {
 	const [isPlaying, setIsPlaying] = useState(false);
+	const navigate = useNavigate();
 
 	return (
 		<div className="project-item-card">
@@ -26,7 +28,7 @@ function ProjectItem({ project, hover, play }) {
 							showsearch: 0,
 							rel: 0,
 							iv_load_policy: 3,
-							// end: 10,
+							end: 10,
 							playlist: project.videoId,
 							loop: 1,
 						},
@@ -35,12 +37,13 @@ function ProjectItem({ project, hover, play }) {
 				onMouseEnter={() => setIsPlaying(true)}
 				onMouseLeave={() => setIsPlaying(false)}
 			/>
-
-			<div className="card-contents" onMouseOver={() => hover()}>
-				<h4>{project.name}</h4>
-				<span>{project.desc}</span>
-				<br />
-			</div>
+			<Link to={`/projects/${project.name}`} style={{ textDecoration: 'none' }}>
+				<div className="card-contents" onMouseOver={hover} onClick={play}>
+					<h4 style={{ textDecoration: 'underline' }}>{project.name}</h4>
+					<span>{project.desc}</span>
+					<br />
+				</div>
+			</Link>
 		</div>
 	);
 }

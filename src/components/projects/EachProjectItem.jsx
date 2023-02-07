@@ -2,12 +2,20 @@ import './each-project-item.css';
 import ReactPlayer from 'react-player';
 import AboutItem from '../about/about-contents/AboutItem';
 import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
+import { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
-function EachProjectItem({ project, shadow, play, hover }) {
+function EachProjectItem({  shadow, play, hover }) {
+	const [project, setProject] = useState([]);
+	const navigate = useNavigate();
 	const onLinkClick = (link) => {
 		play();
 		window.open(link, '_blank');
 	};
+
+	useEffect(() => {
+		
+	}, [])
 
 	return (
 		<>
