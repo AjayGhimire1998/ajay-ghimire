@@ -1,26 +1,31 @@
 import { useState } from 'react';
 import './projects.css';
 import { videoLinks } from './projects-data';
-import ProjectItem from './ProjectItem';
+import EachProjectItem from './EachProjectItem';
 import { useEffect } from 'react';
+import ProjectItem from './ProjectItem';
 
 function Projects({ shadow, hover, play }) {
 	const [pageCount, setPageCount] = useState(0);
 
-	const allProjects = videoLinks.map((item) => {
-		return (
-			<ProjectItem
-				shadow={shadow}
-				name={item.name}
-				url={item.url}
-				desc={item.desc}
-				desc2={item.desc2}
-				links={item.links}
-				tools={item.tools}
-				play={play}
-				hover={hover}
-			/>
-		);
+	// const allProjects = videoLinks.map((item) => {
+	// 	return (
+	// 		<EachProjectItem
+	// 			shadow={shadow}
+	// 			name={item.name}
+	// 			url={item.url}
+	// 			desc={item.desc}
+	// 			desc2={item.desc2}
+	// 			links={item.links}
+	// 			tools={item.tools}
+	// 			play={play}
+	// 			hover={hover}
+	// 		/>
+	// 	);
+	// });
+
+	const projects = videoLinks.map((project) => {
+		return <ProjectItem project={project} />;
 	});
 
 	const onPrevClick = () => {
@@ -40,7 +45,7 @@ function Projects({ shadow, hover, play }) {
 	}, []);
 	return (
 		<div className="projects-container">
-			{allProjects[pageCount]}
+			{/* {allProjects[pageCount]}
 			<br />
 			<br />
 			<div className="about-buttons">
@@ -60,7 +65,8 @@ function Projects({ shadow, hover, play }) {
 				>
 					Next
 				</button>
-			</div>
+			</div> */}
+			{projects}
 		</div>
 	);
 }
