@@ -15,7 +15,7 @@ import Blog from './pages/blog/Blog';
 import Contact from './components/contact/Contact';
 import CheerPlayer from './components/cheer/CheerPlayer';
 import NoMatch from './components/NoMatch';
-import EachProjectItem from './components/projects/EachProjectItem';
+import EachProject from './pages/project/EachProject';
 
 function App() {
 	const [play] = useSound(click, { volume: 0.1 });
@@ -58,7 +58,12 @@ function App() {
 					<Route path="/" element={<Home shadow={shadow} play={play} />} />
 					<Route path="/about" element={<About shadow={shadow} play={play} hover={onHover} />} />
 					<Route path="/projects" element={<Project shadow={shadow} play={play} hover={onHover} />} />
-					<Route path="/projects/:name" element={<EachProjectItem />} />
+
+					<Route
+						path="/projects/:name"
+						element={<EachProject shadow={shadow} play={play} hover={hover} />}
+					/>
+
 					<Route path="/blogs" element={<Blog shadow={shadow} />} />
 					<Route path="/resume" element={<Resume shadow={shadow} play={play} hover={onHover} />} />
 					<Route path="*" element={<NoMatch />} />

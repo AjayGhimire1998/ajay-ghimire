@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 700px;
 }
 
@@ -12,6 +13,7 @@
 .project-video {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .links {
   display: flex;
@@ -41,11 +43,25 @@
 	.project-item-container > h3 > span {
 		font-size: 1.8vh;
 	}
+  .project-item-container {
+    width: 70%;
+  }
+  .project-video {
+    /* width: 70%; */
+  }
+
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
 	.project-item-container > h3 > span {
 		font-size: 1.6vh;
 	}
+  .project-item-container {
+    width: 80%;
+  }
+  .project-video {
+    /* width: 80%; */
+  }
 }
+
 
