@@ -7,19 +7,19 @@ import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
 import { videoLinks } from './projects-data';
 
 function EachProjectItem({ shadow, play, hover }) {
-	const [project, setProject] = useState(videoLinks[0]);
-	const navigate = useNavigate();
 	const { name } = useParams();
-	console.log(name)
+	const [project, setProject] = useState(videoLinks.find((vid) => vid.name === name));
+	const navigate = useNavigate();
+
+	console.log(name);
 	const onLinkClick = (link) => {
 		play();
 		window.open(link, '_blank');
 	};
 
 	useEffect(() => {
-		const video = videoLinks[0]
-		setProject(video);
-	}, [name]);
+		setProject(videoLinks.find((vid) => vid.name === name))
+	}, [name])
 
 	console.log(project);
 

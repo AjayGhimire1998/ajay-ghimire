@@ -5,8 +5,6 @@ import { useNavigate, Link } from 'react-router-dom';
 
 function ProjectItem({ project, hover, play }) {
 	const [isPlaying, setIsPlaying] = useState(false);
-	const navigate = useNavigate();
-
 	return (
 		<div className="project-item-card">
 			<ReactPlayer
