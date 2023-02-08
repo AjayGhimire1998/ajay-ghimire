@@ -57,9 +57,9 @@ function EachProjectItem({ hover }) {
 				<h5 style={{ textAlign: 'center' }}>Tools Used:</h5>
 				{project.tools.map((lan) => lan)}
 			</div>
-			{/* <br />
 			<br />
-			<div className="about-buttons">
+			<br />
+			<div className="about-buttons" style={{width: '100%'}}>
 				<button
 					className="nav-button previous"
 					onMouseOver={hover}
@@ -76,7 +76,7 @@ function EachProjectItem({ hover }) {
 				>
 					Next
 				</button>
-			</div> */}
+			</div>
 		</div>
 	);
 }
