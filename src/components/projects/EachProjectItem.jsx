@@ -30,9 +30,8 @@ function EachProjectItem({ hover, play }) {
 
 	useEffect(() => {
 		setProject(videoLinks.find((vid) => vid.name === name));
-		document.body.scrollTop = 0; 
+		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;
-
 	}, [name]);
 
 	console.log(indexOfProject);
@@ -75,7 +74,6 @@ function EachProjectItem({ hover, play }) {
 				{project.tools.map((lan) => lan)}
 			</div>
 			<br />
-			<br />
 			<div className="about-buttons" style={{ width: '100%' }}>
 				<button
 					className="nav-button previous"
@@ -94,6 +92,7 @@ function EachProjectItem({ hover, play }) {
 					Next
 				</button>
 			</div>
+			<br />
 		</div>
 	);
 }
