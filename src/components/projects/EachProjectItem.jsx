@@ -7,9 +7,9 @@ import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
 import { videoLinks } from './projects-data';
 
 function EachProjectItem({ hover, play }) {
+	const navigate = useNavigate();
 	const { name } = useParams();
 	const [project, setProject] = useState(videoLinks.find((vid) => vid.name === name));
-	const navigate = useNavigate();
 	const [indexOfProject, setIndexOfProject] = useState(videoLinks.indexOf(project));
 
 	const onLinkClick = (link) => {
@@ -18,22 +18,24 @@ function EachProjectItem({ hover, play }) {
 
 	const onPrevClick = () => {
 		play();
-		setIndexOfProject(indexOfProject - 1)
-		navigate(`/projects/${videoLinks[indexOfProject].name}`);
+		setIndexOfProject(indexOfProject - 1);
+		navigate(`/projects/${videoLinks[indexOfProject - 1].name}`);
 	};
 
 	const onNextClick = () => {
 		play();
-		setIndexOfProject(indexOfProject + 1)
-		navigate(`/projects/${videoLinks[indexOfProject].name}`);
+		setIndexOfProject(indexOfProject + 1);
+		navigate(`/projects/${videoLinks[indexOfProject + 1].name}`);
 	};
 
 	useEffect(() => {
 		setProject(videoLinks.find((vid) => vid.name === name));
-		setIndexOfProject(videoLinks.indexOf(project))
+		document.body.scrollTop = 0; 
+		document.documentElement.scrollTop = 0;
+
 	}, [name]);
 
-
+	console.log(indexOfProject);
 	return (
 		<div className="project-item-container">
 			<br />
