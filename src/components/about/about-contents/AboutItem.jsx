@@ -35,7 +35,7 @@ function Profile({
 					</div>
 					<br />
 					<div className="preview-reverse-container">
-						<CgReadme size="30px" className="preview-button" onClick={onPreviewClick} />
+						<CgReadme size="25px" className="preview-button" onClick={onPreviewClick} />
 					</div>
 				</div>
 			) : (
@@ -53,8 +53,8 @@ function Profile({
 							<svg
 								fill="white"
 								viewBox="0 0 16 16"
-								height="30px"
-								width="30px"
+								height="25px"
+								width="25px"
 								className="preview-button"
 								onClick={onPreviewClick}
 							>
