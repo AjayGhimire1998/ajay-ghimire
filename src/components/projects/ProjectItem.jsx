@@ -1,7 +1,7 @@
 import './project-item.css';
 import ReactPlayer from 'react-player';
 import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function ProjectItem({ project, hover, play }) {
 	const [isPlaying, setIsPlaying] = useState(false);

@@ -34,7 +34,6 @@ function EachProjectItem({ hover, play }) {
 		document.documentElement.scrollTop = 0;
 	}, [name]);
 
-	console.log(indexOfProject);
 	return (
 		<div className="project-item-container">
 			<br />

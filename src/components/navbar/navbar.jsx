@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { videoLinks } from '../projects/projects-data';
 
 import './navbar.css';
 function Navbar({ play, hover }) {
