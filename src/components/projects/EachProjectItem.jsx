@@ -6,18 +6,33 @@ import AboutItem from '../about/about-contents/AboutItem';
 import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
 import { videoLinks } from './projects-data';
 
-function EachProjectItem({ hover }) {
+function EachProjectItem({ hover, play }) {
 	const { name } = useParams();
 	const [project, setProject] = useState(videoLinks.find((vid) => vid.name === name));
 	const navigate = useNavigate();
+	const [indexOfProject, setIndexOfProject] = useState(videoLinks.indexOf(project));
 
 	const onLinkClick = (link) => {
 		window.open(link, '_blank');
 	};
 
+	const onPrevClick = () => {
+		play();
+		setIndexOfProject(indexOfProject - 1)
+		navigate(`/projects/${videoLinks[indexOfProject].name}`);
+	};
+
+	const onNextClick = () => {
+		play();
+		setIndexOfProject(indexOfProject + 1)
+		navigate(`/projects/${videoLinks[indexOfProject].name}`);
+	};
+
 	useEffect(() => {
 		setProject(videoLinks.find((vid) => vid.name === name));
+		setIndexOfProject(videoLinks.indexOf(project))
 	}, [name]);
+
 
 	return (
 		<div className="project-item-container">
@@ -59,20 +74,20 @@ function EachProjectItem({ hover }) {
 			</div>
 			<br />
 			<br />
-			<div className="about-buttons" style={{width: '100%'}}>
+			<div className="about-buttons" style={{ width: '100%' }}>
 				<button
 					className="nav-button previous"
 					onMouseOver={hover}
-					// onClick={onPrevClick}
-					// disabled={pageCount === 0}
+					onClick={onPrevClick}
+					disabled={indexOfProject === 0}
 				>
 					Previous
 				</button>
 				<button
 					className="nav-button next"
 					onMouseOver={hover}
-					// onClick={onNextClick}
-					// disabled={pageCount === allProjects.length - 1}
+					onClick={onNextClick}
+					disabled={indexOfProject === videoLinks.length - 1}
 				>
 					Next
 				</button>

@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import ProjectItem from './ProjectItem';
 
 function Projects({ shadow, hover, play }) {
-	const [pageCount, setPageCount] = useState(0);
+	// const [pageCount, setPageCount] = useState(0);
 
 	// const allProjects = videoLinks.map((item) => {
 	// 	return (
@@ -28,21 +28,21 @@ function Projects({ shadow, hover, play }) {
 		return <ProjectItem project={project} hover={hover} play={play}/>;
 	});
 
-	const onPrevClick = () => {
-		play();
-		setPageCount(pageCount - 1);
-		localStorage.setItem('projects_page_count', JSON.stringify(pageCount - 1));
-	};
+	// const onPrevClick = () => {
+	// 	play();
+	// 	setPageCount(pageCount - 1);
+	// 	localStorage.setItem('projects_page_count', JSON.stringify(pageCount - 1));
+	// };
 
-	const onNextClick = () => {
-		play();
-		setPageCount(pageCount + 1);
-		localStorage.setItem('projects_page_count', JSON.stringify(pageCount + 1));
-	};
+	// const onNextClick = () => {
+	// 	play();
+	// 	setPageCount(pageCount + 1);
+	// 	localStorage.setItem('projects_page_count', JSON.stringify(pageCount + 1));
+	// };
 
-	useEffect(() => {
-		setPageCount(JSON.parse(localStorage.getItem('projects_page_count')) || 0);
-	}, []);
+	// useEffect(() => {
+	// 	setPageCount(JSON.parse(localStorage.getItem('projects_page_count')) || 0);
+	// }, []);
 	return (
 		<div className="projects-container">
 			{/* {allProjects[pageCount]}
