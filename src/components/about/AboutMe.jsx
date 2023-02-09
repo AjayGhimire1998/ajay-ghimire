@@ -5,6 +5,7 @@ import AboutItem from './about-contents/AboutItem';
 import FromTo from './about-contents/FromTo';
 import { edu, exp } from './about-contents/eduExp';
 import Skills from './about-contents/Skills';
+import { Tooltip } from 'react-tooltip';
 
 function AboutMe({ shadow, play, hover }) {
 	const [pageCount, setPageCount] = useState(0);
@@ -87,6 +88,12 @@ function AboutMe({ shadow, play, hover }) {
 		setPageCount(JSON.parse(localStorage.getItem('about_page_count')) || 0);
 	}, []);
 
+	const toolTipStyle = {
+		height: '10px',
+		width: 'auto',
+		fontSize: '10px',
+	};
+
 	return (
 		<>
 			<div className="about-container">
@@ -95,22 +102,33 @@ function AboutMe({ shadow, play, hover }) {
 				<div className="about-buttons">
 					<button
 						className="nav-button previous"
+						id="prevAbout"
+						data-tooltip-content={
+							aboutData[pageCount - 1]?.title || (pageCount === 4 ? 'Technical Skills' : '')
+						}
+						data-tooltip-place="bottom"
 						onMouseOver={hover}
 						onClick={onPrevClick}
 						disabled={pageCount === 0}
-						
 					>
 						Previous
 					</button>
-
+					<Tooltip anchorId="prevAbout" style={toolTipStyle} />
 					<button
 						className="nav-button next"
+						id="nextAbout"
+						data-tooltip-content={
+							aboutData[pageCount + 1]?.title ||
+							(pageCount === 2 ? 'Technical Skills' : pageCount === 3 ? 'Timeline' : '')
+						}
+						data-tooltip-place="bottom"
 						onMouseOver={hover}
 						onClick={onNextClick}
 						disabled={pageCount === pages.length - 1}
 					>
 						Next
 					</button>
+					<Tooltip anchorId="nextAbout" style={toolTipStyle} />
 				</div>
 			</div>
 		</>
