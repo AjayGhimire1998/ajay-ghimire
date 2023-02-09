@@ -20,6 +20,7 @@ import {
 	SVELTESvg,
 	VSCODESvg,
 } from './devIcons.js';
+import { ToolTips } from './ToolTip';
 
 function Skills({ shadow }) {
 	return (
@@ -31,7 +32,7 @@ function Skills({ shadow }) {
 			<div className="languages">
 				<h6>Languages:</h6>
 				<div className="icons-container">
-					<HTMLSvg />
+					<HTMLSvg onMouseOver={() =><ToolTips name="HTML" />} />
 					<CSSSvg />
 					<JSSvg />
 					<RUBYSvg />
@@ -61,7 +62,7 @@ function Skills({ shadow }) {
 			<br />
 			<div className="languages">
 				<h6>Tools:</h6>
-				<div className="icons-container">
+				<div className="icons-container">~
 					<VSCODESvg />
 					<GITSvg />
 					<POSTMANSvg />

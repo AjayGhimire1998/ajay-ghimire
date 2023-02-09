@@ -2,6 +2,7 @@ import postman from '../../../images/postman.png';
 import eclipse from '../../../images/eclipse.png';
 import chatgpt from '../../../images/chatgpt.png';
 
+
 export const HTMLSvg = () => {
 	return (
 		<svg viewBox="0 0 128 128">
