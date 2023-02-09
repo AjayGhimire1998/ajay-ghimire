@@ -29,7 +29,7 @@ export const videoLinks = [
 			git: 'https://github.com/AjayGhimire1998/with-love-from-home',
 		},
 		tools: [
-			<div id="REACT" data-tooltip-content="REACT" data-tooltip-place="bottom">
+			<div id="REACT" data-tooltip-content="React" data-tooltip-place="bottom">
 				<DiReact size={50} key={uuidv4()} />
 				<Tooltip anchorId="REACT" style={toolTipStyle} />
 			</div>,
@@ -41,7 +41,6 @@ export const videoLinks = [
 				<DiPostgresql size={50} key={uuidv4()} />
 				<Tooltip anchorId="PostgreSQL" style={toolTipStyle} />
 			</div>,
-			
 		],
 	},
 	{
@@ -55,9 +54,18 @@ export const videoLinks = [
 			git: 'https://github.com/AjayGhimire1998/GoalsToScore/',
 		},
 		tools: [
-			<DiReact size={50} key={uuidv4()} />,
-			<DiNodejs size={50} key={uuidv4()} />,
-			<DiMongodb size={50} key={uuidv4()} />,
+			<div id="REACT" data-tooltip-content="React" data-tooltip-place="bottom">
+				<DiReact size={50} key={uuidv4()} />
+				<Tooltip anchorId="REACT" style={toolTipStyle} />
+			</div>,
+			<div id="Node" data-tooltip-content="Node" data-tooltip-place="bottom">
+				<DiNodejs size={50} key={uuidv4()} />,
+				<Tooltip anchorId="Node" style={toolTipStyle} />
+			</div>,
+			<div id="MongoDB" data-tooltip-content="MongoDB" data-tooltip-place="bottom">
+				<DiMongodb size={50} key={uuidv4()} />,
+				<Tooltip anchorId="MongoDB" style={toolTipStyle} />
+			</div>,
 		],
 	},
 	{
@@ -70,7 +78,16 @@ export const videoLinks = [
 			live: 'https://ajayghimire1998.github.io/memebook/',
 			git: 'https://github.com/AjayGhimire1998/memebook',
 		},
-		tools: [<DiReact size={50} key={uuidv4()} />, <DiFirebase size={50} key={uuidv4()} />],
+		tools: [
+			<div id="REACT" data-tooltip-content="React" data-tooltip-place="bottom">
+				<DiReact size={50} key={uuidv4()} />
+				<Tooltip anchorId="REACT" style={toolTipStyle} />
+			</div>,
+			<div id="Firebase" data-tooltip-content="Firebase" data-tooltip-place="bottom">
+				<DiFirebase size={50} key={uuidv4()} />
+				<Tooltip anchorId="Firebase" style={toolTipStyle} />
+			</div>,
+		],
 	},
 	{
 		name: 'CryptoMania',
@@ -82,7 +99,16 @@ export const videoLinks = [
 			live: 'https://rubygems.org/search?query=cryptomania',
 			git: 'https://github.com/AjayGhimire1998/cryptomania',
 		},
-		tools: [<DiRuby size={50} key={uuidv4()} />, <SiRubygems size={50} key={uuidv4()} />],
+		tools: [
+			<div id="Ruby" data-tooltip-content="Ruby" data-tooltip-place="bottom">
+				<DiRuby size={50} key={uuidv4()} />
+				<Tooltip anchorId="Ruby" style={toolTipStyle} />
+			</div>,
+			<div id="RubyGems" data-tooltip-content="RubyGems" data-tooltip-place="bottom">
+				<SiRubygems size={50} key={uuidv4()} />
+				<Tooltip anchorId="RubyGems" style={toolTipStyle} />
+			</div>,
+		],
 	},
 	{
 		name: 'PlayMates',
@@ -93,7 +119,16 @@ export const videoLinks = [
 		links: {
 			git: 'https://github.com/AjayGhimire1998/Play-Mates',
 		},
-		tools: [<DiRuby size={50} key={uuidv4()} />, <SiRubyonrails size={50} key={uuidv4()} />],
+		tools: [
+			<div id="Ruby" data-tooltip-content="Ruby" data-tooltip-place="bottom">
+				<DiRuby size={50} key={uuidv4()} />
+				<Tooltip anchorId="Ruby" style={toolTipStyle} />
+			</div>,
+			<div id="Rails" data-tooltip-content="Rails" data-tooltip-place="bottom">
+				<SiRubyonrails size={50} key={uuidv4()} />
+				<Tooltip anchorId="Rails" style={toolTipStyle} />
+			</div>,
+		],
 	},
 	{
 		name: 'Movie-Finder',
@@ -106,9 +141,18 @@ export const videoLinks = [
 			git: 'https://github.com/AjayGhimire1998/Movie-Finder',
 		},
 		tools: [
-			<DiJavascript1 size={50} key={uuidv4()} />,
-			<DiHtml5 size={50} key={uuidv4()} />,
-			<DiCss3 size={50} key={uuidv4()} />,
+			<div id="JavaScript" data-tooltip-content="JavaScript" data-tooltip-place="bottom">
+				<DiJavascript1 size={50} key={uuidv4()} />
+				<Tooltip anchorId="JavaScript" style={toolTipStyle} />
+			</div>,
+			<div id="HTML" data-tooltip-content="HTML" data-tooltip-place="bottom">
+				<DiHtml5 size={50} key={uuidv4()} />
+				<Tooltip anchorId="HTML" style={toolTipStyle} />
+			</div>,
+			<div id="CSS" data-tooltip-content="CSS" data-tooltip-place="bottom">
+				<DiCss3 size={50} key={uuidv4()} />
+				<Tooltip anchorId="CSS" style={toolTipStyle} />
+			</div>
 		],
 	},
 ];
