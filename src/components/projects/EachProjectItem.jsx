@@ -68,10 +68,8 @@ function EachProjectItem({ hover, play }) {
 				<AboutItem desc={project.desc} desc2={project.desc2} />
 			</div>
 			<br />
-			<div className="tools-used">
-				<h5 style={{ textAlign: 'center' }}>Tools Used:</h5>
-				{project.tools.map((lan) => lan)}
-			</div>
+			<h5 style={{ textAlign: 'center' }}>Tools Used:</h5>
+			<div className="tools-used">{project.tools.map((lan) => lan)}</div>
 			<br />
 			<div className="about-buttons" style={{ width: '100%' }}>
 				<button

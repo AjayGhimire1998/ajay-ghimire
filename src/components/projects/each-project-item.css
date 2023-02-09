@@ -35,8 +35,14 @@
   top: 0.3em;
 }
 
+.tools-used {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .tools-used > * {
-  margin: 20px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 760px) {

@@ -1,3 +1,4 @@
+import { Tooltip } from 'react-tooltip';
 import {
 	DiMongodb,
 	DiReact,
@@ -10,8 +11,13 @@ import {
 	DiPostgresql,
 } from 'react-icons/di';
 import { SiRubygems, SiRubyonrails } from 'react-icons/si';
-
 import { v4 as uuidv4 } from 'uuid';
+
+const toolTipStyle = {
+	height: '10px',
+	width: 'auto',
+	fontSize: '10px',
+};
 export const videoLinks = [
 	{
 		name: 'WithLoveFromHome',
@@ -23,9 +29,19 @@ export const videoLinks = [
 			git: 'https://github.com/AjayGhimire1998/with-love-from-home',
 		},
 		tools: [
-			<DiReact size={50} key={uuidv4()} />,
-			<SiRubyonrails size={50} key={uuidv4()} />,
-			<DiPostgresql size={50} key={uuidv4()} />,
+			<div id="REACT" data-tooltip-content="REACT" data-tooltip-place="bottom">
+				<DiReact size={50} key={uuidv4()} />
+				<Tooltip anchorId="REACT" style={toolTipStyle} />
+			</div>,
+			<div id="Rails" data-tooltip-content="Rails" data-tooltip-place="bottom">
+				<SiRubyonrails size={50} key={uuidv4()} />
+				<Tooltip anchorId="Rails" style={toolTipStyle} />
+			</div>,
+			<div id="PostgreSQL" data-tooltip-content="PostgreSQL" data-tooltip-place="bottom">
+				<DiPostgresql size={50} key={uuidv4()} />
+				<Tooltip anchorId="PostgreSQL" style={toolTipStyle} />
+			</div>,
+			
 		],
 	},
 	{
