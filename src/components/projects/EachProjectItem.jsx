@@ -5,6 +5,7 @@ import ReactPlayer from 'react-player';
 import AboutItem from '../about/about-contents/AboutItem';
 import { AiOutlineLink, AiOutlineGithub } from 'react-icons/ai';
 import { videoLinks } from './projects-data';
+import { Tooltip } from 'react-tooltip';
 
 function EachProjectItem({ hover, play }) {
 	const navigate = useNavigate();
@@ -33,6 +34,12 @@ function EachProjectItem({ hover, play }) {
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;
 	}, [name]);
+
+	const toolTipStyle = {
+		height: '10px',
+		width: 'auto',
+		fontSize: '10px',
+	};
 
 	return (
 		<div className="project-item-container">
@@ -74,20 +81,28 @@ function EachProjectItem({ hover, play }) {
 			<div className="about-buttons" style={{ width: '100%' }}>
 				<button
 					className="nav-button previous"
+					id="prevProject"
+					data-tooltip-content={videoLinks[indexOfProject - 1]?.name}
+					data-tooltip-place="bottom"
 					onMouseOver={hover}
 					onClick={onPrevClick}
 					disabled={indexOfProject === 0}
 				>
 					Previous
 				</button>
+				<Tooltip anchorId="prevProject" style={toolTipStyle} />
 				<button
 					className="nav-button next"
+					id="nextProject"
+					data-tooltip-content={videoLinks[indexOfProject + 1]?.name}
+					data-tooltip-place="bottom"
 					onMouseOver={hover}
 					onClick={onNextClick}
 					disabled={indexOfProject === videoLinks.length - 1}
 				>
 					Next
 				</button>
+				<Tooltip anchorId="nextProject" style={toolTipStyle} />
 			</div>
 			<br />
 		</div>
