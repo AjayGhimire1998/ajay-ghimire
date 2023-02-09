@@ -35,10 +35,6 @@
 	flex-wrap: wrap;
 }
 
-.icons-container-tools > * {
-	margin-bottom: 8px;
-}
-
 .icons-container-tools > * > img {
 	height: 50px;
 	width: 50px;
