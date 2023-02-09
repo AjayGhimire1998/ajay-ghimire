@@ -1,6 +1,7 @@
 import postman from '../../../images/postman.png';
 import eclipse from '../../../images/eclipse.png';
 import chatgpt from '../../../images/chatgpt.png';
+
 export const HTMLSvg = () => {
 	return (
 		<svg viewBox="0 0 128 128">
@@ -15,6 +16,7 @@ export const HTMLSvg = () => {
 				fill="#fff"
 				d="M63.962 66.978v11.063h13.624L76.302 92.39l-12.34 3.331v11.51l22.682-6.286.166-1.87 2.6-29.127.27-2.97h-2.982zm0-22.395v11.064h26.725l.221-2.487.505-5.608.265-2.969z"
 			></path>
+			<title>HTML</title>
 		</svg>
 	);
 };
