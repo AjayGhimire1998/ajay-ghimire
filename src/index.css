@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('react-tooltip/dist/react-tooltip.css');
 
 * {
 	color: white;
