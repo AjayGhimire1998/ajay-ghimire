@@ -49,13 +49,13 @@ function Skills({ shadow }) {
 						<JSSvg />
 						<Tooltip anchorId="JS" style={toolTipStyle} />
 					</div>
-					<div id="ruby" data-tooltip-content="RUBY" data-tooltip-place="bottom">
+					<div id="ruby" data-tooltip-content="Ruby" data-tooltip-place="bottom">
 						<RUBYSvg />
 						<Tooltip anchorId="ruby" style={toolTipStyle} />
 					</div>
-					<div id="css" data-tooltip-content="CSS" data-tooltip-place="bottom">
+					<div id="JAVA" data-tooltip-content="Java" data-tooltip-place="bottom">
 						<JAVASvg />
-						<Tooltip anchorId="css" style={toolTipStyle} />
+						<Tooltip anchorId="JAVA" style={toolTipStyle} />
 					</div>
 				</div>
 			</div>
@@ -64,27 +64,51 @@ function Skills({ shadow }) {
 			<div className="languages">
 				<h6>Frameworks:</h6>
 				<div className="icons-container">
-					<REACTSvg />
-					<RAILSSvg />
-					<EXPRESSSvg />
-					<NEXTSvg />
-					<SVELTESvg />
+					<div id="REACT" data-tooltip-content="React" data-tooltip-place="bottom">
+						<REACTSvg />
+						<Tooltip anchorId="REACT" style={toolTipStyle} />
+					</div>
+					<div id="RAILS" data-tooltip-content="Rails" data-tooltip-place="bottom">
+						<RAILSSvg />
+						<Tooltip anchorId="RAILS" style={toolTipStyle} />
+					</div>
+					<div id="EXPRESS" data-tooltip-content="Express" data-tooltip-place="bottom">
+						<EXPRESSSvg />
+						<Tooltip anchorId="EXPRESS" style={toolTipStyle} />
+					</div>
+					<div id="NEXT" data-tooltip-content="NEXT" data-tooltip-place="bottom">
+						<NEXTSvg />
+						<Tooltip anchorId="NEXT" style={toolTipStyle} />
+					</div>
+					<div id="SVELTE" data-tooltip-content="Svelte" data-tooltip-place="bottom">
+						<SVELTESvg />
+						<Tooltip anchorId="SVELTE" style={toolTipStyle} />
+					</div>
 				</div>
 			</div>
 			<br />
 			<div className="languages">
 				<h6>Database:</h6>
 				<div className="icons-container">
-					<MYSQLSvg />
-					<MONGOSvg />
-					<POSTGRESSvg />
+					<div id="MySQL" data-tooltip-content="MySQL" data-tooltip-place="bottom">
+						<MYSQLSvg />
+						<Tooltip anchorId="MySQL" style={toolTipStyle} />
+					</div>
+					<div id="MongoDB" data-tooltip-content="MongoDB" data-tooltip-place="bottom">
+						<MONGOSvg />
+						<Tooltip anchorId="MongoDB" style={toolTipStyle} />
+					</div>
+					<div id="PostgreSQL" data-tooltip-content="PostgreSQL" data-tooltip-place="bottom">
+						<POSTGRESSvg />
+						<Tooltip anchorId="PostgreSQL" style={toolTipStyle} />
+					</div>
 				</div>
 			</div>
 			<br />
 			<div className="languages">
 				<h6>Tools:</h6>
 				<div className="icons-container">
-					~
+					
 					<VSCODESvg />
 					<GITSvg />
 					<POSTMANSvg />
