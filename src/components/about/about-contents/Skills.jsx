@@ -4,6 +4,7 @@ import {
 	AESvg,
 	CHATGPTSvg,
 	CSSSvg,
+	ECLIPSESvg,
 	EXPRESSSvg,
 	GITSvg,
 	HTMLSvg,
@@ -107,13 +108,31 @@ function Skills({ shadow }) {
 			<br />
 			<div className="languages">
 				<h6>Tools:</h6>
-				<div className="icons-container">
-					
-					<VSCODESvg />
-					<GITSvg />
-					<POSTMANSvg />
-					<CHATGPTSvg />
-					<AESvg />
+				<div className="icons-container-tools">
+					<div id="VS Code" data-tooltip-content="VS Code" data-tooltip-place="bottom">
+						<VSCODESvg />
+						<Tooltip anchorId="VS Code" style={toolTipStyle} />
+					</div>
+					<div id="Eclipse" data-tooltip-content="Eclipse" data-tooltip-place="bottom">
+						<ECLIPSESvg />
+						<Tooltip anchorId="Eclipse" style={toolTipStyle} />
+					</div>
+					<div id="GIT" data-tooltip-content="GIT" data-tooltip-place="bottom">
+						<GITSvg />
+						<Tooltip anchorId="GIT" style={toolTipStyle} />
+					</div>
+					<div id="Postman" data-tooltip-content="Postman" data-tooltip-place="bottom">
+						<POSTMANSvg />
+						<Tooltip anchorId="Postman" style={toolTipStyle} />
+					</div>
+					<div id="ChatGPT" data-tooltip-content="ChatGPT" data-tooltip-place="bottom">
+						<CHATGPTSvg />
+						<Tooltip anchorId="ChatGPT" style={toolTipStyle} />
+					</div>
+					<div id="AfterEffects" data-tooltip-content="After Effects" data-tooltip-place="bottom">
+						<AESvg />
+						<Tooltip anchorId="AfterEffects" style={toolTipStyle} />
+					</div>
 				</div>
 			</div>
 			<br />

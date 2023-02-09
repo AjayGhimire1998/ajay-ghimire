@@ -1,7 +1,6 @@
 import postman from '../../../images/postman.png';
-import eclipse from '../../../images/eclipse.png';
+import eclipses from '../../../images/eclipses.png';
 import chatgpt from '../../../images/chatgpt.png';
-
 
 export const HTMLSvg = () => {
 	return (
@@ -560,6 +559,7 @@ export const VSCODESvg = () => {
 		<img
 			src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg"
 			alt="vscode"
+			style={{ height: '50px' }}
 		/>
 	);
 };
@@ -586,7 +586,7 @@ export const AESvg = () => {
 };
 
 export const ECLIPSESvg = () => {
-	return <img src={eclipse} alt="eclipse" />;
+	return <img src={eclipses} alt="eclipse" />;
 };
 
 export const CHATGPTSvg = () => {
