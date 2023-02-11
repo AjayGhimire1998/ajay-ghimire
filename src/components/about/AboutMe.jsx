@@ -64,8 +64,8 @@ function AboutMe({ shadow, play, hover }) {
 			onNextImageClick={onNextImageClick}
 			shadow={shadow}
 		/>,
-		<Skills shadow={shadow} />,
-		<FromTo edu={edu} exp={exp} shadow={shadow} />,
+		<Skills/>,
+		<FromTo edu={edu} exp={exp}  />,
 	];
 
 	const onNextClick = () => {

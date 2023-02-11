@@ -23,7 +23,7 @@ import {
 } from './devIcons.js';
 import { Tooltip } from 'react-tooltip';
 
-function Skills({ shadow }) {
+function Skills() {
 	const toolTipStyle = {
 		height: '10px',
 		width: 'auto',
@@ -32,7 +32,7 @@ function Skills({ shadow }) {
 	return (
 		<div className="skills-container">
 			<h3 style={{ textAlign: 'center' }}>
-				<span style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>Technical Skills</span>
+				<span>Technical Skills</span>
 			</h3>
 			<br />
 			<div className="languages">
