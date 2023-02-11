@@ -30,7 +30,7 @@ function Profile({
 									&gt;
 								</span>
 							)}
-							<img src={image[imageCount]} className="preview-image" alt="ajay" />
+							<img src={image[imageCount]} className="preview-image" alt="ajay" loading="lazy" />
 						</div>
 					</div>
 					<br />

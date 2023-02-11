@@ -14,7 +14,7 @@ function Intro({ play }) {
 	return (
 		<div className="intro-container">
 			<div className="avatar" style={{ backgroundImage: `url(${cover})`, backgroundSize: '100% 100%' }}>
-				<img src={ajay} alt="avatar" className="avatar-image" onClick={goToAbout} />
+				<img src={ajay} alt="avatar" className="avatar-image" onClick={goToAbout} loading="lazy"/>
 			</div>
 			<div className="contents">
 				<p>I am</p>
