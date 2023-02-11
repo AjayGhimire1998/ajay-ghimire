@@ -3,7 +3,7 @@ import './blog-item.css';
 
 function BlogItem({ blog }) {
 	return (
-		<div className="blog-item-container">
+		<div className="blog-item-container" onClick={() => window.open(`${blog.url}`, '_blank')}>
 			<h4>{blog.title}</h4>
 			<p>
 				{blog.desc}

@@ -1,6 +1,7 @@
 .blog-item-container {
   background-color: white;
   margin: 10px;
+  cursor: pointer;
 }
 
 .blog-item-container > * {
