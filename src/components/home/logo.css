@@ -1,23 +1,21 @@
 .logo-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .logo {
-  height: 180px;
-  width: 180px;
-  filter: contrast(200%);
+	height: 180px;
+	width: 180px;
+	filter: contrast(200%);
 }
 
 @media screen and (max-width: 760px) {
-  .logo {
-    height: 160px;
-    min-width: 160px;
-  }
+	.logo {
+		height: 180px;
+	}
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
-  .logo {
-    height: 150px;
-    min-width: 150px;
-  }
+	.logo {
+		height: 180px;
+	}
 }
