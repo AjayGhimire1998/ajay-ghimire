@@ -69,8 +69,10 @@ function App() {
 				<br />
 				<Navbar play={play} hover={onHover} />
 				<br />
-				<CheerPlayer />
+				<br />
+				<br />
 				<div className="footer">
+					<CheerPlayer />
 					<Contact play={play} />
 					<footer>
 						<p style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>© 2023 Ajay Ghimire</p>
