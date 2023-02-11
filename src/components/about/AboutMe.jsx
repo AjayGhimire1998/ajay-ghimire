@@ -38,7 +38,7 @@ function AboutMe({ shadow, play, hover }) {
 			imageCount={imageCount}
 			onPrevImageClick={onPrevImageClick}
 			onNextImageClick={onNextImageClick}
-			shadow={shadow}
+			
 		/>,
 		<AboutItem
 			title={aboutData[1].title}
@@ -50,7 +50,7 @@ function AboutMe({ shadow, play, hover }) {
 			imageCount={imageCount}
 			onPrevImageClick={onPrevImageClick}
 			onNextImageClick={onNextImageClick}
-			shadow={shadow}
+			
 		/>,
 		<AboutItem
 			title={aboutData[2].title}
@@ -62,7 +62,7 @@ function AboutMe({ shadow, play, hover }) {
 			imageCount={imageCount}
 			onPrevImageClick={onPrevImageClick}
 			onNextImageClick={onNextImageClick}
-			shadow={shadow}
+			
 		/>,
 		<Skills/>,
 		<FromTo edu={edu} exp={exp}  />,
