@@ -6,6 +6,7 @@
 	height: 180px;
 	width: 180px;
 	filter: contrast(200%);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 760px) {
