@@ -52,7 +52,7 @@ function App() {
 		<>
 			<div className="space"></div>
 			<div className="main">
-				<Logo logo={logo} shadow={shadow} />
+				<Logo logo={logo} shadow={shadow} play={play} />
 
 				<Routes>
 					<Route path="/" element={<Home shadow={shadow} play={play} />} />
