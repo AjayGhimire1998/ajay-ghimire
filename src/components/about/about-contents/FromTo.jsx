@@ -3,64 +3,6 @@ import { HiAcademicCap } from "react-icons/hi";
 import { CgWorkAlt } from "react-icons/cg";
 
 function FromTo({ edu, exp, shadow }) {
-  // const [timelineHeight, setTimelineHeight] = useState(0);
-
-  // const years = [
-  //   "2023",
-  //   "2022",
-  //   "2021",
-  //   "2020",
-  //   "2019",
-  //   "2018",
-  //   "2017",
-  // ];
-  // const months = [
-  //   "Dec",
-  //   "Nov",
-  //   "Oct",
-  //   "Sep",
-  //   "Aug",
-  //   "Jul",
-  //   "Jun",
-  //   "May",
-  //   "Apr",
-  //   "Mar",
-  //   "Feb",
-  //   "Jan",
-  // ];
-  // const marginTopCalc = (item) => {
-    // const eachYearMargin = timelineHeight / years.length;
-    // const eachMonthMargin = eachYearMargin / months.length;
-
-    // const yearIndex = years.indexOf(item?.startTime.slice(4));
-    // const monthIndex = months.indexOf(item?.startTime.slice(0, 3));
-    // console.log("year: " + years[yearIndex]);
-    // console.log("month: " + months[monthIndex]);
-    // let yearMargin = eachYearMargin + eachYearMargin * yearIndex;
-
-    // let monthMargin = eachMonthMargin + eachMonthMargin * monthIndex;
-    // console.log("Year margin: " + yearMargin);
-    // console.log("Month margin: " + monthMargin);
-    // console.log("Total margin: " + (yearMargin + monthMargin));
-
-    // return yearMargin + monthMargin;
-  //   let marginTop;
-  //   if(item.startTime === "Feb 2022"){
-  //     marginTop = "450px";
-  //   }
-
-  //   if(item.startTime === "Feb 2022"){
-  //     marginTop = "450px";
-  //   }
-    
-  //   return marginTop;
-  // };
-
-  // useEffect(() => {
-  //   setTimelineHeight(document.querySelector(".line").offsetHeight);
-  //   console.log(document.querySelector(".line").offsetHeight);
-  // }, []);
-
   return (
     <div className="from-to-container">
       <h3 style={{ textAlign: "center" }}>
