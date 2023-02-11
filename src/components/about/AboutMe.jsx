@@ -7,7 +7,7 @@ import { edu, exp } from './about-contents/eduExp';
 import Skills from './about-contents/Skills';
 import { Tooltip } from 'react-tooltip';
 
-function AboutMe({ shadow, play, hover }) {
+function AboutMe({ play, hover }) {
 	const [pageCount, setPageCount] = useState(0);
 	const [isPreviewOn, setIsPreviewOn] = useState(false);
 	const [imageCount, setImageCount] = useState(0);
