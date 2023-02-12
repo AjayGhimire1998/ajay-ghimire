@@ -1,7 +1,7 @@
 .about-item-container {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	max-width: 100%;
 }
 .about-item {
 	display: flex;
@@ -25,7 +25,6 @@
 .preview-button-container {
 	display: flex;
 	justify-content: center;
-	/* width: 100%; */
 }
 .preview-button {
 	font-size: 1.7vh;
@@ -91,23 +90,24 @@
 }
 
 .lt {
-	position: absolute;
-	top: 48%;
-	left: 9%;
-	transform: translate(-48%, -9%);
+	position: relative;
+	top: 50%;
+	/* left: 20%; */
+	/* transform: translate(-48%, -9%);  */
 	font-size: 3vh;
 	cursor: pointer;
+	background-color: black;
 }
-
 
 .gt {
 	position: absolute;
-	top: 48%;
-	left: 91%;
-	transform: translate(-48%, -91%);
-	margin-top: 21px;
+	top: 50%;
+	/* left: 91%; */
+	/* transform: translate(-48%, -91%); */
+	/* margin-top: 21px; */
 	font-size: 3vh;
 	cursor: pointer;
+	background-color: black;
 }
 
 @media screen and (max-width: 760px) {
@@ -123,22 +123,11 @@
 	}
 
 	.lt {
-		position: absolute;
-		top: 47%;
-		left: 13%;
-		transform: translate(-47%, -13%);
 		font-size: 2.2vh;
-		background-color: black;
 	}
 
 	.gt {
-		position: absolute;
-		top: 47%;
-		left: 87%;
-		transform: translate(-47%, -87%);
-		margin-top: 19px;
 		font-size: 2.2vh;
-		background-color: black;
 	}
 }
 
@@ -155,19 +144,10 @@
 	}
 
 	.lt {
-		position: absolute;
-		top: 45%;
-		left: 8%;
-		transform: translate(-45%, -8%);
 		font-size: 1.5vh;
 	}
 
 	.gt {
-		position: absolute;
-		top: 45%;
-		left: 92%;
-		transform: translate(-45%, -92%);
-		margin-top: 10px;
 		font-size: 1.5vh;
 	}
 }
