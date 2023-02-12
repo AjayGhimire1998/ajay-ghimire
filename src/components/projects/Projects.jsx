@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import './projects.css';
 import { videoLinks } from './projects-data';
-import EachProjectItem from './EachProjectItem';
-import { useEffect } from 'react';
 import ProjectItem from './ProjectItem';
 
 function Projects({ hover, play }) {
