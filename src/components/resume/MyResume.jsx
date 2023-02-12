@@ -1,5 +1,5 @@
 import React from 'react';
-import myResume from '../../images/Ajay_Ghimire_Resume.pdf';
+import myResume from '../../images/Resume_Ajay_Ghimire.pdf';
 import './my-resume.css';
 
 function MyResume({ play, hover }) {
