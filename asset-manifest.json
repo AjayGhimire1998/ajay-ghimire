@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/ajay-ghimire/static/css/main.d97ec8b3.css",
-    "main.js": "/ajay-ghimire/static/js/main.e4a5a67d.js",
+    "main.css": "/ajay-ghimire/static/css/main.2e15d541.css",
+    "main.js": "/ajay-ghimire/static/js/main.0f2bf88b.js",
     "static/js/845.fe94479c.chunk.js": "/ajay-ghimire/static/js/845.fe94479c.chunk.js",
     "static/js/787.caccb356.chunk.js": "/ajay-ghimire/static/js/787.caccb356.chunk.js",
+    "static/media/cover.png": "/ajay-ghimire/static/media/cover.07d5a8a5342a53fb8e51.png",
+    "static/media/Ajay.png": "/ajay-ghimire/static/media/Ajay.3d218fdd8ff571741ce7.png",
     "static/media/sweet-home.mp3": "/ajay-ghimire/static/media/sweet-home.41fa62f68287a1599180.mp3",
+    "static/media/wollies.jpeg": "/ajay-ghimire/static/media/wollies.4c2a63eeede513630223.jpeg",
     "static/media/never-gonna.mp3": "/ajay-ghimire/static/media/never-gonna.746d063d33e8924f88ce.mp3",
     "static/media/i-want-it.mp3": "/ajay-ghimire/static/media/i-want-it.e7f76cff3ddf09d5fa1c.mp3",
     "static/media/should-i.mp3": "/ajay-ghimire/static/media/should-i.e8efa917b2cbbbecf2f2.mp3",
     "static/media/aint-no.mp3": "/ajay-ghimire/static/media/aint-no.5d3444c8eb000edc201a.mp3",
     "static/media/what-a.mp3": "/ajay-ghimire/static/media/what-a.5c9c7af57ce4ce2c13ef.mp3",
+    "static/media/ajay2.png": "/ajay-ghimire/static/media/ajay2.ea4ccbc23f46bbe1b2b3.png",
     "static/media/jailhouse-rock.mp3": "/ajay-ghimire/static/media/jailhouse-rock.eb51b441a22d8adc7da7.mp3",
     "static/media/hound-dog.mp3": "/ajay-ghimire/static/media/hound-dog.b29e0981f4a1457c31ce.mp3",
+    "static/media/profile_pic.png": "/ajay-ghimire/static/media/profile_pic.ae5f96436625825f5f5f.png",
     "static/media/ajay1.jpeg": "/ajay-ghimire/static/media/ajay1.ee9747b067cf15b8f38a.jpeg",
     "static/media/chocho.JPG": "/ajay-ghimire/static/media/chocho.29750590fe20636dab8b.JPG",
     "static/media/academyXi.png": "/ajay-ghimire/static/media/academyXi.b103134480f01f370b60.png",
@@ -20,23 +25,20 @@
     "static/media/responsive-cert.jpg": "/ajay-ghimire/static/media/responsive-cert.278e26511741c2f498a6.jpg",
     "static/media/wave.gif": "/ajay-ghimire/static/media/wave.7ff6edc9f16e187dc258.gif",
     "static/media/Ajay_Ghimire_Resume.pdf": "/ajay-ghimire/static/media/Ajay_Ghimire_Resume.2a9749b8edd39952ff88.pdf",
-    "static/media/coverr.jpg": "/ajay-ghimire/static/media/coverr.2303a25ebc7d22738bd6.jpg",
     "static/media/click.wav": "/ajay-ghimire/static/media/click.2bdd35daaf43e7398fe7.wav",
     "static/media/eclipses.png": "/ajay-ghimire/static/media/eclipses.3896ae3881cbb83af589.png",
     "static/media/postman.png": "/ajay-ghimire/static/media/postman.3281fd39306eed30fbf2.png",
     "static/media/logo2.png": "/ajay-ghimire/static/media/logo2.54f43cbc28034ff02ed2.png",
-    "static/media/ajay2.jpeg": "/ajay-ghimire/static/media/ajay2.2405465bcf45520c7dd5.jpeg",
-    "static/media/profile.jpeg": "/ajay-ghimire/static/media/profile.12d57907473888320e37.jpeg",
     "static/media/logo.png": "/ajay-ghimire/static/media/logo.ff8cea5461a50d73344d.png",
     "static/media/hover.mp3": "/ajay-ghimire/static/media/hover.f6990f20ecc0699fc881.mp3",
     "index.html": "/ajay-ghimire/index.html",
-    "main.d97ec8b3.css.map": "/ajay-ghimire/static/css/main.d97ec8b3.css.map",
-    "main.e4a5a67d.js.map": "/ajay-ghimire/static/js/main.e4a5a67d.js.map",
+    "main.2e15d541.css.map": "/ajay-ghimire/static/css/main.2e15d541.css.map",
+    "main.0f2bf88b.js.map": "/ajay-ghimire/static/js/main.0f2bf88b.js.map",
     "845.fe94479c.chunk.js.map": "/ajay-ghimire/static/js/845.fe94479c.chunk.js.map",
     "787.caccb356.chunk.js.map": "/ajay-ghimire/static/js/787.caccb356.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d97ec8b3.css",
-    "static/js/main.e4a5a67d.js"
+    "static/css/main.2e15d541.css",
+    "static/js/main.0f2bf88b.js"
   ]
 }
