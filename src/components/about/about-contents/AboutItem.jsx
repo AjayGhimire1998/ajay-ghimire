@@ -12,7 +12,6 @@ function Profile({
 	imageCount,
 	onPrevImageClick,
 	onNextImageClick,
-	shadow,
 }) {
 	return (
 		<>
@@ -29,6 +28,8 @@ function Profile({
 							</div>
 							<div>
 								<img src={image[imageCount]} className="preview-image" alt="ajay" loading="lazy" />
+							</div>
+							<div>
 								{(imageCount === 0 || imageCount < image.length - 1) && (
 									<span className="gt " onClick={onNextImageClick}>
 										&gt;
