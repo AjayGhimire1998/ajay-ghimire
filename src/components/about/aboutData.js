@@ -2,7 +2,8 @@ import profile from '../../images/my-pictures/Ajay.png';
 import ajay1 from '../../images/my-pictures/ajay1.jpeg';
 import ajay2 from '../../images/my-pictures/ajay2.png';
 import chocho from '../../images/my-pictures/chocho.JPG';
-import wollies from "../../images/my-pictures/wollies.jpeg"
+import wollies from "../../images/my-pictures/wollies.jpeg";
+import chemist from "../../images/my-pictures/chemist.jpeg";
 import academyXiCert from '../../images/my-pictures/academyXi.png';
 import reactReduxCert from '../../images/my-pictures/react-redux-cert.png';
 import rubyCert from '../../images/my-pictures/ruby-cert.png';
@@ -20,7 +21,7 @@ export const aboutData = [
 		title: 'Professional Evolution',
 		desc: "During my pursuit of a Bachelor's degree in IT, I had the opportunity to work as a kitchen hand at a bustling Japanese restaurant. My dedication to hard work and quick learning abilities, combined with my positive attitude and problem-solving skills, earned me a promotion to Cook within just six months. This experience honed my ability to work effectively under pressure and in fast-paced environments.",
 		desc2: "After leaving the restaurant at the end of 2022, I embarked on a new journey as a Retail Assistant in a pharmacy setting. This role has allowed me to further develop my communication and customer service skills, which are crucial in any industry. In my free time, I like to joke that I'm also a master at counting pills and sorting medication – though I'll leave the actual prescriptions to the pharmacists.",
-		images: [chocho, wollies],
+		images: [chocho, wollies, chemist],
 	},
 	{
 		title: 'Academic Evolution',

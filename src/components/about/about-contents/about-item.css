@@ -1,156 +1,154 @@
 .about-item-container {
-	display: flex;
-	flex-direction: column;
-	max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
 }
 .about-item {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-item > h3 {
-	text-align: center;
-	font-style: bold;
-	font-size: 2vh;
+  text-align: center;
+  font-style: bold;
+  font-size: 2vh;
 }
 
 .about-item > p {
-	display: flex;
-	text-align: center;
-	font-size: 1.5vh;
-	line-height: 1.5;
-	margin: 10px;
-	color: #39ff14;
+  display: flex;
+  text-align: center;
+  font-size: 1.5vh;
+  line-height: 1.5;
+  margin: 10px;
+  color: #39ff14;
 }
 .preview-button-container {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .preview-button {
-	font-size: 1.7vh;
-	text-align: center;
-	display: inline-block;
-	font-weight: bold;
-	color: rgb(0, 0, 0);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	border-radius: 5px;
-	cursor: pointer;
-	text-decoration: none;
+  font-size: 1.7vh;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .preview-button:hover {
-	cursor: pointer;
-	box-shadow: none;
-	position: relative;
-	top: 0.3em;
+  cursor: pointer;
+  box-shadow: none;
+  position: relative;
+  top: 0.3em;
 }
 
 .preview-button > span {
-	color: black;
+  color: black;
 }
 
 .preview-reverse-container {
-	display: flex;
-	justify-content: center;
-	/* width: 100%;
+  display: flex;
+  justify-content: center;
+  /* width: 100%;
 	overflow: hidden; */
 }
 
 .preview-image-container {
-	display: flex;
-	justify-content: center;
-	height: 450px;
-	width: 100%;
-	overflow: hidden;
-	object-fit: fill;
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  object-fit: fill;
 }
 
 .preview-image {
-	animation: preview-image-container 1s;
-	margin-top: 0%;
-	height: auto;
-	width: 100%;
-	object-fit: scale-down;
+  animation: preview-image-container 1s;
+  margin-top: 0%;
+  height: auto;
+  width: 100%;
+  object-fit: scale-down;
 }
 
 @keyframes preview-image-container {
-	from {
-		margin-top: -100%;
-	}
+  from {
+    margin-top: -100%;
+  }
 
-	to {
-		margin-top: 0%;
-	}
+  to {
+    margin-top: 0%;
+  }
 }
 
 .next-image {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .next-image > div > button {
-	color: black;
-	font-size: 0.8vh;
+  color: black;
+  font-size: 0.8vh;
 }
 
 .lt {
-	position: relative;
-	top: 50%;
+  position: relative;
+  top: 50%;
 
-	font-size: 3vh;
-	cursor: pointer;
-	/* background-color: black; */
+  font-size: 3vh;
+  cursor: pointer;
 }
 
 .gt {
-	position: relative;
-	top: 50%;
+  position: relative;
+  top: 50%;
 
-	font-size: 3vh;
-	cursor: pointer;
-	/* background-color: black; */
+  font-size: 3vh;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 760px) {
-	.about-item {
-		text-align: center;
-	}
-	.about-item > h3 {
-		line-height: 1.8;
-		font-size: 1.8vh;
-	}
-	.about-item > p {
-		font-size: 1.3vh;
-	}
+  .about-item {
+    text-align: center;
+  }
+  .about-item > h3 {
+    line-height: 1.8;
+    font-size: 1.8vh;
+  }
+  .about-item > p {
+    font-size: 1.3vh;
+  }
 
-	.lt {
-		font-size: 2.2vh;
-	}
+  .lt {
+    font-size: 2.2vh;
+  }
 
-	.gt {
-		font-size: 2.2vh;
-	}
+  .gt {
+    font-size: 2.2vh;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
-	.about-item {
-		text-align: center;
-	}
-	.about-item > h3 {
-		font-size: 1.6vh;
-		line-height: 1.2;
-	}
-	.about-item > p {
-		font-size: 0.9vh;
-	}
+  .about-item {
+    text-align: center;
+  }
+  .about-item > h3 {
+    font-size: 1.6vh;
+    line-height: 1.2;
+  }
+  .about-item > p {
+    font-size: 0.9vh;
+  }
 
-	.lt {
-		font-size: 1.5vh;
-	}
+  .lt {
+    font-size: 1.5vh;
+  }
 
-	.gt {
-		font-size: 1.5vh;
-	}
+  .gt {
+    font-size: 1.5vh;
+  }
 }
