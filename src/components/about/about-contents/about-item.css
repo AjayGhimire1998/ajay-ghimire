@@ -90,8 +90,9 @@
 	flex-direction: row;
 }
 
-.next-image > div > span {
-	font-size: 0.7vh;
+.next-image > div > button {
+	color: black;
+	font-size: 0.8vh;
 }
 
 .lt {
@@ -100,7 +101,7 @@
 
 	font-size: 3vh;
 	cursor: pointer;
-	background-color: black;
+	/* background-color: black; */
 }
 
 .gt {
@@ -109,7 +110,7 @@
 
 	font-size: 3vh;
 	cursor: pointer;
-	background-color: black;
+	/* background-color: black; */
 }
 
 @media screen and (max-width: 760px) {

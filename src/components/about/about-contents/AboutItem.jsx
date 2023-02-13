@@ -20,20 +20,20 @@ function Profile({
 					<div className="about-item preview-image-container">
 						<div className="next-image">
 							<div>
-								{imageCount > 0 && (
-									<span className="lt" onClick={onPrevImageClick}>
+								{/* {imageCount > 0 && ( */}
+									<button className="lt" onClick={onPrevImageClick} disabled={imageCount === 0}>
 										&lt;Prev
-									</span>
-								)}
+									</button>
+								{/* )} */}
 							</div>
 							<div>
 								<img src={image[imageCount]} className="preview-image" alt="ajay" loading="lazy" />
 							</div>
 							<div>
 								{(imageCount === 0 || imageCount < image.length - 1) && (
-									<span className="gt " onClick={onNextImageClick}>
+									<button className="gt " onClick={onNextImageClick}>
 										Next&gt;
-									</span>
+									</button>
 								)}
 							</div>
 						</div>
