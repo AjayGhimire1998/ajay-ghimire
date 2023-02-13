@@ -22,7 +22,7 @@ function Profile({
 							<div>
 								{imageCount > 0 && (
 									<span className="lt" onClick={onPrevImageClick}>
-										&lt;
+										&lt;Prev
 									</span>
 								)}
 							</div>
@@ -32,7 +32,7 @@ function Profile({
 							<div>
 								{(imageCount === 0 || imageCount < image.length - 1) && (
 									<span className="gt " onClick={onNextImageClick}>
-										&gt;
+										Next&gt;
 									</span>
 								)}
 							</div>

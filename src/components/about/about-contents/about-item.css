@@ -90,6 +90,10 @@
 	flex-direction: row;
 }
 
+.next-image > div > span {
+	font-size: 0.7vh;
+}
+
 .lt {
 	position: relative;
 	top: 50%;
