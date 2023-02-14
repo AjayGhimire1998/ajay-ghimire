@@ -33,7 +33,6 @@ function Profile({
                   src={image[imageCount]}
                   className="preview-image"
                   alt="ajay"
-                //   loading="lazy"
                 />
               </div>
               <div>
