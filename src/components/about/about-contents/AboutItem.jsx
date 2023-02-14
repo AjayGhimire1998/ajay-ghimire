@@ -28,7 +28,7 @@ function Profile({
                   &lt;Prev
                 </button>
               </div>
-              <div>
+              <div style={{border: "1px solid transparent"}}>
                 <img
                   src={image[imageCount]}
                   className="preview-image"
