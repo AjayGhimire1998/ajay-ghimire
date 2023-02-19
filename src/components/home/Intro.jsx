@@ -42,7 +42,7 @@ function Intro({ play, shadow }) {
             className="avatar-image"
             onClick={goToAbout}
             onMouseEnter={() => setProfileHover(true)}
-			style={{ filter: `drop-shadow(0px 0px 9px ${shadow})` }}
+			style={{ filter: `drop-shadow(0px 0px 10px ${shadow})`, border: `2px solid ${shadow}` }}
           />
         </div>
       )}
