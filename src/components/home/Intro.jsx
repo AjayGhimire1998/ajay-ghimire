@@ -18,10 +18,9 @@ function Intro({ shadow }) {
         <ReactPlayer
           url={ppvideo}
           width="100%"
-          height="100%"
-          controls={false}
+          height="100%"  
           playing={true}
-		  playsinline
+		  controls={true}
         />
       ) : (
         <div
