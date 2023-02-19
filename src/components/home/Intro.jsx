@@ -26,6 +26,8 @@ function Intro({ play }) {
           width="100%"
           height="100%"
           controls={false}
+          playing={true}
+		  loop={true}
         />
       ) : (
         <div
@@ -44,7 +46,6 @@ function Intro({ play }) {
           />
         </div>
       )}
-
       <div className="contents">
         <p>I am</p>
         <div>
