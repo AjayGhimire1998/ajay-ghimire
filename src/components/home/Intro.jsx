@@ -7,7 +7,7 @@ import cover from "../../images/cover.png";
 import pin from "../../images/my-pictures/pin.png";
 import ppvideo from "../../videos/PortfolioVideo.mp4";
 
-function Intro({ play }) {
+function Intro({ play, shadow }) {
   const navigate = useNavigate();
   const [profileHover, setProfileHover] = useState(false);
   function goToAbout() {
@@ -27,7 +27,6 @@ function Intro({ play }) {
           height="100%"
           controls={false}
           playing={true}
-		  loop={true}
         />
       ) : (
         <div
@@ -43,6 +42,7 @@ function Intro({ play }) {
             className="avatar-image"
             onClick={goToAbout}
             onMouseEnter={() => setProfileHover(true)}
+			style={{ filter: `drop-shadow(0px 0px 9px ${shadow})` }}
           />
         </div>
       )}
