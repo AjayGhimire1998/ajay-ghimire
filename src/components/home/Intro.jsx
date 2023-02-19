@@ -21,6 +21,7 @@ function Intro({ shadow }) {
           height="100%"
           controls={false}
           playing={true}
+		  playsinline
         />
       ) : (
         <div
