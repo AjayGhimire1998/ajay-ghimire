@@ -10,7 +10,8 @@ import {
 	DiJavascript1,
 	DiPostgresql,
 } from 'react-icons/di';
-import { SiRubygems, SiRubyonrails } from 'react-icons/si';
+import { SiRubygems, SiRubyonrails, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
+import { TbApi} from 'react-icons/tb'
 import { v4 as uuidv4 } from 'uuid';
 
 const toolTipStyle = {
@@ -153,6 +154,31 @@ export const videoLinks = [
 				<DiCss3 size={50} key={uuidv4()} />
 				<Tooltip anchorId="CSS" style={toolTipStyle} />
 			</div>
+		],
+	},
+	{
+		name: 'Youtify',
+		url: 'https://youtu.be/IEl0hS8OP2k',
+		videoId: 'IEl0hS8OP2k',
+		desc: 'A single-page web application developed using Next.js, Tailwind CSS and open Youtube API.',
+		desc2: 'It allows users to login using google and search for a particular song to listen, as well as choose the song to play from the user\'s own youtube playlist.',
+		links: {
+			live: 'https://youtify-next.vercel.app/',
+			git: 'https://github.com/AjayGhimire1998/youtify-next',
+		},
+		tools: [
+			<div id="Next" data-tooltip-content="Next" data-tooltip-place="bottom">
+				<SiNextdotjs size={50} key={uuidv4()} />
+				<Tooltip anchorId="Next" style={toolTipStyle} />
+			</div>,
+			<div id="Tailwind" data-tooltip-content="Tailwind" data-tooltip-place="bottom">
+				<SiTailwindcss size={50} key={uuidv4()} />
+				<Tooltip anchorId="Tailwind" style={toolTipStyle} />
+			</div>,
+			<div id="open API" data-tooltip-content="open API" data-tooltip-place="bottom">
+				<TbApi size={50} key={uuidv4()} />
+				<Tooltip anchorId="open API" style={toolTipStyle} />
+			</div>,
 		],
 	},
 ];
