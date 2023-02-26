@@ -20,13 +20,25 @@
     border-radius: 5px;
 }
 .cheer-up{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     cursor: pointer;
-    background-color: rgb(34, 34, 34);
 }
 
-.cheer-up > * {
-    font-size: 1.2vh;
+.cheer-up > img {
+    cursor: pointer;
+    margin-top: 0;
+    /* margin-left: 20px; */
+    width: 70px;
+    height: 70px;
+}
+
+.cheer-up > button {
+    cursor: pointer;
+    margin-top: 20px;
+    height: 30px;
+    font-size: 1vh;
     text-decoration: underline;
     color: black;
 }

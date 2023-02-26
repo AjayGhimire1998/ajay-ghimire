@@ -85,7 +85,7 @@ function CheerPlayer() {
               alt="avatar"
               className="avatar-image"
             />
-			<button>Click Me to Cheer Up</button>
+			<button>Click Me to Cheer Up !</button>
         </div>
       )}
     </div>
