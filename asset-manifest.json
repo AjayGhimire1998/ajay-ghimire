@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ajay-ghimire/static/css/main.326ea40e.css",
-    "main.js": "/ajay-ghimire/static/js/main.f00ef822.js",
+    "main.css": "/ajay-ghimire/static/css/main.dcd17315.css",
+    "main.js": "/ajay-ghimire/static/js/main.56979d7e.js",
     "static/js/845.fe94479c.chunk.js": "/ajay-ghimire/static/js/845.fe94479c.chunk.js",
     "static/js/787.caccb356.chunk.js": "/ajay-ghimire/static/js/787.caccb356.chunk.js",
     "static/media/cover.png": "/ajay-ghimire/static/media/cover.07d5a8a5342a53fb8e51.png",
@@ -18,7 +18,7 @@
     "static/media/ajay2.png": "/ajay-ghimire/static/media/ajay2.ea4ccbc23f46bbe1b2b3.png",
     "static/media/jailhouse-rock.mp3": "/ajay-ghimire/static/media/jailhouse-rock.eb51b441a22d8adc7da7.mp3",
     "static/media/hound-dog.mp3": "/ajay-ghimire/static/media/hound-dog.b29e0981f4a1457c31ce.mp3",
-    "static/media/profile_pic.png": "/ajay-ghimire/static/media/profile_pic.ae5f96436625825f5f5f.png",
+    "static/media/profile_pic.png": "/ajay-ghimire/static/media/profile_pic.8a8a994c7ba12cdc37d5.png",
     "static/media/ajay1.jpeg": "/ajay-ghimire/static/media/ajay1.ee9747b067cf15b8f38a.jpeg",
     "static/media/chocho.JPG": "/ajay-ghimire/static/media/chocho.29750590fe20636dab8b.JPG",
     "static/media/academyXi.png": "/ajay-ghimire/static/media/academyXi.b103134480f01f370b60.png",
@@ -32,15 +32,16 @@
     "static/media/postman.png": "/ajay-ghimire/static/media/postman.3281fd39306eed30fbf2.png",
     "static/media/logo2.png": "/ajay-ghimire/static/media/logo2.54f43cbc28034ff02ed2.png",
     "static/media/logo.png": "/ajay-ghimire/static/media/logo.ff8cea5461a50d73344d.png",
+    "static/media/music.jpeg": "/ajay-ghimire/static/media/music.c34be5b70df1868c39bc.jpeg",
     "static/media/hover.mp3": "/ajay-ghimire/static/media/hover.f6990f20ecc0699fc881.mp3",
     "index.html": "/ajay-ghimire/index.html",
-    "main.326ea40e.css.map": "/ajay-ghimire/static/css/main.326ea40e.css.map",
-    "main.f00ef822.js.map": "/ajay-ghimire/static/js/main.f00ef822.js.map",
+    "main.dcd17315.css.map": "/ajay-ghimire/static/css/main.dcd17315.css.map",
+    "main.56979d7e.js.map": "/ajay-ghimire/static/js/main.56979d7e.js.map",
     "845.fe94479c.chunk.js.map": "/ajay-ghimire/static/js/845.fe94479c.chunk.js.map",
     "787.caccb356.chunk.js.map": "/ajay-ghimire/static/js/787.caccb356.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.326ea40e.css",
-    "static/js/main.f00ef822.js"
+    "static/css/main.dcd17315.css",
+    "static/js/main.56979d7e.js"
   ]
 }
