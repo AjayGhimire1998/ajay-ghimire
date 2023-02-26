@@ -20,12 +20,13 @@
     border-radius: 5px;
 }
 .cheer-up{
-    font-size: 1.2vh;
-    text-decoration: underline;
+    
     cursor: pointer;
-    background-color: black;
+    background-color: rgb(34, 34, 34);
 }
 
-.cheer-up:hover{
-    color: #39ff14;
+.cheer-up > * {
+    font-size: 1.2vh;
+    text-decoration: underline;
+    color: black;
 }
