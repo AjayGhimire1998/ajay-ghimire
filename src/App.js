@@ -89,7 +89,7 @@ function App() {
         <br />
 
         <div className="footer">
-          <CheerPlayer />
+          <CheerPlayer  shadow={shadow}/>
           <br />
           <Contact play={play} />
           <footer>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import "./intro.css";
-import ajay from "../../images/my-pictures/ajay2.png";
+import ajay from "../../images/my-pictures/profile_pic.png";
 import cover from "../../images/cover.png";
 import pin from "../../images/my-pictures/pin.png";
 import ppvideo from "../../videos/PortfolioVideo.mp4";

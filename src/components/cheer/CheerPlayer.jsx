@@ -5,9 +5,9 @@ import { useEffect } from "react";
 import { songsUrl } from "./songs";
 import { BsPlayCircle, BsPauseCircle } from "react-icons/bs";
 import { BiShuffle } from "react-icons/bi";
-import music from "../../images/music.jpeg"
+import music from "../../images/music.jpeg";
 
-function CheerPlayer() {
+function CheerPlayer({ shadow }) {
   const [cheerUp, setCheerUp] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [trackIndex, setTrackIndex] = useState(0);
@@ -80,12 +80,13 @@ function CheerPlayer() {
         </div>
       ) : (
         <div className="cheer-up" onClick={onCheerUpClick}>
-            <img
-              src={music}
-              alt="avatar"
-              className="avatar-image"
-            />
-			<button>Click Me to Cheer Up !</button>
+          <img
+            src={music}
+            alt="avatar"
+            className="avatar-image"
+            style={{ border: `3px solid ${shadow}` }}
+          />
+          <button>Cheer Up a Little !</button>
         </div>
       )}
     </div>
