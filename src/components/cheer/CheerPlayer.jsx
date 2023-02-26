@@ -80,13 +80,17 @@ function CheerPlayer({ shadow }) {
         </div>
       ) : (
         <div className="cheer-up" onClick={onCheerUpClick}>
-          <img
-            src={music}
-            alt="avatar"
-            className="avatar-image"
-            style={{ border: `3px solid ${shadow}` }}
-          />
-          <button>Cheer Up a Little !</button>
+          <div>
+            <img
+              src={music}
+              alt="avatar"
+              className="avatar-image"
+              style={{ border: `3px solid ${shadow}` }}
+            />
+          </div>
+          <div>
+            <p style={{ color: `${shadow}` }}> Cheer Up a Little !</p>
+          </div>
         </div>
       )}
     </div>
