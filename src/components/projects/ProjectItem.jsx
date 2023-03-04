@@ -40,7 +40,7 @@ function ProjectItem({ project, hover, play }) {
           <h4
             style={{
               textDecoration: "underline",
-              color: `${isPlaying ? "#39ff14" : "white"}`,
+              color: `${isPlaying ? "#39ff14" : ""}`,
             }}
           >
             {project.name}
