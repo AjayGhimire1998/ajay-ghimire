@@ -6,7 +6,7 @@ import './navbar.css';
 function Navbar({ play, hover }) {
 	const location = useLocation();
 	const [currentPage, setCurrentPage] = useState('');
-	const [pages, setPages] = useState(['About', 'Projects', 'Blogs', 'Resume']);
+	const [pages, setPages] = useState(['About', 'Projects', 'Contents', 'Resume']);
 
 	const playSound = () => {
 		play();
@@ -25,19 +25,19 @@ function Navbar({ play, hover }) {
 
 	useEffect(() => {
 		if (currentPage === '') {
-			setPages(['About', 'Projects', 'Blogs', 'Resume']);
+			setPages(['About', 'Projects', 'Contents', 'Resume']);
 		}
 		if (currentPage === 'About') {
-			setPages(['Home', 'Projects', 'Blogs', 'Resume']);
+			setPages(['Home', 'Projects', 'Contents', 'Resume']);
 		}
 		if (currentPage === 'Projects') {
-			setPages(['Home', 'About', 'Blogs', 'Resume']);
+			setPages(['Home', 'About', 'Contents', 'Resume']);
 		}
-		if (currentPage === 'Blogs') {
+		if (currentPage === 'Contents') {
 			setPages(['Home', 'About', 'Projects', 'Resume']);
 		}
 		if (currentPage === 'Resume') {
-			setPages(['Home', 'About', 'Projects', 'Blogs']);
+			setPages(['Home', 'About', 'Projects', 'Contents']);
 		}
 	}, [currentPage]);
 
