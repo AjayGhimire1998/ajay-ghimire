@@ -63,7 +63,7 @@ function Skills() {
 			<br />
 
 			<div className="languages">
-				<h6>Frameworks:</h6>
+				<h6>Frameworks / Libraries:</h6>
 				<div className="icons-container">
 					<div id="REACT" data-tooltip-content="React" data-tooltip-place="bottom">
 						<REACTSvg />
