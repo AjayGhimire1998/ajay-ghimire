@@ -1,5 +1,5 @@
 import React from 'react';
-import myResume from '../../images/Resume_Ajay_Ghimire.pdf';
+import myResume from '../../images/Resume-Ajay-2023.pdf';
 import './my-resume.css';
 
 function MyResume({ play, hover }) {
@@ -14,7 +14,7 @@ function MyResume({ play, hover }) {
 					className="nav-button download"
 					onClick={play}
 					onMouseOver={hover}
-					download="Ajay_Ghimire_Resume.pdf"
+					download="Ajay_Ghimire_Resume-2023.pdf"
 				>
 					Download
 				</a>
