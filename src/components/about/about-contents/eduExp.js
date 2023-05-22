@@ -31,7 +31,7 @@ export const exp = [
     address: "Campsie, Sydney",
     jobTitle: "Intern Web Developer",
     startTime: "Dec 2022",
-    endTime: "Present",
+    endTime: "March 2023",
     marginTop: "0px"
   },
 
