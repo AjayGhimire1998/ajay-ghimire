@@ -27,7 +27,8 @@ export const blogsData = [
     url: "https://medium.com/@ajayghimire1998/the-final-keyword-in-java-2471f9b63cb6",
     source: "Medium",
     readTime: "3 min read",
-    datePossted: "23 Jan, 2023"
+    datePossted: "23 Jan, 2023",
+    profile: mediumPic
   },
   {
     title: "“Array”​ Data Structure: An Illustrative Introduction",
@@ -35,7 +36,8 @@ export const blogsData = [
     url: "https://medium.com/@ajayghimire1998/array-data-structure-an-illustrative-introduction-a4f5ca8cce46",
     source: "Medium",
     readTime: "9 min read",
-    datePossted: "23 Jan, 2023"
+    datePossted: "23 Jan, 2023",
+    profile: mediumPic
   },
   {
     title: "CRYPTOMANIA- a RUBY CLI APPLICATION",
@@ -43,7 +45,8 @@ export const blogsData = [
     url: "https://medium.com/@ajayghimire1998/cryptomania-a-ruby-cli-application-f959f2508606",
     source: "Medium",
     readTime: "2 min read",
-    datePossted: "27 Jun, 2022"
+    datePossted: "27 Jun, 2022",
+    profile: mediumPic
   },
   {
     title: "Was Creating a Meme App for React’s Final project worth it??",
@@ -51,7 +54,8 @@ export const blogsData = [
     url: "https://medium.com/@ajayghimire1998/was-creating-a-meme-app-for-reacts-final-project-worth-it-f1859731ff6f",
     source: "Medium",
     readTime: "2 min read",
-    datePossted: "20 Apr, 2022"
+    datePossted: "20 Apr, 2022",
+    profile: mediumPic
   },
   {
     title: "MovieFinder JS App using OMDB API",
@@ -59,7 +63,8 @@ export const blogsData = [
     url: "https://medium.com/@ajayghimire1998/movie-search-js-app-using-omdb-api-93033f0898a6",
     source: "Medium",
     readTime: "1 min read",
-    datePossted: "16 Mar, 2022"
+    datePossted: "16 Mar, 2022",
+    profile: mediumPic
   },
   {
     title: "I have created my first portfolio website",
@@ -67,7 +72,8 @@ export const blogsData = [
     url: "https://medium.com/@ajayghimire1998/i-have-created-my-first-portfolio-website-4d0da88f4145",
     source: "Medium",
     readTime: "1 min read",
-    datePossted: "25 Feb, 2022"
+    datePossted: "25 Feb, 2022",
+    profile: mediumPic
   },
   {
     title: "Why did I decide to study Software Engineering ?",
@@ -75,6 +81,7 @@ export const blogsData = [
     url: "https://medium.com/@ajayghimire1998/why-did-i-decide-to-study-software-engineering-8bf843bdfb10",
     source: "Medium",
     readTime: "2 min read",
-    datePossted: "19 Feb, 2022"
+    datePossted: "19 Feb, 2022",
+    profile: mediumPic
   },
 ];
