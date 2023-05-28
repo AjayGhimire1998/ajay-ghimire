@@ -3,38 +3,44 @@ export const blogsData = [
     title: '"Recursive Methods" in Java ',
     desc: "Recursive methods in Java are powerful tools for solving complex problems by breaking them down into smaller sub-problems. By calling the function on each sub-problem recursively, the solution can be computed in a clear and concise way.....",
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7037722687158255616?utm_source=share&utm_medium=member_desktop",
-    source: "LinkedIn"
+    source: "LinkedIn",
+    readTime: "2 min read"
   },
   {
     title: 'The "main" method in Java ',
     desc: "When you write a program in Java, you need to have a special method called “main” that tells the computer where to start running the program. The main method is the entry point of aprogram. It is like the boss. It tells the....",
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7035211177932517376?utm_source=share&utm_medium=member_desktop",
-    source: "LinkedIn"
+    source: "LinkedIn",
+    readTime: "2 min read"
   },
 
   {
     title: "The ’final’ keyword in Java",
     desc: "The ’final ’ keyword is a non-access modifier used for classes, attributes or variables, and methods, which makes them non-changeable, meaning impossible to inherit or override. Most common uses of ‘final ’are:....",
     url: "https://medium.com/@ajayghimire1998/the-final-keyword-in-java-2471f9b63cb6",
-    source: "Medium"
+    source: "Medium",
+    readTime: "3 min read"
   },
   {
     title: "“Array”​ Data Structure: An Illustrative Introduction",
     desc: "An array is a collection of items stored consecutively in the memory. An array has three main features: All items in an array must be of the same data type. An array is indexed, meaning that we can access each....",
     url: "https://medium.com/@ajayghimire1998/array-data-structure-an-illustrative-introduction-a4f5ca8cce46",
-    source: "Medium"
+    source: "Medium",
+    readTime: "9 min read"
   },
   {
     title: "CRYPTOMANIA- a RUBY CLI APPLICATION",
     desc: "Ruby was indeed the most interesting language to learn. It has all those built in methods, which are very easy and quick to use. Being one of the most promising Object-Oriented Language, Ruby provides a vast scope on....",
     url: "https://medium.com/@ajayghimire1998/cryptomania-a-ruby-cli-application-f959f2508606",
-    source: "Medium"
+    source: "Medium",
+    readTime: "2 min read"
   },
   {
     title: "Was Creating a Meme App for React’s Final project worth it??",
     desc: "Totally……This project has completely made myself feel that I am no longer a beginner but a competitive intermediate who now has guts to tackle every logical problem or at least try. With a month of learning....",
     url: "https://medium.com/@ajayghimire1998/was-creating-a-meme-app-for-reacts-final-project-worth-it-f1859731ff6f",
-    source: "Medium"
+    source: "Medium",
+    readTime: "2 min read"
   },
   {
     title: "MovieFinder JS App using OMDB API",
