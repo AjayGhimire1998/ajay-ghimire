@@ -14,17 +14,17 @@
 }
 
 .blog-item-container > .imgDiv{
-  height: 100px;
+  height: 50px;
 	padding: 10px;
 	border-radius: 5px;
   display: flex;
 	background-size: auto;
 }
 
-.blog-item-container > img{
-  height: 100px;
-	padding: 10px;
-	border-radius: 5px;
+.blog-item-container > .imgDiv >img{
+	border-radius: 50%;
+	object-fit: cover;
+	cursor: pointer;
 }
 
 .blog-item-container > p > a {
