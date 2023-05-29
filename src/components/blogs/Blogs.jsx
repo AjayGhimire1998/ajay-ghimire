@@ -19,7 +19,9 @@ function Blogs() {
   };
   return (
     <>
-      <div className="blogs-container">{blogItem.slice(0, blogCount)}</div>
+      <div className="blogs-container">
+       {blogItem.slice(0, blogCount)}
+      </div>
       <div className="view">
         {blogCount === 4 ? (
           <p onClick={onSeeMore}>See More</p>
