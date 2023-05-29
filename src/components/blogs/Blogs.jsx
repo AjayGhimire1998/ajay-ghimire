@@ -20,7 +20,7 @@ function Blogs() {
   return (
     <>
       <div className="blogs-container">
-       {blogItem.slice(0, blogCount)}
+        <div className="blogs">{blogItem.slice(0, blogCount)}</div>
       </div>
       <div className="view">
         {blogCount === 4 ? (

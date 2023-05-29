@@ -9,7 +9,9 @@ export const blogsData = [
     source: "LinkedIn",
     readTime: "2 min read",
     datePossted: "25 Mar, 2023",
-    profile: linkedInPic
+    profile: linkedInPic, 
+    tag: "Java"
+
   },
   {
     title: 'The "main" method in Java ',
@@ -18,7 +20,8 @@ export const blogsData = [
     source: "LinkedIn",
     readTime: "2 min read",
     datePossted: "28 Mar, 2023",
-    profile: linkedInPic
+    profile: linkedInPic,
+    tag: "Java"
   },
 
   {
@@ -28,7 +31,8 @@ export const blogsData = [
     source: "Medium",
     readTime: "3 min read",
     datePossted: "23 Jan, 2023",
-    profile: mediumPic
+    profile: mediumPic,
+    tag: "Java"
   },
   {
     title: "“Array”​ Data Structure: An Illustrative Introduction",
@@ -37,7 +41,8 @@ export const blogsData = [
     source: "Medium",
     readTime: "9 min read",
     datePossted: "23 Jan, 2023",
-    profile: mediumPic
+    profile: mediumPic,
+    tag: "Java"
   },
   {
     title: "CRYPTOMANIA- a RUBY CLI APPLICATION",
@@ -46,7 +51,8 @@ export const blogsData = [
     source: "Medium",
     readTime: "2 min read",
     datePossted: "27 Jun, 2022",
-    profile: mediumPic
+    profile: mediumPic,
+    tag: "Ruby"
   },
   {
     title: "Was Creating a Meme App for React’s Final project worth it??",
@@ -64,7 +70,8 @@ export const blogsData = [
     source: "Medium",
     readTime: "1 min read",
     datePossted: "16 Mar, 2022",
-    profile: mediumPic
+    profile: mediumPic, 
+    tag: "JavaScript"
   },
   {
     title: "I have created my first portfolio website",
@@ -73,7 +80,8 @@ export const blogsData = [
     source: "Medium",
     readTime: "1 min read",
     datePossted: "25 Feb, 2022",
-    profile: mediumPic
+    profile: mediumPic,
+    tag: "HTML/CSS"
   },
   {
     title: "Why did I decide to study Software Engineering ?",
@@ -82,6 +90,7 @@ export const blogsData = [
     source: "Medium",
     readTime: "2 min read",
     datePossted: "19 Feb, 2022",
-    profile: mediumPic
+    profile: mediumPic,
+    tag: "Tech"
   },
 ];
