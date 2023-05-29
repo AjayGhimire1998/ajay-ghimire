@@ -15,6 +15,11 @@ function BlogItem({ blog }) {
         </div>
       </div>
 
+      <div className="tag">
+        <span>{blog.tag}</span>
+      </div>
+    <br/>
+    <br/>
       <h4>{blog.title}</h4>
       <p>
         {blog.desc}

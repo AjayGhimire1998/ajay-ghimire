@@ -61,7 +61,8 @@ export const blogsData = [
     source: "Medium",
     readTime: "2 min read",
     datePossted: "20 Apr, 2022",
-    profile: mediumPic
+    profile: mediumPic,
+    tag: "React"
   },
   {
     title: "MovieFinder JS App using OMDB API",

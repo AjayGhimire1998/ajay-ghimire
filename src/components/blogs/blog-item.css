@@ -56,3 +56,20 @@
 .blog-item-container > h4{
   font-size: 28px;
 }
+
+.tag{
+  background-color: white;
+  float: left;
+  width:fit-content;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.tag>span{
+  padding: 4px;
+  text-align: center;
+  color: rgb(27, 25, 25);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
