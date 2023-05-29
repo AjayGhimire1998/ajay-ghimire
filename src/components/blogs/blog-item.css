@@ -20,14 +20,19 @@
   display: flex;
 	background-size: auto;
 }
-.desc{
+.desc > *{
   margin-left: 20px;
+  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .desc > p{
   font-size: smaller;
-  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: black;
+}
+
+.desc > span{
+  font-size: x-small;
+  color: rgba(117, 117, 117, 1);
 }
 
 .blog-item-container > .imgDiv >img{
