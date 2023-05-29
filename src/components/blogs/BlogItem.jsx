@@ -9,6 +9,10 @@ function BlogItem({ blog }) {
     >
       <div className="imgDiv">
         <img src={blog.profile} alt="pp" />
+        <div className="desc">
+          <p>Ajay Ghimire</p>
+		  {/* < */}
+        </div>
       </div>
 
       <h4>{blog.title}</h4>
