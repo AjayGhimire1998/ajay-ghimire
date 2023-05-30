@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import useSound from "use-sound";
 import click from "./sounds/click.wav";
 import hover from "./sounds/hover.mp3";
-import logo1 from "./images/logo.png";
-import logo2 from "./images/logo2.png";
+// import logo1 from "./images/logo.png";
+import logo from "./images/logo2.png";
 import Home from "./pages/home/Home";
 import Logo from "./components/home/Logo";
 import Navbar from "./components/navbar/Navbar";
@@ -32,36 +32,12 @@ function App() {
     "#ff00ff",
     "#ff9900",
   ];
-  let logos = useMemo(() => [], []);
-  logos = [logo2];
 
   const [shadow, setShadow] = useState("");
-  const [logo, setLogo] = useState(logos[0]);
-
-  // const changeColors = () => {
-    // setTimeout(() => {
-      // setShadow(shadows[Math.floor(Math.random() * (7 - 0) + 0)]);
-      // changeColors();
-    // }, 1000);
-  // };
-
-  // const changeLogo = () => {
-  //   setTimeout(() => {
-  //     setLogo(logos[Math.floor(Math.random() * (2 - 0) + 0)]);
-  //     changeLogo();
-  //   }, 1000);
-  // };
   setTimeout(() => {
-    // changeColors();
     setShadow(shadows[Math.floor(Math.random() * (7 - 0) + 0)]);
   }, 1000);
   
-
-  // useEffect(() => {
-  //   changeColors();
-  //   // changeLogo();
-  // }, []);
-
   return (
     <>
       <div className="space"></div>
