@@ -22,8 +22,8 @@ function App() {
   const [onHover] = useSound(hover, { volume: 0.1 });
   const [index, setIndex] = useState(0);
 
-  let shadows = useMemo(() => [], []);
-  shadows = [
+  // let shadows = useMemo(() => [], []);
+  let shadows = [
     "#80dfff",
     "#cc6600",
     "#00ccff",
@@ -35,14 +35,18 @@ function App() {
   ];
 
   const [shadow, setShadow] = useState("");
-  setTimeout(() => {
-    if (index < 7) {
-      setIndex(index + 1);
-    } else {
-      setIndex(0);
-    }
-    setShadow(shadows[index]);
-  }, 1500);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     if (index < 7) {
+  //       setIndex(index + 1);
+  //     } else {
+  //       setIndex(0);
+  //     }
+  //     setShadow(shadows[index]);
+  //   }, 1500);
+  // }, [shadow])
+  
 
   return (
     <>
@@ -61,7 +65,7 @@ function App() {
             path="/projects/:name"
             element={<EachProject play={play} hover={onHover} />}
           />
-          <Route path="/blogs" element={<Blog shadow={shadow} />} />
+          <Route path="/blogs" element={<Blog  />} />
           <Route
             path="/resume"
             element={<Resume play={play} hover={onHover} />}

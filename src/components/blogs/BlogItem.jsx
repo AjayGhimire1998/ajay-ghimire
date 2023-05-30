@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import "./blog-item.css";
 import PopUp from "./PopUp";
 
-function BlogItem({ blog, shadow }) {
+function BlogItem({ blog }) {
   const [hover, setHover] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const onHover = () => {
     setHover(true);
   };
 
+  console.log(isOpen)
   const isOpenClick = () => setIsOpen(true);
   return (
     <>
@@ -32,24 +33,24 @@ function BlogItem({ blog, shadow }) {
 
         <h4>{blog.title}</h4>
         {isOpen ? (
-          <PopUp isOpen={isOpen} blog={blog} />
+          <PopUp  blog={blog} />
         ) : (
           <p>
             {blog.desc}
-            <a
+            <span
               // href={blog.url}
               // target="_blank"
-              rel="noreferrer"
-              style={
-                hover
-                  ? { color: "#39ff14", fontSize: "large" }
-                  : { color: `${shadow}` }
-              }
+              // rel="noreferrer"
+              // style={
+              //   hover
+              //     ? { color: "#39ff14", fontSize: "large" }
+              //     : { color: `${shadow}` }
+              // }
               onMouseOver={onHover}
               onClick={isOpenClick}
             >
               Read More
-            </a>
+            </span>
           </p>
         )}
       </div>

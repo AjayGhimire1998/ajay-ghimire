@@ -3,8 +3,8 @@ import "./pop-up.css";
 
 function PopUp({ blog }) {
   return (
-    <div className="Modal">
-      <div className="Modal-content">
+    <div className="modal">
+      <div className="modal-content">
         <p>{blog.source}</p>
       </div>
     </div>
