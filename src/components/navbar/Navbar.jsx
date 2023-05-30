@@ -25,19 +25,19 @@ function Navbar({ play, hover }) {
 
 	useEffect(() => {
 		if (currentPage === '') {
-			setPages(['About', 'Projects', 'Contents', 'Resume']);
+			setPages(['About', 'Projects', 'Blogs', 'Resume']);
 		}
 		if (currentPage === 'About') {
-			setPages(['Home', 'Projects', 'Contents', 'Resume']);
+			setPages(['Home', 'Projects', 'Blogs', 'Resume']);
 		}
 		if (currentPage === 'Projects') {
-			setPages(['Home', 'About', 'Contents', 'Resume']);
+			setPages(['Home', 'About', 'Blogs', 'Resume']);
 		}
-		if (currentPage === 'Contents') {
+		if (currentPage === 'Blogs') {
 			setPages(['Home', 'About', 'Projects', 'Resume']);
 		}
 		if (currentPage === 'Resume') {
-			setPages(['Home', 'About', 'Projects', 'Contents']);
+			setPages(['Home', 'About', 'Projects', 'Blogs']);
 		}
 	}, [currentPage]);
 

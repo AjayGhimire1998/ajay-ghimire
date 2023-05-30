@@ -8,6 +8,8 @@
 
 .project-item-container  > h3 > span{
   font-size: 3vh;
+  background-color: black;
+  display: inline-block;
 }
 
 .project-desc{
