@@ -19,6 +19,7 @@
 	cursor: pointer;
 	font-size: 2vh;
 	color: white;
+	display: inline-block;
 }
 .blogs-container > p:hover {
 	color: #39ff14;

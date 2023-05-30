@@ -5,12 +5,12 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 
-function Blogs({ shadow }) {
+function Blogs({ play, hover }) {
   const [blogCount, setBlogCount] = useState(5);
 
 
   const blogItem = blogsData.map((blog) => {
-    return <BlogItem blog={blog} key={uuidv4()} shadow={shadow} />;
+    return <BlogItem blog={blog} key={uuidv4()} play={play} hover={hover} />;
   });
 
 

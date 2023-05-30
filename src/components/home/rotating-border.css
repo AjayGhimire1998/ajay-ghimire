@@ -38,6 +38,10 @@
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
     background-image: linear-gradient(#ffffff, #ffffff);
     animation: rotate 2s infinite;
+    -webkit-animation: rotate 2s infinite;
+   -moz-animation: rotate 2s infinite;
+    -ms-animation: rotate 2s infinite;
+     -o-animation:rotate 2s infinite;
   }
 
   &::after {

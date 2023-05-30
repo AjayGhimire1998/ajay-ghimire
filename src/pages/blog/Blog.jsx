@@ -2,10 +2,10 @@ import Blogs from "../../components/blogs/Blogs";
 import "./blog.css";
 
 
-function Blog({shadow}) {
+function Blog({ play, hover}) {
   return (
     <div className="blog">
-        <Blogs shadow= {shadow}/>
+        <Blogs play={play} hover={hover}/>
     </div>
   )
 }

@@ -21,7 +21,6 @@ function App() {
   const [play] = useSound(click, { volume: 0.1 });
   const [onHover] = useSound(hover, { volume: 0.1 });
 
-
   return (
     <>
       <div className="space"></div>
@@ -39,7 +38,7 @@ function App() {
             path="/projects/:name"
             element={<EachProject play={play} hover={onHover} />}
           />
-          <Route path="/blogs" element={<Blog  />} />
+          <Route path="/blogs" element={<Blog hover={onHover} play={play} />} />
           <Route
             path="/resume"
             element={<Resume play={play} hover={onHover} />}
@@ -55,9 +54,7 @@ function App() {
           <br />
           <Contact play={play} />
           <footer>
-            <p className="shadow">
-              © 2023 Ajay Ghimire
-            </p>
+            <p className="shadow">© 2023 Ajay Ghimire</p>
           </footer>
         </div>
       </div>
