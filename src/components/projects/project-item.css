@@ -8,7 +8,9 @@
   width: 300px;
   margin: 25px;
   cursor: pointer;
+  border-radius: 20px;
 }
+
 
 .project-item-card:hover {
   position: relative;

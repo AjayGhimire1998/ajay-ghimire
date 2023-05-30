@@ -11,12 +11,14 @@
 
 @media screen and (max-width: 760px) {
 	.logo {
-		height: 180px;
+		height: 150px;
+		width: 150px;
 	}
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
 	.logo {
-		height: 180px;
+		height: 150px;
+		width: 150px;
 	}
 }

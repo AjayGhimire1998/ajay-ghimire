@@ -1,5 +1,5 @@
 .typewriter {
-  font-size: 1.2vh;
+  font-size: 1.7vh;
   background-color: black;
   display: flex;
   font-family: "Press Start 2P", cursive;
@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 760px) {
   .typewriter {
-    font-size: 1vh;
+    font-size: 1.5vh;
   }
 
   .wave {
@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
   .typewriter {
-    font-size: 0.8vh;
+    font-size: 1.4vh;
   }
 
   .wave {

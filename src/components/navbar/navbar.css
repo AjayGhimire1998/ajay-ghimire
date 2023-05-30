@@ -12,7 +12,7 @@
 }
 
 .nav-button {
-  font-size: 1.7vh;
+  font-size: 2vh;
   text-align: center;
   display: inline-block;
   margin: 5px;
@@ -27,6 +27,7 @@
   box-shadow: 0 0.2em rgb(202, 201, 201);
   cursor: pointer;
   text-decoration: none;
+  
 }
 
 .nav-button:hover {
@@ -49,7 +50,7 @@
     width: 740px;
   }
   .nav-button {
-    font-size: 1.5vh;
+    font-size: 1.8vh;
   }
 }
 
@@ -59,6 +60,6 @@
   }
   .nav-button {
     flex: 30%;
-    font-size: 1.3vh;
+    font-size: 1.8vh;
   }
 }
