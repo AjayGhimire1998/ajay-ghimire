@@ -11,7 +11,6 @@
   border-radius: 20px;
 }
 
-
 .project-item-card:hover {
   position: relative;
   top: 0.3em;
@@ -37,14 +36,26 @@
   flex-direction: column;
   align-items: center;
   margin: 8px;
+  padding: 10px;
+}
+
+.card-contents:hover {
+  border-radius: 20px;
+  border: 2px solid white;
 }
 
 .card-contents > * {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+.card-contents > h4 {
+  animation: changeText 8s linear infinite;
+}
 .card-contents > h4:hover {
-  color: #39ff14;
+  font-size: large;
+  cursor: pointer;
+  color: #39ff14 !important;
 }
 
 @media screen and (max-width: 760px) {
