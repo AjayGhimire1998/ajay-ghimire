@@ -5,9 +5,7 @@ import PopUp from "./PopUp";
 function BlogItem({ blog }) {
   const [hover, setHover] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const onHover = () => {
-    setHover(true);
-  };
+  
 
   console.log(isOpen)
   const isOpenClick = () => setIsOpen(true);
@@ -41,13 +39,15 @@ function BlogItem({ blog }) {
               // href={blog.url}
               // target="_blank"
               // rel="noreferrer"
-              // style={
-              //   hover
-              //     ? { color: "#39ff14", fontSize: "large" }
-              //     : { color: `${shadow}` }
-              // }
-              onMouseOver={onHover}
+              style={
+                hover
+                  ? { color: "#39ff14", fontSize: "large" }
+                  : { animation: "changeText 8s linear infinite" }
+              }
+              onMouseOver={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
               onClick={isOpenClick}
+             
             >
               Read More
             </span>

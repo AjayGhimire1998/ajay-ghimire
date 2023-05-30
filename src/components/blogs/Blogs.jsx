@@ -35,7 +35,7 @@ function Blogs({ shadow }) {
       {blogItem.slice(0, blogCount)}
     
       {blogCount === 5 ? (
-        <p onClick={onSeeMore}>See More</p>
+        <p onClick={onSeeMore} >See More</p>
       ) : (
         <p onClick={onSeeLess}>See Less</p>
       )}

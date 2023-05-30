@@ -87,9 +87,9 @@ body {
 }
 
 .shadow {
-  animation: change 8s linear infinite;
+  animation: changeFilter 8s linear infinite;
 }
-@keyframes change {
+@keyframes changeFilter {
   0% {
     filter: drop-shadow(5px -5px 7px #80dfff);
   }
@@ -119,6 +119,37 @@ body {
     filter: drop-shadow(5px -5px 7px #ff9900);
   }
 }
+
+@keyframes changeText {
+	0% {
+	  color: #80dfff;
+	}
+  
+	15% {
+	  color: #cc6600;
+	}
+	30% {
+	  color: #00ccff;
+	}
+	45% {
+	  color: #ffff00;
+	}
+  
+	60% {
+	  color: #ff00ff;
+	}
+  
+	70% {
+	  color: #00cc00;
+	}
+  
+	85% {
+	  color: #00ccff;
+	}
+	100% {
+	  color: #ff9900;
+	}
+  }
 
 @media screen and (max-width: 760px) {
   body {

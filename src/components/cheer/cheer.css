@@ -40,6 +40,7 @@
   font-size: 1.5vh;
   text-decoration: underline;
   background-color: rgb(0, 0, 0);
+  animation: changeText 8s linear infinite;
 }
 
 .music{

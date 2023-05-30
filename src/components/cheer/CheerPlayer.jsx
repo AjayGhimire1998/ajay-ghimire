@@ -89,7 +89,7 @@ function CheerPlayer({ shadow }) {
             />
           </div>
           <div>
-            <p style={{ color: `${shadow}` }}> Cheer Up a Little !</p>
+            <p className="cheer-p"> Cheer Up a Little !</p>
           </div>
         </div>
       )}
