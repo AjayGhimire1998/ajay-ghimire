@@ -20,42 +20,16 @@ import EachProject from "./pages/project/EachProject";
 function App() {
   const [play] = useSound(click, { volume: 0.1 });
   const [onHover] = useSound(hover, { volume: 0.1 });
-  const [index, setIndex] = useState(0);
 
-  // let shadows = useMemo(() => [], []);
-  let shadows = [
-    "#80dfff",
-    "#cc6600",
-    "#00ccff",
-    "#cc6600",
-    "#00cc00",
-    "#ffff00",
-    "#ff00ff",
-    "#ff9900",
-  ];
-
-  const [shadow, setShadow] = useState("");
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     if (index < 7) {
-  //       setIndex(index + 1);
-  //     } else {
-  //       setIndex(0);
-  //     }
-  //     setShadow(shadows[index]);
-  //   }, 1500);
-  // }, [shadow])
-  
 
   return (
     <>
       <div className="space"></div>
       <div className="main">
-        <Logo logo={logo} shadow={shadow} play={play} />
+        <Logo logo={logo} play={play} />
 
         <Routes>
-          <Route path="/" element={<Home shadow={shadow} play={play} />} />
+          <Route path="/" element={<Home play={play} />} />
           <Route
             path="/about"
             element={<About play={play} hover={onHover} />}
@@ -77,11 +51,11 @@ function App() {
         <br />
 
         <div className="footer">
-          <CheerPlayer shadow={shadow} />
+          <CheerPlayer />
           <br />
           <Contact play={play} />
           <footer>
-            <p style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}>
+            <p className="shadow">
               © 2023 Ajay Ghimire
             </p>
           </footer>

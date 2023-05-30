@@ -8,7 +8,7 @@ function Logo({ logo, shadow, play }) {
 			<img
 				src={logo}
 				alt="logo"
-				className="logo"
+				className="logo shadow"
 				style={{ filter: `drop-shadow(5px -5px 7px ${shadow})` }}
 				onClick={() => {
 					play();
