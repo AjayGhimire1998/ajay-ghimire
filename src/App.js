@@ -38,12 +38,12 @@ function App() {
   const [shadow, setShadow] = useState("");
   const [logo, setLogo] = useState(logos[0]);
 
-  const changeColors = () => {
-    setTimeout(() => {
-      setShadow(shadows[Math.floor(Math.random() * (7 - 0) + 0)]);
-      changeColors();
-    }, 1000);
-  };
+  // const changeColors = () => {
+    // setTimeout(() => {
+      // setShadow(shadows[Math.floor(Math.random() * (7 - 0) + 0)]);
+      // changeColors();
+    // }, 1000);
+  // };
 
   // const changeLogo = () => {
   //   setTimeout(() => {
@@ -51,11 +51,16 @@ function App() {
   //     changeLogo();
   //   }, 1000);
   // };
+  setTimeout(() => {
+    // changeColors();
+    setShadow(shadows[Math.floor(Math.random() * (7 - 0) + 0)]);
+  }, 1000);
+  
 
-  useEffect(() => {
-    changeColors();
-    // changeLogo();
-  }, []);
+  // useEffect(() => {
+  //   changeColors();
+  //   // changeLogo();
+  // }, []);
 
   return (
     <>
