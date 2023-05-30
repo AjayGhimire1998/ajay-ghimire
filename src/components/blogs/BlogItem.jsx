@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "./blog-item.css";
 import PopUp from "./PopUp";
 
@@ -10,13 +10,17 @@ function BlogItem({ blog, hover, play }) {
     setIsOpen(true);
     setIsHover(false);
   };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
+
   return (
     <>
       <div
         className="blog-item-container"
-        // onClick={() => window.open(`${blog.url}`, "_blank")}
-        onClick={() => setIsOpen(true)}
-        onMouseLeave={() => setIsOpen(false)}
+        onMouseLeave={closeModal}
       >
         <div className="imgDiv">
           <img src={blog.profile} alt="pp" />
@@ -34,17 +38,20 @@ function BlogItem({ blog, hover, play }) {
 
         <h4>{blog.title}</h4>
         {isOpen ? (
-          <PopUp blog={blog} play={play} hover={hover}/>
+          <PopUp
+            blog={blog}
+            play={play}
+            hover={hover}
+            isOpen = {isOpen}
+            closeModal = {closeModal}
+          />
         ) : (
           <p>
             {blog.desc}
             <span
-              // href={blog.url}
-              // target="_blank"
-              // rel="noreferrer"
               style={
                 isHover
-                  ? { color: "#39ff14", fontSize: "large" }
+                  ? { color: "#39ff14", fontSize: "large", cursor: "pointer" }
                   : { animation: "changeText 8s linear infinite" }
               }
               onMouseOver={() => setIsHover(true)}
