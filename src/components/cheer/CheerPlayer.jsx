@@ -84,7 +84,7 @@ function CheerPlayer({ shadow }) {
             <img
               src={music}
               alt="avatar"
-              className="avatar-image"
+              className="avatar-image music"
               style={{ border: `3px solid ${shadow}` }}
             />
           </div>

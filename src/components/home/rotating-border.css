@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.rainbow {
+  position: relative;
+  z-index: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: 90% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#ffffff, #ffffff);
+    animation: rotate 2s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    /* background: white; */
+    border-radius: 50%;
+  }
+}
+
+.roat {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+  .roat {
+    height: 110px;
+    width: 110px;
+    /* margin-top: 40px; */
+  }
+
+  .rainbow{
+    height: 115px;
+    width: 115px;
+    /* margin-top: 40px; */
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .roat {
+    height: 88px;
+    width: 88px;
+    /* margin-top: 25px; */
+  }
+  .rainbow{
+    height: 93px;
+    width: 93px;
+    /* margin-top: 25px; */
+  }
+}

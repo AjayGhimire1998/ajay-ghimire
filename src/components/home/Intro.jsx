@@ -5,6 +5,7 @@ import ajay from "../../images/my-pictures/profile_pic.png";
 import cover from "../../images/cover.png";
 import pin from "../../images/my-pictures/pin.png";
 import ppvideo from "../../videos/PortfolioVideo.mp4";
+import RotatingBorder from "./RotatingBorder";
 
 function Intro({ shadow }) {
   const [profileHover, setProfileHover] = useState(false);
@@ -18,9 +19,9 @@ function Intro({ shadow }) {
         <ReactPlayer
           url={ppvideo}
           width="100%"
-          height="100%"  
+          height="100%"
           playing={true}
-		  controls={true}
+          controls={true}
         />
       ) : (
         <div
@@ -30,13 +31,12 @@ function Intro({ shadow }) {
             backgroundSize: "100% 100%",
           }}
         >
-          <img
-            src={ajay}
-            alt="avatar"
+          <div
             className="avatar-image"
             onMouseEnter={() => setProfileHover(true)}
-			// style={{ filter: `drop-shadow(0px 0px 10px ${shadow})`, border: `3px solid ${shadow}` }}
-          />
+          >
+            <RotatingBorder />
+          </div>
         </div>
       )}
       <div className="contents">

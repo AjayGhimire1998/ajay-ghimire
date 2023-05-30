@@ -1,132 +1,133 @@
 .intro-container {
-	width: 400px;
-	text-align: center;
-	border-radius: 5px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-top: 2%;
+  width: 400px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2%;
 }
 
 .avatar {
-	height: 100px;
-	padding: 10px;
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	background-size: auto;
-	
+  height: 130px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-size: auto;
 }
+/* *, *::before, *::after {
+	box-sizing:border-box;
+  } */
 
 .avatar-image {
-	height: 130px;
-	width: 130px;
-	border-radius: 50%;
-	object-fit: cover;
-	margin-top: 42px;
-	cursor: pointer;
-	border: 4px solid black;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  object-fit: cover; 
+   margin-top: 42px;
+   
 }
 
 .contents {
-	margin-top: 19%;
+  margin-top: 19%;
 }
 
 .contents > * {
-	background-color: black;
+  background-color: black;
 }
 
 .contents > p {
-	font-size: 1.8vh;
-	filter: contrast(200%);
-	color: white;
-	font-family: Futura;
+  font-size: 1.8vh;
+  filter: contrast(200%);
+  color: white;
+  font-family: Futura;
 }
 
 .contents > span {
-	font-size: 2.3vh;
-	font-style: italic;
-	filter: contrast(200%);
-	color: white;
-	font-family: Futura;
+  font-size: 2.3vh;
+  font-style: italic;
+  filter: contrast(200%);
+  color: white;
+  font-family: Futura;
 }
 
 .contents > div > strong {
-	font-family: Futura;
-	font-size: 3.5vh;
-	line-height: 2;
-	color: white;
+  font-family: Futura;
+  font-size: 3.5vh;
+  line-height: 2;
+  color: white;
 }
 
 .contents > span {
-	font-size: 2vh;
+  font-size: 2vh;
 }
 
 .contents > span > i {
-	font-size: 1.8vh;
-	font-family: Futura;
+  font-size: 1.8vh;
+  font-family: Futura;
 }
 .contents > span > i > img {
-	height: 15px;
-	width: 15px;
+  height: 15px;
+  width: 15px;
 }
 
 @media screen and (max-width: 760px) {
-	.intro-container {
-		width: 50%;
-		text-align: center;
-	}
-	.avatar {
-		height: 90px;
-	}
+  .intro-container {
+    width: 50%;
+    text-align: center;
+  }
+  .avatar {
+    height: 90px;
+  }
 
-	.avatar-image {
-		height: 110px;
-		width: 110px;
-		margin-top: 40px;
-	}
-	.contents > p {
-		font-size: 1.3vh;
-	}
-	.contents > span {
-		font-size: 1.8vh;
-	}
-	.contents > span > i {
-		font-size: 1.5vh;
-	}
+  .avatar-image {
+    height: 110px;
+    width: 110px;
+    margin-top: 25px;
+  }
+  .contents > p {
+    font-size: 1.3vh;
+  }
+  .contents > span {
+    font-size: 1.8vh;
+  }
+  .contents > span > i {
+    font-size: 1.5vh;
+  }
 
-	.contents > div > strong {
-		font-size: 2.8vh;
-	}
+  .contents > div > strong {
+    font-size: 2.8vh;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
-	.intro-container {
-		width: 60%;
-		text-align: center;
-	}
+  .intro-container {
+    width: 60%;
+    text-align: center;
+  }
 
-	.avatar {
-		height: 65px;
-	}
+  .avatar {
+    height: 65px;
+  }
 
-	.avatar-image {
-		height: 90px;
-		width: 90px;
-		margin-top: 25px;
-	}
-	.contents > p {
-		font-size: 0.9vh;
-	}
-	.contents > span {
-		font-size: 1.4vh;
-		font-style: italic;
-	}
-	.contents > span > i {
-		font-size: 1.2vh;
-	}
+  .avatar-image {
+    height: 90px;
+    width: 90px;
+    margin-top: 15px;
+  }
+  .contents > p {
+    font-size: 0.9vh;
+  }
+  .contents > span {
+    font-size: 1.4vh;
+    font-style: italic;
+  }
+  .contents > span > i {
+    font-size: 1.2vh;
+  }
 
-	.contents > div > strong {
-		font-size: 2.3vh;
-	}
+  .contents > div > strong {
+    font-size: 2.3vh;
+  }
 }

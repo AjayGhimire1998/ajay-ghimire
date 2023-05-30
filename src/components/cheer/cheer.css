@@ -41,3 +41,7 @@
   text-decoration: underline;
   background-color: rgb(0, 0, 0);
 }
+
+.music{
+  animation: rotate 2s linear infinite;
+}
