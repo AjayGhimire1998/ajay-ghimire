@@ -7,9 +7,13 @@ import { v4 as uuidv4 } from "uuid";
 
 function Blogs({ shadow }) {
   const [blogCount, setBlogCount] = useState(5);
+
+
   const blogItem = blogsData.map((blog) => {
     return <BlogItem blog={blog} key={uuidv4()} shadow={shadow} />;
   });
+
+
 
   const onSeeMore = () => {
     setBlogCount(blogsData.length);

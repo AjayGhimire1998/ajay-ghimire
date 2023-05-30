@@ -20,6 +20,7 @@ import EachProject from "./pages/project/EachProject";
 function App() {
   const [play] = useSound(click, { volume: 0.1 });
   const [onHover] = useSound(hover, { volume: 0.1 });
+  const [index, setIndex] = useState(0);
 
   let shadows = useMemo(() => [], []);
   shadows = [
@@ -35,9 +36,14 @@ function App() {
 
   const [shadow, setShadow] = useState("");
   setTimeout(() => {
-    setShadow(shadows[Math.floor(Math.random() * (7 - 0) + 0)]);
-  }, 1000);
-  
+    if (index < 7) {
+      setIndex(index + 1);
+    } else {
+      setIndex(0);
+    }
+    setShadow(shadows[index]);
+  }, 1500);
+
   return (
     <>
       <div className="space"></div>
@@ -50,15 +56,12 @@ function App() {
             path="/about"
             element={<About play={play} hover={onHover} />}
           />
-          <Route
-            path="/projects"
-            element={<Project play={play} />}
-          />
+          <Route path="/projects" element={<Project play={play} />} />
           <Route
             path="/projects/:name"
             element={<EachProject play={play} hover={onHover} />}
           />
-          <Route path="/blogs" element={<Blog shadow={shadow}/>} />
+          <Route path="/blogs" element={<Blog shadow={shadow} />} />
           <Route
             path="/resume"
             element={<Resume play={play} hover={onHover} />}
@@ -70,7 +73,7 @@ function App() {
         <br />
 
         <div className="footer">
-          <CheerPlayer  shadow={shadow}/>
+          <CheerPlayer shadow={shadow} />
           <br />
           <Contact play={play} />
           <footer>
