@@ -23,7 +23,7 @@ function FromTo({ edu, exp }) {
                   marginTop: ed.marginTop,
                 }}
               >
-                <p style={{ color: "white", marginRight: "-100%" }}>-&rarr;</p>
+                <p style={{ color: "white", marginRight: "-105%" }}>&rarr;</p>
                 <div className="edu-contents">
                   <div className="edu-desc">
                     <p>
@@ -46,20 +46,23 @@ function FromTo({ edu, exp }) {
         </div>
         <div className="line"></div>
         <div className="edu-container">
+          
           <div className="edu">
             <CgWorkAlt size="30px" />
             {exp.map((ex, index) => (
+              
               <div
                 className="exp-item"
                 key={index}
                 style={{
                   marginTop: ex.marginTop
                 }}
+                
               >
                 <p
-                  style={{ color: "white", marginLeft: "-100%", height: "0px" }}
+                  style={{ color: "white", marginLeft: "-105%", height: "0px" }}
                 >
-                  &larr;-
+                  &larr;
                 </p>
                 <div className="edu-contents">
                   <div className="edu-desc">
