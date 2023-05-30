@@ -46,3 +46,8 @@
 .music{
   animation: rotate 2s linear infinite;
 }
+
+.music-div{
+  animation: changeBorder 8s linear infinite;
+  border-radius: 50%;
+}

@@ -11,7 +11,7 @@
 }
 
 .rainbow {
-  position: relative;
+  position: fixed;
   z-index: 0;
   width: 130px;
   height: 130px;
@@ -56,7 +56,6 @@
   height: 125px;
   width: 125px;
   border-radius: 50%;
-  /* object-fit: ; */
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;

@@ -5,9 +5,7 @@ import PopUp from "./PopUp";
 function BlogItem({ blog }) {
   const [hover, setHover] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  
 
-  console.log(isOpen)
   const isOpenClick = () => setIsOpen(true);
   return (
     <>
