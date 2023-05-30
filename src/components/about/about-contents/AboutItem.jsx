@@ -13,6 +13,9 @@ function Profile({
   onPrevImageClick,
   onNextImageClick,
 }) {
+  const isEnd = imageCount === image.length - 1;
+  const isStart = imageCount === 0;
+
   return (
     <>
       {isPreviewOn ? (
@@ -23,7 +26,8 @@ function Profile({
                 <button
                   className="lt"
                   onClick={onPrevImageClick}
-                  disabled={imageCount === 0}
+                  disabled={isStart}
+                  style={isStart ? { color: "white" } : null}
                 >
                   &lt;Prev
                 </button>
@@ -39,7 +43,8 @@ function Profile({
                 <button
                   className="gt "
                   onClick={onNextImageClick}
-                  disabled={imageCount === image.length - 1}
+                  disabled={isEnd}
+                  style={isEnd ? { color: "white" } : null}
                 >
                   Next&gt;
                 </button>
