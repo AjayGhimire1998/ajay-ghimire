@@ -77,7 +77,7 @@ function App() {
             path="/projects/:name"
             element={<EachProject play={play} hover={onHover} />}
           />
-          <Route path="/blogs" element={<Blog />} />
+          <Route path="/blogs" element={<Blog shadow={shadow}/>} />
           <Route
             path="/resume"
             element={<Resume play={play} hover={onHover} />}
