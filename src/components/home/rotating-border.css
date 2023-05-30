@@ -1,8 +1,8 @@
-*,
-*::before,
+/* *, */
+/* *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
 @keyframes rotate {
   100% {
@@ -20,7 +20,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: cover;
+
+  
+ 
 
   &::before {
     content: "";
@@ -35,7 +37,7 @@
     background-size: 90% 50%, 50% 50%;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
     background-image: linear-gradient(#ffffff, #ffffff);
-    animation: rotate 2s linear infinite;
+    animation: rotate 2s infinite;
   }
 
   &::after {
@@ -46,7 +48,6 @@
     top: 6px;
     width: calc(100% - 12px);
     height: calc(100% - 12px);
-    /* background: white; */
     border-radius: 50%;
   }
 }
@@ -55,21 +56,24 @@
   height: 125px;
   width: 125px;
   border-radius: 50%;
-  object-fit: cover;
+  /* object-fit: ; */
   cursor: pointer;
+  object-fit: cover;
+  max-width: 100%;
+  object-position: center;
 }
 
 @media screen and (max-width: 760px) {
   .roat {
     height: 110px;
     width: 110px;
-    /* margin-top: 40px; */
+
   }
 
   .rainbow{
     height: 115px;
     width: 115px;
-    /* margin-top: 40px; */
+
   }
 }
 
@@ -77,11 +81,9 @@
   .roat {
     height: 88px;
     width: 88px;
-    /* margin-top: 25px; */
   }
   .rainbow{
     height: 93px;
     width: 93px;
-    /* margin-top: 25px; */
   }
 }
