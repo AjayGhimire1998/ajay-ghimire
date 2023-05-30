@@ -13,21 +13,37 @@
 }
 
 .previous {
-  width: 40%;
+  width: 30%;
+  text-align: center;
 }
 
 .next {
-  width: 40%;
+  width: 30%;
+  text-align: center;
 }
 
 @media screen and (max-width: 760px) {
   .about-container {
     width: 70%;
   }
+  .previous {
+    width: 28%;
+  }
+  
+  .next {
+    width: 28%;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
   .about-container {
     width: 80%;
+  }
+  .previous {
+    width: 25%;
+  }
+  
+  .next {
+    width: 25%;
   }
 }

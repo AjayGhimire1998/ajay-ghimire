@@ -35,7 +35,7 @@ function Intro({ shadow }) {
             alt="avatar"
             className="avatar-image"
             onMouseEnter={() => setProfileHover(true)}
-			style={{ filter: `drop-shadow(0px 0px 10px ${shadow})`, border: `3px solid ${shadow}` }}
+			// style={{ filter: `drop-shadow(0px 0px 10px ${shadow})`, border: `3px solid ${shadow}` }}
           />
         </div>
       )}

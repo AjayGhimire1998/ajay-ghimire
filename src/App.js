@@ -33,7 +33,7 @@ function App() {
     "#ff9900",
   ];
   let logos = useMemo(() => [], []);
-  logos = [logo1, logo2];
+  logos = [logo2];
 
   const [shadow, setShadow] = useState("");
   const [logo, setLogo] = useState(logos[0]);
@@ -45,16 +45,16 @@ function App() {
     }, 1000);
   };
 
-  const changeLogo = () => {
-    setTimeout(() => {
-      setLogo(logos[Math.floor(Math.random() * (2 - 0) + 0)]);
-      changeLogo();
-    }, 1000);
-  };
+  // const changeLogo = () => {
+  //   setTimeout(() => {
+  //     setLogo(logos[Math.floor(Math.random() * (2 - 0) + 0)]);
+  //     changeLogo();
+  //   }, 1000);
+  // };
 
   useEffect(() => {
     changeColors();
-    changeLogo();
+    // changeLogo();
   }, []);
 
   return (

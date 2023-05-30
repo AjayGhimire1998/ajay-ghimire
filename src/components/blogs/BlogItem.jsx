@@ -11,7 +11,7 @@ function BlogItem({ blog }) {
         <img src={blog.profile} alt="pp" />
         <div className="desc">
           <p>Ajay Ghimire</p>
-          <span> {blog.readTime + " " + "·" + " " + blog.datePossted} </span>
+          <span> {blog.readTime + " " + "·" + " "  +  blog.datePossted} </span>
         </div>
       </div>
 
