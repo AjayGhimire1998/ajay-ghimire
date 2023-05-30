@@ -4,7 +4,7 @@
 }
 
 .from-to-container > h3 > span {
-	font-size: 2vh;
+	font-size: 3vh;
 }
 
 .edu-exp-container {
@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 760px) {
   .from-to-container > h3 > span {
-    font-size: 1.8vh;
+    font-size: 2.8vh;
   }
 	.edu-time {
 		float: right;
@@ -123,7 +123,7 @@
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
   .from-to-container > h3 > span {
-    font-size: 1.6vh;
+    font-size: 2.5vh;
   }
 	.edu-desc > p > strong {
 		color: black;

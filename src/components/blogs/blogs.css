@@ -6,11 +6,14 @@
 	flex-direction: column;
 	justify-content: center;
 }
+.page-head >h3 > span{
+	font-size: 3vh;
+  }
 
 .blogs-container > p {
 	text-decoration: underline;
 	cursor: pointer;
-	font-size: 1.4vh;
+	font-size: 2vh;
 	color: white;
 }
 .blogs-container > p:hover {
@@ -23,8 +26,11 @@
 	}
 
 	.blogs-container > p {
-		font-size: 1.2vh;
+		font-size: 1.8vh;
 	}
+	.page-head >h3 > span{
+		font-size: 2.8vh;
+	  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
@@ -32,6 +38,9 @@
 		width: 80%;
 	}
 	.blogs-container > p {
-		font-size: 1vh;
+		font-size: 1.3vh;
 	}
+	.page-head >h3 > span{
+		font-size: 2.5vh;
+	  }
 }

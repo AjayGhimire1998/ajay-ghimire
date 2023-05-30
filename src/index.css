@@ -80,6 +80,7 @@ body {
 	font-size: small;
 }
 
+
 @media screen and (max-width: 760px) {
 	body {
 		overflow-x: hidden;
