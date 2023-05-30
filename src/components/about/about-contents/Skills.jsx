@@ -27,16 +27,15 @@ function Skills() {
 	const toolTipStyle = {
 		height: '10px',
 		width: 'auto',
-		fontSize: '10px',
+		fontSize: '12px',
 	};
 	return (
 		<div className="skills-container">
 			<h3 style={{ textAlign: 'center' }}>
 				<span>Technical Skills</span>
 			</h3>
-			<br />
 			<div className="languages">
-				<h6>Languages:</h6>
+				<h4>Languages:</h4>
 				<div className="icons-container">
 					<div id="html" data-tooltip-content="HTML" data-tooltip-place="bottom">
 						<HTMLSvg />
@@ -63,7 +62,7 @@ function Skills() {
 			<br />
 
 			<div className="languages">
-				<h6>Frameworks / Libraries:</h6>
+				<h4>Frameworks / Libraries:</h4>
 				<div className="icons-container">
 					<div id="REACT" data-tooltip-content="React" data-tooltip-place="bottom">
 						<REACTSvg />
@@ -89,7 +88,7 @@ function Skills() {
 			</div>
 			<br />
 			<div className="languages">
-				<h6>Database:</h6>
+				<h4>Database:</h4>
 				<div className="icons-container">
 					<div id="MySQL" data-tooltip-content="MySQL" data-tooltip-place="bottom">
 						<MYSQLSvg />
@@ -107,7 +106,7 @@ function Skills() {
 			</div>
 			<br />
 			<div className="languages">
-				<h6>Tools:</h6>
+				<h4>Tools:</h4>
 				<div className="icons-container-tools">
 					<div id="VS Code" data-tooltip-content="VS Code" data-tooltip-place="bottom">
 						<VSCODESvg />

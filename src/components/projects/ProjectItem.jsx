@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function ProjectItem({ project, hover, play }) {
+function ProjectItem({ project, play }) {
   const [isPlaying, setIsPlaying] = useState(false);
   return (
     <div className="project-item-card">
@@ -36,7 +36,7 @@ function ProjectItem({ project, hover, play }) {
         onMouseLeave={() => setIsPlaying(false)}
       />
       <Link to={`/projects/${project.name}`} style={{ textDecoration: "none" }}>
-        <div className="card-contents" onMouseOver={hover} onClick={play}>
+        <div className="card-contents" onClick={play}>
           <h4
             style={{
               textDecoration: "underline",

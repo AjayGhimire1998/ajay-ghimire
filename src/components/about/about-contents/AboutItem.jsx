@@ -13,7 +13,7 @@ function Profile({
   onPrevImageClick,
   onNextImageClick,
 }) {
-  const isEnd = imageCount === image.length - 1;
+  const isEnd =  imageCount === image?.length - 1;
   const isStart = imageCount === 0;
 
   return (

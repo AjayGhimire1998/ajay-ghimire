@@ -7,7 +7,11 @@
 }
 
 .project-item-container  > h3 > span{
-  font-size: 2vh;
+  font-size: 3vh;
+}
+
+.project-desc{
+  background-color: black;
 }
 
 .project-video {
@@ -48,7 +52,7 @@
 
 @media screen and (max-width: 760px) {
 	.project-item-container > h3 > span {
-		font-size: 1.8vh;
+		font-size: 2.8vh;
 	}
   .project-item-container {
     width: 70%;
@@ -58,7 +62,7 @@
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
 	.project-item-container > h3 > span {
-		font-size: 1.6vh;
+		font-size: 2.5vh;
 	}
   .project-item-container {
     width: 80%;

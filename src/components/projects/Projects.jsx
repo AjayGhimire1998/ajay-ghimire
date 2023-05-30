@@ -3,9 +3,9 @@ import './projects.css';
 import { videoLinks } from './projects-data';
 import ProjectItem from './ProjectItem';
 
-function Projects({ hover, play }) {
+function Projects({ play }) {
 	const projects = videoLinks.map((project) => {
-		return <ProjectItem project={project} hover={hover} play={play} />;
+		return <ProjectItem project={project}  play={play} />;
 	});
 	return (
 		<div className="projects-container">

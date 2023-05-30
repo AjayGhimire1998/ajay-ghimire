@@ -91,7 +91,7 @@ function AboutMe({ play, hover }) {
 	const toolTipStyle = {
 		height: '10px',
 		width: 'auto',
-		fontSize: '10px',
+		fontSize: '12px',
 	};
 
 	return (

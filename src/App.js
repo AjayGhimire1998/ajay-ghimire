@@ -71,7 +71,7 @@ function App() {
           />
           <Route
             path="/projects"
-            element={<Project play={play} hover={onHover} />}
+            element={<Project play={play} />}
           />
           <Route
             path="/projects/:name"

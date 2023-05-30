@@ -14,6 +14,7 @@ function EachProjectItem({ hover, play }) {
 	const [indexOfProject, setIndexOfProject] = useState(videoLinks.indexOf(project));
 
 	const onLinkClick = (link) => {
+		play();
 		window.open(link, '_blank');
 	};
 
@@ -55,7 +56,6 @@ function EachProjectItem({ hover, play }) {
 				{project.links.live ? (
 					<AiOutlineLink
 						size={40}
-						onMouseOver={hover}
 						onClick={() => {
 							onLinkClick(project.links.live);
 						}}
@@ -64,7 +64,6 @@ function EachProjectItem({ hover, play }) {
 				) : null}
 				<AiOutlineGithub
 					size={40}
-					onMouseOver={hover}
 					onClick={() => {
 						onLinkClick(project.links.git);
 					}}
@@ -75,7 +74,7 @@ function EachProjectItem({ hover, play }) {
 				<AboutItem desc={project.desc} desc2={project.desc2} />
 			</div>
 			<br />
-			<h5 style={{ textAlign: 'center' }}>Tools Used:</h5>
+			<h4 style={{ textAlign: 'center' }}>Tools Used:</h4>
 			<div className="tools-used">{project.tools.map((lan) => lan)}</div>
 			<br />
 			<div className="about-buttons" style={{ width: '100%' }}>
