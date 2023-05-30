@@ -1,7 +1,6 @@
 .blog-item-container {
   background-color: rgb(27, 25, 25);
   margin: 20px;
-  /* cursor: pointer; */
   border-radius: 20px;
 }
 .blog-item-container:hover {

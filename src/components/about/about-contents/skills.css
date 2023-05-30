@@ -1,6 +1,7 @@
 .skills-container {
 	display: flex;
 	flex-direction: column;
+	
 }
 
 .skills-container > h3 > span {
@@ -19,7 +20,17 @@
 
 .icons-container {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	justify-content: space-evenly;
+	height: 100px;
+	background-color: rgb(27, 25, 25);
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.icons-container:hover{
+	border: 3px solid white;
 }
 
 .icons-container > * {
@@ -29,10 +40,20 @@
 }
 
 .icons-container-tools {
+
 	display: flex;
-	justify-items: center;
+	align-items: center;
+	justify-content: center;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	height: 100px;
+	background-color: rgb(27, 25, 25);
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.icons-container-tools:hover{
+	border: 3px solid white;
 }
 
 .icons-container-tools > * > img {

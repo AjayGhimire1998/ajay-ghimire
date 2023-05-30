@@ -34,6 +34,7 @@ function Skills() {
 			<h3 style={{ textAlign: 'center' }}>
 				<span>Technical Skills</span>
 			</h3>
+			<br/>
 			<div className="languages">
 				<h4>Languages:</h4>
 				<div className="icons-container">
