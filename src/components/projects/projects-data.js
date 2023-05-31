@@ -17,7 +17,7 @@ import { v4 as uuidv4 } from 'uuid';
 const toolTipStyle = {
 	height: '10px',
 	width: 'auto',
-	fontSize: '10px',
+	fontSize: '12px',
 };
 export const videoLinks = [
 	{

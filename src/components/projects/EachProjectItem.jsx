@@ -39,7 +39,7 @@ function EachProjectItem({ hover, play }) {
 	const toolTipStyle = {
 		height: '10px',
 		width: 'auto',
-		fontSize: '10px',
+		fontSize: '12px',
 	};
 
 	return (
