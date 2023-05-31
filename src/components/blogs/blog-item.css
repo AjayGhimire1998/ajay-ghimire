@@ -1,6 +1,7 @@
 .blog-item-container {
   background-color: rgb(27, 25, 25);
   margin: 20px;
+  /* cursor: pointer; */
   border-radius: 20px;
 }
 .blog-item-container:hover {
@@ -48,20 +49,21 @@
 	object-fit: cover;
 }
 
+.blog-item-container > p{
+  margin-bottom: 5%;
+  font-size: 17px;
+}
+
 .blog-item-container > p > a {
+  
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
-.blog-contents {
-  padding: 10px;
-}
-.blog-contents > p > a:hover {
+.blog-item-container > p > a:hover {
   color: #39ff14;
-
+  cursor: pointer;
 }
-.blog-contents > h4{
+.blog-item-container > h4{
   font-size: 25px;
-  margin-bottom: -2%;
 }
 
 .tag{
