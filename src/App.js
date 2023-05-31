@@ -1,9 +1,8 @@
-import { useEffect, useState, useMemo } from "react";
+
 import { Routes, Route } from "react-router-dom";
 import useSound from "use-sound";
 import click from "./sounds/click.wav";
 import hover from "./sounds/hover.mp3";
-// import logo1 from "./images/logo.png";
 import logo from "./images/logo2.png";
 import Home from "./pages/home/Home";
 import Logo from "./components/home/Logo";

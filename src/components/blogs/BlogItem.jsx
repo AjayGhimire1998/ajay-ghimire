@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useState } from "react";
 import "./blog-item.css";
 import PopUp from "./PopUp";
 
@@ -15,6 +15,8 @@ function BlogItem({ blog, hover, play }) {
     setIsOpen(false);
   };
 
+  const blogReadAndDatea = `${blog.readTime} ${"·"} ${blog.datePossted}`;
+
   return (
     <>
       <div className="blog-item-container" onMouseLeave={closeModal}>
@@ -22,14 +24,13 @@ function BlogItem({ blog, hover, play }) {
           <img src={blog.profile} alt="pp" />
           <div className="desc">
             <p>Ajay Ghimire</p>
-            <span> {blog.readTime + " " + "·" + " " + blog.datePossted} </span>
+            <span> {blogReadAndDatea} </span>
           </div>
         </div>
         <div className="blog-contents">
           <div className="tag">
             <span>{blog.tag}</span>
           </div>
-          <br/>
 
           <h4>{blog.title}</h4>
           {isOpen ? (

@@ -20,7 +20,7 @@ function ProjectItem({ project, play }) {
             playerVars: {
               disablekb: 1,
               controls: 0,
-              rel: 0,
+
               modestbranding: 1,
               fs: 0,
               showsearch: 0,

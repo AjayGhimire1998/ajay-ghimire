@@ -3,12 +3,12 @@ import HelloMsg from '../../components/home/HelloMsg';
 import './home.css';
 import Intro from '../../components/home/Intro';
 
-function Home({ shadow, play }) {
+function Home({ play }) {
 	return (
 		<>
 			<div className="home">
 				<HelloMsg />
-				<Intro shadow={shadow} play={play} />
+				<Intro play={play} />
 			</div>
 		</>
 	);
