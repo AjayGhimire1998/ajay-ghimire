@@ -8,7 +8,7 @@ import {
 
 const LinkedInSvg = () => {
   return (
-    <svg viewBox="0 0 128 128" width="38" height="38">
+    <svg viewBox="0 0 128 128" height="40px" width="40px">
       <path
         fill="#0076b2"
         d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z"
@@ -27,8 +27,8 @@ const GithubSvg = () => {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="42"
-      height="42"
+      height="40px"
+      width="40px"
       viewBox="0 0 48 48"
     >
       <path
@@ -61,8 +61,8 @@ const EmailSvg = () => {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="38"
-      height="38"
+      height="40px"
+      width="40px"
       viewBox="0 0 48 48"
     >
       <path
@@ -95,14 +95,14 @@ const FacebookSvg = () => {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="42"
-      height="42"
+      height="43px"
+      width="43px"
       viewBox="0 0 48 48"
     >
-      <path fill="#3f51b5" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path>
+      <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
       <path
         fill="#fff"
-        d="M29.368,24H26v12h-5V24h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H30v4h-2.287 C26.104,16,26,16.6,26,17.723V20h4L29.368,24z"
+        d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"
       ></path>
     </svg>
   );
@@ -114,8 +114,8 @@ const InstaSvg = () => {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="44"
-      height="44"
+      height="45px"
+      width="45px"
       viewBox="0 0 48 48"
     >
       <path
@@ -186,10 +186,10 @@ const InstaSvg = () => {
         <path
           fill="none"
           stroke="#fff"
-          stroke-linecap="round"
+          strokeLinecap="round"
           stroke-linejoin="round"
           stroke-miterlimit="10"
-          stroke-width="2"
+          strokeWidth="2"
           d="M30,11H18c-3.9,0-7,3.1-7,7v12c0,3.9,3.1,7,7,7h12c3.9,0,7-3.1,7-7V18C37,14.1,33.9,11,30,11z"
         ></path>
         <circle cx="31" cy="16" r="1" fill="#fff"></circle>
@@ -201,10 +201,10 @@ const InstaSvg = () => {
           r="6"
           fill="none"
           stroke="#fff"
-          stroke-linecap="round"
+          strokeLinecap="round"
           stroke-linejoin="round"
           stroke-miterlimit="10"
-          stroke-width="2"
+          strokeWidth="2"
         ></circle>
       </g>
     </svg>
@@ -276,8 +276,21 @@ export const contacts = [
       />
     ),
   },
-  <SiInstagram
-    size={35}
-    onClick={() => onContactClick("https://www.instagram.com/azeysupertramp/")}
-  />,
+  {
+    plain: (
+      <SiInstagram
+        size={35}
+        onClick={() =>
+          onContactClick("https://www.instagram.com/azeysupertramp/")
+        }
+      />
+    ),
+    colored: (
+      <InstaSvg
+        onClick={() =>
+          onContactClick("https://www.instagram.com/azeysupertramp/")
+        }
+      />
+    ),
+  },
 ];
