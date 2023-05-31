@@ -15,13 +15,9 @@ function BlogItem({ blog, hover, play }) {
     setIsOpen(false);
   };
 
-
   return (
     <>
-      <div
-        className="blog-item-container"
-        onMouseLeave={closeModal}
-      >
+      <div className="blog-item-container" onMouseLeave={closeModal}>
         <div className="imgDiv">
           <img src={blog.profile} alt="pp" />
           <div className="desc">
@@ -29,39 +25,39 @@ function BlogItem({ blog, hover, play }) {
             <span> {blog.readTime + " " + "·" + " " + blog.datePossted} </span>
           </div>
         </div>
+        <div className="blog-contents">
+          <div className="tag">
+            <span>{blog.tag}</span>
+          </div>
+          <br/>
 
-        <div className="tag">
-          <span>{blog.tag}</span>
+          <h4>{blog.title}</h4>
+          {isOpen ? (
+            <PopUp
+              blog={blog}
+              play={play}
+              hover={hover}
+              isOpen={isOpen}
+              closeModal={closeModal}
+            />
+          ) : (
+            <p>
+              {blog.desc}
+              <span
+                style={
+                  isHover
+                    ? { color: "#39ff14", fontSize: "large", cursor: "pointer" }
+                    : { animation: "changeText 8s linear infinite" }
+                }
+                onMouseOver={() => setIsHover(true)}
+                onMouseLeave={() => setIsHover(false)}
+                onClick={isOpenClick}
+              >
+                Read More
+              </span>
+            </p>
+          )}
         </div>
-        <br />
-        <br />
-
-        <h4>{blog.title}</h4>
-        {isOpen ? (
-          <PopUp
-            blog={blog}
-            play={play}
-            hover={hover}
-            isOpen = {isOpen}
-            closeModal = {closeModal}
-          />
-        ) : (
-          <p>
-            {blog.desc}
-            <span
-              style={
-                isHover
-                  ? { color: "#39ff14", fontSize: "large", cursor: "pointer" }
-                  : { animation: "changeText 8s linear infinite" }
-              }
-              onMouseOver={() => setIsHover(true)}
-              onMouseLeave={() => setIsHover(false)}
-              onClick={isOpenClick}
-            >
-              Read More
-            </span>
-          </p>
-        )}
       </div>
     </>
   );

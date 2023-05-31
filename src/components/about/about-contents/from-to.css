@@ -24,7 +24,7 @@
   margin: 20px;
   max-width: auto;
   background-color: rgb(27, 25, 25);
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1.5px solid white;
 
 }
@@ -37,7 +37,7 @@
 	margin: 20px;
 	max-width: auto;
 	background-color: rgb(27, 25, 25);
-	border-radius: 20px;
+	border-radius: 10px;
 	border: 1.5px solid white;
 }
 

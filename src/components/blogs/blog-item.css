@@ -52,12 +52,17 @@
   /* color: rgb(155, 232, 140); */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.blog-item-container > p > a:hover {
+
+.blog-contents {
+  padding: 10px;
+}
+.blog-contents > p > a:hover {
   color: #39ff14;
 
 }
-.blog-item-container > h4{
+.blog-contents > h4{
   font-size: 25px;
+  /* line-height: 0%; */
 }
 
 .tag{

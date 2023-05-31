@@ -30,7 +30,8 @@
 }
 
 .icons-container:hover{
-	border: 3px solid white;
+	/* border: 3px solid white; */
+	background-color: black;
 }
 
 .icons-container > * {
@@ -53,7 +54,8 @@
 }
 
 .icons-container-tools:hover{
-	border: 3px solid white;
+	/* border: 2px solid white; */
+	background-color: black;
 }
 
 .icons-container-tools > * > img {

@@ -16,7 +16,8 @@
 }
 
 .player > *:hover {
-  border: 2px solid white;
+  /* border: 2px solid white; */
+  background-color: rgb(0, 0, 0);
   border-radius: 5px;
 }
 .cheer-up {
