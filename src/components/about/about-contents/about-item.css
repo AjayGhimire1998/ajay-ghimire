@@ -67,12 +67,17 @@
   object-fit: fill;
 }
 
+.preview-img{
+  border: 2px solid white;
+}
+
 .preview-image {
   animation: preview-image-container 1s;
   margin-top: 0%;
   height: auto;
   width: 100%;
   object-fit: scale-down;
+ 
 }
 
 @keyframes preview-image-container {

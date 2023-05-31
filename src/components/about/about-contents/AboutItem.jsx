@@ -27,12 +27,12 @@ function Profile({
                   className="lt"
                   onClick={onPrevImageClick}
                   disabled={isStart}
-                  style={isStart ? { color: "white" } : null}
+                  style={isStart ? { color: "black", backgroundColor:  "rgba(193, 190, 190, 0.7)"} : null}
                 >
                   &lt;Prev
                 </button>
               </div>
-              <div>
+              <div class="preview-img">
                 <img
                   src={image[imageCount]}
                   className="preview-image"
@@ -44,7 +44,7 @@ function Profile({
                   className="gt "
                   onClick={onNextImageClick}
                   disabled={isEnd}
-                  style={isEnd ? { color: "white" } : null}
+                  style={isEnd ? { color: "black", backgroundColor: "rgba(193, 190, 190, 0.7)" } : null}
                 >
                   Next&gt;
                 </button>
