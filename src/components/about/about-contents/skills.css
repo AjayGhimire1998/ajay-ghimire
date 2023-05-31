@@ -27,10 +27,11 @@
 	background-color: rgb(27, 25, 25);
   margin: 10px;
   border-radius: 20px;
+  border: 2px solid black;
 }
 
 .icons-container:hover{
-	/* border: 3px solid white; */
+	border: 2px solid white;
 	background-color: black;
 }
 
@@ -51,10 +52,11 @@
 	background-color: rgb(27, 25, 25);
   margin: 10px;
   border-radius: 20px;
+ 
 }
 
 .icons-container-tools:hover{
-	/* border: 2px solid white; */
+	border: 2px solid white;
 	background-color: black;
 }
 

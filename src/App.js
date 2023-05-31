@@ -47,7 +47,6 @@ function App() {
         <br />
         <Navbar play={play} hover={onHover} />
         <br />
-
         <div className="footer">
           <CheerPlayer />
           <br />
