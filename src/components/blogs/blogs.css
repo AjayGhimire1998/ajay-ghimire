@@ -1,5 +1,5 @@
 .blogs-container {
-	width: 500px;
+	width: 700px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -27,7 +27,8 @@
 
 @media screen and (max-width: 760px) {
 	.blogs-container {
-		width: 70%;
+		width: 90%;
+		margin: 16px;
 	}
 
 	.blogs-container > p {
@@ -41,6 +42,7 @@
 @media screen and (min-width: 300px) and (max-width: 480px) {
 	.blogs-container {
 		width: 100%;
+		margin: 16px;
 	}
 	.blogs-container > p {
 		font-size: 1.6vh;
