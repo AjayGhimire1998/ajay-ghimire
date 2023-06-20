@@ -37,7 +37,9 @@
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
   .about-container {
-    width: 80%;
+    width: 100%;
+    margin: 16px;
+    padding: 16px;
   }
   .previous {
     width: 25%;

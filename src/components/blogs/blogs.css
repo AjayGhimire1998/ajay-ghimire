@@ -40,7 +40,7 @@
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
 	.blogs-container {
-		width: 80%;
+		width: 100%;
 	}
 	.blogs-container > p {
 		font-size: 1.6vh;
