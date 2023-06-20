@@ -187,8 +187,8 @@ const InstaSvg = () => {
           fill="none"
           stroke="#fff"
           strokeLinecap="round"
-          stroke-linejoin="round"
-          stroke-miterlimit="10"
+          strokeLinejoin="round"
+          strokeMiterlimit="10"
           strokeWidth="2"
           d="M30,11H18c-3.9,0-7,3.1-7,7v12c0,3.9,3.1,7,7,7h12c3.9,0,7-3.1,7-7V18C37,14.1,33.9,11,30,11z"
         ></path>
@@ -202,8 +202,8 @@ const InstaSvg = () => {
           fill="none"
           stroke="#fff"
           strokeLinecap="round"
-          stroke-linejoin="round"
-          stroke-miterlimit="10"
+          strokeLinejoin="round"
+          strokeMiterlimit="10"
           strokeWidth="2"
         ></circle>
       </g>
@@ -211,86 +211,89 @@ const InstaSvg = () => {
   );
 };
 
-const onContactClick = (link) => {
+export const onContactClick = (link) => {
   // play();
   window.open(link, "_blank");
 };
 
-const onMailClick = (gmail) => {
-  // play();
-  window.location = `mailto: ${gmail}`;
-};
+// export const onMailClick = (gmail) => {
+//   // play();
+//   window.location = `mailto: ${gmail}`;
+// };
 
 export const contacts = [
   {
     plain: (
       <SiLinkedin
         size={35}
-        onClick={() =>
-          onContactClick("https://www.linkedin.com/in/ajayghimire/")
-        }
+        // onClick={onContactClick("https://www.linkedin.com/in/ajayghimire/")}
       />
     ),
     colored: (
       <LinkedInSvg
-        onClick={() =>
-          onContactClick("https://www.linkedin.com/in/ajayghimire/")
-        }
+      // onClick={onContactClick("https://www.linkedin.com/in/ajayghimire/")}
       />
     ),
+    link: "https://www.linkedin.com/in/ajayghimire/",
   },
   {
     plain: (
       <SiGithub
         size={35}
-        onClick={() => onContactClick("https://github.com/AjayGhimire1998")}
+        // onClick={() => onContactClick("https://github.com/AjayGhimire1998")}
       />
     ),
     colored: (
       <GithubSvg
-        onClick={() => onContactClick("https://github.com/AjayGhimire1998")}
+      // onClick={() => onContactClick("https://github.com/AjayGhimire1998")}
       />
     ),
+    link: "https://github.com/AjayGhimire1998",
   },
   {
     plain: (
       <SiGmail
         size={35}
-        onClick={() => onMailClick("ajayghimire1998@gmail.com")}
+        // onClick={() => onMailClick("ajayghimire1998@gmail.com")}
       />
     ),
     colored: (
-      <EmailSvg onClick={() => onMailClick("ajayghimire1998@gmail.com")} />
+      <EmailSvg
+      // onClick={() => onMailClick("ajayghimire1998@gmail.com")}
+      />
     ),
+    link: "mailto: ajayghimire009@gmail.com"
   },
   {
     plain: (
       <SiFacebook
         size={35}
-        onClick={() => onContactClick("https://www.facebook.com/azeyghimirey/")}
+        // onClick={() => onContactClick("https://www.facebook.com/azeyghimirey/")}
       />
     ),
     colored: (
       <FacebookSvg
-        onClick={() => onContactClick("https://www.facebook.com/azeyghimirey/")}
+      // onClick={() => onContactClick("https://www.facebook.com/azeyghimirey/")}
       />
     ),
+    link: "https://www.facebook.com/azeyghimirey/",
   },
   {
     plain: (
       <SiInstagram
         size={35}
-        onClick={() =>
-          onContactClick("https://www.instagram.com/azeysupertramp/")
-        }
+        // onClick={() =>
+        //   onContactClick("https://www.instagram.com/azeysupertramp/")
+        // }
       />
     ),
     colored: (
       <InstaSvg
-        onClick={() =>
-          onContactClick("https://www.instagram.com/azeysupertramp/")
-        }
+      // onClick={() =>
+      //   onContactClick("https://www.instagram.com/azeysupertramp/")
+      // }
       />
     ),
+    link: "https://www.instagram.com/azeysupertramp/",
   },
 ];

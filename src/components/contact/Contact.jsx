@@ -7,7 +7,8 @@ function Contact({ play }) {
     return (
       <EachContact
         contact={contact}
-        contacts={contacts}
+        // contacts={contacts}
+        play={play}
         key={contacts?.indexOf(contact)}
       />
     );
