@@ -19,11 +19,19 @@ export const edu = [
 
 export const exp = [
   {
+    company: "Woolworths CFC",
+    address: "Lidcombe, Sydney",
+    jobTitle: "Online Dispatch Member",
+    startTime: "Dec 2022",
+    endTime: "Present",
+    marginTop: "0px"
+  },
+  {
     company: "Chemist Warehouse",
     address: "Brookvale, Sydney",
     jobTitle: "Retail Assistant",
     startTime: "Jan 2023",
-    endTime: "Present",
+    endTime: "Jul 2023",
     marginTop: "0px"
   },
   {
@@ -32,15 +40,6 @@ export const exp = [
     jobTitle: "Intern Web Developer",
     startTime: "Dec 2022",
     endTime: "March 2023",
-    marginTop: "0px"
-  },
-
-  {
-    company: "Woolworths CFC",
-    address: "Lidcombe, Sydney",
-    jobTitle: "Online Dispatch Member",
-    startTime: "Dec 2022",
-    endTime: "Present",
     marginTop: "0px"
   },
   {
