@@ -15,6 +15,7 @@
 .edu-container {
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 .edu-item {
@@ -24,7 +25,6 @@
   border-radius: 10px;
   border: 2px solid white;
   color: transparent;
-
 }
 
 .edu-item:hover {
@@ -133,6 +133,9 @@
   .line {
     margin-top: 8%;
   }
+  .edu-container {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
@@ -168,5 +171,8 @@
   }
   .line {
     margin-top: 12%;
+  }
+  .edu-container {
+    width: 100%;
   }
 }

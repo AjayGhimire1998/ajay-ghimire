@@ -7,34 +7,35 @@ function ProjectItem({ project, play }) {
   const [isPlaying, setIsPlaying] = useState(false);
   return (
     <div className="project-item-card">
-      <ReactPlayer
-        url={project.url}
-        className="video-player"
-        playing={isPlaying}
-        loop={true}
-        muted={true}
-        height="200px"
-        width="300px"
-        config={{
-          youtube: {
-            playerVars: {
-              disablekb: 1,
-              controls: 0,
+      <div className="video-player">
+        <ReactPlayer
+          url={project.url}
+          playing={isPlaying}
+          loop={true}
+          muted={true}
+          height="200px"
+          width="380px"
+          config={{
+            youtube: {
+              playerVars: {
+                disablekb: 1,
+                controls: 0,
 
-              modestbranding: 1,
-              fs: 0,
-              showsearch: 0,
-              rel: 0,
-              iv_load_policy: 3,
-              end: 10,
-              playlist: project.videoId,
-              loop: 1,
+                modestbranding: 1,
+                fs: 0,
+                showsearch: 0,
+                rel: 0,
+                iv_load_policy: 3,
+                end: 10,
+                playlist: project.videoId,
+                loop: 1,
+              },
             },
-          },
-        }}
-        onMouseEnter={() => setIsPlaying(true)}
-        onMouseLeave={() => setIsPlaying(false)}
-      />
+          }}
+          onMouseEnter={() => setIsPlaying(true)}
+          onMouseLeave={() => setIsPlaying(false)}
+        />
+      </div>
       <Link to={`/projects/${project.name}`} style={{ textDecoration: "none" }}>
         <div className="card-contents" onClick={play}>
           <h4

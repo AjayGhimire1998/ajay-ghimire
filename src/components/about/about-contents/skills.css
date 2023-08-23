@@ -1,118 +1,148 @@
 .skills-container {
-	display: flex;
-	flex-direction: column;
-	
+  display: flex;
+  flex-direction: column;
+  width: 700px;
 }
 
 .skills-container > h3 > span {
-	font-size: 3vh;
+  font-size: 3vh;
 }
 
 .languages {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .languages > h6 {
-	line-height: 1.7;
+  line-height: 1.7;
 }
 
 .icons-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	justify-content: space-evenly;
-	height: 100px;
-	background-color: rgb(27, 25, 25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 80px;
+  background-color: rgb(27, 25, 25);
   margin: 10px;
   border-radius: 20px;
   border: 2px solid black;
+  /* width: 680px;
+  gap: 50px; */
 }
 
-.icons-container:hover{
-	border: 2px solid white;
-	background-color: black;
+.icons-container:hover {
+  border: 2px solid white;
+  background-color: black;
 }
 
 .icons-container > * {
-	height: 50px;
-	width: 50px;
-	font-size: 50px;
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
 }
 
 .icons-container-tools {
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	height: 100px;
-	background-color: rgb(27, 25, 25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  height: 80px;
+  background-color: rgb(27, 25, 25);
   margin: 10px;
   border-radius: 20px;
- 
+gap:30px;
+  /* width: 680px;
+  gap: 30px; */
 }
 
-.icons-container-tools:hover{
-	border: 2px solid white;
-	background-color: black;
+.icons-container-tools:hover {
+  border: 2px solid white;
+  background-color: black;
 }
 
 .icons-container-tools > * > img {
-	height: 50px;
-	width: 50px;
-	font-size: 50px;
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
 }
 
 .icons-container-tools > #AfterEffects {
-	height: 50px;
-	width: 50px;
-	font-size: 50px;
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
 }
 
 @media screen and (max-width: 760px) {
-	.skills-container > h3 > span {
-		font-size: 2.8vh;
-	}
+  .skills-container {
+    width: 100%;
+  }
+  .skills-container > h3 > span {
+    font-size: 2.8vh;
+  }
+  .icons-container {
+    width: 100%;
+    /* height: 90px; */
+    /* height: 90%; */
+  }
 
-	.icons-container > * {
-		height: 40px;
-		width: 40px;
-		font-size: 40px;
-	}
+  .icons-container-tools {
+    width: 100%;
+    /* height: 90px; */
+    /* height: 90%; */
+  }
 
-	.icons-container-tools > * > img {
-		height: 40px;
-		width: 40px;
-		font-size: 40px;
-	}
-	.icons-container-tools > #AfterEffects {
-		height: 40px;
-		width: 40px;
-		font-size: 40px;
-	}
+  .icons-container > * {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+  }
+
+  .icons-container-tools > * > img {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+  }
+  .icons-container-tools > #AfterEffects {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+  }
 }
 
-@media screen and (min-width: 300px) and (max-width: 480px) {
-	
-	.skills-container > h3 > span {
-		font-size: 2.5vh;
-	}
-	.icons-container > * {
-		height: 30px;
-		width: 30px;
-		font-size: 40px;
-	}
-	.icons-container-tools > * > img {
-		height: 30px;
-		width: 30px;
-		font-size: 40px;
-	}
-	.icons-container-tools > #AfterEffects {
-		height: 30px;
-		width: 30px;
-		font-size: 40px;
-	}
+@media screen and (max-width: 450px) {
+  .skills-container {
+    width: 100%;
+  }
+  .skills-container > h3 > span {
+    font-size: 2.5vh;
+  }
+  .icons-container {
+    width: 100%;
+    /* height: 80px; */
+    /* height: 100%; */
+  }
+  .icons-container-tools {
+    width: 100%;
+	gap: 20px;
+    /* height: 90px; */
+  }
+
+  .icons-container > * {
+    height: 30px;
+    width: 30px;
+    font-size: 40px;
+  }
+  .icons-container-tools > * > img {
+    height: 30px;
+    width: 30px;
+    font-size: 40px;
+  }
+  .icons-container-tools > #AfterEffects {
+    height: 30px;
+    width: 30px;
+    font-size: 40px;
+  }
 }

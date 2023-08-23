@@ -1,9 +1,10 @@
 .projects-container {
-  width: 700px;
+  width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
 .page-title > h3 > span{
@@ -14,28 +15,47 @@
 
 .projects{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap:  wrap;
+  flex-direction: column;
+  align-items: center; 
+  /* justify-content: center;
+  /* justify-content: space-around; */
+  width: 550px;
+  gap: 50px;
+  
+  /* flex-wrap:  wrap; */
 }
 
 
 @media screen and (max-width: 760px) {
   .projects-container {
-    width: 70%;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .page-title > h3 > span{
     font-size: 2.8vh;
 
   }
+  .projects {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
   .projects-container {
-    width: 80%;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .page-title > h3 > span{
     font-size: 2.5vh;
    
+  }
+  .projects {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
