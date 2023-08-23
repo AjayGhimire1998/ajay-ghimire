@@ -10,7 +10,8 @@ body {
   max-width: 100%;
   min-height: 100vh;
   background-color: rgb(0, 0, 0) !important;
-  overflow-x: hidden;
+  overflow-x: hidden!;
+
   /* outline: 1px red solid !important;
 	visibility: visible !important; */
 }

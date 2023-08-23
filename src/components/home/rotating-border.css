@@ -66,27 +66,27 @@
   object-position: center;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 600px) {
   .roat {
-    height: 110px;
-    width: 110px;
+    /* height: 110px;
+    width: 110px; */
 
   }
 
   .rainbow{
-    height: 115px;
-    width: 115px;
+    /* height: 115px;
+    width: 115px; */
 
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 480px) {
+@media screen  and (max-width: 480px) {
   .roat {
-    height: 88px;
-    width: 88px;
+    height: 117px;
+    width: 117px;
   }
   .rainbow{
-    height: 93px;
-    width: 93px;
+    height: 123px;
+    width: 123px;
   }
 }
