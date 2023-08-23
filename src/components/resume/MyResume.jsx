@@ -3,6 +3,19 @@ import myResume from "../../images/ajayghimire_resume.pdf";
 import "./my-resume.css";
 
 function MyResume({ play, hover }) {
+  const [email, setEmail] = React.useState("");
+
+  const handleEmailChange = (e) => {
+    const { value } = e.target;
+    setEmail(value);
+  };
+
+
+  React.useEffect(() => {
+    console.log(email);
+  }, [email])
+
+
   return (
     <div className="resume-container">
       <div className="page-head">
@@ -11,14 +24,22 @@ function MyResume({ play, hover }) {
         </h3>
       </div>
       <div className="my-resume-container">
-        <iframe
+        {/* <iframe
           src={myResume + "#toolbar=0"}
           title="Ajay_Ghimire_Resume"
           className="my-resume"
+        /> */}
+        <label htmlFor="email-input"></label>
+        <input
+          type="email"
+          id="email-input"
+          value={email}
+          onChange={handleEmailChange}
+          
         />
       </div>
-	  <br/>
-      <div className="download-button-container">
+      <br />
+      {/* <div className="download-button-container">
         <a
           href={myResume}
           className="nav-button download"
@@ -28,7 +49,7 @@ function MyResume({ play, hover }) {
         >
           Download
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

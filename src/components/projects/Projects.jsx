@@ -3,8 +3,8 @@ import { videoLinks } from "./projects-data";
 import ProjectItem from "./ProjectItem";
 
 function Projects({ play }) {
-  const projects = videoLinks.map((project) => {
-    return <ProjectItem project={project} play={play} />;
+  const projects = videoLinks.map((project, index) => {
+    return <ProjectItem project={project} play={play} key={index} />;
   });
   return (
     <div className="projects-container">

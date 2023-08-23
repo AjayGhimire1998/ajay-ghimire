@@ -1,11 +1,12 @@
 .intro-container {
-  width: 400px;
+  width: 500px;
   text-align: center;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2%;
+  margin-top: 25px;
+  gap: 50px;
 }
 
 .avatar {
@@ -15,6 +16,7 @@
   display: flex;
   justify-content: center;
   background-size: auto;
+  /* margin-bottom: 10%; */
 }
 /* *, *::before, *::after {
 	box-sizing:border-box;
@@ -30,7 +32,7 @@
 }
 
 .contents {
-  margin-top: 20%;
+  /* margin-top: 25%; */
   background-color: black;
 }
 
@@ -75,11 +77,13 @@
 
 @media screen and (max-width: 760px) {
   .intro-container {
-    width: 50%;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
     text-align: center;
   }
   .avatar {
-    height: 90px;
+    /* height: 90px; */
   }
 
   .avatar-image {
@@ -87,6 +91,10 @@
     width: 110px;
     margin-top: 25px;
   }
+
+  /* .contents {
+    margin-top: 18%;
+  } */
   .contents > p {
     font-size: 1.3vh;
   }
@@ -104,7 +112,9 @@
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
   .intro-container {
-    width: 80%;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
     text-align: center;
   }
 

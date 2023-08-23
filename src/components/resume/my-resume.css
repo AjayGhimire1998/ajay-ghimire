@@ -11,8 +11,14 @@
 .my-resume-container {
   display: flex;
   justify-content: center;
-  height: 450px;
+  /* height: 450px; */
   width: 100%;
+}
+#email-input{
+  width: 200px;
+  color: black;
+  height: 50px;
+  font-size: 18px;
 }
 .my-resume {
   width: 100%;

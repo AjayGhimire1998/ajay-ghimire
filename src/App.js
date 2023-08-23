@@ -1,4 +1,3 @@
-
 import { Routes, Route } from "react-router-dom";
 import useSound from "use-sound";
 import click from "./sounds/click.wav";
@@ -24,37 +23,41 @@ function App() {
     <>
       <div className="space"></div>
       <div className="main">
-        <Logo logo={logo} play={play} />
+        <div className="content-wrap">
+          <Logo logo={logo} play={play} />
 
-        <Routes>
-          <Route path="/" element={<Home play={play} />} />
-          <Route
-            path="/about"
-            element={<About play={play} hover={onHover} />}
-          />
-          <Route path="/projects" element={<Project play={play} />} />
-          <Route
-            path="/projects/:name"
-            element={<EachProject play={play} hover={onHover} />}
-          />
-          <Route path="/blogs" element={<Blog hover={onHover} play={play} />} />
-          <Route
-            path="/resume"
-            element={<Resume play={play} hover={onHover} />}
-          />
-          <Route path="*" element={<NoMatch />} />
-        </Routes>
-        <br />
-        <Navbar play={play} hover={onHover} />
-        <br />
-        <div className="footer">
+          <Routes>
+            <Route path="/" element={<Home play={play} />} />
+            <Route
+              path="/about"
+              element={<About play={play} hover={onHover} />}
+            />
+            <Route path="/projects" element={<Project play={play} />} />
+            <Route
+              path="/projects/:name"
+              element={<EachProject play={play} hover={onHover} />}
+            />
+            <Route
+              path="/blogs"
+              element={<Blog hover={onHover} play={play} />}
+            />
+            <Route
+              path="/resume"
+              element={<Resume play={play} hover={onHover} />}
+            />
+            <Route path="*" element={<NoMatch />} />
+          </Routes>
+        </div>
+
+        <footer className="footer">
+          <br />
+          <Navbar play={play} hover={onHover} />
+          <br />
           <CheerPlayer />
           <br />
           <Contact play={play} />
-          <footer>
-            <p className="shadow">© 2023 Ajay Ghimire</p>
-          </footer>
-        </div>
+          <p className="shadow">© 2023 Ajay Ghimire</p>
+        </footer>
       </div>
     </>
   );

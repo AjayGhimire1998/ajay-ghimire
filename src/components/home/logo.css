@@ -1,25 +1,25 @@
 .logo-container {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .logo {
-	height: 180px;
-	width: 180px;
-	filter: contrast(200%);
+  height: 180px;
+  width: 180px;
+  filter: contrast(200%);
   cursor: pointer;
 }
 
 @media screen and (max-width: 760px) {
-	.logo {
-		height: 150px;
-		width: 150px;
-	}
+  .logo {
+    height: 150px;
+    width: 150px;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
-	.logo {
-		margin-top: 15px;
-		height: 150px;
-		width: 150px;
-	}
+  .logo {
+    margin-top: 15px;
+    height: 150px;
+    width: 150px;
+  }
 }
