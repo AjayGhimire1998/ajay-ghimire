@@ -54,7 +54,7 @@ function Intro() {
           </i>
         </span>
       </div>
-      <br />
+
     </div>
   );
 }

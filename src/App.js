@@ -50,6 +50,7 @@ function App() {
         </div>
 
         <footer className="footer">
+          <br/>
           <br />
           <Navbar play={play} hover={onHover} />
           <br />

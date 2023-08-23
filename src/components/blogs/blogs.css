@@ -1,10 +1,9 @@
 .blogs-container {
-	width: 700px;
+	width: 550px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	
 }
 .page-head >h3 > span{
@@ -27,8 +26,10 @@
 
 @media screen and (max-width: 760px) {
 	.blogs-container {
-		width: 90%;
-		margin: 16px;
+		width: 100%;
+		padding-left: 32px;
+		padding-right: 32px;
+		/* margin: 16px; */
 	}
 
 	.blogs-container > p {
@@ -42,7 +43,9 @@
 @media screen and (min-width: 300px) and (max-width: 480px) {
 	.blogs-container {
 		width: 100%;
-		margin: 16px;
+		padding-left: 16px;
+		padding-right: 16px;
+		/* margin: 16px; */
 	}
 	.blogs-container > p {
 		font-size: 1.6vh;
