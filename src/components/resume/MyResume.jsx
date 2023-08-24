@@ -78,7 +78,7 @@ function MyResume({ play, hover }) {
           setDotCount(0);
           setBtnTxt("Loading");
         }
-      }, 500);
+      }, 250);
 
       return () => {
         clearInterval(loadInterval);
