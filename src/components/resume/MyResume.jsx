@@ -7,6 +7,9 @@ function MyResume({ play, hover }) {
   const [message, setMessage] = React.useState("");
   const [tries, setTries] = React.useState(3);
   const [messageColor, setMessageColor] = React.useState("green");
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [dotCount, setDotCount] = React.useState(0);
+  const [btnText, setBtnTxt] = React.useState("Loading");
 
   const handleEmailChange = (e) => {
     const { value } = e.target;
@@ -23,14 +26,20 @@ function MyResume({ play, hover }) {
   };
   const handleRequest = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:3000/ajay/request_resume", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email: email }),
-      });
+      setIsLoading(true);
+      const res = await fetch(
+        "https://yashitech-server.onrender.com/ajay/request_resume",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email: email }),
+        }
+      );
       const data = await res.json();
+      
+
       if (data?.unlocks_in) {
         setMessage(
           data.message +
@@ -38,24 +47,47 @@ function MyResume({ play, hover }) {
             "Send another request in " +
             calcHours(data.unlocks_in)
         );
-        setMessageColor("#ff0033")
-        setTries(0);
+        setMessageColor("#ff0033");
       } else {
-        setMessage(data.message);
-        setMessageColor("#39ff14");
-      setTries(data.data.request_count)
+        setMessage(
+          data.message || data.error + " " + data.full_errors.join(". ") + ". "
+        );
+        if (data.message) {
+          setMessageColor("#39ff14");
+          setTries(3 - data?.data.request_count);
+        } else if (data.error) {
+          setMessageColor("#ff0033");
+        }
       }
 
+      setIsLoading(false);
       console.log(data);
     } catch (err) {
       console.log(err.message);
-      setMessage(err.message);
+      setIsLoading(false);
     }
   };
 
   React.useEffect(() => {
-    
-  }, [tries]);
+    if (isLoading) {
+      const loadInterval = setInterval(() => {
+        if (dotCount < 3) {
+          setDotCount((prev) => prev + 1);
+          setBtnTxt((prev) => prev + ".");
+        } else {
+          setDotCount(0);
+          setBtnTxt("Loading");
+        }
+      }, 500);
+
+      return () => {
+        clearInterval(loadInterval);
+      };
+    } else {
+      setDotCount(0);
+      setBtnTxt("Loading");
+    }
+  }, [isLoading, dotCount]);
 
   return (
     <div className="resume-container">
@@ -65,11 +97,6 @@ function MyResume({ play, hover }) {
         </h3>
       </div>
       <div className="my-resume-container">
-        {/* <iframe
-          src={myResume + "#toolbar=0"}
-          title="Ajay_Ghimire_Resume"
-          className="my-resume"
-        /> */}
         <br />
         <div>
           <small>Enter your email and I'll send you a copy of my resume.</small>
@@ -79,10 +106,11 @@ function MyResume({ play, hover }) {
           <input
             type="email"
             id="email-input"
+            name="email"
             value={email}
             onChange={handleEmailChange}
           />
-          <small>{ tries === 0 ? "0 tries left" : tries === 3 ? "3 tries left" : `${3 - tries} tries left.`}</small>
+          <small>{`${tries} tries left.`}</small>
         </div>
         {message ? (
           <small style={{ color: messageColor }}>{message}</small>
@@ -93,7 +121,7 @@ function MyResume({ play, hover }) {
             onMouseOver={hover}
             onClick={handleRequest}
           >
-            Request
+            {isLoading ? btnText : "Request"}
           </button>
         </div>
       </div>
