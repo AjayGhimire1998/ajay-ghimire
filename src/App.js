@@ -48,12 +48,11 @@ function App() {
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </div>
-
         <footer className="footer">
-          <br/>
           <br />
           <Navbar play={play} hover={onHover} />
           <br />
+          <br/>
           <CheerPlayer />
           <br />
           <Contact play={play} />

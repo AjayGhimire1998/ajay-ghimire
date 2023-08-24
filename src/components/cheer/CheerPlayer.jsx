@@ -36,7 +36,7 @@ function CheerPlayer({ shadow }) {
   useEffect(() => {
     if (isPlaying) {
       songRef.current.play();
-      songRef.current.volume = 0.2;
+      songRef.current.volume = 0.1;
     } else {
       songRef.current.pause();
     }
@@ -53,7 +53,7 @@ function CheerPlayer({ shadow }) {
 
     if (isReady.current) {
       songRef.current.play();
-      songRef.current.volume = 0.2;
+      songRef.current.volume = 0.1;
       setIsPlaying(true);
     } else {
       isReady.current = true;
@@ -80,17 +80,11 @@ function CheerPlayer({ shadow }) {
         </div>
       ) : (
         <div className="cheer-up" onClick={onCheerUpClick}>
+         
           <div className="music-div">
-            <img
-              src={music}
-              alt="avatar"
-              className="avatar-image music"
-              
-            />
+            <img src={music} alt="avatar" className="avatar-image music" />
           </div>
-          <div>
-            <p className="cheer-p"> Cheer Up a Little !</p>
-          </div>
+          <small>Fancy some music ?</small>
         </div>
       )}
     </div>

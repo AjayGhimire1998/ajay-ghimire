@@ -38,16 +38,16 @@
   }
   .projects {
     width: 100%;
-    padding-left: 32px;
-    padding-right: 32px;
+    /* padding-left: 32px;
+    padding-right: 32px; */
   }
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
   .projects-container {
     width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
+    /* padding-left: 16px;
+    padding-right: 16px; */
   }
   .page-title > h3 > span{
     font-size: 2.5vh;
@@ -55,7 +55,7 @@
   }
   .projects {
     width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
+    /* padding-left: 16px;
+    padding-right: 16px; */
   }
 }

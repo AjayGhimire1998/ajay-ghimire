@@ -13,7 +13,14 @@ function Contact({ play }) {
       />
     );
   });
-  return <section className="contact-container">{contactIcons}</section>;
+  return (
+    <>
+      <div>
+        <small style={{}}>Connect with me!</small>
+      </div>
+      <section className="contact-container">{contactIcons}</section>
+    </>
+  );
 }
 
 export default Contact;

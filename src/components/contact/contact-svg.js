@@ -89,6 +89,27 @@ const EmailSvg = () => {
   );
 };
 
+const XSvg = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg"   height="40px"
+    width="40px" viewBox="0 0 512 512" fill="white">
+      <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+    </svg>
+  );
+};
+
+
+const ColoredXSvg = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg"   height="40px"
+    width="40px" viewBox="0 0 512 512" fill="#00acee">
+      <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+    </svg>
+  );
+};
+
+
+
 const FacebookSvg = () => {
   return (
     <svg
@@ -262,7 +283,21 @@ export const contacts = [
       // onClick={() => onMailClick("ajayghimire1998@gmail.com")}
       />
     ),
-    link: "mailto: ajayghimire009@gmail.com"
+    link: "mailto: ajayghimire009@gmail.com",
+  },
+  {
+    plain: (
+      <XSvg
+        size={35}
+        // onClick={onContactClick("https://www.linkedin.com/in/ajayghimire/")}
+      />
+    ),
+    colored: (
+      <ColoredXSvg
+      // onClick={onContactClick("https://www.linkedin.com/in/ajayghimire/")}
+      />
+    ),
+    link: "https://twitter.com/AJ_supertramp_",
   },
   {
     plain: (

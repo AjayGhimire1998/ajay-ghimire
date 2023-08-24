@@ -24,7 +24,7 @@
 .cheer-up {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   cursor: pointer;
 }
 
@@ -35,7 +35,7 @@
   height: 60px;
 }
 
-.cheer-up > div > p {
+.cheer-up > small {
   cursor: pointer;
   margin-top: 30px;
   height: 25px;

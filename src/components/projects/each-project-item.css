@@ -25,7 +25,21 @@
 
 .links {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+}
+
+.live{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.git{
+  display: flex;
+  align-items: center;
 }
 
 .link-button {
