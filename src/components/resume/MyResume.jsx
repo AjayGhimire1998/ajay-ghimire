@@ -48,6 +48,7 @@ function MyResume({ play, hover }) {
             calcHours(data.unlocks_in)
         );
         setMessageColor("#ff0033");
+        setTries(0);
       } else {
         setMessage(
           data.message || data.error + " " + data.full_errors.join(". ") + ". "
