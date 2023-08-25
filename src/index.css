@@ -100,6 +100,8 @@ body::-webkit-scrollbar{
   position: absolute;
   bottom: 0;
   width: 100%;
+  /* padding-left: 8px; 
+  padding-right: 8px; */
   height: 2rem; 
 }
 .footer > p {
@@ -213,6 +215,12 @@ body::-webkit-scrollbar{
   body {
     overflow-x: hidden;
   }
+
+  .main {
+    width: 100%;
+    /* padding-left: 32px !important;
+    padding-right: 32px !important; */
+  }
   .main > * {
     width: 100%;
     /* margin-top: 3%; */
@@ -232,6 +240,9 @@ body::-webkit-scrollbar{
   }
   .main {
     /* margin-top: 5%; */
+    width: 100%;
+    /* padding-left: 16px !important;
+    padding-right: 16px !important; */
   }
   .main > * {
     width: 100%;

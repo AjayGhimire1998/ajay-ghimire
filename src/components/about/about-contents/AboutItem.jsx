@@ -32,7 +32,7 @@ function Profile({
                   &lt;Prev
                 </button>
               </div>
-              <div class="preview-img">
+              <div className="preview-img">
                 <img
                   src={image[imageCount]}
                   className="preview-image"

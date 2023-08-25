@@ -69,14 +69,14 @@
 
 @media screen and (max-width: 760px) {
   .project-item-card {
-    width: 100%;
+    /* width: 100%; */
   }
   .video-player {
-    width: 100%;
+    /* width: 100%; */
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 480px) {
+@media screen  and (max-width: 510px) {
   .project-item-card {
     width: 100%;
   }

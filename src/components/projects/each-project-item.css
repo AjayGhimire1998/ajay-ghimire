@@ -14,6 +14,7 @@
 
 .project-desc{
   background-color: black;
+  width: 650px;
 }
 
 .project-video {
@@ -67,22 +68,34 @@
 }
 
 @media screen and (max-width: 760px) {
+  .project-item-container{
+    width: 100%;
+    /* padding-left: 32px !important;
+    padding-right: 32px !important; */
+  }
+  .project-desc{
+  
+    width: 100%;
+  }
 	.project-item-container > h3 > span {
 		font-size: 2.8vh;
 	}
-  .project-item-container {
-    width: 70%;
-  }
+ 
 
 }
 
-@media screen and (min-width: 300px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .project-item-container{
+    width: 100%;
+  }
+  .project-desc{
+  
+    width: 100%;
+  }
 	.project-item-container > h3 > span {
 		font-size: 2.5vh;
 	}
-  .project-item-container {
-    width: 80%;
-  }
+ 
 }
 
 

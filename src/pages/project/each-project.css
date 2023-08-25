@@ -3,4 +3,19 @@
 	flex-direction: column;
     justify-content: center;
 	align-items: center;
+	width: 700px
 }
+
+@media screen and (max-width: 760px) {
+	.each-project {
+		width: 550px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+  }
+  
+  @media screen and (max-width: 560px) {
+	.each-project {
+		width: 100%;
+	}
+  }

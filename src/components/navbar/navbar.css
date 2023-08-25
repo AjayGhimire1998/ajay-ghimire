@@ -58,9 +58,9 @@
 
 @media screen and (max-width: 760px) {
   .navbar {
-    width: 100%;
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 500px;
+    /* padding-left: 32px;
+    padding-right: 32px; */
   }
   .nav-button {
     width: 100%;
@@ -68,11 +68,11 @@
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .navbar {
     width: 100%;
-    padding-left: 12px;
-    padding-right: 12px;
+    /* padding-left: 12px;
+    padding-right: 12px; */
   }
   .nav-button {
     width: 100%;

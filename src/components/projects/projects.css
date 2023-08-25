@@ -28,26 +28,26 @@
 
 @media screen and (max-width: 760px) {
   .projects-container {
-    width: 100%;
-    padding-left: 32px;
-    padding-right: 32px;
+    /* width: 100%; */
+    /* padding-left: 32px;
+    padding-right: 32px; */
   }
   .page-title > h3 > span{
     font-size: 2.8vh;
 
   }
   .projects {
-    width: 100%;
+    /* width: 100%; */
     /* padding-left: 32px;
     padding-right: 32px; */
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .projects-container {
     width: 100%;
-    /* padding-left: 16px;
-    padding-right: 16px; */
+    padding-left: 16px;
+		padding-right: 16px;
   }
   .page-title > h3 > span{
     font-size: 2.5vh;

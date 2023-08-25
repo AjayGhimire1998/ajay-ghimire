@@ -1,7 +1,7 @@
 .about-item-container {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  width: 700px;
 }
 .about-item {
   display: flex;
@@ -113,6 +113,9 @@
 }
 
 @media screen and (max-width: 760px) {
+  .about-item-container {
+    width: 100%;
+  }
   .about-item {
     text-align: center;
   }
@@ -130,9 +133,12 @@
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .about-item {
     text-align: center;
+  }
+  .about-item-container {
+    width: 100%;
   }
   .about-item > h3 {
     font-size: 2.5vh;
