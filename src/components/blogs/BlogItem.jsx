@@ -28,12 +28,18 @@ function BlogItem({ blog, hover, play }) {
           </div>
         </div>
         {/* <div className="blog-contents"> */}
-        <div className="tag">
-          <span>{blog.tag}</span>
-        </div>
+        {/* <div> */}
+          {blog.tag.map((tg) => {
+            return (
+              <div className="tag">
+                <span>{tg}</span>{" "}
+              </div>
+            );
+          })}
+        {/* </div> */}
 
         <br />
-        <br/>
+        <br />
         <h4>{blog.title}</h4>
         {isOpen ? (
           <PopUp
