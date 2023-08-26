@@ -42,7 +42,7 @@ function MyResume({ play, hover }) {
 
       if (data?.unlocks_in) {
         setMessage(
-          data.message +
+          data.message + " for " + data.requester_email + 
             ". " +
             "Send another request in " +
             calcHours(data.unlocks_in)
