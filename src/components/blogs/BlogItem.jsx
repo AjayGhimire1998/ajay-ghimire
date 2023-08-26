@@ -29,9 +29,9 @@ function BlogItem({ blog, hover, play }) {
         </div>
         {/* <div className="blog-contents"> */}
         {/* <div> */}
-          {blog.tag.map((tg) => {
+          {blog.tag.map((tg, index) => {
             return (
-              <div className="tag">
+              <div className="tag" key={index}>
                 <span>{tg}</span>{" "}
               </div>
             );

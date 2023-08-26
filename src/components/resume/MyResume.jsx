@@ -38,11 +38,12 @@ function MyResume({ play, hover }) {
         }
       );
       const data = await res.json();
-      
 
       if (data?.unlocks_in) {
         setMessage(
-          data.message + " for " + data.requester_email + 
+          data.message +
+            " for " +
+            data.requester_email +
             ". " +
             "Send another request in " +
             calcHours(data.unlocks_in)
@@ -51,7 +52,8 @@ function MyResume({ play, hover }) {
         setTries(0);
       } else {
         setMessage(
-          data.message || data.error + " " + data.full_errors.join(". ") + ". "
+          data.message + ". " ||
+            data.error + " " + data.full_errors.join(". ") + ". "
         );
         if (data.message) {
           setMessageColor("#39ff14");
@@ -62,7 +64,6 @@ function MyResume({ play, hover }) {
       }
 
       setIsLoading(false);
-      console.log(data);
     } catch (err) {
       console.log(err.message);
       setIsLoading(false);
@@ -116,15 +117,17 @@ function MyResume({ play, hover }) {
         {message ? (
           <small style={{ color: messageColor }}>{message}</small>
         ) : null}
-        <div>
-          <button
-            className="nav-button"
-            onMouseOver={hover}
-            onClick={handleRequest}
-          >
-            {isLoading ? btnText : "Request"}
-          </button>
-        </div>
+        {tries === 0 ? null : (
+          <div>
+            <button
+              className="nav-button"
+              onMouseOver={hover}
+              onClick={handleRequest}
+            >
+              {isLoading ? btnText : "Request"}
+            </button>
+          </div>
+        )}
       </div>
       <br />
       {/* <div className="download-button-container">

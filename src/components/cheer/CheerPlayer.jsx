@@ -80,11 +80,10 @@ function CheerPlayer({ shadow }) {
         </div>
       ) : (
         <div className="cheer-up" onClick={onCheerUpClick}>
-         
           <div className="music-div">
             <img src={music} alt="avatar" className="avatar-image music" />
           </div>
-          <small>Fancy some music ?</small>
+          &nbsp;<small>Fancy some music ?</small>
         </div>
       )}
     </div>
