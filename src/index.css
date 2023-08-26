@@ -92,16 +92,17 @@ body::-webkit-scrollbar{
 }
 
 .footer {
-  /* position: relative; */
-  /* bottom: 0;
-  width: auto; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+
+  /* justify-content: center; */
+  /* left: 50%; */
+  /* bottom: 0; */
   text-align: center; 
-  /* position: absolute; */
   position: absolute;
   bottom: 0;
-  width: 100%;
-  /* padding-left: 8px; 
-  padding-right: 8px; */
+  /* width: 800px; */
   height: 2rem; 
 }
 .footer > p {
@@ -227,7 +228,7 @@ body::-webkit-scrollbar{
   }
 
   .footer {
-    margin-top: 7%;
+    /* margin-top: 7%; */
   }
   .footer > footer > p {
     font-size: small;

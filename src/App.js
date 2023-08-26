@@ -48,7 +48,7 @@ function App() {
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </div>
-        <footer className="footer">
+        <section className="footer">
           <br />
           <Navbar play={play} hover={onHover} />
           <br />
@@ -57,7 +57,7 @@ function App() {
           <br />
           <Contact play={play} />
           <p className="shadow">© 2023 Ajay Ghimire</p>
-        </footer>
+        </section>
       </div>
     </>
   );

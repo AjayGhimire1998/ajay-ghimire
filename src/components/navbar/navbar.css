@@ -9,6 +9,7 @@
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: center;
+  align-items: center;
 
   /* flex: 100%; */
 }
@@ -29,7 +30,7 @@
   box-shadow: 0 0.2em rgb(202, 201, 201);
   cursor: pointer;
   text-decoration: none;
-  width: 120px;
+  width: 150px;
 }
 
 .nav-button:hover {
@@ -56,15 +57,52 @@
   }
 } */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 740px) {
   .navbar {
-    width: 500px;
+    width: 700px;
     /* padding-left: 32px;
     padding-right: 32px; */
   }
   .nav-button {
-    width: 100%;
-    font-size: 1.7vh;
+    /* width: 100%; */
+    /* width: 130px; */
+    font-size: 2.0vh;
+  }
+}
+@media screen and (max-width: 660px) {
+  .navbar {
+    width: 580px;
+    /* padding-left: 32px;
+    padding-right: 32px; */
+  }
+  .nav-button {
+    /* width: 100%; */
+    /* width: 130px; */
+    font-size: 1.9vh;
+  }
+}
+@media screen and (max-width: 590px) {
+  .navbar {
+    width: 570px;
+    /* padding-left: 32px;
+    padding-right: 32px; */
+  }
+  .nav-button {
+    /* width: 100%; */
+    /* width: 130px; */
+    font-size: 1.9vh;
+  }
+}
+@media screen and (max-width: 575px) {
+  .navbar {
+    width: 550px;
+    /* padding-left: 32px;
+    padding-right: 32px; */
+  }
+  .nav-button {
+    /* width: 100%; */
+    /* width: 130px; */
+    font-size: 1.9vh;
   }
 }
 

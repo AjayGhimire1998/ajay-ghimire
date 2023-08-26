@@ -5,7 +5,7 @@
   background-color: rgb(27, 25, 25);
 
   /* height: 380px; */
-  width: 500px;
+  width: 550px;
   margin-bottom: 35px;
   cursor: pointer;
   border-radius: 20px;
@@ -25,7 +25,7 @@
   flex: 1 1 0px;
   transition: transform 500ms;
   background-color: black;
-  width: 500px;
+  width: 550px;
 
   /* width: 500px; */
 }
