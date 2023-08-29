@@ -6,17 +6,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
-  gap: 60px;
+  margin-top: 15px;
+  /* margin-bottom:10px; */
 }
 
 .avatar {
-  height: 130px;
-  width: 450px;
+  /* height: 130px;*/
+  width: 450px; 
   padding: 10px;
   border-radius: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   /* align-items: center; */
   background-size: auto;
   /* margin-bottom: 10%; */
@@ -25,12 +27,17 @@
 	box-sizing:border-box;
   } */
 
+  .avatar-back{
+    height: 130px;
+    width: 450px;
+  }
+
 .avatar-image {
   height: 130px;
   width: 130px;
   border-radius: 50%;
   object-fit: cover; 
-   margin-top: 50px;
+   margin-top: -70px;
    
 }
 
@@ -125,11 +132,15 @@
     padding-left: 16px !important;
     padding-right: 16px !important;
     text-align: center;
+    margin-top: 5px;
   }
 
   .avatar {
     /* height: 90px; */
-    width: 300px;
+    width: 320px;
+  }
+  .avatar-back{
+    width: 320px;
   }
 
   .avatar-image {
@@ -150,5 +161,19 @@
 
   .contents > div > strong {
     font-size: 2.6vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro-container {
+    width: 100%;
+  }
+
+  .avatar {
+    /* height: 90px; */
+    width: 100%;
+  }
+  .avatar-back{
+    width: 100%;
   }
 }

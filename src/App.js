@@ -23,9 +23,8 @@ function App() {
     <>
       <div className="space"></div>
       <div className="main">
+        <Logo logo={logo} play={play} />
         <div className="content-wrap">
-          <Logo logo={logo} play={play} />
-
           <Routes>
             <Route path="/" element={<Home play={play} />} />
             <Route
@@ -52,7 +51,7 @@ function App() {
           <br />
           <Navbar play={play} hover={onHover} />
           <br />
-          <br/>
+          <br />
           <CheerPlayer />
           <br />
           <Contact play={play} />

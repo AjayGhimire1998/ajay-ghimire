@@ -26,10 +26,11 @@ function Intro() {
         <div
           className="avatar"
           style={{
-            backgroundImage: `url(${cover})`,
-            backgroundSize: "100% 100%",
+            // backgroundImage: `url(${cover})`,
+            // backgroundSize: "100% 100%",
           }}
-        >
+        > 
+        <img src={cover} alt="hehe" className="avatar-back"/>
           <div
             className="avatar-image"
             onMouseEnter={() => setProfileHover(true)}
@@ -49,7 +50,7 @@ function Intro() {
         <br />
         <span>
           <i>
-            <img src={pin} alt="pin" />
+            <img src={pin} alt="location" />
             Sydney, Australia.
           </i>
         </span>
