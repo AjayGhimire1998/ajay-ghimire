@@ -19,6 +19,14 @@ export const edu = [
 
 export const exp = [
   {
+    company: "YashiTech Solution",
+    address: "Remote",
+    jobTitle: "Software Engineer Intern",
+    startTime: "Mar 2023",
+    endTime: "Present",
+    marginTop: "0px"
+  },
+  {
     company: "Woolworths CFC",
     address: "Lidcombe, Sydney",
     jobTitle: "Online Dispatch Member",
