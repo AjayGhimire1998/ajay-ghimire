@@ -21,10 +21,6 @@
   justify-content: center;
   align-items: center;
   
-
-  
- 
-
   &::before {
     content: "";
     position: absolute;
@@ -58,13 +54,15 @@
 }
 
 .roat {
+  margin-top: 3px;
   height: 125px;
-  width: 125px;
+  width: 125px; 
   border-radius: 50%;
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
   object-position: center;
+  
 }
 
 @media screen and (max-width: 600px) {
