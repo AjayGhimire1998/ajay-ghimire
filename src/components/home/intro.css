@@ -12,7 +12,7 @@
 
 .avatar {
   /* height: 130px;*/
-  width: 450px; 
+  width: 450px;
   padding: 10px;
   border-radius: 5px;
   display: flex;
@@ -27,18 +27,17 @@
 	box-sizing:border-box;
   } */
 
-  .avatar-back{
-    height: 130px;
-    width: 450px;
-  }
+.avatar-back {
+  height: 130px;
+  width: 450px;
+}
 
 .avatar-image {
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  object-fit: cover; 
-   margin-top: -70px;
-   
+  object-fit: cover;
+  margin-top: -70px;
 }
 
 .contents {
@@ -78,16 +77,18 @@
 
 .contents > span {
   font-size: 2vh;
-}ear
-
-.contents > span > i {
+}
+ear .contents > span > i {
   font-size: 1.8vh;
   font-family: Futura;
 }
-.contents > span > i > img {
+/* .contents > span > i > svg {
+  margin-top: 2px;
+} */
+/* .contents > span > i > img {
   height: 15px;
   width: 15px;
-}
+} */
 
 @media screen and (max-width: 600px) {
   .intro-container {
@@ -139,13 +140,13 @@
     /* height: 90px; */
     width: 320px;
   }
-  .avatar-back{
+  .avatar-back {
     width: 320px;
   }
 
   .avatar-image {
     height: 120px;
-    width: 120px; 
+    width: 120px;
     /* margin-top: 70px; */
   }
   .contents > p {
@@ -173,7 +174,7 @@
     /* height: 90px; */
     width: 100%;
   }
-  .avatar-back{
+  .avatar-back {
     width: 100%;
   }
 }
