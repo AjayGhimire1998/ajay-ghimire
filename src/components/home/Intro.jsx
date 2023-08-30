@@ -5,6 +5,8 @@ import cover from "../../images/cover.png";
 import pin from "../../images/my-pictures/pin.png";
 import ppvideo from "../../videos/PortfolioVideo.mp4";
 import RotatingBorder from "./RotatingBorder";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Intro() {
   const [profileHover, setProfileHover] = useState(false);
@@ -25,12 +27,19 @@ function Intro() {
       ) : (
         <div
           className="avatar"
-          style={{
-            // backgroundImage: `url(${cover})`,
-            // backgroundSize: "100% 100%",
-          }}
-        > 
-        <img src={cover} alt="hehe" className="avatar-back"/>
+          // style={
+          //   {
+              // backgroundImage: `url(${cover})`,
+              // backgroundSize: "100% 100%",
+          //   }
+          // }
+        >
+          <LazyLoadImage
+            src={cover}
+            effect="blur"
+            alt="From Slicing Sashimis to Slicing Arrays."
+            className="avatar-back"
+          />
           <div
             className="avatar-image"
             onMouseEnter={() => setProfileHover(true)}
@@ -55,7 +64,6 @@ function Intro() {
           </i>
         </span>
       </div>
-
     </div>
   );
 }
