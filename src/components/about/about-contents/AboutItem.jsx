@@ -1,6 +1,8 @@
 import React from "react";
 import "./about-item.css";
 import { CgReadme } from "react-icons/cg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Profile({
   title,
@@ -33,10 +35,11 @@ function Profile({
                 </button>
               </div>
               <div className="preview-img">
-                <img
+                <LazyLoadImage
                   src={image[imageCount]}
                   className="preview-image"
                   alt="ajay"
+                  effect="blur"
                 />
               </div>
               <div>

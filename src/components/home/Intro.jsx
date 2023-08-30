@@ -58,8 +58,6 @@ function Intro() {
         <br />
         <span>
           <i>
-            {/* <img src={pin} alt="location" /> */}
-            
             <svg
               fill="#ffffff"
               height="20px"
