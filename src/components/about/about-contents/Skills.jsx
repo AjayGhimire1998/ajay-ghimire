@@ -134,7 +134,7 @@ function Skills() {
       </div>
       <br />
       <div className="languages">
-        <h4>Database:</h4>
+        <h4>Databases:</h4>
         <div className="icons-container">
           <div
             id="MySQL"
