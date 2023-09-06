@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import "./intro.css";
 import cover from "../../images/cover.png";
+import coverLite from "../../images/cover_lite.jpg"
 import ppvideo from "../../videos/PortfolioVideo.mp4";
 import RotatingBorder from "./RotatingBorder";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -35,6 +36,7 @@ function Intro() {
         >
           <LazyLoadImage
             src={cover}
+            placeholderSrc={coverLite}
             effect="blur"
             alt="From Slicing Sashimis to Slicing Arrays."
             className="avatar-back"

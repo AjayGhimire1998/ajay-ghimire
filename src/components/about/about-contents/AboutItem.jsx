@@ -9,6 +9,7 @@ function Profile({
   desc,
   desc2,
   image,
+  placeholderImages,
   isPreviewOn,
   onPreviewClick,
   imageCount,
@@ -37,6 +38,7 @@ function Profile({
               <div className="preview-img">
                 <LazyLoadImage
                   src={image[imageCount]}
+                  placeholderSrc={placeholderImages ? placeholderImages[imageCount]: null}
                   className="preview-image"
                   alt="ajay"
                   effect="blur"

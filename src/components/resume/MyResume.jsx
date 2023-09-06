@@ -67,7 +67,7 @@ function MyResume({ play, hover }) {
 
       setIsLoading(false);
     } catch (err) {
-      console.log(err.message);
+      console.log(err);
       setIsLoading(false);
     }
   };

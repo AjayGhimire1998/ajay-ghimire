@@ -33,6 +33,7 @@ function AboutMe({ play, hover }) {
 			desc={aboutData[0].desc}
 			desc2={aboutData[0].desc2}
 			image={aboutData[0].images}
+			placeholderImages = {aboutData[0].placeholderImages}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
 			imageCount={imageCount}
