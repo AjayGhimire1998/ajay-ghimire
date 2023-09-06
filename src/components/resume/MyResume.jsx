@@ -18,8 +18,8 @@ function MyResume({ play, hover }) {
 
   const calcHours = (sec) => {
     const remainingSec = sec % 60;
-    const minutes = Math.floor(sec / 60); 
-    const hours = Math.floor(minutes / 60); 
+    const minutes = Math.floor(sec / 60);
+    const hours = Math.floor(minutes / 60);
     const remainingMinutes = minutes % 60;
 
     return `${hours} hours ${remainingMinutes} minutes ${remainingSec} seconds.`;
@@ -38,7 +38,8 @@ function MyResume({ play, hover }) {
         }
       );
       const data = await res.json();
-
+      console.log(data);
+      setMessage(data.message || "");
       if (data?.unlocks_in) {
         setMessage(
           data.message +
@@ -52,8 +53,9 @@ function MyResume({ play, hover }) {
         setTries(0);
       } else {
         setMessage(
-          data.message + ". " ||
-            data.error + " " + data.full_errors.join(". ") + ". "
+          data.message
+            ? data.message + ". "
+            : data.error + " " + data.full_errors.join(". ") + ". "
         );
         if (data.message) {
           setMessageColor("#39ff14");
