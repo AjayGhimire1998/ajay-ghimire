@@ -3,15 +3,24 @@ import linkedInPic from "../../images/my-pictures/ajay2.png";
 
 export const blogsData = [
   {
+    title: '"What happens when we search a URL in the browser ?"',
+    desc: 'All the devices on the internet have unique addresses, known as IP addresses. Think of an IP address like a phone number or a unique identifier for your device on the internet. Each address is unique to each device or computer on the ......',
+    url: "https://www.linkedin.com/pulse/how-does-internet-actually-work-ajay-ghimire%3FtrackingId=fIiIQTVGT%252FCUviPEvVcCkw%253D%253D/?trackingId=fIiIQTVGT%2FCUviPEvVcCkw%3D%3D",
+    source: "LinkedIn",
+    readTime: "4 min read",
+    datePossted: "10 Sep, 2023",
+    profile: linkedInPic,
+    tag: ["Web", "Internet", "LinkedIn"],
+  },
+  {
     title: '"How does the Internet actually work?"',
     desc: 'Information on the internet moves from one device or computer to another in the forms of bits over various mediums like ethernet cables, Fiber-Optic cables and wireless signals. A bit has two possible states. "On or Off" or "Yes or No"......',
     url: "https://www.linkedin.com/pulse/how-does-internet-actually-work-ajay-ghimire%3FtrackingId=fIiIQTVGT%252FCUviPEvVcCkw%253D%253D/?trackingId=fIiIQTVGT%2FCUviPEvVcCkw%3D%3D",
     source: "LinkedIn",
     readTime: "5 min read",
     datePossted: "9 Sep, 2023",
-    profile: linkedInPic, 
-    tag: ["Internet", "Digital Tech", "LinkedIn"]
-
+    profile: linkedInPic,
+    tag: ["Internet", "Technology", "LinkedIn"],
   },
   {
     title: '"What in the Digital World is the Internet? 🌐"',
@@ -20,9 +29,8 @@ export const blogsData = [
     source: "LinkedIn",
     readTime: "3 min read",
     datePossted: "7 Sep, 2023",
-    profile: linkedInPic, 
-    tag: ["Internet", "Digital Tech", "LinkedIn"]
-
+    profile: linkedInPic,
+    tag: ["Internet", "Technology", "LinkedIn"],
   },
   {
     title: '"Recursive Methods" in Java ',
@@ -31,9 +39,8 @@ export const blogsData = [
     source: "LinkedIn",
     readTime: "2 min read",
     datePossted: "25 Mar, 2023",
-    profile: linkedInPic, 
-    tag: ["Java"]
-
+    profile: linkedInPic,
+    tag: ["Java"],
   },
   {
     title: 'The "main" method in Java ',
@@ -43,7 +50,7 @@ export const blogsData = [
     readTime: "2 min read",
     datePossted: "28 Mar, 2023",
     profile: linkedInPic,
-    tag: ["Java"]
+    tag: ["Java"],
   },
 
   {
@@ -54,7 +61,7 @@ export const blogsData = [
     readTime: "3 min read",
     datePossted: "23 Jan, 2023",
     profile: mediumPic,
-    tag: ["Java"]
+    tag: ["Java"],
   },
   {
     title: "“Array”​ Data Structure: An Illustrative Introduction",
@@ -64,7 +71,7 @@ export const blogsData = [
     readTime: "9 min read",
     datePossted: "23 Jan, 2023",
     profile: mediumPic,
-    tag: ["Java", "DSA"]
+    tag: ["Java", "DSA"],
   },
   {
     title: "CRYPTOMANIA- a RUBY CLI APPLICATION",
@@ -74,7 +81,7 @@ export const blogsData = [
     readTime: "2 min read",
     datePossted: "27 Jun, 2022",
     profile: mediumPic,
-    tag: ["Ruby", "Gem", "Nokogiri"]
+    tag: ["Ruby", "Gem", "Nokogiri"],
   },
   {
     title: "Was Creating a Meme App for React’s Final project worth it??",
@@ -84,7 +91,7 @@ export const blogsData = [
     readTime: "2 min read",
     datePossted: "20 Apr, 2022",
     profile: mediumPic,
-    tag: ["React", "Firebase", "FlipImg API"]
+    tag: ["React", "Firebase", "FlipImg API"],
   },
   {
     title: "MovieFinder JS App using OMDB API",
@@ -93,8 +100,8 @@ export const blogsData = [
     source: "Medium",
     readTime: "1 min read",
     datePossted: "16 Mar, 2022",
-    profile: mediumPic, 
-    tag: ["JavaScript", "OMDB API"]
+    profile: mediumPic,
+    tag: ["JavaScript", "OMDB API"],
   },
   {
     title: "I have created my first portfolio website",
@@ -104,7 +111,7 @@ export const blogsData = [
     readTime: "1 min read",
     datePossted: "25 Feb, 2022",
     profile: mediumPic,
-    tag: ["HTML/CSS", "Web Dev"]
+    tag: ["HTML/CSS", "Web Dev"],
   },
   {
     title: "Why did I decide to study Software Engineering ?",
@@ -114,6 +121,6 @@ export const blogsData = [
     readTime: "2 min read",
     datePossted: "19 Feb, 2022",
     profile: mediumPic,
-    tag: ["Tech", "Software Engineering"]
+    tag: ["Tech", "Software Engineering"],
   },
 ];
