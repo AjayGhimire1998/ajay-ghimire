@@ -3,6 +3,17 @@ import linkedInPic from "../../images/my-pictures/ajay2.png";
 
 export const blogsData = [
   {
+    title: '"What in the Digital World is the Internet? 🌐"',
+    desc: "Interconnected Networks or simply, Internet is a global network of interconnected computers and devices that can share information with each other across vast distances.Vint Cerf, one of the fathers of the internet, defines internet as.....",
+    url: "https://www.linkedin.com/pulse/what-digital-world-internet-ajay-ghimire%3FtrackingId=K8vqdosdQsKDY3SK0YiZHg%253D%253D/?trackingId=K8vqdosdQsKDY3SK0YiZHg%3D%3D",
+    source: "LinkedIn",
+    readTime: "3 min read",
+    datePossted: "7 Sep, 2023",
+    profile: linkedInPic, 
+    tag: ["Internet", "Digital Tech", "LinkedIn"]
+
+  },
+  {
     title: '"Recursive Methods" in Java ',
     desc: "Recursive methods in Java are powerful tools for solving complex problems by breaking them down into smaller sub-problems. By calling the function on each sub-problem recursively, the solution can be computed in a clear and concise way.....",
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7037722687158255616?utm_source=share&utm_medium=member_desktop",
