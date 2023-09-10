@@ -40,7 +40,7 @@ export const blogsData = [
     readTime: "2 min read",
     datePossted: "25 Mar, 2023",
     profile: linkedInPic,
-    tag: ["Java"],
+    tag: ["Java", "LinkedIn"],
   },
   {
     title: 'The "main" method in Java ',
@@ -50,7 +50,7 @@ export const blogsData = [
     readTime: "2 min read",
     datePossted: "28 Mar, 2023",
     profile: linkedInPic,
-    tag: ["Java"],
+    tag: ["Java", "LinkedIn"],
   },
 
   {
@@ -61,7 +61,7 @@ export const blogsData = [
     readTime: "3 min read",
     datePossted: "23 Jan, 2023",
     profile: mediumPic,
-    tag: ["Java"],
+    tag: ["Java" , "Medium"],
   },
   {
     title: "“Array”​ Data Structure: An Illustrative Introduction",
@@ -71,7 +71,7 @@ export const blogsData = [
     readTime: "9 min read",
     datePossted: "23 Jan, 2023",
     profile: mediumPic,
-    tag: ["Java", "DSA"],
+    tag: ["Java", "DSA", "Medium"],
   },
   {
     title: "CRYPTOMANIA- a RUBY CLI APPLICATION",
@@ -81,7 +81,7 @@ export const blogsData = [
     readTime: "2 min read",
     datePossted: "27 Jun, 2022",
     profile: mediumPic,
-    tag: ["Ruby", "Gem", "Nokogiri"],
+    tag: ["Ruby", "Nokogiri", "Medium"],
   },
   {
     title: "Was Creating a Meme App for React’s Final project worth it??",
@@ -91,7 +91,7 @@ export const blogsData = [
     readTime: "2 min read",
     datePossted: "20 Apr, 2022",
     profile: mediumPic,
-    tag: ["React", "Firebase", "FlipImg API"],
+    tag: ["React", "Firebase", "APIs", "Medium"],
   },
   {
     title: "MovieFinder JS App using OMDB API",
@@ -101,7 +101,7 @@ export const blogsData = [
     readTime: "1 min read",
     datePossted: "16 Mar, 2022",
     profile: mediumPic,
-    tag: ["JavaScript", "OMDB API"],
+    tag: ["JavaScript", "API", "Medium"],
   },
   {
     title: "I have created my first portfolio website",
@@ -111,7 +111,7 @@ export const blogsData = [
     readTime: "1 min read",
     datePossted: "25 Feb, 2022",
     profile: mediumPic,
-    tag: ["HTML/CSS", "Web Dev"],
+    tag: ["HTML/CSS", "Web Development", "Medium"],
   },
   {
     title: "Why did I decide to study Software Engineering ?",
@@ -121,6 +121,6 @@ export const blogsData = [
     readTime: "2 min read",
     datePossted: "19 Feb, 2022",
     profile: mediumPic,
-    tag: ["Tech", "Software Engineering"],
+    tag: ["Technology", "Software Engineering", "Medium"],
   },
 ];
