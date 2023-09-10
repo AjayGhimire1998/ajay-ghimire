@@ -3,6 +3,17 @@ import linkedInPic from "../../images/my-pictures/ajay2.png";
 
 export const blogsData = [
   {
+    title: '"How does the Internet actually work?"',
+    desc: 'Information on the internet moves from one device or computer to another in the forms of bits over various mediums like ethernet cables, Fiber-Optic cables and wireless signals. A bit has two possible states. "On or Off" or "Yes or No"......',
+    url: "https://www.linkedin.com/pulse/how-does-internet-actually-work-ajay-ghimire%3FtrackingId=fIiIQTVGT%252FCUviPEvVcCkw%253D%253D/?trackingId=fIiIQTVGT%2FCUviPEvVcCkw%3D%3D",
+    source: "LinkedIn",
+    readTime: "5 min read",
+    datePossted: "9 Sep, 2023",
+    profile: linkedInPic, 
+    tag: ["Internet", "Digital Tech", "LinkedIn"]
+
+  },
+  {
     title: '"What in the Digital World is the Internet? 🌐"',
     desc: "Interconnected Networks or simply, Internet is a global network of interconnected computers and devices that can share information with each other across vast distances.Vint Cerf, one of the fathers of the internet, defines internet as.....",
     url: "https://www.linkedin.com/pulse/what-digital-world-internet-ajay-ghimire%3FtrackingId=K8vqdosdQsKDY3SK0YiZHg%253D%253D/?trackingId=K8vqdosdQsKDY3SK0YiZHg%3D%3D",
