@@ -55,7 +55,7 @@ function BlogItem({ blog, hover, play }) {
             <span
               style={
                 isHover
-                  ? { color: "#39ff14", fontSize: "large", cursor: "pointer" }
+                  ? { color: "#39ff14", cursor: "pointer" }
                   : { animation: "changeText 8s linear infinite" }
               }
               onMouseOver={() => setIsHover(true)}
