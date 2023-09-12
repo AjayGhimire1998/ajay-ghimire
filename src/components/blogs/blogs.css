@@ -6,7 +6,7 @@
 	justify-content: center;
 	
 }
-.page-head >h3 > span{
+.page-head >h3 {
 	display: inline-block;
 	background-color: black;
 	font-size: 3vh;
