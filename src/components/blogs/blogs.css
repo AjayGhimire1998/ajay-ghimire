@@ -1,56 +1,79 @@
 .blogs-container {
-	width: 550px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	
+  width: 550px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.page-head >h3 {
-	display: inline-block;
-	background-color: black;
-	font-size: 3vh;
-	
-  }
+.page-head > h3 {
+  display: inline-block;
+  background-color: black;
+  font-size: 3vh;
+}
 
 .blogs-container > p {
-	text-decoration: underline;
-	cursor: pointer;
-	font-size: 2vh;
-	color: white;
-	display: inline-block;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 2vh;
+  color: white;
+  display: inline-block;
 }
 .blogs-container > p:hover {
-	color: #39ff14;
+  color: #39ff14;
+}
+
+.filter-wrapper {
+  display: flex;
+}
+
+.filter-button {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(27, 25, 25);
+}
+
+.filter-button > p {
+	/* text-decoration: underline; */
+}
+
+.arrow-down {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom: 1px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 760px) {
-	.blogs-container {
-		/* width: 100%; */
-		/* padding-left: 32px;
+  .blogs-container {
+    /* width: 100%; */
+    /* padding-left: 32px;
 		padding-right: 32px; */
-		/* margin: 16px; */
-	}
+    /* margin: 16px; */
+  }
 
-	.blogs-container > p {
-		font-size: 1.8vh;
-	}
-	.page-head >h3 > span{
-		font-size: 2.8vh;
-	  }
+  .blogs-container > p {
+    font-size: 1.8vh;
+  }
+  .page-head > h3 > span {
+    font-size: 2.8vh;
+  }
 }
 
 @media screen and (max-width: 560px) {
-	.blogs-container {
-		width: 100%;
-		padding-left: 16px;
-		padding-right: 16px;
-		/* margin: 16px; */
-	}
-	.blogs-container > p {
-		font-size: 1.6vh;
-	}
-	.page-head >h3 > span{
-		font-size: 2.5vh;
-	  }
+  .blogs-container {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* margin: 16px; */
+  }
+  .blogs-container > p {
+    font-size: 1.6vh;
+  }
+  .page-head > h3 > span {
+    font-size: 2.5vh;
+  }
 }

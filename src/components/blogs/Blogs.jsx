@@ -24,7 +24,13 @@ function Blogs({ play, hover }) {
         <div className="page-head">
           <h3>Blogs</h3>
         </div>
-        {/* <div>Filter</div> */}
+        <div className="filter-wrapper">
+          <div className="filter-button">
+            <p>
+              Filter <i class="arrow-down"></i>
+            </p>
+          </div>
+        </div>
         {blogItem.slice(0, blogCount)}
 
         {blogCount === 5 ? (
