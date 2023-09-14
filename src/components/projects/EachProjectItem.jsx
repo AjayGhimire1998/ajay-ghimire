@@ -49,9 +49,7 @@ function EachProjectItem({ hover, play }) {
   return (
     <div className="project-item-container">
       <br />
-      <h3 style={{ textAlign: "center" }}>
-        <span>{project.name}</span>
-      </h3>
+      <h1 style={{ textAlign: "center" }}>{project.name}</h1>
       <div className="project-video">
         <ReactPlayer
           url={project.url}
@@ -63,11 +61,10 @@ function EachProjectItem({ hover, play }) {
       </div>
       <br />
       <div className="links">
-        {project.links.live ? (
+        {project.links.live && (
           <div className="live link-button">
             <AiOutlineLink
               size={45}
-		
               onClick={() => {
                 onLinkClick(project.links.live);
               }}
@@ -75,7 +72,7 @@ function EachProjectItem({ hover, play }) {
             />
             <small>
               <span
-			  style={{textDecoration: "underline"}}
+                style={{ textDecoration: "underline" }}
                 onClick={() => {
                   onLinkClick(project.links.live);
                 }}
@@ -84,26 +81,17 @@ function EachProjectItem({ hover, play }) {
               </span>
             </small>
           </div>
-        ) : null}
+        )}
         <div className="git link-button">
-          <AiOutlineGithub
-            size={45}
-			style={{textDecoration: "underline"}}
-            onClick={() => {
-              onLinkClick(project.links.git);
-            }}
-            // className="link-button"
-          />
-          <small>
-            <span
-				  style={{textDecoration: "underline"}}
-              onClick={() => {
-                onLinkClick(project.links.git);
-              }}
-            >
-              Source
-            </span>
-          </small>
+          <a
+            href={project.links.git}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => onLinkClick(project.links.git)}
+          >
+            <AiOutlineGithub size={45} />
+            <span style={{ textDecoration: "underline" }}>Source</span>
+          </a>
         </div>
       </div>
       <div className="project-desc">
@@ -111,7 +99,11 @@ function EachProjectItem({ hover, play }) {
       </div>
       <br />
       <h4 style={{ textAlign: "center" }}>Tools Used:</h4>
-      <div className="tools-used">{project.tools.map((lan) => lan)}</div>
+      <div className="tools-used">
+        {project.tools.map((lan, index) => (
+          <span key={index}>{lan}</span>
+        ))}
+      </div>
       <br />
       <div className="about-buttons" style={{ width: "100%" }}>
         <button
@@ -122,6 +114,7 @@ function EachProjectItem({ hover, play }) {
           onMouseOver={hover}
           onClick={onPrevClick}
           disabled={indexOfProject === 0}
+          aria-label="Previous Project"
         >
           Previous
         </button>
@@ -134,6 +127,7 @@ function EachProjectItem({ hover, play }) {
           onMouseOver={hover}
           onClick={onNextClick}
           disabled={indexOfProject === videoLinks.length - 1}
+          aria-label="Next Project"
         >
           Next
         </button>
