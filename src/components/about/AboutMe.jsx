@@ -96,7 +96,7 @@ function AboutMe({ play, hover }) {
 	};
 
 	return (
-		<>
+		<section>
 			<div className="about-container">
 				{pages[pageCount]}
 				<br />
@@ -104,6 +104,7 @@ function AboutMe({ play, hover }) {
 					<button
 						className="nav-button previous"
 						id="prevAbout"
+						aria-label="Previous About"
 						data-tooltip-content={
 							aboutData[pageCount - 1]?.title || (pageCount === 4 ? 'Technical Skills' : '')
 						}
@@ -118,6 +119,7 @@ function AboutMe({ play, hover }) {
 					<button
 						className="nav-button next"
 						id="nextAbout"
+						aria-label="Next About"
 						data-tooltip-content={
 							aboutData[pageCount + 1]?.title ||
 							(pageCount === 2 ? 'Technical Skills' : pageCount === 3 ? 'Timeline' : '')
@@ -132,7 +134,7 @@ function AboutMe({ play, hover }) {
 					<Tooltip anchorId="nextAbout" style={toolTipStyle} />
 				</div>
 			</div>
-		</>
+		</section>
 	);
 }
 

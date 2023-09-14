@@ -7,15 +7,15 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 function RotatingBorder() {
   return (
-    <div className="rainbow">
+    <section className="rainbow">
       <LazyLoadImage
         src={ajay}
         placeholderSrc={ajay_lite}
-        alt="LinkedIn Profile Picture"
+        alt="Ajay Ghimire - Software Developer Profile Picture for LinkedIn"
         className="roat"
         effect="blur"
       />
-    </div>
+    </section>
   );
 }
 
