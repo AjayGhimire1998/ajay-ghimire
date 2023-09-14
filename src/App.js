@@ -20,11 +20,14 @@ function App() {
   const [onHover] = useSound(hover, { volume: 0.1 });
 
   return (
-    <>
+    <div className="app">
       <div className="space"></div>
       <div className="main">
-        <Logo logoSrc={logoSrc} play={play} />
-        <div className="content-wrap">
+        <header>
+          <Logo logoSrc={logoSrc} play={play} />
+        </header>
+
+        <main className="content-wrap">
           <Routes>
             <Route path="/" element={<Home play={play} />} />
             <Route
@@ -46,8 +49,8 @@ function App() {
             />
             <Route path="*" element={<NoMatch />} />
           </Routes>
-        </div>
-        <section className="footer">
+        </main>
+        <footer className="footer">
           <br />
           <Navbar play={play} hover={onHover} />
           <br />
@@ -56,9 +59,9 @@ function App() {
           <br />
           <Contact play={play} />
           <p className="shadow">© 2023 Ajay Ghimire</p>
-        </section>
+        </footer>
       </div>
-    </>
+    </div>
   );
 }
 
