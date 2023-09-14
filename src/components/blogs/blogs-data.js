@@ -101,7 +101,7 @@ export const blogsData = [
     readTime: "1 min read",
     datePossted: "16 Mar, 2022",
     profile: mediumPic,
-    tag: ["JavaScript", "API", "Medium"],
+    tag: ["JavaScript", "APIs", "Medium"],
   },
   {
     title: "I have created my first portfolio website",
