@@ -65,11 +65,22 @@ function Blogs({ play, hover }) {
     setBlogCount(5);
   };
 
+  //SEO
+  const pageTitle = "My Blog Page - Ajay Ghimire";
+  const pageDescription = "Explore a collection of insightful blog posts.";
+  const canonicalURL = "https://www.ajayghimire.com/blogs";
+
   return (
-    <>
+    <section>
       <div className="blogs-container">
+        {/* Add SEO Metadata */}
+        <head>
+          <title>{pageTitle}</title>
+          <meta name="description" content={pageDescription} />
+          <link rel="canonical" href={canonicalURL} />
+        </head>
         <div className="page-head">
-          <h3>Blogs</h3>
+          <h1>Blogs</h1>
         </div>
         <section className="filter-wrapper">
           <div className="filter-button-wrapper">
@@ -157,7 +168,7 @@ function Blogs({ play, hover }) {
           )
         ) : null}
       </div>
-    </>
+    </section>
   );
 }
 

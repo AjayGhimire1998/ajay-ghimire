@@ -18,17 +18,15 @@ function BlogItem({ blog, hover, play }) {
   const blogReadAndDatea = `${blog.readTime} ${"·"} ${blog.datePossted}`;
 
   return (
-    <>
+    <section>
       <div className="blog-item-container" onMouseLeave={closeModal}>
         <div className="imgDiv">
-          <img src={blog.profile} alt="pp" />
+          <img src={blog.profile} alt="profile pics from blogs posting platform" />
           <div className="desc">
             <p>Ajay Ghimire</p>
             <span> {blogReadAndDatea} </span>
           </div>
         </div>
-        {/* <div className="blog-contents"> */}
-        {/* <div> */}
           {blog.tag.map((tg, index) => {
             return (
               <div className="tag" key={index}>
@@ -36,11 +34,9 @@ function BlogItem({ blog, hover, play }) {
               </div>
             );
           })}
-        {/* </div> */}
-
         <br />
         <br />
-        <h4>{blog.title}</h4>
+        <h2>{blog.title}</h2>
         {isOpen ? (
           <PopUp
             blog={blog}
@@ -68,7 +64,7 @@ function BlogItem({ blog, hover, play }) {
         )}
       </div>
       {/* </div> */}
-    </>
+    </section>
   );
 }
 

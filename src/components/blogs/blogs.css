@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.page-head > h3 {
+.page-head > h1 {
   display: inline-block;
   background-color: black;
   font-size: 3vh;
@@ -141,7 +141,7 @@
   .blogs-container > p {
     font-size: 1.8vh;
   }
-  .page-head > h3 > span {
+  .page-head > h1  {
     font-size: 2.8vh;
   }
 }
@@ -156,7 +156,7 @@
   .blogs-container > p {
     font-size: 1.6vh;
   }
-  .page-head > h3 > span {
+  .page-head > h1{
     font-size: 2.5vh;
   }
 }
