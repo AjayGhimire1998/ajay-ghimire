@@ -25,6 +25,7 @@
 .preview-button-container {
   display: flex;
   justify-content: center;
+  
 }
 .preview-button {
   font-size: 1.7vh;
