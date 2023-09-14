@@ -4,9 +4,9 @@ import EachProjectItem from "../../components/projects/EachProjectItem";
 
 function EachProject({ play, hover }) {
   return (
-    <div className="each-project">
+    <section className="each-project">
       <EachProjectItem play={play} hover={hover} />
-    </div>
+    </section>
   );
 }
 

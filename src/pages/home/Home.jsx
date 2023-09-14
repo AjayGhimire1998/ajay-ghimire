@@ -5,11 +5,11 @@ import Intro from "../../components/home/Intro";
 
 function Home({ play }) {
   return (
-    <div className="home">
+    <section className="home">
       <br />
       <HelloMsg />
       <Intro play={play} />
-    </div>
+    </section >
   );
 }
 

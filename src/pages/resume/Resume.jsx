@@ -4,9 +4,9 @@ import "./resume.css"
 
 function Resume({shadow, play, hover}) {
   return (
-    <div className="resume">
+    <section className="resume">
         <MyResume shadow={shadow} play={play} hover={hover}/>
-    </div>
+    </section>
   );
 }
 

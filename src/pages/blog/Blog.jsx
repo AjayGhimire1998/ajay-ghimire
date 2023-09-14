@@ -4,9 +4,9 @@ import "./blog.css";
 
 function Blog({ play, hover}) {
   return (
-    <div className="blog">
+    <section className="blog">
         <Blogs play={play} hover={hover}/>
-    </div>
+    </section>
   )
 }
 

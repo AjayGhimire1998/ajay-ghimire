@@ -4,9 +4,9 @@ import Projects from '../../components/projects/Projects'
 
 function Project({ hover, play}) {
   return (
-    <div className='projects'>
+    <section className='projects'>
       <Projects hover={hover} play={play}/>
-    </div>
+    </section>
   )
 }
 

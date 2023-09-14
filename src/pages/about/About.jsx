@@ -4,9 +4,9 @@ import AboutMe from '../../components/about/AboutMe';
 
 function About({ play, hover }) {
 	return (
-		<div className="about">
+		<section className="about">
 			<AboutMe play={play} hover={hover} />
-		</div>
+		</section>
 	);
 }
 

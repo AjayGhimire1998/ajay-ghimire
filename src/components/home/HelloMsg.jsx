@@ -5,7 +5,7 @@ import wave from '../../images/wave.gif';
 
 function HelloMsg() {
 	return (
-		<div className="typewriter">
+		<section className="typewriter">
 			<Typewriter
 				options={{
 					strings: [
@@ -19,8 +19,8 @@ function HelloMsg() {
 					deleteSpeed: 25,
 				}}
 			/>
-			<img src={wave} alt="wave" className="wave" />
-		</div>
+			<img src={wave} alt="waving hand" className="wave" />
+		</section>
 	);
 }
 

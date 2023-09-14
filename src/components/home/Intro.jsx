@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import "./intro.css";
 import cover from "../../images/cover.png";
-import coverLite from "../../images/cover_lite.jpg"
+import coverLite from "../../images/cover_lite.jpg";
 import ppvideo from "../../videos/PortfolioVideo.mp4";
 import RotatingBorder from "./RotatingBorder";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -12,7 +12,7 @@ function Intro() {
   const [profileHover, setProfileHover] = useState(false);
 
   return (
-    <div
+    <section
       className="intro-container"
       onMouseLeave={() => setProfileHover(false)}
     >
@@ -50,15 +50,15 @@ function Intro() {
         </div>
       )}
       <div className="contents">
-        <p>I am</p>
-        <div>
+        <p>
+          I am
+          <br />
           <strong>Ajay Ghimire.</strong>
-        </div>
-        <br />
-        <span>Full Stack Software Developer </span>
-        <br />
-        <br />
-        <span>
+          <br />
+          <span>Full Stack Software Developer </span>
+          <br />
+        </p>
+        <p className="location">
           <i>
             <svg
               fill="#ffffff"
@@ -94,9 +94,9 @@ function Intro() {
             </svg>
             {"  "}Sydney, Australia.
           </i>
-        </span>
+        </p>
       </div>
-    </div>
+    </section>
   );
 }
 
