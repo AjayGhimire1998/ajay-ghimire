@@ -5,16 +5,13 @@ import { CgWorkAlt } from "react-icons/cg";
 function FromTo({ edu, exp }) {
   return (
     <div className="from-to-container">
-      <h3 style={{ textAlign: "center" }}>
-        <span>
-          Timeline
-        </span>
-      </h3>
+      <h2 style={{ textAlign: "center" }}>Timeline</h2>
       <br />
       <div className="edu-exp-container">
-        <div className="edu-container">
+        <section className="edu-container">
           <div className="edu">
             <HiAcademicCap size="30px" />
+
             {edu.map((ed, index) => (
               <div
                 className="edu-item"
@@ -43,24 +40,26 @@ function FromTo({ edu, exp }) {
               </div>
             ))}
           </div>
-        </div>
+        </section>
         <div className="line"></div>
-        <div className="edu-container">
-          
+        <section className="edu-container">
           <div className="edu">
             <CgWorkAlt size="30px" />
+
             {exp.map((ex, index) => (
-              
               <div
                 className="exp-item"
                 key={index}
                 style={{
-                  marginTop: ex.marginTop
+                  marginTop: ex.marginTop,
                 }}
-                
               >
                 <p
-                  style={{ color: "white", marginLeft: "-105%", height: "0px" }}
+                  style={{
+                    color: "white",
+                    marginLeft: "-105%",
+                    height: "0px",
+                  }}
                 >
                   &larr;
                 </p>
@@ -83,7 +82,7 @@ function FromTo({ edu, exp }) {
               </div>
             ))}
           </div>
-        </div>
+        </section>
       </div>
       <br />
     </div>

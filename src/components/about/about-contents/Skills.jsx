@@ -106,30 +106,7 @@ function Skills() {
             <RAILSSvg />
             <Tooltip anchorId="RAILS" style={toolTipStyle} />
           </div>
-          {/* <div
-            id="EXPRESS"
-            data-tooltip-content="Express"
-            data-tooltip-place="bottom"
-          >
-            <EXPRESSSvg />
-            <Tooltip anchorId="EXPRESS" style={toolTipStyle} />
-          </div> */}
-          {/* <div
-            id="NEXT"
-            data-tooltip-content="NEXT"
-            data-tooltip-place="bottom"
-          >
-            <NEXTSvg />
-            <Tooltip anchorId="NEXT" style={toolTipStyle} />
-          </div> */}
-          {/* <div
-            id="SVELTE"
-            data-tooltip-content="Svelte"
-            data-tooltip-place="bottom"
-          >
-            <SVELTESvg />
-            <Tooltip anchorId="SVELTE" style={toolTipStyle} />
-          </div> */}
+
         </div>
       </div>
       <br />
@@ -202,14 +179,7 @@ function Skills() {
             <CHATGPTSvg />
             <Tooltip anchorId="ChatGPT" style={toolTipStyle} />
           </div>
-          {/* <div
-            id="AfterEffects"
-            data-tooltip-content="After Effects"
-            data-tooltip-place="bottom"
-          >
-            <AESvg />
-            <Tooltip anchorId="AfterEffects" style={toolTipStyle} />
-          </div> */}
+
         </div>
       </div>
       <br />
