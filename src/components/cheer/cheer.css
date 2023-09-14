@@ -25,8 +25,16 @@
 .cheer-up {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-evenly; */
   cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  outline: none;
+
 }
 
 .cheer-up > div > img {
@@ -36,7 +44,7 @@
   height: 60px;
 }
 
-.cheer-up > small {
+.cheer-up > span {
   cursor: pointer;
   margin-top: 30px;
   height: 25px;

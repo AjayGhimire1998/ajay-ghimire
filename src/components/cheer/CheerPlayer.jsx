@@ -64,27 +64,44 @@ function CheerPlayer({ shadow }) {
     <div className="cheer-container">
       {cheerUp ? (
         <div className="player">
-          <div>
+          <button
+            aria-label={isPlaying ? "Pause" : "Play"}
+            onClick={() => onPlayPauseClick(!isPlaying)}
+          >
             {isPlaying ? (
-              <BsPauseCircle
-                size={30}
-                onClick={() => onPlayPauseClick(false)}
-              />
+              <BsPauseCircle size={30} />
             ) : (
-              <BsPlayCircle size={30} onClick={() => onPlayPauseClick(true)} />
+              <BsPlayCircle size={30} />
             )}
-          </div>
-          <div>
-            <BiShuffle size={30} onClick={() => onNextClick()} />
-          </div>
+          </button>
+          <button aria-label="Next Track" onClick={() => onNextClick()}>
+            <BiShuffle size={30} />
+          </button>
         </div>
       ) : (
-        <div className="cheer-up" onClick={onCheerUpClick}>
+        // <div className="cheer-up" onClick={onCheerUpClick}>
+        //   <div className="music-div">
+        //     <img src={music} alt="avatar" className="avatar-image music" />
+        //   </div>
+        //   &nbsp;<small>Fancy some music ?</small>
+        // </div>
+
+        <button
+          className="cheer-up"
+          onClick={onCheerUpClick}
+          aria-label="Start Music"
+        >
           <div className="music-div">
-            <img src={music} alt="avatar" className="avatar-image music" />
+            <img
+              src={music}
+              alt="Music"
+              className="avatar-image music"
+              aria-hidden="true"
+            />
           </div>
-          &nbsp;<small>Fancy some music ?</small>
-        </div>
+          &nbsp;
+          <span>Fancy some music?</span>
+        </button>
       )}
     </div>
   );
