@@ -626,7 +626,7 @@ export const GITSvg = () => {
 };
 
 export const POSTMANSvg = () => {
-  return <img src={postman} alt="postman" style={{width: "80px"}}/>;
+  return <img src={postman} alt="postman" style={{width: "50px"}}/>;
 };
 
 export const AESvg = () => {

@@ -1,11 +1,11 @@
 import React from "react";
 import "./skills.css";
 import {
-//   AESvg,
+  //   AESvg,
   CHATGPTSvg,
   CSSSvg,
   ECLIPSESvg,
-//   EXPRESSSvg,
+  //   EXPRESSSvg,
   GITSvg,
   HTMLSvg,
   JAVASvg,
@@ -13,13 +13,13 @@ import {
   JSSvg,
   MONGOSvg,
   MYSQLSvg,
-//   NEXTSvg,
+  //   NEXTSvg,
   POSTGRESSvg,
   POSTMANSvg,
   RAILSSvg,
   REACTSvg,
   RUBYSvg,
-//   SVELTESvg,
+  //   SVELTESvg,
   VSCODESvg,
 } from "./devIcons.js";
 import { Tooltip } from "react-tooltip";
@@ -32,11 +32,9 @@ function Skills() {
   };
   return (
     <div className="skills-container">
-      <h3 style={{ textAlign: "center" }}>
-        <span>Technical Skills</span>
-      </h3>
+      <h2 style={{ textAlign: "center" }}>Technical Skills</h2>
       <br />
-      <div className="languages">
+      <section className="languages">
         <h4>Programming Languages:</h4>
         <div className="icons-container">
           <div
@@ -47,7 +45,7 @@ function Skills() {
             <JSSvg />
             <Tooltip anchorId="JS" style={toolTipStyle} />
           </div>
-		  <div
+          <div
             id="TS"
             data-tooltip-content="TypeScript"
             data-tooltip-place="bottom"
@@ -72,10 +70,10 @@ function Skills() {
             <Tooltip anchorId="JAVA" style={toolTipStyle} />
           </div>
         </div>
-      </div>
+      </section>
       <br />
 
-      <div className="languages">
+      <section className="languages">
         <h4>Web Development:</h4>
         <div className="icons-container">
           <div
@@ -106,11 +104,10 @@ function Skills() {
             <RAILSSvg />
             <Tooltip anchorId="RAILS" style={toolTipStyle} />
           </div>
-
         </div>
-      </div>
+      </section>
       <br />
-      <div className="languages">
+      <section className="languages">
         <h4>Databases:</h4>
         <div className="icons-container">
           <div
@@ -138,9 +135,9 @@ function Skills() {
             <Tooltip anchorId="PostgreSQL" style={toolTipStyle} />
           </div>
         </div>
-      </div>
+      </section>
       <br />
-      <div className="languages">
+      <section className="languages">
         <h4>Tools:</h4>
         <div className="icons-container-tools">
           <div
@@ -179,9 +176,8 @@ function Skills() {
             <CHATGPTSvg />
             <Tooltip anchorId="ChatGPT" style={toolTipStyle} />
           </div>
-
         </div>
-      </div>
+      </section>
       <br />
     </div>
   );

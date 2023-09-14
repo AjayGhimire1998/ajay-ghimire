@@ -100,7 +100,7 @@
 }
 
 @media screen and (max-width: 760px) {
-  .from-to-container > h3 > span {
+  .from-to-container > h2  {
     font-size: 2.8vh;
   }
   .edu-time {
@@ -139,7 +139,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .from-to-container > h3 > span {
+  .from-to-container > h2  {
     font-size: 2.5vh;
   }
   .edu-desc > p > strong {

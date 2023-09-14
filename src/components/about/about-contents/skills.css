@@ -4,7 +4,7 @@
   width: 700px;
 }
 
-.skills-container > h3 > span {
+.skills-container > h2 {
   font-size: 3vh;
 }
 
@@ -14,7 +14,7 @@
   justify-content: center;
 }
 
-.languages > h6 {
+.languages > h4 {
   line-height: 1.7;
 }
 
@@ -79,7 +79,7 @@
   .skills-container {
     width: 500px;
   }
-  .skills-container > h3 > span {
+  .skills-container > h2{
     font-size: 2.8vh;
   }
   .icons-container {
@@ -116,7 +116,7 @@
   .skills-container {
     width: 500px;
   }
-  .skills-container > h3 > span {
+  .skills-container > h2  {
     font-size: 2.5vh;
   }
   .icons-container {
