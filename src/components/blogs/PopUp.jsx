@@ -11,6 +11,10 @@ function PopUp({ blog, hover, play, closeModal, isOpen }) {
     play();
     closeModal(false);
   };
+
+  if (!isOpen) {
+    return null; // Don't render the component if it's not open
+  }
   return (
     <div className="modal">
       <div className="modal-content">
@@ -22,6 +26,7 @@ function PopUp({ blog, hover, play, closeModal, isOpen }) {
             className="nav-button proceed"
             onMouseOver={hover}
             onClick={onProceedClick}
+            aria-label={`Proceed to ${blog.source}`}
           >
             Proceed
           </button>
@@ -29,6 +34,7 @@ function PopUp({ blog, hover, play, closeModal, isOpen }) {
             className="nav-button cancel"
             onMouseOver={hover}
             onClick={onCancelClick}
+            aria-label="Cancel"
           >
             Cancel
           </button>
