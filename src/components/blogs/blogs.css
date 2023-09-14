@@ -37,17 +37,30 @@
 
 .filter-button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-left: 10px;
-  padding-right: 10px;
+  /* padding-right: 10px; */
   background-color: rgb(27, 25, 25);
   height: 40px;
   border-radius: 10px;
-  border: 2px solid transparent;
-
+}
+.filter-button>p>small{
+	font-size: 16px;
+	width: 37px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border: 2px solid white;
+	/* width: 10px; */
+}
+.filter-button:hover > p > small {
+  /* border: 1px solid white; */
 }
 
+.filter-button:hover {
+	/* border: 2px solid white; */
+  }
 .reset {
   display: flex;
   justify-content: center;
@@ -62,16 +75,13 @@
 }
 
 .reset:hover > svg {
-	transform: rotate(-360deg);
+  transform: rotate(-360deg);
 }
-.reset>svg {
-	transition: transform 1s ease;
+.reset > svg {
+  transition: transform 1s ease;
 }
 
 
-.filter-button:hover {
-  border: 2px solid white;
-}
 
 .filter-button > p {
   /* text-decoration: underline; */

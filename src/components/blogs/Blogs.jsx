@@ -27,16 +27,17 @@ function Blogs({ play, hover }) {
 
   useEffect(() => {
     console.log(selectedCategories);
-    blogsData.map((blog, index) => {
-      selectedCategories.forEach((cat) => {
+    selectedCategories.forEach((cat) => {
+      blogsData.map((blog, index) => {
         if (blog.tag.includes(cat)) {
           setFilteredBlogs((prev) => [...prev, blogsData[index]]);
         } else {
-          setFilteredBlogs((prev) => prev.filter((blog) => !blog.tag.includes(cat)))
+          setFilteredBlogs((prev) =>
+            prev.filter((blog) => !blog.tag.includes(cat))
+          );
         }
       });
     });
-    
   }, [selectedCategories]);
 
   console.log(filteredBlogs);
@@ -79,7 +80,7 @@ function Blogs({ play, hover }) {
           <div className="filter-button-wrapper">
             <div className="filter-button">
               <p>
-                Filter &nbsp;&nbsp;
+                Filter: &nbsp;&nbsp;
                 <small
                   onClick={() => setIsFilterOn(!isFilterOn)}
                   className="arrow"
