@@ -23,24 +23,20 @@ function Blogs({ play, hover }) {
     setIsFilterOn(false);
     setSelectedCategories([]);
     setFilteredBlogs([]);
+    setBlogCount(blogsData.length);
+  };
+  const filterBlogs = () => {
+    const filtered = blogsData.filter((blog) => {
+      return selectedCategories.some((cat) => blog.tag.includes(cat));
+    });
+    // setBlogCount(filtered.length);
+    console.log(blogCount);
+    setFilteredBlogs(filtered);
   };
 
   useEffect(() => {
-    console.log(selectedCategories);
-    selectedCategories.forEach((cat) => {
-      blogsData.map((blog, index) => {
-        if (blog.tag.includes(cat)) {
-          setFilteredBlogs((prev) => [...prev, blogsData[index]]);
-        } else {
-          setFilteredBlogs((prev) =>
-            prev.filter((blog) => !blog.tag.includes(cat))
-          );
-        }
-      });
-    });
+    filterBlogs();
   }, [selectedCategories]);
-
-  console.log(filteredBlogs);
 
   const blogItem =
     selectedCategories.length === 0
@@ -63,7 +59,7 @@ function Blogs({ play, hover }) {
   // console.log(uniqueCategories);
 
   const onSeeMore = () => {
-    setBlogCount(blogsData.length);
+    setBlogCount(blogItem.length);
   };
 
   const onSeeLess = () => {
@@ -150,9 +146,9 @@ function Blogs({ play, hover }) {
             </div>
           ) : null}
         </section>
-        {blogItem.slice(0, blogCount)}
-
-        {blogCount === 5 ? (
+        {blogItem.slice(0, blogCount) }
+        {/* {blogCount > 5 ? <p onClick={onSeeMore}>See More</p> : null} */}
+        {blogCount > 4 ? (
           <p onClick={onSeeMore}>See More</p>
         ) : (
           <p onClick={onSeeLess}>See Less</p>
