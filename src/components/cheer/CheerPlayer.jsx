@@ -94,7 +94,7 @@ function CheerPlayer({ shadow }) {
           <div className="music-div">
             <img
               src={music}
-              alt="Music"
+              alt="music logo"
               className="avatar-image music"
               aria-hidden="true"
             />
