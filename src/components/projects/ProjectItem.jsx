@@ -34,19 +34,20 @@ function ProjectItem({ project, play }) {
           }}
           onMouseEnter={() => setIsPlaying(true)}
           onMouseLeave={() => setIsPlaying(false)}
+          alt={`Video player for project: ${project.name}`}
         />
       </div>
       <Link to={`/projects/${project.name}`} style={{ textDecoration: "none" }}>
         <div className="card-contents" onClick={play}>
-          <h4
+          <h2
             style={{
               textDecoration: "underline",
               color: `${isPlaying ? "#39ff14" : ""}`,
             }}
           >
             {project.name}
-          </h4>
-          <span>{project.desc}</span>
+          </h2>
+          <p>{project.desc}</p>
           <br />
         </div>
       </Link>

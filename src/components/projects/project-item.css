@@ -58,10 +58,11 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.card-contents > h4 {
+.card-contents > h2 {
+  font-size: 18px;
   animation: changeText 8s linear infinite;
 }
-.card-contents > h4:hover {
+.card-contents > h2:hover {
   font-size: large;
   cursor: pointer;
   color: #39ff14 !important;
