@@ -4,6 +4,7 @@ import { blogsData } from "./blogs-data";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { useEffect } from "react";
+import { useCallback } from "react";
 
 function Blogs({ play, hover }) {
   const [blogCount, setBlogCount] = useState(6);
@@ -25,16 +26,16 @@ function Blogs({ play, hover }) {
     setFilteredBlogs([]);
     setBlogCount(6);
   };
-  const filterBlogs = () => {
+  const filterBlogs = useCallback(() => {
     const filtered = blogsData.filter((blog) => {
       return selectedCategories.some((cat) => blog.tag.includes(cat));
     });
     setFilteredBlogs(filtered);
-  };
+  }, [selectedCategories]);
 
   useEffect(() => {
     filterBlogs();
-  }, [selectedCategories]);
+  }, [filterBlogs]);
 
   const blogItem =
     selectedCategories.length === 0
