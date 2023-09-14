@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import { useEffect } from "react";
 
 function Blogs({ play, hover }) {
-  const [blogCount, setBlogCount] = useState(5);
+  const [blogCount, setBlogCount] = useState(6);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [isFilterOn, setIsFilterOn] = useState(false);
   const [filteredBlogs, setFilteredBlogs] = useState([]);
@@ -23,14 +23,12 @@ function Blogs({ play, hover }) {
     setIsFilterOn(false);
     setSelectedCategories([]);
     setFilteredBlogs([]);
-    setBlogCount(blogsData.length);
+    setBlogCount(6);
   };
   const filterBlogs = () => {
     const filtered = blogsData.filter((blog) => {
       return selectedCategories.some((cat) => blog.tag.includes(cat));
     });
-    // setBlogCount(filtered.length);
-    console.log(blogCount);
     setFilteredBlogs(filtered);
   };
 
@@ -59,7 +57,7 @@ function Blogs({ play, hover }) {
   // console.log(uniqueCategories);
 
   const onSeeMore = () => {
-    setBlogCount(blogItem.length);
+    setBlogCount(blogsData.length);
   };
 
   const onSeeLess = () => {
@@ -146,13 +144,17 @@ function Blogs({ play, hover }) {
             </div>
           ) : null}
         </section>
-        {blogItem.slice(0, blogCount) }
-        {/* {blogCount > 5 ? <p onClick={onSeeMore}>See More</p> : null} */}
-        {blogCount > 4 ? (
-          <p onClick={onSeeMore}>See More</p>
-        ) : (
-          <p onClick={onSeeLess}>See Less</p>
-        )}
+        {selectedCategories.length === 0
+          ? blogItem.slice(0, blogCount)
+          : blogItem}
+
+        {selectedCategories.length === 0 ? (
+          blogCount === 6 ? (
+            <p onClick={onSeeMore}>See More</p>
+          ) : (
+            <p onClick={onSeeLess}>See Less</p>
+          )
+        ) : null}
       </div>
     </>
   );
