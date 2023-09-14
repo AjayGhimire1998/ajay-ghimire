@@ -9,6 +9,7 @@ function Blogs({ play, hover }) {
   const [blogCount, setBlogCount] = useState(5);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [isFilterOn, setIsFilterOn] = useState(false);
+  const [filteredBlogs, setFilteredBlogs] = useState([]);
 
   const handleSelectCategory = (category) => {
     if (!selectedCategories.includes(category)) {
@@ -21,22 +22,43 @@ function Blogs({ play, hover }) {
   const handleResetAll = () => {
     setIsFilterOn(false);
     setSelectedCategories([]);
-  }
+  };
 
   useEffect(() => {
     console.log(selectedCategories);
+    // if (selectedCategories.length === 0) {
+    //   setFilteredBlogs(blogsData);
+    // }
+    blogsData.map((blog, index) => {
+      selectedCategories.forEach((cat) => {
+        if (blog.tag.includes(cat)) {
+          setFilteredBlogs((prev) => [...prev, blogsData[index]]);
+        } 
+      });
+    });
   }, [selectedCategories]);
 
-  const blogItem = blogsData.map((blog) => {
-    return <BlogItem blog={blog} key={uuidv4()} play={play} hover={hover} />;
-  });
+  // console.log(filteredBlogs);
+
+  const blogItem =
+    selectedCategories.length === 0
+      ? blogsData.map((blog) => {
+          return (
+            <BlogItem blog={blog} key={uuidv4()} play={play} hover={hover} />
+          );
+        })
+      : filteredBlogs.map((blog) => {
+          return (
+            <BlogItem blog={blog} key={uuidv4()} play={play} hover={hover} />
+          );
+        });
 
   const blogCategories = blogsData.map((blog) => {
     return blog.tag.map((tag) => tag);
   });
 
   const uniqueCategories = Array.from(new Set(blogCategories.flat())).sort();
-  console.log(uniqueCategories);
+  // console.log(uniqueCategories);
 
   const onSeeMore = () => {
     setBlogCount(blogsData.length);
