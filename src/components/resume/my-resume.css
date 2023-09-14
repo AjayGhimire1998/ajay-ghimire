@@ -17,6 +17,27 @@
   gap: 30px;
   /* width: 100%; */
 }
+.my-resume-container > p {
+  font-size: 15px;
+}
+
+.page-head > h2 {
+  font-size: 3vh;
+  display: inline-block;
+  background-color: black;
+}
+
+.email-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.email-input > span {
+  align-self: center;
+  font-size: 13px;
+}
 #email-input {
   width: 300px;
   color: black;
@@ -42,12 +63,9 @@
   .my-resume {
     min-width: 100%;
   }
-  .my-resume-container {
-    /* height: 300px; */
+  .page-head > h2 {
+    font-size: 2.8vh;
   }
-  /* #email-input {
-    width: 100%;
-  } */
 }
 
 @media screen and (max-width: 480px) {
@@ -57,9 +75,10 @@
   .my-resume {
     min-width: 100%;
   }
-  .my-resume-container {
-    /* height: 200px; */
+  .page-head > h2 {
+    font-size: 2.5vh;
   }
+
   #email-input {
     width: 100%;
   }

@@ -96,17 +96,13 @@ function MyResume({ play, hover }) {
   return (
     <div className="resume-container">
       <div className="page-head">
-        <h3>
-          <span>Resume</span>
-        </h3>
+        <h2>Resume</h2>
       </div>
+      <br />
       <div className="my-resume-container">
-        <br />
-        <div>
-          <small>Enter your email and I'll send you a copy of my resume.</small>
-        </div>
-
-        <div>
+        <p>Enter your email and I'll send you a copy of my resume.</p>
+        <div className="email-input">
+          <label htmlFor="email-input">Email:</label>
           <input
             type="email"
             id="email-input"
@@ -114,10 +110,10 @@ function MyResume({ play, hover }) {
             value={email}
             onChange={handleEmailChange}
           />
-          <small>{`${tries} tries left.`}</small>
+          <span>{`${tries} tries left.`}</span>
         </div>
         {message ? (
-          <small style={{ color: messageColor }}>{message}</small>
+          <p style={{ color: messageColor }}>{message}</p>
         ) : null}
         {tries === 0 ? null : (
           <div>
@@ -125,6 +121,7 @@ function MyResume({ play, hover }) {
               className="nav-button"
               onMouseOver={hover}
               onClick={handleRequest}
+              disabled={isLoading}
             >
               {isLoading ? btnText : "Request"}
             </button>
@@ -132,17 +129,6 @@ function MyResume({ play, hover }) {
         )}
       </div>
       <br />
-      {/* <div className="download-button-container">
-        <a
-          href={myResume}
-          className="nav-button download"
-          onClick={play}
-          onMouseOver={hover}
-          download="Ajay_Ghimire_Resume-2023.pdf"
-        >
-          Download
-        </a>
-      </div> */}
     </div>
   );
 }
