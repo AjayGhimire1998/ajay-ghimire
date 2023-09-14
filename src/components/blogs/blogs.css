@@ -29,14 +29,45 @@
   align-items: flex-start;
   /* height: fit-content; */
 }
+.filter-button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 
 .filter-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-left: 10px;
   padding-right: 10px;
   background-color: rgb(27, 25, 25);
+  height: 40px;
   border-radius: 10px;
   border: 2px solid transparent;
+
 }
+
+.reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(27, 25, 25);
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.reset:hover > svg {
+	transform: rotate(-360deg);
+}
+.reset>svg {
+	transition: transform 1s ease;
+}
+
 
 .filter-button:hover {
   border: 2px solid white;
@@ -46,61 +77,47 @@
   /* text-decoration: underline; */
 }
 
-.arrow-down {
-  border: solid white;
-  border-width: 0 1.5px 1.5px 0;
+.arrow {
   display: inline-block;
   padding: 3px;
-  margin-bottom: 1px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
   cursor: pointer;
 }
 
-
-
-.arrow-down:hover {
+.arrow:hover {
   cursor: pointer;
   box-shadow: none;
   position: relative;
   top: 0.2em;
 }
-.close{
-	cursor: pointer;
-}
-.close:hover{
-	cursor: pointer;
-	box-shadow: none;
-	position: relative;
-	top: 0.2em;
+
+.filter-categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  /* border: 2px solid transparent; */
 }
 
-.filter-categories{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background-color: rgb(0, 0, 0);
-	border-radius: 10px;
-	/* border: 2px solid transparent; */
+.category {
+  /* background-color: rgb(27, 25, 25) !important; */
+  border: 1px solid transparent !important;
+  width: fit-content;
+  text-align: center;
+  border-radius: 3px;
+  /* color: white ; */
+  padding-left: 3px;
+  padding-right: 3px;
+  cursor: pointer !important;
 }
 
-.category{
-	/* background-color: rgb(27, 25, 25) !important; */
-	border: 1px solid transparent !important;
-	width: fit-content;
-	text-align: center;
-	border-radius: 3px;
-	/* color: white ; */
-	padding-left: 3px;
-	padding-right: 3px;
-	cursor: pointer !important;
-}
-
-.category:hover{
-	border: 1px solid white !important;
+.category:hover {
+  border: 1px solid white !important;
 }
 
 @media screen and (max-width: 760px) {
