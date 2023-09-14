@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import useSound from "use-sound";
 import click from "./sounds/click.wav";
 import hover from "./sounds/hover.mp3";
-import logo from "./images/logo2.png";
+import logoSrc from "./images/logo2.png";
 import Home from "./pages/home/Home";
 import Logo from "./components/home/Logo";
 import Navbar from "./components/navbar/Navbar";
@@ -23,7 +23,7 @@ function App() {
     <>
       <div className="space"></div>
       <div className="main">
-        <Logo logo={logo} play={play} />
+        <Logo logoSrc={logoSrc} play={play} />
         <div className="content-wrap">
           <Routes>
             <Route path="/" element={<Home play={play} />} />

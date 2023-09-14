@@ -38,7 +38,7 @@ function Intro() {
             src={cover}
             placeholderSrc={coverLite}
             effect="blur"
-            alt="From Slicing Sashimis to Slicing Arrays."
+            alt="Ajay Ghimire - Software Developer"
             className="avatar-back"
           />
           <div
