@@ -9,9 +9,9 @@ function Projects({ play }) {
   return (
     <div className="projects-container">
       <div className="page-title">
-        <h3>
-          <span>Personal Projects</span>
-        </h3>
+        <h2>
+          Personal Projects
+        </h2>
       </div>
       <div className="projects">{projects}</div>
     </div>

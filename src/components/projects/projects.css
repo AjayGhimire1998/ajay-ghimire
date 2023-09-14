@@ -7,7 +7,7 @@
   gap: 50px;
 }
 
-.page-title > h3 > span{
+.page-title > h2{
   font-size: 3vh;
   display: inline-block;
   background-color: black;
@@ -32,7 +32,7 @@
     /* padding-left: 32px;
     padding-right: 32px; */
   }
-  .page-title > h3 > span{
+  .page-title > h2{
     font-size: 2.8vh;
 
   }
@@ -49,7 +49,7 @@
     padding-left: 16px;
 		padding-right: 16px;
   }
-  .page-title > h3 > span{
+  .page-title > h2{
     font-size: 2.5vh;
    
   }
