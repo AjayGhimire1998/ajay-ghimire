@@ -22,23 +22,24 @@ function Blogs({ play, hover }) {
   const handleResetAll = () => {
     setIsFilterOn(false);
     setSelectedCategories([]);
+    setFilteredBlogs([]);
   };
 
   useEffect(() => {
     console.log(selectedCategories);
-    // if (selectedCategories.length === 0) {
-    //   setFilteredBlogs(blogsData);
-    // }
     blogsData.map((blog, index) => {
       selectedCategories.forEach((cat) => {
         if (blog.tag.includes(cat)) {
           setFilteredBlogs((prev) => [...prev, blogsData[index]]);
-        } 
+        } else {
+          setFilteredBlogs((prev) => prev.filter((blog) => !blog.tag.includes(cat)))
+        }
       });
     });
+    
   }, [selectedCategories]);
 
-  // console.log(filteredBlogs);
+  console.log(filteredBlogs);
 
   const blogItem =
     selectedCategories.length === 0
