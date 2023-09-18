@@ -3,7 +3,17 @@ import linkedInPic from "../../images/my-pictures/ajay2.png";
 
 export const blogsData = [
   {
-    title: '"What happens when we search a URL in the browser ?"',
+    title: '"Client-Side Form Validation"',
+    desc: "Before sending data to the server, it's crucial to make sure that all required form fields are not only filled out but also in the correct format. This essential step is known as client-side form validation, and here's why it matters: ......",
+    url: "https://www.linkedin.com/posts/ajayghimire_clientsidevalidation-userexperience-dataintegrity-activity-7109104853024460800-ithL?utm_source=share&utm_medium=member_desktop",
+    source: "LinkedIn",
+    readTime: "2 min read",
+    datePossted: "17 Sep, 2023",
+    profile: linkedInPic,
+    tag: ["HTML", "JavaScript", "LinkedIn"],
+  },
+  {
+    title: '"What Happens When We Search a URL In The Browser ?"',
     desc: 'All the devices on the internet have unique addresses, known as IP addresses. Think of an IP address like a phone number or a unique identifier for your device on the internet. Each address is unique to each device or computer on the ......',
     url: "https://www.linkedin.com/pulse/how-does-internet-actually-work-ajay-ghimire%3FtrackingId=fIiIQTVGT%252FCUviPEvVcCkw%253D%253D/?trackingId=fIiIQTVGT%2FCUviPEvVcCkw%3D%3D",
     source: "LinkedIn",
@@ -13,7 +23,7 @@ export const blogsData = [
     tag: ["Web", "Internet", "LinkedIn"],
   },
   {
-    title: '"How does the Internet actually work?"',
+    title: '"How Does The Internet Actually Work?"',
     desc: 'Information on the internet moves from one device or computer to another in the forms of bits over various mediums like ethernet cables, Fiber-Optic cables and wireless signals. A bit has two possible states. "On or Off" or "Yes or No"......',
     url: "https://www.linkedin.com/pulse/how-does-internet-actually-work-ajay-ghimire%3FtrackingId=fIiIQTVGT%252FCUviPEvVcCkw%253D%253D/?trackingId=fIiIQTVGT%2FCUviPEvVcCkw%3D%3D",
     source: "LinkedIn",
@@ -23,7 +33,7 @@ export const blogsData = [
     tag: ["Internet", "Technology", "LinkedIn"],
   },
   {
-    title: '"What in the Digital World is the Internet? 🌐"',
+    title: '"What In The Digital World Is The Internet? 🌐"',
     desc: "Interconnected Networks or simply, Internet is a global network of interconnected computers and devices that can share information with each other across vast distances.Vint Cerf, one of the fathers of the internet, defines internet as.....",
     url: "https://www.linkedin.com/pulse/what-digital-world-internet-ajay-ghimire%3FtrackingId=K8vqdosdQsKDY3SK0YiZHg%253D%253D/?trackingId=K8vqdosdQsKDY3SK0YiZHg%3D%3D",
     source: "LinkedIn",
@@ -33,7 +43,7 @@ export const blogsData = [
     tag: ["Internet", "Technology", "LinkedIn"],
   },
   {
-    title: '"Recursive Methods" in Java ',
+    title: '"Recursive Methods" In Java ',
     desc: "Recursive methods in Java are powerful tools for solving complex problems by breaking them down into smaller sub-problems. By calling the function on each sub-problem recursively, the solution can be computed in a clear and concise way.....",
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7037722687158255616?utm_source=share&utm_medium=member_desktop",
     source: "LinkedIn",
@@ -43,7 +53,7 @@ export const blogsData = [
     tag: ["Java", "LinkedIn"],
   },
   {
-    title: 'The "main" method in Java ',
+    title: 'The "main" Method In Java ',
     desc: "When you write a program in Java, you need to have a special method called “main” that tells the computer where to start running the program. The main method is the entry point of aprogram. It is like the boss. It tells the....",
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7035211177932517376?utm_source=share&utm_medium=member_desktop",
     source: "LinkedIn",
@@ -54,7 +64,7 @@ export const blogsData = [
   },
 
   {
-    title: "The ’final’ keyword in Java",
+    title: "The ’final’ Keyword In Java",
     desc: "The ’final ’ keyword is a non-access modifier used for classes, attributes or variables, and methods, which makes them non-changeable, meaning impossible to inherit or override. Most common uses of ‘final ’are:....",
     url: "https://medium.com/@ajayghimire1998/the-final-keyword-in-java-2471f9b63cb6",
     source: "Medium",
@@ -84,7 +94,7 @@ export const blogsData = [
     tag: ["Ruby", "Nokogiri", "Medium"],
   },
   {
-    title: "Was Creating a Meme App for React’s Final project worth it??",
+    title: "Was Creating a Meme App For React’s Final Project Worth It??",
     desc: "Totally……This project has completely made myself feel that I am no longer a beginner but a competitive intermediate who now has guts to tackle every logical problem or at least try. With a month of learning....",
     url: "https://medium.com/@ajayghimire1998/was-creating-a-meme-app-for-reacts-final-project-worth-it-f1859731ff6f",
     source: "Medium",
@@ -94,7 +104,7 @@ export const blogsData = [
     tag: ["React", "Firebase", "APIs", "Medium"],
   },
   {
-    title: "MovieFinder JS App using OMDB API",
+    title: "MovieFinder JS App Using OMDB API",
     desc: "Within just 4 weeks into the JavaScript course, I was poured myself with tons of course contents and structures. Coding in a real programming language for the first time was exciting as well as pretty....",
     url: "https://medium.com/@ajayghimire1998/movie-search-js-app-using-omdb-api-93033f0898a6",
     source: "Medium",
@@ -104,7 +114,7 @@ export const blogsData = [
     tag: ["JavaScript", "APIs", "Medium"],
   },
   {
-    title: "I have created my first portfolio website",
+    title: "I Have Created My First Portfolio Website",
     desc: "Within one week into the full-time software engineering course by Academy Xi in Sydney, Australia, I have successfully created my first personal website using only HTML and CSS. It was fun and not so challenging....",
     url: "https://medium.com/@ajayghimire1998/i-have-created-my-first-portfolio-website-4d0da88f4145",
     source: "Medium",
@@ -114,7 +124,7 @@ export const blogsData = [
     tag: ["HTML/CSS", "Web Development", "Medium"],
   },
   {
-    title: "Why did I decide to study Software Engineering ?",
+    title: "Why Did I Decide To Study Software Engineering ?",
     desc: "Computer Science is a course which has always held a certain interest to me as I loved doing various stuffs with computer and always seek for learning more in computing field. In today’s world, computer science is ubiquitous....",
     url: "https://medium.com/@ajayghimire1998/why-did-i-decide-to-study-software-engineering-8bf843bdfb10",
     source: "Medium",
