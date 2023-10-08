@@ -54,19 +54,22 @@ function Navbar({ play, hover }) {
         {pages.map((page, index) => {
           return (
             // <li key={index}>
-              <Link
-                to={page === "Home" ? "" : `/${page.toLowerCase()}`}
-                className={`nav-button ${page.toLowerCase() === currentPage.toLowerCase() ? 'active' : ''}`}
-                onClick={() => {
-                  onLinkClick(page === "Home" ? "" : page);
-                  playSound();
-                }}
-                onMouseOver={hover}
-				role="menuitem"
-				tabIndex={0}
-              >
-                {page}
-              </Link>
+            <Link
+              to={page === "Home" ? "" : `/${page.toLowerCase()}`}
+              className={`nav-button ${
+                page.toLowerCase() === currentPage.toLowerCase() ? "active" : ""
+              }`}
+              onClick={() => {
+                onLinkClick(page === "Home" ? "" : page);
+                playSound();
+              }}
+              onMouseOver={hover}
+              role="menuitem"
+              tabIndex={0}
+              key={index}
+            >
+              {page}
+            </Link>
             // </li>
           );
         })}

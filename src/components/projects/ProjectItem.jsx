@@ -2,6 +2,7 @@ import "./project-item.css";
 import ReactPlayer from "react-player";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { projectNameHypen } from "./EachProjectItem";
 
 function ProjectItem({ project, play }) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -37,7 +38,7 @@ function ProjectItem({ project, play }) {
           alt={`Video player for project: ${project.name}`}
         />
       </div>
-      <Link to={`/projects/${project.name}`} style={{ textDecoration: "none" }}>
+      <Link to={`/projects/${projectNameHypen(project.name)}`} style={{ textDecoration: "none" }}>
         <div className="card-contents" onClick={play}>
           <h2
             style={{

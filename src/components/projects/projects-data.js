@@ -107,7 +107,7 @@ export const videoLinks = [
     ],
   },
   {
-    name: "MemeBook",
+    name: "Memebook",
     url: "https://youtu.be/JTJ3IyiqIqk",
     videoId: "JTJ3IyiqIqk",
     desc: "A React app with user authentication, allowing users to view, upload, and create memes using multiple APIs and Firebase for authentication and storage.",
@@ -139,7 +139,7 @@ export const videoLinks = [
     ],
   },
   {
-    name: "CryptoMania",
+    name: "Cryptomania",
     url: "https://youtu.be/EYW5ZX8XiWk",
     videoId: "EYW5ZX8XiWk",
     desc: "A Ruby CLI gem game that simulates investment in historical cryptocurrencies with the aim to double funds and win the game, which runs on Terminal.",
@@ -171,7 +171,7 @@ export const videoLinks = [
     ],
   },
   {
-    name: "PlayMates",
+    name: "Playmates",
     url: "https://youtu.be/HV8v0qiuvtI",
     videoId: "HV8v0qiuvtI",
     desc: "A Ruby on Rails gaming contents platform with user authentication, enabling users to post, share and chat about gaming contents, facilitating team-ups for like-minded players.",
@@ -202,7 +202,7 @@ export const videoLinks = [
     ],
   },
   {
-    name: "Movie-Finder",
+    name: "MovieFinder",
     url: "https://youtu.be/L78bUwIzYYo",
     videoId: "L78bUwIzYYo",
     desc: "A JavaScript web application built with OMDB and YOUTUBE API.",

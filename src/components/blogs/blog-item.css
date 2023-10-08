@@ -38,7 +38,7 @@
   color: white;
 }
 
-.desc > span {
+.desc > time {
   font-size: x-small;
   color: rgb(170, 170, 170);
 }

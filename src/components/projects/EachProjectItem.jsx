@@ -7,11 +7,23 @@ import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
 import { videoLinks } from "./projects-data";
 import { Tooltip } from "react-tooltip";
 
+export const projectNameHypen = (projectName) => {
+  let result = "";
+  for (let i = 0; i <= projectName.length - 1; i++) {
+    if (projectName.charCodeAt(i) < 97) {
+      result += "-" + projectName.charAt(i);
+    } else {
+      result = result + projectName.charAt(i);
+    }
+  }
+  // console.log(result.slice(1));
+  return result.slice(1).toLowerCase();
+};
 function EachProjectItem({ hover, play }) {
   const navigate = useNavigate();
   const { name } = useParams();
   const [project, setProject] = useState(
-    videoLinks.find((vid) => vid.name === name)
+    videoLinks.find((vid) => projectNameHypen(vid.name) === name)
   );
   const [indexOfProject, setIndexOfProject] = useState(
     videoLinks.indexOf(project)
@@ -25,17 +37,19 @@ function EachProjectItem({ hover, play }) {
   const onPrevClick = () => {
     play();
     setIndexOfProject(indexOfProject - 1);
-    navigate(`/projects/${videoLinks[indexOfProject - 1].name}`);
+    navigate(`/projects/${projectNameHypen(videoLinks[indexOfProject - 1].name)}`);
   };
 
   const onNextClick = () => {
     play();
     setIndexOfProject(indexOfProject + 1);
-    navigate(`/projects/${videoLinks[indexOfProject + 1].name}`);
+    navigate(`/projects/${projectNameHypen(videoLinks[indexOfProject + 1].name)}`);
   };
 
   useEffect(() => {
-    setProject(videoLinks.find((vid) => vid.name === name));
+    setProject(
+      videoLinks.find((vid) => projectNameHypen(vid.name) === name)
+    );
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }, [name]);
