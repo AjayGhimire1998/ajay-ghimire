@@ -30,6 +30,7 @@ function ProjectItem({ project, play }) {
                 end: 10,
                 playlist: project.videoId,
                 loop: 1,
+                origin: 'https://ajayghimire.com'
               },
             },
           }}
