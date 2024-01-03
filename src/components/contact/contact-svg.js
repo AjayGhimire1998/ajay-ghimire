@@ -283,7 +283,7 @@ export const contacts = [
       // onClick={() => onMailClick("ajayghimire1998@gmail.com")}
       />
     ),
-    link: "mailto: ajayghimire009@gmail.com",
+    link: "mailto: ghimire.ajay@outlook.com",
   },
   {
     plain: (

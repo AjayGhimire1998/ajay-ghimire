@@ -55,7 +55,7 @@ function Intro() {
           <br />
           <strong>Ajay Ghimire.</strong>
           <br />
-          <span>Full Stack Software Developer </span>
+          <span>Junior Software Engineer </span>
           <br />
         </p>
         <p className="location">

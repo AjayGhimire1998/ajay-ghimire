@@ -21,7 +21,7 @@ export const exp = [
   {
     company: "YashiTech Solution",
     address: "Remote",
-    jobTitle: "Software Engineer Intern",
+    jobTitle: "Software Engineer",
     startTime: "Mar 2023",
     endTime: "Present",
     marginTop: "0px"
