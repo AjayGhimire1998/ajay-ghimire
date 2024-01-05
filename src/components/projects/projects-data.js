@@ -18,7 +18,13 @@ import {
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { v4 as uuidv4 } from "uuid";
-import with_love from "../../"
+import with_love from "../../images/projects/with_love.png";
+import movie from "../../images/projects/movie.png";
+import mates from "../../images/projects/mates.png";
+import memebook from "../../images/projects/memebook.png";
+import crypto from "../../images/projects/crypto.png";
+import goal from "../../images/projects/goal.png";
+import yout from "../../images/projects/yout.png";
 
 const toolTipStyle = {
   height: "10px",
@@ -29,7 +35,7 @@ export const videoLinks = [
   {
     name: "WithLoveFromHome",
     url: "https://youtu.be/IEl0hS8OP2k",
-    thumbnail: "https://i9.ytimg.com/vi_webp/IEl0hS8OP2k/mq1.webp?sqp=COiO36wG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYACpgWKAgwIABABGEcgXChlMA8=&rs=AOn4CLAUBpnT9S47ZpVTJWftMeLalO4hdw",
+    thumbnail: with_love,
     videoId: "IEl0hS8OP2k",
     desc: "A full-stack E-commerce web application developed using React for UI and Rails for server.",
     desc2:
@@ -71,6 +77,7 @@ export const videoLinks = [
     name: "GoalsToScore",
     url: "https://youtu.be/aAT7HKS-DdU",
     videoId: "aAT7HKS-DdU",
+    thumbnail: goal,
     desc: "A MERN stack app for effective goals management, allowing for creation and updates of goals and sub-tasks.",
     desc2:
       "The app requires a simple authentication, and allows a user to save their goals with tasks related to them. They can later add more tasks as needed and switch the status of each task to either pending or completed which updates in the backend synchronously.",
@@ -112,6 +119,7 @@ export const videoLinks = [
     name: "Memebook",
     url: "https://youtu.be/JTJ3IyiqIqk",
     videoId: "JTJ3IyiqIqk",
+    thumbnail: memebook,
     desc: "A React app with user authentication, allowing users to view, upload, and create memes using multiple APIs and Firebase for authentication and storage.",
     desc2:
       "Users can register and login using their email and view the memes in the news feed, set up their profile and be able to upload memes of their own and also create memes with the help of templates generated from FLIPImg API and adding texts of their own or automated jokes from Rapid/JOKES API and also download the newly created meme to their local device and upload it back to the feed for others to see.",
@@ -144,6 +152,7 @@ export const videoLinks = [
     name: "Cryptomania",
     url: "https://youtu.be/EYW5ZX8XiWk",
     videoId: "EYW5ZX8XiWk",
+    thumbnail: crypto,
     desc: "A Ruby CLI gem game that simulates investment in historical cryptocurrencies with the aim to double funds and win the game, which runs on Terminal.",
     desc2:
       "It allows players to enter the past dates and invest given initial balance into their favourite crypto currencies, read about the currencies, and checkout in any future date they like to, and the program calculates the total earning at last to finalize a winner. It uses 'Nokogiri' to scrape details about the crypto and a crypto API to fetch rates data.",
@@ -176,6 +185,7 @@ export const videoLinks = [
     name: "Playmates",
     url: "https://youtu.be/HV8v0qiuvtI",
     videoId: "HV8v0qiuvtI",
+    thumbnail: mates,
     desc: "A Ruby on Rails gaming contents platform with user authentication, enabling users to post, share and chat about gaming contents, facilitating team-ups for like-minded players.",
     desc2:
       "The users can register and login using their email and view the gaming contents posted in the feed, set up their profile and be able to contents of their own, create a category their posts would belong to, and use it to filter the relative contents on that category. They can also team up with others directly through a chat system.",
@@ -207,6 +217,7 @@ export const videoLinks = [
     name: "MovieFinder",
     url: "https://youtu.be/L78bUwIzYYo",
     videoId: "L78bUwIzYYo",
+    thumbnail: movie,
     desc: "A JavaScript web application built with OMDB and YOUTUBE API.",
     desc2:
       "The users can search for a movie with its title name and get all information about the selected movie and also watch the trailer of the movie from youtube.",
@@ -248,6 +259,7 @@ export const videoLinks = [
     name: "Youtify",
     url: "https://youtu.be/IEl0hS8OP2k",
     videoId: "IEl0hS8OP2k",
+    thumbnail: yout,
     desc: "A single-page web application developed using Next.js, Tailwind CSS and open Youtube API.",
     desc2:
       "It allows users to login using google and search for a particular song to listen, as well as choose the song to play from the user's own youtube playlist.",

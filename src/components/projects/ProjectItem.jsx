@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { projectNameHypen } from "./EachProjectItem";
 
+
 function ProjectItem({ project, play }) {
   const [isPlaying, setIsPlaying] = useState(false);
   return (
@@ -11,12 +12,12 @@ function ProjectItem({ project, play }) {
       <div className="video-player">
         <ReactPlayer
           url={project.url}
-          // light={thumbnail}
-          // playing={isPlaying}
+          light={project.thumbnail}
+          playing={isPlaying}
           loop={true}
           muted={true}
-          height="200px"
-          width="380px"
+          height="250px"
+          // width="380px"
           config={{
             youtube: {
               playerVars: {
