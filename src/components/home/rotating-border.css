@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -31,14 +31,30 @@
     height: 200%;
     background-color: #000000;
     background-repeat: no-repeat;
-    background-size: 90% 50%, 50% 50%;
-    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: linear-gradient(#80dfff, #ff9900);
-    animation: rotate 2s infinite, changeColor 8s infinite;
-    -webkit-animation: rotate 2s infinite, changeColor 8s infinite;
-    -moz-animation: rotate 2s infinite, changeColor 8s infinite;
-    -ms-animation: rotate 2s infinite, changeColor 8s infinite;
-    -o-animation: rotate 2s infinite, changeColor 8s infinite;
+    background-size:
+      90% 50%,
+      50% 50%;
+    background-position:
+      0 0,
+      100% 0,
+      100% 100%,
+      0 100%;
+
+    animation:
+      rotate 2s infinite,
+      changeColor 8s infinite;
+    -webkit-animation:
+      rotate 2s infinite,
+      changeColor 8s infinite;
+    -moz-animation:
+      rotate 2s infinite,
+      changeColor 8s infinite;
+    -ms-animation:
+      rotate 2s infinite,
+      changeColor 8s infinite;
+    -o-animation:
+      rotate 2s infinite,
+      changeColor 8s infinite;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect */
   }
 
@@ -51,114 +67,95 @@
     width: calc(100% - 12px);
     height: calc(100% - 12px);
     border-radius: 50%;
-    animation: changeBorderColor 8s infinite;
+    /* animation: changeBorderColor 8s infinite;
     -webkit-animation: changeBorderColor 8s infinite;
     -moz-animation: changeBorderColor 8s infinite;
     -ms-animation: changeBorderColor 8s infinite;
-    -o-animation: changeBorderColor 8s infinite;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect */
+    -o-animation: changeBorderColor 8s infinite; */
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); Glow effect */
   }
 }
 @keyframes changeColor {
   0% {
     background-color: #80dfff;
+    background-image: linear-gradient(#2080bf, #80dfff, #b3ecff);
+    box-shadow: 0 0 10px #80dfff, 0 0 20px #80dfff, 0 0 30px #80dfff;
   }
 
   15% {
     background-color: #cc6600;
+    background-image: linear-gradient(#8c4500, #cc6600, #ff9933);
+    box-shadow: 0 0 10px #cc6600, 0 0 20px #cc6600, 0 0 30px #cc6600;
   }
 
   30% {
     background-color: #00ccff;
+    background-image: linear-gradient(#0077b3, #00ccff, #99e6ff);
+    box-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 30px #00ccff;
   }
 
   45% {
     background-color: #ffff00;
+    background-image: linear-gradient(#b3b300, #ffff00, #fffa66);
+    box-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00;
   }
 
   60% {
     background-color: #ff00ff;
+    background-image: linear-gradient(#cc00cc, #ff00ff, #ff66ff);
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
   }
 
   70% {
     background-color: #00cc00;
+    background-image: linear-gradient(#009900, #00cc00, #33ff33);
+    box-shadow: 0 0 10px #00cc00, 0 0 20px #00cc00, 0 0 30px #00cc00;
   }
 
   85% {
     background-color: #00ccff;
+    background-image: linear-gradient(#0077b3, #00ccff, #99e6ff);
+    box-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 30px #00ccff;
   }
 
   100% {
     background-color: #ff9900;
+    background-image: linear-gradient(#cc6600, #ff9900, #ffb366);
+    box-shadow: 0 0 10px #ff9900, 0 0 20px #ff9900, 0 0 30px #ff9900;
   }
 }
 
-@keyframes changeBorderColor {
-  0% {
-    background-color: #80dfff;
-  }
 
-  15% {
-    background-color: #cc6600;
-  }
-
-  30% {
-    background-color: #00ccff;
-  }
-
-  45% {
-    background-color: #ffff00;
-  }
-
-  60% {
-    background-color: #ff00ff;
-  }
-
-  70% {
-    background-color: #00cc00;
-  }
-
-  85% {
-    background-color: #00ccff;
-  }
-
-  100% {
-    background-color: #ff9900;
-  }
-}
 
 .roat {
   margin-top: 3px;
   height: 125px;
-  width: 125px; 
+  width: 125px;
   border-radius: 50%;
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
   object-position: center;
-  
 }
 
 @media screen and (max-width: 600px) {
   .roat {
     /* height: 110px;
     width: 110px; */
-
   }
 
-  .rainbow{
+  .rainbow {
     /* height: 115px;
     width: 115px; */
-
   }
 }
 
-@media screen  and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .roat {
     height: 117px;
     width: 117px;
   }
-  .rainbow{
+  .rainbow {
     height: 123px;
     width: 123px;
   }
