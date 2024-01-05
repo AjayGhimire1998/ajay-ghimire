@@ -70,6 +70,10 @@
   cursor: pointer;
   color: #39ff14 !important;
 }
+
+.click-link {
+  margin-bottom: -10px;
+}
 .click-link > g{
   
   animation: changeFill 8s linear infinite;
