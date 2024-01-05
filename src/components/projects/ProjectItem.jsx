@@ -11,6 +11,7 @@ function ProjectItem({ project, play }) {
       <div className="video-player">
         <ReactPlayer
           url={project.url}
+          light={true}
           playing={isPlaying}
           loop={true}
           muted={true}
