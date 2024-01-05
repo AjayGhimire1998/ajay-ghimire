@@ -10,6 +10,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   background-color: rgb(0, 0, 0) !important;
+ 
   /* overflow-x: hidden !important; */
   /* overflow-y: hidden !important; */
 
@@ -19,6 +20,8 @@ body {
 body::-webkit-scrollbar{
   display: none;
 }
+
+
 .space {
   position: fixed;
   top: 50%;
@@ -58,6 +61,7 @@ body::-webkit-scrollbar{
     3vw -34vh 0px 0px #fff, -5vw 42vh 2px 2px #fff, -7vw 29vh 0px 1px #fff,
     1vw -15vh 3px 2px #fff, -21vw 14vh 0px 2px #fff, -14vw 38vh 0px 3px #fff;
   animation: zoom 15s alternate infinite;
+
 }
 
 @keyframes zoom {
@@ -77,6 +81,7 @@ body::-webkit-scrollbar{
   overflow-x: hidden; */
   position: relative;
   min-height: 70vh;
+  
 }
 
 .main > * {

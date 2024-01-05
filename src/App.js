@@ -22,6 +22,7 @@ function App() {
   return (
     <div className="app">
       <div className="space"></div>
+      {/* <div className="giphy"></div> */}
       <div className="main">
         <header>
           <Logo logoSrc={logoSrc} play={play} />
