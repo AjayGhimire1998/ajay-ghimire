@@ -51,6 +51,9 @@
   /* border-radius: 20px; */
   /* border: 2px solid white; */
   /* background-color: black; */
+  /* margin: 0px; */
+  /* padding-left: 0px;
+  padding-right: 0px; */
 }
 
 .card-contents > * {
@@ -67,6 +70,42 @@
   cursor: pointer;
   color: #39ff14 !important;
 }
+.click-link > g{
+  
+  animation: changeFill 8s linear infinite;
+
+}
+
+@keyframes changeFill {
+	0% {
+	  fill: #80dfff;
+	}
+  
+	15% {
+	  fill: #cc6600;
+	}
+	30% {
+	  fill: #00ccff;
+	}
+	45% {
+	  fill: #ffff00;
+	}
+  
+	60% {
+	  fill: #ff00ff;
+	}
+  
+	70% {
+	  fill: #00cc00;
+	}
+  
+	85% {
+	  fill: #00ccff;
+	}
+	100% {
+	  fill: #ff9900;
+	}
+  }
 
 @media screen and (max-width: 760px) {
   .project-item-card {
