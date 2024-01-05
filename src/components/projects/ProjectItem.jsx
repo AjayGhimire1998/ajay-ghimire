@@ -11,8 +11,8 @@ function ProjectItem({ project, play }) {
       <div className="video-player">
         <ReactPlayer
           url={project.url}
-          light={true}
-          playing={isPlaying}
+          // light={thumbnail}
+          // playing={isPlaying}
           loop={true}
           muted={true}
           height="200px"
@@ -22,7 +22,6 @@ function ProjectItem({ project, play }) {
               playerVars: {
                 disablekb: 1,
                 controls: 0,
-
                 modestbranding: 1,
                 fs: 0,
                 showsearch: 0,

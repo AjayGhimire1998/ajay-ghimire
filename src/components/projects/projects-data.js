@@ -18,6 +18,7 @@ import {
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { v4 as uuidv4 } from "uuid";
+import with_love from "../../"
 
 const toolTipStyle = {
   height: "10px",
@@ -28,6 +29,7 @@ export const videoLinks = [
   {
     name: "WithLoveFromHome",
     url: "https://youtu.be/IEl0hS8OP2k",
+    thumbnail: "https://i9.ytimg.com/vi_webp/IEl0hS8OP2k/mq1.webp?sqp=COiO36wG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYACpgWKAgwIABABGEcgXChlMA8=&rs=AOn4CLAUBpnT9S47ZpVTJWftMeLalO4hdw",
     videoId: "IEl0hS8OP2k",
     desc: "A full-stack E-commerce web application developed using React for UI and Rails for server.",
     desc2:
