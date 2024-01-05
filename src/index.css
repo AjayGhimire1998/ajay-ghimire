@@ -149,6 +149,7 @@ body::-webkit-scrollbar{
   }
 }
 
+
 @keyframes changeText {
 	0% {
 	  color: #80dfff;

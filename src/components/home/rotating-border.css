@@ -33,12 +33,13 @@
     background-repeat: no-repeat;
     background-size: 90% 50%, 50% 50%;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: linear-gradient(#ffffff, #ffffff);
-    animation: rotate 2s infinite;
-    -webkit-animation: rotate 2s infinite;
-   -moz-animation: rotate 2s infinite;
-    -ms-animation: rotate 2s infinite;
-     -o-animation:rotate 2s infinite;
+    background-image: linear-gradient(#80dfff, #ff9900);
+    animation: rotate 2s infinite, changeColor 8s infinite;
+    -webkit-animation: rotate 2s infinite, changeColor 8s infinite;
+    -moz-animation: rotate 2s infinite, changeColor 8s infinite;
+    -ms-animation: rotate 2s infinite, changeColor 8s infinite;
+    -o-animation: rotate 2s infinite, changeColor 8s infinite;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect */
   }
 
   &::after {
@@ -50,6 +51,79 @@
     width: calc(100% - 12px);
     height: calc(100% - 12px);
     border-radius: 50%;
+    animation: changeBorderColor 8s infinite;
+    -webkit-animation: changeBorderColor 8s infinite;
+    -moz-animation: changeBorderColor 8s infinite;
+    -ms-animation: changeBorderColor 8s infinite;
+    -o-animation: changeBorderColor 8s infinite;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect */
+  }
+}
+@keyframes changeColor {
+  0% {
+    background-color: #80dfff;
+  }
+
+  15% {
+    background-color: #cc6600;
+  }
+
+  30% {
+    background-color: #00ccff;
+  }
+
+  45% {
+    background-color: #ffff00;
+  }
+
+  60% {
+    background-color: #ff00ff;
+  }
+
+  70% {
+    background-color: #00cc00;
+  }
+
+  85% {
+    background-color: #00ccff;
+  }
+
+  100% {
+    background-color: #ff9900;
+  }
+}
+
+@keyframes changeBorderColor {
+  0% {
+    background-color: #80dfff;
+  }
+
+  15% {
+    background-color: #cc6600;
+  }
+
+  30% {
+    background-color: #00ccff;
+  }
+
+  45% {
+    background-color: #ffff00;
+  }
+
+  60% {
+    background-color: #ff00ff;
+  }
+
+  70% {
+    background-color: #00cc00;
+  }
+
+  85% {
+    background-color: #00ccff;
+  }
+
+  100% {
+    background-color: #ff9900;
   }
 }
 
