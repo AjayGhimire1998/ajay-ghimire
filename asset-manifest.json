@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.57c68abb.css",
-    "main.js": "/static/js/main.4a2ef533.js",
+    "main.js": "/static/js/main.5eb2a15d.js",
     "static/js/845.fe94479c.chunk.js": "/static/js/845.fe94479c.chunk.js",
     "static/js/787.caccb356.chunk.js": "/static/js/787.caccb356.chunk.js",
     "static/media/Ajay.png": "/static/media/Ajay.3d218fdd8ff571741ce7.png",
+    "static/media/with_love.png": "/static/media/with_love.93cf129de0343d02fec1.png",
+    "static/media/movie.png": "/static/media/movie.d2e3eab54b08e24cf86f.png",
     "static/media/sweet-home.mp3": "/static/media/sweet-home.41fa62f68287a1599180.mp3",
     "static/media/wollies.jpeg": "/static/media/wollies.4c2a63eeede513630223.jpeg",
     "static/media/never-gonna.mp3": "/static/media/never-gonna.746d063d33e8924f88ce.mp3",
@@ -16,16 +18,21 @@
     "static/media/what-a.mp3": "/static/media/what-a.5c9c7af57ce4ce2c13ef.mp3",
     "static/media/ajay2.png": "/static/media/ajay2.ea4ccbc23f46bbe1b2b3.png",
     "static/media/profile_pic.gif": "/static/media/profile_pic.390d2b8c9d71c7de71d3.gif",
+    "static/media/mates.png": "/static/media/mates.6eb9d5c5eedbbc706a77.png",
     "static/media/jailhouse-rock.mp3": "/static/media/jailhouse-rock.eb51b441a22d8adc7da7.mp3",
     "static/media/hound-dog.mp3": "/static/media/hound-dog.b29e0981f4a1457c31ce.mp3",
     "static/media/cover.gif": "/static/media/cover.19ec1d360f651493babe.gif",
+    "static/media/goal.png": "/static/media/goal.28e48a34e1a1e00eac42.png",
+    "static/media/memebook.png": "/static/media/memebook.77919520605f9b597f31.png",
     "static/media/ajay1.jpeg": "/static/media/ajay1.ee9747b067cf15b8f38a.jpeg",
+    "static/media/crypto.png": "/static/media/crypto.f9e5554a954236ca72f1.png",
     "static/media/chocho.JPG": "/static/media/chocho.29750590fe20636dab8b.JPG",
     "static/media/academyXi.png": "/static/media/academyXi.b103134480f01f370b60.png",
     "static/media/react-redux-cert.png": "/static/media/react-redux-cert.d83c1d4ea1cea2932d52.png",
     "static/media/cover_lite.gif": "/static/media/cover_lite.dc08f76933ce68b17450.gif",
     "static/media/ruby-cert.png": "/static/media/ruby-cert.a5a35c280a4c8ba8a118.png",
     "static/media/responsive-cert.jpg": "/static/media/responsive-cert.278e26511741c2f498a6.jpg",
+    "static/media/yout.png": "/static/media/yout.6b1d61376d41d7509d07.png",
     "static/media/wave.gif": "/static/media/wave.7ff6edc9f16e187dc258.gif",
     "static/media/click.wav": "/static/media/click.2bdd35daaf43e7398fe7.wav",
     "static/media/eclipses.png": "/static/media/eclipses.3896ae3881cbb83af589.png",
@@ -37,12 +44,12 @@
     "static/media/hover.mp3": "/static/media/hover.f6990f20ecc0699fc881.mp3",
     "index.html": "/index.html",
     "main.57c68abb.css.map": "/static/css/main.57c68abb.css.map",
-    "main.4a2ef533.js.map": "/static/js/main.4a2ef533.js.map",
+    "main.5eb2a15d.js.map": "/static/js/main.5eb2a15d.js.map",
     "845.fe94479c.chunk.js.map": "/static/js/845.fe94479c.chunk.js.map",
     "787.caccb356.chunk.js.map": "/static/js/787.caccb356.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57c68abb.css",
-    "static/js/main.4a2ef533.js"
+    "static/js/main.5eb2a15d.js"
   ]
 }
