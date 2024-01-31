@@ -42,6 +42,7 @@ export const videoLinks = [
       "It allows users to register as a store who can create products to sell and also allows users to register as a customer who can choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email.",
     links: {
       git: "https://github.com/AjayGhimire1998/with-love-from-home",
+      live: "https://with-love-from-home.netlify.app/",
     },
     tools: [
       <div
