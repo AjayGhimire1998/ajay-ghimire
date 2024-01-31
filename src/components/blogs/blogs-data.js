@@ -15,7 +15,7 @@ export const blogsData = [
   {
     title: '"What Happens When We Search a URL In The Browser ?"',
     desc: 'All the devices on the internet have unique addresses, known as IP addresses. Think of an IP address like a phone number or a unique identifier for your device on the internet. Each address is unique to each device or computer on the ......',
-    url: "https://www.linkedin.com/pulse/how-does-internet-actually-work-ajay-ghimire%3FtrackingId=fIiIQTVGT%252FCUviPEvVcCkw%253D%253D/?trackingId=fIiIQTVGT%2FCUviPEvVcCkw%3D%3D",
+    url: "https://www.linkedin.com/pulse/what-happens-when-we-search-url-browser-ajay-ghimire/",
     source: "LinkedIn",
     readTime: "4 min read",
     datePossted: "10 Sep, 2023",
