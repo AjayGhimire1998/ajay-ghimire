@@ -82,33 +82,36 @@
 
 @keyframes changeFill {
 	0% {
-	  fill: #80dfff;
-	}
-  
-	15% {
-	  fill: #cc6600;
-	}
-	30% {
-	  fill: #00ccff;
-	}
-	45% {
-	  fill: #ffff00;
-	}
-  
-	60% {
-	  fill: #ff00ff;
-	}
-  
-	70% {
-	  fill: #00cc00;
-	}
-  
-	85% {
-	  fill: #00ccff;
-	}
-	100% {
-	  fill: #ff9900;
-	}
+    fill: #ffffff;
+  }
+
+  15% {
+    fill: #f2f2f2;
+  }
+
+  30% {
+    fill: #e5e5e5;
+  }
+
+  45% {
+    fill: #d8d8d8;
+  }
+
+  60% {
+    fill: #cccccc;
+  }
+
+  70% {
+    fill: #bfbfbf;
+  }
+
+  85% {
+    fill: #b3b3b3;
+  }
+
+  100% {
+    fill: #a6a6a6;
+  }
   }
 
 @media screen and (max-width: 760px) {

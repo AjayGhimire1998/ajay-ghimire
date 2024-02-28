@@ -77,51 +77,51 @@
 }
 @keyframes changeColor {
   0% {
-    background-color: #80dfff;
-    background-image: linear-gradient(#2080bf, #80dfff, #b3ecff);
-    box-shadow: 0 0 10px #80dfff, 0 0 20px #80dfff, 0 0 30px #80dfff;
+    background-color: #ffffff;
+    background-image: linear-gradient(#f2f2f2, #ffffff, #ffffff);
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
   }
 
   15% {
-    background-color: #cc6600;
-    background-image: linear-gradient(#8c4500, #cc6600, #ff9933);
-    box-shadow: 0 0 10px #cc6600, 0 0 20px #cc6600, 0 0 30px #cc6600;
+    background-color: #f2f2f2;
+    background-image: linear-gradient(#e5e5e5, #f2f2f2, #f2f2f2);
+    box-shadow: 0 0 10px #f2f2f2, 0 0 20px #f2f2f2, 0 0 30px #f2f2f2;
   }
 
   30% {
-    background-color: #00ccff;
-    background-image: linear-gradient(#0077b3, #00ccff, #99e6ff);
-    box-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 30px #00ccff;
+    background-color: #e5e5e5;
+    background-image: linear-gradient(#d8d8d8, #e5e5e5, #e5e5e5);
+    box-shadow: 0 0 10px #e5e5e5, 0 0 20px #e5e5e5, 0 0 30px #e5e5e5;
   }
 
   45% {
-    background-color: #ffff00;
-    background-image: linear-gradient(#b3b300, #ffff00, #fffa66);
-    box-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00;
+    background-color: #d8d8d8;
+    background-image: linear-gradient(#cccccc, #d8d8d8, #d8d8d8);
+    box-shadow: 0 0 10px #d8d8d8, 0 0 20px #d8d8d8, 0 0 30px #d8d8d8;
   }
 
   60% {
-    background-color: #ff00ff;
-    background-image: linear-gradient(#cc00cc, #ff00ff, #ff66ff);
-    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    background-color: #cccccc;
+    background-image: linear-gradient(#bfbfbf, #cccccc, #cccccc);
+    box-shadow: 0 0 10px #cccccc, 0 0 20px #cccccc, 0 0 30px #cccccc;
   }
 
   70% {
-    background-color: #00cc00;
-    background-image: linear-gradient(#009900, #00cc00, #33ff33);
-    box-shadow: 0 0 10px #00cc00, 0 0 20px #00cc00, 0 0 30px #00cc00;
+    background-color: #bfbfbf;
+    background-image: linear-gradient(#b3b3b3, #bfbfbf, #bfbfbf);
+    box-shadow: 0 0 10px #bfbfbf, 0 0 20px #bfbfbf, 0 0 30px #bfbfbf;
   }
 
   85% {
-    background-color: #00ccff;
-    background-image: linear-gradient(#0077b3, #00ccff, #99e6ff);
-    box-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 30px #00ccff;
+    background-color: #b3b3b3;
+    background-image: linear-gradient(#a6a6a6, #b3b3b3, #b3b3b3);
+    box-shadow: 0 0 10px #b3b3b3, 0 0 20px #b3b3b3, 0 0 30px #b3b3b3;
   }
 
   100% {
-    background-color: #ff9900;
-    background-image: linear-gradient(#cc6600, #ff9900, #ffb366);
-    box-shadow: 0 0 10px #ff9900, 0 0 20px #ff9900, 0 0 30px #ff9900;
+    background-color: #a6a6a6;
+    background-image: linear-gradient(#999999, #a6a6a6, #a6a6a6);
+    box-shadow: 0 0 10px #a6a6a6, 0 0 20px #a6a6a6, 0 0 30px #a6a6a6;
   }
 }
 

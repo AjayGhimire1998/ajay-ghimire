@@ -38,7 +38,7 @@ function MyResume({ play, hover }) {
         }
       );
       const data = await res.json();
-      // console.log(data);
+      console.log(data);
       setMessage(data.message || "");
       if (data?.unlocks_in) {
         setMessage(
@@ -112,9 +112,7 @@ function MyResume({ play, hover }) {
           />
           <span>{`${tries} tries left.`}</span>
         </div>
-        {message ? (
-          <p style={{ color: messageColor }}>{message}</p>
-        ) : null}
+        {message ? <p style={{ color: messageColor }}>{message}</p> : null}
         {tries === 0 ? null : (
           <div>
             <button
