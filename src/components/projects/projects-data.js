@@ -41,7 +41,7 @@ export const videoLinks = [
     desc2:
       "It allows users to register as a store who can create products to sell and also allows users to register as a customer who can choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email.",
     links: {
-      git: "https://github.com/AjayGhimire1998/with-love-from-home",
+      git: "https://github.com/AjayGhimire1998/with-love-from-home-frontend",
       live: "https://with-love-from-home.netlify.app/",
     },
     tools: [
@@ -84,7 +84,7 @@ export const videoLinks = [
       "The app requires a simple authentication, and allows a user to save their goals with tasks related to them. They can later add more tasks as needed and switch the status of each task to either pending or completed which updates in the backend synchronously.",
     links: {
       live: "https://ajayghimire1998.github.io/GoalsToScore/",
-      git: "https://github.com/AjayGhimire1998/GoalsToScore/",
+      git: "https://github.com/AjayGhimire1998/goals-to-score",
     },
     tools: [
       <div
