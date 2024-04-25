@@ -110,7 +110,7 @@ function MyResume({ play, hover }) {
             value={email}
             onChange={handleEmailChange}
           />
-          <span>{`${tries} tries left.`}</span>
+          {/* <span>{`${tries} tries left.`}</span> */}
         </div>
         {message ? <p style={{ color: messageColor }}>{message}</p> : null}
         {tries === 0 ? null : (
