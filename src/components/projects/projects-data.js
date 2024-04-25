@@ -83,7 +83,7 @@ export const videoLinks = [
     desc2:
       "The app requires a simple authentication, and allows a user to save their goals with tasks related to them. They can later add more tasks as needed and switch the status of each task to either pending or completed which updates in the backend synchronously.",
     links: {
-      live: "https://ajayghimire1998.github.io/GoalsToScore/",
+      live: "https://goals-to-score.netlify.app/",
       git: "https://github.com/AjayGhimire1998/goals-to-score",
     },
     tools: [

@@ -91,7 +91,7 @@ function EachProjectItem({ hover, play }) {
                   onLinkClick(project.links.live);
                 }}
               >
-                Demo
+                Live
               </span>
             </small>
           </div>
