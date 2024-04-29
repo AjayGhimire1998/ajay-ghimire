@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .contact-container > * {

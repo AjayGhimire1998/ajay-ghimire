@@ -31,11 +31,12 @@
 }
 
 .video-player:hover {
-  z-index: 1000;
-  transform: scale(1.1);
+  /* z-index: 1000; */
+  /* transform: scale(1.1); */
   background-color: black;
+  cursor: pointer;
   /* transform: translateY(-5px); */
-  box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.25);
+  /* box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.25); */
 }
 
 .card-contents {
@@ -74,14 +75,12 @@
 .click-link {
   margin-bottom: -10px;
 }
-.click-link > g{
-  
+.click-link > g {
   animation: changeFill 8s linear infinite;
-
 }
 
 @keyframes changeFill {
-	0% {
+  0% {
     fill: #ffffff;
   }
 
@@ -112,7 +111,7 @@
   100% {
     fill: #a6a6a6;
   }
-  }
+}
 
 @media screen and (max-width: 760px) {
   .project-item-card {
@@ -123,7 +122,7 @@
   }
 }
 
-@media screen  and (max-width: 510px) {
+@media screen and (max-width: 510px) {
   .project-item-card {
     width: 100%;
   }

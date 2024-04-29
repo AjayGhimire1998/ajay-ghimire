@@ -15,9 +15,9 @@ function Contact({ play }) {
   });
   return (
     <>
-      <div>
+      {/* <div>
         <small style={{}}>Connect with me!</small>
-      </div>
+      </div> */}
       <section className="contact-container">{contactIcons}</section>
     </>
   );

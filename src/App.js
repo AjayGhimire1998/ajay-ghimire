@@ -52,12 +52,12 @@ function App() {
           </Routes>
         </main>
         <footer className="footer">
-          <br />
+          {/* <br /> */}
           <Navbar play={play} hover={onHover} />
-          <br />
+          {/* <br /> */}
           <br />
           <CheerPlayer />
-          <br />
+          {/* <br /> */}
           <Contact play={play} />
           <p className="shadow">© 2023 Ajay Ghimire</p>
         </footer>
