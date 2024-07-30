@@ -112,7 +112,7 @@ function MyResume({ play, hover }) {
           />
           {/* <span>{`${tries} tries left.`}</span> */}
         </div>
-        {message ? <p style={{ color: messageColor }}>{message}</p> : null}
+        {message ? <p style={{ color: messageColor }}>{message}</p> : <p>I am using Render's free hosting service. It sleeps while inactive, so please give few seconds to wake up.</p>}
         {tries === 0 ? null : (
           <div>
             <button
