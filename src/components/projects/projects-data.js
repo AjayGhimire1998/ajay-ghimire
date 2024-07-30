@@ -9,6 +9,7 @@ import {
   DiCss3,
   DiJavascript1,
   DiPostgresql,
+  DiJava,
 } from "react-icons/di";
 import {
   SiRubygems,
@@ -25,6 +26,7 @@ import memebook from "../../images/projects/memebook.png";
 import crypto from "../../images/projects/crypto.png";
 import goal from "../../images/projects/goal.png";
 import yout from "../../images/projects/yout.png";
+import javaMovie from "../../images/projects/java-movie.png";
 
 const toolTipStyle = {
   height: "10px",
@@ -62,6 +64,39 @@ export const videoLinks = [
       >
         <SiRubyonrails size={50} />
         <Tooltip anchorId="Rails" style={toolTipStyle} />
+      </div>,
+      <div
+        id="PostgreSQL"
+        data-tooltip-content="PostgreSQL"
+        data-tooltip-place="bottom"
+        key={uuidv4()}
+      >
+        <DiPostgresql size={50} />
+        <Tooltip anchorId="PostgreSQL" style={toolTipStyle} />
+      </div>,
+    ],
+  },
+  {
+    name: "Java Movie Finder App",
+    url: "https://youtu.be/L78bUwIzYYo",
+    thumbnail: javaMovie,
+    videoId: "L78bUwIzYYo",
+    desc: "A dynamic java web application developed using java servlets and jsp.",
+    desc2:
+      "It allows users to search for movies and tv-shows from all around the world, see their details such as plot, year of release, imdb rating, etc. One can save movies to their favourites. Favourites feature utilises Java Database Connectivity to a PostgreSQL instance, where all favourite movies and shows are saved and retrieved from.",
+    links: {
+      git: "https://github.com/AjayGhimire1998/first-java-web-app",
+      live: "https://ajayghimire1998.github.io/Movie-Finder/",
+    },
+    tools: [
+      <div
+        id="JAVA"
+        data-tooltip-content="Java"
+        data-tooltip-place="bottom"
+        key={uuidv4()}
+      >
+        <DiJava size={50} />
+        <Tooltip anchorId="JAVA" style={toolTipStyle} />
       </div>,
       <div
         id="PostgreSQL"

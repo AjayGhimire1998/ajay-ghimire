@@ -10,6 +10,8 @@ import academyXiCert from "../../images/my-pictures/academyXi.png";
 import reactReduxCert from "../../images/my-pictures/react-redux-cert.png";
 import rubyCert from "../../images/my-pictures/ruby-cert.png";
 import responsiveCert from "../../images/my-pictures/responsive-cert.jpg";
+import java from "../../images/my-pictures/Java.jpeg";
+import javaIO from "../../images/my-pictures/JavaIO.jpeg";
 
 export const aboutData = [
   {
@@ -32,6 +34,6 @@ export const aboutData = [
     desc: "With a Bachelor of IT degree in hand, I embarked on an okay academic journey in the field of software development. Then I realized that I needed to do more to gain hands-on and practical approach. And what better way to delve into it than by enrolling in a bootcamp?",
     desc2:
       "At the bootcamp, I was able to work on real-world projects and learn from experienced industry professionals. This unique learning experience helped me to bridge the gap between theory and practicality and enabled me to become a well-rounded software engineer. I gained immense confidence in my abilities and was ready to pursue a career in this field with full gusto. And just when I thought I had it all figured out, I realize that there's still so much to learn and discover in the world of software engineering. I mean, who knew Java could have so many twists and turns? But I wouldn't have it any other way - because as they say, the journey to becoming a software engineer is never complete, it's an ongoing quest for knowledge and mastery!",
-    images: [academyXiCert, reactReduxCert, rubyCert, responsiveCert],
+    images: [academyXiCert, java, javaIO,  reactReduxCert, rubyCert, responsiveCert],
   },
 ];
