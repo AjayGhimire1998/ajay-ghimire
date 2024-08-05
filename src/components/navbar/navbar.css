@@ -110,8 +110,24 @@
 @media screen and (max-width: 550px) {
   .navbar {
     width: 100%;
+
     /* padding-left: 12px;
     padding-right: 12px; */
+  }
+  .nav-button {
+    width: 100%;
+    /* flex: 30%; */
+    font-size: 1.8vh;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+     padding-left: 12px; 
+    padding-right: 12px; 
   }
   .nav-button {
     width: 100%;

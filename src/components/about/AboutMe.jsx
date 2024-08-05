@@ -30,8 +30,9 @@ function AboutMe({ play, hover }) {
 	const pages = [
 		<AboutItem
 			title={aboutData[0].title}
+			quote={aboutData[0].quote}
 			desc={aboutData[0].desc}
-			desc2={aboutData[0].desc2}
+			// desc2={aboutData[0].desc2}
 			image={aboutData[0].images}
 			placeholderImages = {aboutData[0].placeholderImages}
 			isPreviewOn={isPreviewOn}
@@ -43,8 +44,9 @@ function AboutMe({ play, hover }) {
 		/>,
 		<AboutItem
 			title={aboutData[1].title}
+			quote={aboutData[1].quote}
 			desc={aboutData[1].desc}
-			desc2={aboutData[1].desc2}
+			// desc2={aboutData[1].desc2}
 			image={aboutData[1].images}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}
@@ -55,8 +57,9 @@ function AboutMe({ play, hover }) {
 		/>,
 		<AboutItem
 			title={aboutData[2].title}
+			quote={aboutData[2].quote}
 			desc={aboutData[2].desc}
-			desc2={aboutData[2].desc2}
+			// desc2={aboutData[2].desc2}
 			image={aboutData[2].images}
 			isPreviewOn={isPreviewOn}
 			onPreviewClick={onPreviewClick}

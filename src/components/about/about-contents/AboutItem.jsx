@@ -6,8 +6,8 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Profile({
   title,
+  quote,
   desc,
-  desc2,
   image,
   placeholderImages,
   isPreviewOn,
@@ -91,8 +91,14 @@ function Profile({
             <h3>
               <span>{title}</span>
             </h3>
-            <p>{desc}</p>
-            <p>{desc2}</p>
+            <blockquote>
+              <p>{quote}</p>
+            </blockquote>
+
+            {desc &&
+              desc.map((d, index) => {
+                return <p key={index}>{d}</p>;
+              })}
           </div>
           <br />
           {image ? (

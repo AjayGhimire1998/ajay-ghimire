@@ -15,25 +15,47 @@ import javaIO from "../../images/my-pictures/JavaIO.jpeg";
 
 export const aboutData = [
   {
-    title: "Profile",
-    desc: "As a highly motivated and results-driven software developer with a passion for innovation and a strong background in IT, I am eager to bring my skills and expertise to a challenging software developer role. I have recently graduated with a Bachelor's degree in IT and completed a software engineering bootcamp, demonstrating my ability to quickly learn and master new technologies, as well as my track record of delivering high-quality web applications on time.",
-    desc2:
-      "My problem-solving skills are top-notch, and I thrive in a team environment, collaborating effectively with others to deliver exceptional results. I am always seeking opportunities to challenge myself and grow as a professional, which is why I am actively learning the ins and outs of Java (I hear it's like a never-ending adventure!). If you're looking for a software developer who brings a positive, results-driven approach and a bit of humor to the table, look no further. I am ready to take on your toughest projects and help drive your company's success to new heights.",
-    images: [ajay2, ajay1, profile],
-    lazyImages: [ajay2, ajay1_lite, profile_lite],
-  },
-  {
-    title: "Professional Evolution",
-    desc: "During my pursuit of a Bachelor's degree in IT, I had the opportunity to work as a kitchen hand at a bustling Japanese restaurant. My dedication to hard work and quick learning abilities, combined with my positive attitude and problem-solving skills, earned me a promotion to Cook within just six months. This experience honed my ability to work effectively under pressure and in fast-paced environments.",
-    desc2:
-      "After leaving the restaurant at the end of 2022, I embarked on a new journey as a Retail Assistant in a pharmacy setting. This role has allowed me to further develop my communication and customer service skills, which are crucial in any industry. In my free time, I like to joke that I'm also a master at counting pills and sorting medication – though I'll leave the actual prescriptions to the pharmacists.",
+    title: "From Dreams to Embracing the Detour.",
+    quote: "See any detour as an opportunity to experience new things.",
+    desc: [
+      "I've always dreamed of being a software developer with my own multi-screen setup, sipping dark roasted coffee while coding the next big tech. But as they say, life has a funny way of taking us on detours.",
+      "During my bachelor's degree in software development, I hit a financial rough patch and had to work extra jobs to support myself. That's when I found myself working as a kitchen hand in a busy Japanese restaurant. But, I was determined to shine! With my hard work and adaptability, I was promoted to cook in just six months.",
+      "Just when things were starting to look up, Covid-19 hit, taking me four years to finally graduate with a bachelor's degree and a less than stellar performance. I was feeling down and out, but I wasn't ready to give up on my dream.",
+    ],
     images: [chocho, wollies, chemist],
   },
   {
-    title: "Academic Evolution",
-    desc: "With a Bachelor of IT degree in hand, I embarked on an okay academic journey in the field of software development. Then I realized that I needed to do more to gain hands-on and practical approach. And what better way to delve into it than by enrolling in a bootcamp?",
-    desc2:
-      "At the bootcamp, I was able to work on real-world projects and learn from experienced industry professionals. This unique learning experience helped me to bridge the gap between theory and practicality and enabled me to become a well-rounded software engineer. I gained immense confidence in my abilities and was ready to pursue a career in this field with full gusto. And just when I thought I had it all figured out, I realize that there's still so much to learn and discover in the world of software engineering. I mean, who knew Java could have so many twists and turns? But I wouldn't have it any other way - because as they say, the journey to becoming a software engineer is never complete, it's an ongoing quest for knowledge and mastery!",
-    images: [academyXiCert, java, javaIO,  reactReduxCert, rubyCert, responsiveCert],
+    title: "The Light at the End of the Tunnel",
+    quote:
+      "Rock bottom became the solid foundation in which I rebuilt my life.",
+    desc: [
+      "That is when I discovered Academy Xi, a software engineering boot-camp that reignited my passion for software development. I worked 60 hours a week, coding and learning with mentorship, while still working two days as a cook to make ends meet.",
+
+      "For the first four months, I tackled front-end development with HTML, CSS, JavaScript, and React. I was on fire, developing three projects that even my mentor was impressed with. And then, Ruby-on-Rails became a piece of cake (or any flavour I wanted, for that matter). I was unstoppable! After my final e-commerce project, I earned a certified Software Engineering Transform badge.",
+    ],
+    images: [
+      academyXiCert,
+      java,
+      javaIO,
+      reactReduxCert,
+      rubyCert,
+      responsiveCert,
+    ],
+  },
+  {
+    title: "From slicing sashimis to slicing arrays",
+    quote:
+      "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.",
+    desc: [
+      "I said goodbye to my cooking days and applied to endless number of jobs. However, fate had other plans. A friend from my hometown approached me with an exciting opportunity to contribute to his projects and intern at his startup, YashiTech. How could I, a passionate learner, turn down the chance to boost my portfolio?",
+
+      "Without hesitation, I started reading through his codebases, and quickly making meaningful contributions. I have contributed in the development of Equitool, an accessibility browser plugin using just JavaScript, Sass and HTML. I have contributed in developing the company's website, and solo engineered the back-end with Ruby on Rails. I have also single-handedly developed a dashboard application for admin data management with TypeScript, and deployed the Ruby-on-Rails back-end in Render.",
+
+      "These experiences have sharpened my skills, and deepened my understanding of software design, architecture and development. In my free time, I'm also brushing up on my Java skills.",
+
+      "I'm now eagerly searching for an opportunity to join a dedicated and encouraging team here in Australia. Let's make some magic happen!",
+    ],
+    images: [ajay2, ajay1, profile],
+    lazyImages: [ajay2, ajay1_lite, profile_lite],
   },
 ];

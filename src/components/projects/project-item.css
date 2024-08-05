@@ -74,6 +74,7 @@
 
 .click-link {
   margin-bottom: -10px;
+  margin-left: 5px;
 }
 .click-link > g {
   animation: changeFill 8s linear infinite;

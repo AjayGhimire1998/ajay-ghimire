@@ -54,8 +54,8 @@ function ProjectItem({ project, play }) {
             {project.name}
             <svg
               version="1.1"
-              width="25px"
-              height="25px"
+              width="28px"
+              height="28px"
               viewBox="0,0,256,256"
               className="click-link"
             >
@@ -80,6 +80,7 @@ function ProjectItem({ project, play }) {
                 </g>
               </g>
             </svg>
+
           </h2>
           <p>{project.desc} </p>
           <br />

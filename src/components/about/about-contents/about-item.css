@@ -25,7 +25,6 @@
 .preview-button-container {
   display: flex;
   justify-content: center;
-  
 }
 .preview-button {
   font-size: 1.7vh;
@@ -68,7 +67,7 @@
   object-fit: fill;
 }
 
-.preview-img{
+.preview-img {
   border: 2px solid white;
 }
 
@@ -78,7 +77,6 @@
   height: auto;
   width: 100%;
   object-fit: scale-down;
- 
 }
 
 @keyframes preview-image-container {
@@ -113,6 +111,37 @@
   cursor: pointer;
 }
 
+/* Paste the CSS for blockquote here */
+blockquote {
+  font-style: italic;
+  color: #ffffff; /* Adjust the color to your preference */
+  border-left: 4px solid #ccc; /* Left border to highlight the quote */
+  margin: 20px 0; /* Spacing around the blockquote */
+  padding: 10px 20px; /* Padding inside the blockquote */ /* Background color for better readability */
+  quotes: "“" "”" "‘" "’"; /* Using typographic quotes */
+  /* line-height: 1;  */
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 2em; /* Adjust the size of the opening quote */
+  color: #ccc; /* Color of the opening quote */
+  /* vertical-align: -0.4em; Adjust vertical alignment */
+  margin-right: 0.25em; /* Space between quote and text */
+}
+
+blockquote:after {
+  content: close-quote;
+  font-size: 2em; /* Adjust the size of the closing quote */
+  color: #ccc; /* Color of the closing quote */
+  /* vertical-align: -0.4em; Adjust vertical alignment */
+  margin-left: 0.25em; /* Space between text and quote */
+}
+
+blockquote p {
+  display: inline; /* Display paragraphs inline within the blockquote */
+}
+
 @media screen and (max-width: 760px) {
   .about-item-container {
     width: 100%;
@@ -131,6 +160,15 @@
   .next-image > div > button {
     color: black;
     font-size: 1.5vh;
+  }
+  blockquote {
+    margin: 15px 0;
+    padding: 8px 12px;
+  }
+
+  blockquote:before,
+  blockquote:after {
+    font-size: 1.5em;
   }
 }
 
