@@ -82,7 +82,7 @@ function ProjectItem({ project, play }) {
             </svg>
 
           </h2>
-          <p>{project.desc} </p>
+          <p>{project.desc[0]} </p>
           <br />
         </div>
       </Link>

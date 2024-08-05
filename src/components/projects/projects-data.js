@@ -39,9 +39,12 @@ export const videoLinks = [
     url: "https://youtu.be/IEl0hS8OP2k",
     thumbnail: with_love,
     videoId: "IEl0hS8OP2k",
-    desc: "A full-stack E-commerce web application developed using React for UI and Rails for server.",
-    desc2:
-      "It allows users to register as a store who can create products to sell and also allows users to register as a customer who can choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email.",
+    desc: [
+      "A full-stack E-commerce web application developed using React for UI and Rails for server.",
+      "It allows users to register as a store who can create products to sell and also allows users to register as a customer who can choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email. ",
+    ],
+    // desc2:
+    //   "It allows users to register as a store who can create products to sell and also allows users to register as a customer who can choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email.",
     links: {
       git: "https://github.com/AjayGhimire1998/with-love-from-home-frontend",
       live: "https://with-love-from-home.netlify.app/",
@@ -81,9 +84,12 @@ export const videoLinks = [
     url: "https://youtu.be/L78bUwIzYYo",
     thumbnail: javaMovie,
     videoId: "L78bUwIzYYo",
-    desc: "A dynamic java web application developed using java servlets and jsp.",
-    desc2:
+    desc: [
+      "A dynamic java web application developed using java servlets and jsp.",
       "It allows users to search for movies and tv-shows from all around the world, see their details such as plot, year of release, imdb rating, etc. One can save movies to their favourites. Favourites feature utilises Java Database Connectivity to a PostgreSQL instance, where all favourite movies and shows are saved and retrieved from.",
+    ],
+    // desc2:
+    //   "It allows users to search for movies and tv-shows from all around the world, see their details such as plot, year of release, imdb rating, etc. One can save movies to their favourites. Favourites feature utilises Java Database Connectivity to a PostgreSQL instance, where all favourite movies and shows are saved and retrieved from.",
     links: {
       git: "https://github.com/AjayGhimire1998/first-java-web-app",
       live: "https://ajayghimire1998.github.io/Movie-Finder/",
@@ -114,9 +120,12 @@ export const videoLinks = [
     url: "https://youtu.be/aAT7HKS-DdU",
     videoId: "aAT7HKS-DdU",
     thumbnail: goal,
-    desc: "A MERN stack app for effective goals management, allowing for creation and updates of goals and sub-tasks.",
-    desc2:
+    desc: [
+      "A MERN stack app for effective goals management, allowing for creation and updates of goals and sub-tasks.",
       "The app requires a simple authentication, and allows a user to save their goals with tasks related to them. They can later add more tasks as needed and switch the status of each task to either pending or completed which updates in the backend synchronously.",
+    ],
+    // desc2:
+    //   "The app requires a simple authentication, and allows a user to save their goals with tasks related to them. They can later add more tasks as needed and switch the status of each task to either pending or completed which updates in the backend synchronously.",
     links: {
       live: "https://goals-to-score.netlify.app/",
       git: "https://github.com/AjayGhimire1998/goals-to-score",
@@ -156,9 +165,12 @@ export const videoLinks = [
     url: "https://youtu.be/JTJ3IyiqIqk",
     videoId: "JTJ3IyiqIqk",
     thumbnail: memebook,
-    desc: "A React app with user authentication, allowing users to view, upload, and create memes using multiple APIs and Firebase for authentication and storage.",
-    desc2:
+    desc: [
+      "A React app with user authentication, allowing users to view, upload, and create memes using multiple APIs and Firebase for authentication and storage.",
       "Users can register and login using their email and view the memes in the news feed, set up their profile and be able to upload memes of their own and also create memes with the help of templates generated from FLIPImg API and adding texts of their own or automated jokes from Rapid/JOKES API and also download the newly created meme to their local device and upload it back to the feed for others to see.",
+    ],
+    // desc2:
+    //   "Users can register and login using their email and view the memes in the news feed, set up their profile and be able to upload memes of their own and also create memes with the help of templates generated from FLIPImg API and adding texts of their own or automated jokes from Rapid/JOKES API and also download the newly created meme to their local device and upload it back to the feed for others to see.",
     links: {
       live: "https://ajayghimire1998.github.io/memebook/",
       git: "https://github.com/AjayGhimire1998/memebook",
@@ -189,9 +201,12 @@ export const videoLinks = [
     url: "https://youtu.be/EYW5ZX8XiWk",
     videoId: "EYW5ZX8XiWk",
     thumbnail: crypto,
-    desc: "A Ruby CLI gem game that simulates investment in historical cryptocurrencies with the aim to double funds and win the game, which runs on Terminal.",
-    desc2:
+    desc: [
+      "A Ruby CLI gem game that simulates investment in historical cryptocurrencies with the aim to double funds and win the game, which runs on Terminal.",
       "It allows players to enter the past dates and invest given initial balance into their favourite crypto currencies, read about the currencies, and checkout in any future date they like to, and the program calculates the total earning at last to finalize a winner. It uses 'Nokogiri' to scrape details about the crypto and a crypto API to fetch rates data.",
+    ],
+    // desc2:
+    //   "It allows players to enter the past dates and invest given initial balance into their favourite crypto currencies, read about the currencies, and checkout in any future date they like to, and the program calculates the total earning at last to finalize a winner. It uses 'Nokogiri' to scrape details about the crypto and a crypto API to fetch rates data.",
     links: {
       live: "https://rubygems.org/search?query=cryptomania",
       git: "https://github.com/AjayGhimire1998/cryptomania",
@@ -222,9 +237,12 @@ export const videoLinks = [
     url: "https://youtu.be/HV8v0qiuvtI",
     videoId: "HV8v0qiuvtI",
     thumbnail: mates,
-    desc: "A Ruby on Rails gaming contents platform with user authentication, enabling users to post, share and chat about gaming contents, facilitating team-ups for like-minded players.",
-    desc2:
+    desc: [
+      "A Ruby on Rails gaming contents platform with user authentication, enabling users to post, share and chat about gaming contents, facilitating team-ups for like-minded players.",
       "The users can register and login using their email and view the gaming contents posted in the feed, set up their profile and be able to contents of their own, create a category their posts would belong to, and use it to filter the relative contents on that category. They can also team up with others directly through a chat system.",
+    ],
+    // desc2:
+    //   "The users can register and login using their email and view the gaming contents posted in the feed, set up their profile and be able to contents of their own, create a category their posts would belong to, and use it to filter the relative contents on that category. They can also team up with others directly through a chat system.",
     links: {
       git: "https://github.com/AjayGhimire1998/Play-Mates",
     },
@@ -254,9 +272,12 @@ export const videoLinks = [
     url: "https://youtu.be/L78bUwIzYYo",
     videoId: "L78bUwIzYYo",
     thumbnail: movie,
-    desc: "A JavaScript web application built with OMDB and YOUTUBE API.",
-    desc2:
+    desc: [
+      "A JavaScript web application built with OMDB and YOUTUBE API.",
       "The users can search for a movie with its title name and get all information about the selected movie and also watch the trailer of the movie from youtube.",
+    ],
+    // desc2:
+    //   "The users can search for a movie with its title name and get all information about the selected movie and also watch the trailer of the movie from youtube.",
     links: {
       live: "https://ajayghimire1998.github.io/Movie-Finder/",
       git: "https://github.com/AjayGhimire1998/Movie-Finder",
@@ -296,9 +317,12 @@ export const videoLinks = [
     url: "https://youtu.be/IEl0hS8OP2k",
     videoId: "IEl0hS8OP2k",
     thumbnail: yout,
-    desc: "A single-page web application developed using Next.js, Tailwind CSS and open Youtube API.",
-    desc2:
+    desc: [
+      "A single-page web application developed using Next.js, Tailwind CSS and open Youtube API.",
       "It allows users to login using google and search for a particular song to listen, as well as choose the song to play from the user's own youtube playlist.",
+    ],
+    // desc2:
+    //   "It allows users to login using google and search for a particular song to listen, as well as choose the song to play from the user's own youtube playlist.",
     links: {
       live: "https://youtify-next.vercel.app/",
       git: "https://github.com/AjayGhimire1998/youtify-next",

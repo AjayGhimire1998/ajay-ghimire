@@ -91,9 +91,11 @@ function Profile({
             <h3>
               <span>{title}</span>
             </h3>
-            <blockquote>
-              <p>{quote}</p>
-            </blockquote>
+            {quote && (
+              <blockquote>
+                <p>{quote}</p>
+              </blockquote>
+            )}
 
             {desc &&
               desc.map((d, index) => {

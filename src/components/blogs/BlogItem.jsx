@@ -24,7 +24,7 @@ function BlogItem({ blog, hover, play }) {
           <img src={blog.profile} alt="profile pics from blogs posting platform" />
           <div className="desc">
             <p>Ajay Ghimire</p>
-            <time datetime={blog.datePossted}> {blogReadAndDatea} </time>
+            <time dateTime={blog.datePossted}> {blogReadAndDatea} </time>
           </div>
         </div>
           {blog.tag.map((tg, index) => {

@@ -74,11 +74,11 @@ function Blogs({ play, hover }) {
     <section>
       <div className="blogs-container">
         {/* Add SEO Metadata */}
-        <head>
+        {/* <head>
           <title>{pageTitle}</title>
           <meta name="description" content={pageDescription} />
           <link rel="canonical" href={canonicalURL} />
-        </head>
+        </head> */}
         <div className="page-head">
           <h1>Blogs</h1>
         </div>

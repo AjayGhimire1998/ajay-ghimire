@@ -109,7 +109,7 @@ function EachProjectItem({ hover, play }) {
         </div>
       </div>
       <div className="project-desc">
-        <AboutItem desc={project.desc} desc2={project.desc2} />
+        <AboutItem desc={project.desc} />
       </div>
       <br />
       <h4 style={{ textAlign: "center" }}>Tools Used:</h4>
