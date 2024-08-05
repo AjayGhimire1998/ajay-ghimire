@@ -15,7 +15,7 @@ import javaIO from "../../images/my-pictures/JavaIO.jpeg";
 
 export const aboutData = [
   {
-    title: "From Dreams to Embracing the Detour.",
+    title: "From Dreams to Embracing the Detour",
     quote: "See any detour as an opportunity to experience new things.",
     desc: [
       "I've always dreamed of being a software developer with my own multi-screen setup, sipping dark roasted coffee while coding the next big tech. But as they say, life has a funny way of taking us on detours.",
