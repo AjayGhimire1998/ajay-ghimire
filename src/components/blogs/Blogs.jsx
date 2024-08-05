@@ -66,9 +66,7 @@ function Blogs({ play, hover }) {
   };
 
   //SEO
-  const pageTitle = "My Blog Page - Ajay Ghimire";
-  const pageDescription = "Explore a collection of insightful blog posts.";
-  const canonicalURL = "https://www.ajayghimire.com/blogs";
+
 
   return (
     <section>
