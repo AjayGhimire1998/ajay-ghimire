@@ -81,7 +81,7 @@ export const videoLinks = [
   },
   {
     name: "Java Movie Finder App",
-    url: "https://youtu.be/L78bUwIzYYo",
+    url: "https://youtu.be/Jm_onL5X8Gk",
     thumbnail: javaMovie,
     videoId: "L78bUwIzYYo",
     desc: [

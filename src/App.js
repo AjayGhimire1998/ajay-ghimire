@@ -16,8 +16,8 @@ import NoMatch from "./components/NoMatch";
 import EachProject from "./pages/project/EachProject";
 
 function App() {
-  const [play] = useSound(click, { volume: 0.1 });
-  const [onHover] = useSound(hover, { volume: 0.1 });
+  const [play] = useSound(click, { volume: 0.05 });
+  const [onHover] = useSound(hover, { volume: 0.05 });
 
   return (
     <div className="app">
