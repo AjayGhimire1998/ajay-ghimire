@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import useSound from "use-sound";
 import click from "./sounds/click.wav";
 import hover from "./sounds/hover.mp3";
@@ -18,6 +19,49 @@ import EachProject from "./pages/project/EachProject";
 function App() {
   const [play] = useSound(click, { volume: 0.05 });
   const [onHover] = useSound(hover, { volume: 0.05 });
+
+  const footerRef = useRef(null);
+  const navbarRef = useRef(null);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const footer = footerRef.current;
+      const navbar = navbarRef.current;
+
+      const footerTop = footer.getBoundingClientRect().top;
+      const navbarHeight = navbar.offsetHeight;
+      const windowHeight = window.innerHeight;
+
+      // Check if content height is greater than viewport height
+      if (document.body.scrollHeight > windowHeight) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+
+      if (footerTop + navbarHeight >= windowHeight) {
+        navbar.classList.add("fixed-navbar");
+        navbar.classList.remove("footer-scroll");
+      } else {
+        navbar.classList.remove("fixed-navbar");
+        navbar.classList.add("footer-scroll");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Ensure navbar position is set on initial render
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="app">
@@ -51,9 +95,11 @@ function App() {
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </main>
-        <footer className="footer">
-          {/* <br /> */}
-          <Navbar play={play} hover={onHover} />
+        <footer className="footer" ref={footerRef}>
+          <div className={isSticky ? "footer-scroll" : ""} ref={navbarRef}>
+            <Navbar play={play} hover={onHover} />
+          </div>
+
           {/* <br /> */}
           <br />
           <CheerPlayer />

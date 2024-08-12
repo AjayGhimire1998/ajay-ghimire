@@ -159,9 +159,28 @@ header {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.9);
   text-align: center;
   padding: 1rem;
+  position: relative;
+}
+
+.fixed-navbar {
+
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9); /* Match the footer background */
+  z-index: 10;
+}
+
+.footer-scroll {
+  position: relative;
 }
 
 .footer > p {
@@ -319,6 +338,11 @@ header {
   }
   .footer {
     /* margin-top: 4%; */
+  }
+  .fixed-navbar {
+
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .footer > footer > p {
     font-size: x-small;
