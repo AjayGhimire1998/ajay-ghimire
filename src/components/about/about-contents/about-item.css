@@ -8,10 +8,11 @@
   flex-direction: column;
 }
 
-.about-item > h3 {
+.about-item > h3 > span {
   text-align: center;
   font-style: bold;
   font-size: 3vh;
+  color: #fdd612;
 }
 
 .about-item > p {
@@ -20,7 +21,8 @@
   font-size: 2vh;
   line-height: 1.5;
   margin: 10px;
-  color: #39ff14;
+  /* color: #39ff14; */
+  color: #fdd612;
 }
 .preview-button-container {
   display: flex;

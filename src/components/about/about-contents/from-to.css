@@ -5,6 +5,7 @@
 
 .from-to-container > h2  {
   font-size: 3vh;
+  color: #fdd612;
 }
 
 .edu-exp-container {
@@ -70,7 +71,8 @@
   font-weight: bolder;
   font-size: 1.8vh;
   font-weight: 700;
-  color: white;
+  /* color: white; */
+  color: #fdd612;
 }
 
 .edu-desc > span {

@@ -143,7 +143,7 @@ function Blogs({ play, hover }) {
                     onClick={() => handleSelectCategory(cat)}
                     style={
                       selectedCategories?.includes(cat)
-                        ? { backgroundColor: "white ", color: "black " }
+                        ? { backgroundColor: "#fdd612 ", color: "black " }
                         : { backgroundColor: "black ", color: "white " }
                     }
                   >

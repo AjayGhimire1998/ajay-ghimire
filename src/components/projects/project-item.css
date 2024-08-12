@@ -64,12 +64,13 @@
 
 .card-contents > h2 {
   font-size: 18px;
-  animation: changeText 8s linear infinite;
+  /* animation: changeText 8s linear infinite; */
+  color: #fdd612;
 }
 .card-contents > h2:hover {
   font-size: large;
   cursor: pointer;
-  color: #39ff14 !important;
+  /* color: #39ff14 !important; */
 }
 
 .click-link {

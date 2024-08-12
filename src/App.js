@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import useSound from "use-sound";
 import click from "./sounds/click.wav";
 import hover from "./sounds/hover.mp3";
-import logoSrc from "./images/logo2.png";
+import logoSrc from "./images/logo.svg";
 import Home from "./pages/home/Home";
 import Logo from "./components/home/Logo";
 import Navbar from "./components/navbar/Navbar";

@@ -38,7 +38,7 @@ header {
   border-radius: 90%;
   z-index: -1;
   box-shadow:
-    43vw -10vh 0px 2px #fff,
+    43vw -10vh 0px 2px #ffffff,
     -23vw -5vh 2px 2px #fff,
     22vw -48vh 2px 0px #fff,
     1vw 28vh 2px 1px #fff,
@@ -165,13 +165,13 @@ header {
 }
 
 .footer > p {
-  color: rgb(255, 255, 255);
+  color:#fdd612;
   font-size: small;
 }
 
-.shadow {
+/* .shadow {
   animation: changeFilter 4s alternate infinite;
-}
+} */
 
 @keyframes changeFilter {
   0% {
@@ -235,10 +235,10 @@ header {
   }
 }
 
-h1 {
+/* h1 {
   color: white;
   animation: changeText 4s alternate infinite;
-}
+} */
 
 @keyframes changeBorder {
   0% {

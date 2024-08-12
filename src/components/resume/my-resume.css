@@ -55,6 +55,10 @@
 .download-button-container {
   width: 80%;
 }
+.request{
+  background-color: white !important;
+  box-shadow: 0 0.2em rgb(202, 201, 201); 
+}
 
 @media screen and (max-width: 760px) {
   .resume-container {

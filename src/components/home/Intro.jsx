@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import "./intro.css";
-import cover from "../../images/cover.gif";
+import cover from "../../images/back.gif";
 import coverLite from "../../images/cover_lite.gif";
 import ppvideo from "../../videos/PortfolioVideo.mp4";
 import RotatingBorder from "./RotatingBorder";

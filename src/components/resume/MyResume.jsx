@@ -118,7 +118,7 @@ function MyResume({ play, hover }) {
         {tries === 0 ? null : (
           <div>
             <button
-              className="nav-button"
+              className="nav-button request"
               onMouseOver={hover}
               onClick={handleRequest}
               disabled={isLoading}

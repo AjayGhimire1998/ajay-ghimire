@@ -100,7 +100,7 @@ function CheerPlayer({ shadow }) {
             />
           </div>
           &nbsp;
-          <span>Fancy some music?</span>
+          <span style={{color: "#fdd612"}}>Fancy some music?</span>
         </button>
       )}
     </div>

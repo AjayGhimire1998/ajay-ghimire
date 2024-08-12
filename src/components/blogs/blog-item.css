@@ -55,17 +55,20 @@
 
 .blog-item-container > p > a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fdd612 !important;
 }
 .blog-item-container > p > a:hover {
-  color: #39ff14;
+  /* color: #39ff14; */
   cursor: pointer;
 }
 .blog-item-container > h2 {
   font-size: 25px;
+  color: #fdd612 !important;
 }
 
 .tag {
   background-color: white;
+  /* background-color: #fdd612; */
   float: left;
   width: fit-content;
   text-align: center;

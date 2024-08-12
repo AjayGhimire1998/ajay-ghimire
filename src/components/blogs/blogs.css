@@ -9,6 +9,7 @@
   display: inline-block;
   background-color: black;
   font-size: 3vh;
+  color: #fdd612 !important;
 }
 
 .blogs-container > p {

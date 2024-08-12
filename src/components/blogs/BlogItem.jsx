@@ -21,19 +21,22 @@ function BlogItem({ blog, hover, play }) {
     <section>
       <div className="blog-item-container" onMouseLeave={closeModal}>
         <div className="imgDiv">
-          <img src={blog.profile} alt="profile pics from blogs posting platform" />
+          <img
+            src={blog.profile}
+            alt="profile pics from blogs posting platform"
+          />
           <div className="desc">
             <p>Ajay Ghimire</p>
             <time dateTime={blog.datePossted}> {blogReadAndDatea} </time>
           </div>
         </div>
-          {blog.tag.map((tg, index) => {
-            return (
-              <div className="tag" key={index}>
-                <span>{tg}</span>{" "}
-              </div>
-            );
-          })}
+        {blog.tag.map((tg, index) => {
+          return (
+            <div className="tag" key={index}>
+              <span>{tg}</span>{" "}
+            </div>
+          );
+        })}
         <br />
         <br />
         <h2>{blog.title}</h2>
@@ -51,8 +54,8 @@ function BlogItem({ blog, hover, play }) {
             <span
               style={
                 isHover
-                  ? { color: "#39ff14", cursor: "pointer" }
-                  : { animation: "changeText 8s linear infinite" }
+                  ? { color: "white", cursor: "pointer" }
+                  : { color: "#fdd612" }
               }
               onMouseOver={() => setIsHover(true)}
               onMouseLeave={() => setIsHover(false)}

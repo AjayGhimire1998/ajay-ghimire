@@ -16,7 +16,7 @@ function HelloMsg() {
 					delay: 60,
 					autoStart: true,
 					loop: true,
-					deleteSpeed: 25,
+					deleteSpeed: 100,
 				}}
 			/>
 			<img src={wave} alt="waving hand" className="wave" />
