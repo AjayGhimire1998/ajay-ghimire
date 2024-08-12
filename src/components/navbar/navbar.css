@@ -22,26 +22,49 @@
   margin: 5px;
   font-weight: bold;
   padding: 10px 10px 10px 10px;
-  /* background-color: rgb(255, 255, 255); */
   background-color: #fdd612;
   color: rgb(0, 0, 0);
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -o-border-radius: 7px;
   border-radius: 7px;
-  /* box-shadow: 0 0.2em rgb(202, 201, 201); */
   box-shadow: 0 0.2em #d4b101; 
   cursor: pointer;
   text-decoration: none;
   width: 150px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .nav-button:hover {
+  box-shadow: none;
+  transform: translateY(0.2em); /* Moves the button down by 0.2em */
+}
+
+
+/* .nav-button {
+  font-size: 2vh;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  font-weight: bold;
+  padding: 10px 10px 10px 10px; */
+  /* background-color: rgb(255, 255, 255); */
+  /* background-color: #fdd612;
+  color: rgb(0, 0, 0);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px; */
+  /* box-shadow: 0 0.2em rgb(202, 201, 201); */
+  /* box-shadow: 0 0.2em #d4b101; 
+  cursor: pointer;
+  text-decoration: none;
+  width: 150px;
+} */
+
+/* .nav-button:hover {
   cursor: pointer;
   box-shadow: none;
   position: relative;
   top: 0.3em;
-}
+} */
 
 .nav-button:disabled {
   color: rgb(255, 255, 255);
