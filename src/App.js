@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import useSound from "use-sound";
 import click from "./sounds/click.wav";
@@ -22,7 +22,7 @@ function App() {
 
   const footerRef = useRef(null);
   const navbarRef = useRef(null);
-  const [isSticky, setIsSticky] = useState(false);
+  // const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,18 +32,25 @@ function App() {
       const footerTop = footer.getBoundingClientRect().top;
       const navbarHeight = navbar.offsetHeight;
       const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY;
 
-      // Check if content height is greater than viewport height
-      if (document.body.scrollHeight > windowHeight) {
-        setIsSticky(true);
+      if (scrollTop === 0) {
+        // Remove fixed-navbar if at the top of the page
+        navbar.classList.remove("fixed-navbar");
+        navbar.classList.add("footer-scroll");
+      } else if (documentHeight > windowHeight) {
+        if (footerTop + navbarHeight >= windowHeight) {
+          // Apply fixed-navbar when scrolling past the footer
+          navbar.classList.add("fixed-navbar");
+          navbar.classList.remove("footer-scroll");
+        } else {
+          // Apply footer-scroll when scrolling above the footer
+          navbar.classList.remove("fixed-navbar");
+          navbar.classList.add("footer-scroll");
+        }
       } else {
-        setIsSticky(false);
-      }
-
-      if (footerTop + navbarHeight >= windowHeight) {
-        navbar.classList.add("fixed-navbar");
-        navbar.classList.remove("footer-scroll");
-      } else {
+        // Remove fixed-navbar if the document height is less than the viewport height
         navbar.classList.remove("fixed-navbar");
         navbar.classList.add("footer-scroll");
       }
@@ -60,7 +67,7 @@ function App() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(100, 0);
   }, [pathname]);
 
   return (
@@ -96,7 +103,7 @@ function App() {
           </Routes>
         </main>
         <footer className="footer" ref={footerRef}>
-          <div className={isSticky ? "footer-scroll" : ""} ref={navbarRef}>
+          <div className="footer-scroll" ref={navbarRef}>
             <Navbar play={play} hover={onHover} />
           </div>
 
