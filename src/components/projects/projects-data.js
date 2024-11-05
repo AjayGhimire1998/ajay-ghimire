@@ -27,6 +27,7 @@ import crypto from "../../images/projects/crypto.png";
 import goal from "../../images/projects/goal.png";
 import yout from "../../images/projects/yout.png";
 import javaMovie from "../../images/projects/java-movie.png";
+import qr from "../../images/projects/qr.png";
 
 const toolTipStyle = {
   height: "10px",
@@ -34,6 +35,51 @@ const toolTipStyle = {
   fontSize: "12px",
 };
 export const videoLinks = [
+  {
+    name: "Chhittoo QR MENU ORDERING",
+    url: "https://youtu.be/l2yXVNDnhbA",
+    thumbnail: with_love,
+    videoId: "IEl0hS8OP2k",
+    desc: [
+      "A full-stack E-commerce web application developed using React for UI and Rails for server.",
+      "It allows users to register as a store who can create products to sell and also allows users to register as a customer who can choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email. ",
+    ],
+    // desc2:
+    //   "It allows users to register as a store who can create products to sell and also allows users to register as a customer who can choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email.",
+    links: {
+      git: "https://github.com/AjayGhimire1998/with-love-from-home-frontend",
+      live: "https://with-love-from-home.netlify.app/",
+    },
+    tools: [
+      <div
+        id="REACT"
+        data-tooltip-content="React"
+        data-tooltip-place="bottom"
+        key={uuidv4()}
+      >
+        <DiReact size={50} />
+        <Tooltip anchorId="REACT" style={toolTipStyle} />
+      </div>,
+      <div
+        id="Rails"
+        data-tooltip-content="Rails"
+        data-tooltip-place="bottom"
+        key={uuidv4()}
+      >
+        <SiRubyonrails size={50} />
+        <Tooltip anchorId="Rails" style={toolTipStyle} />
+      </div>,
+      <div
+        id="PostgreSQL"
+        data-tooltip-content="PostgreSQL"
+        data-tooltip-place="bottom"
+        key={uuidv4()}
+      >
+        <DiPostgresql size={50} />
+        <Tooltip anchorId="PostgreSQL" style={toolTipStyle} />
+      </div>,
+    ],
+  },
   {
     name: "WithLoveFromHome",
     url: "https://youtu.be/IEl0hS8OP2k",
