@@ -10,12 +10,14 @@ import {
   DiJavascript1,
   DiPostgresql,
   DiJava,
+  
 } from "react-icons/di";
 import {
   SiRubygems,
   SiRubyonrails,
   SiNextdotjs,
   SiTailwindcss,
+  SiSvelte,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { v4 as uuidv4 } from "uuid";
@@ -38,17 +40,17 @@ export const videoLinks = [
   {
     name: "Chhittoo QR MENU ORDERING",
     url: "https://youtu.be/l2yXVNDnhbA",
-    thumbnail: with_love,
-    videoId: "IEl0hS8OP2k",
+    thumbnail: qr,
+    videoId: "l2yXVNDnhbA",
     desc: [
-      "A full-stack E-commerce web application developed using React for UI and Rails for server.",
-      "It allows users to register as a store who can create products to sell and also allows users to register as a customer who can choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email. ",
+      "A B2B SaaS Contactless QR Table Ordering System for cafes, restaurants and hotels to reduce the need for physical menus, and promote online ordering.",
+      "It allows venues to register, create menu with items to sell and also create a dynamic customizable website that is accessible by a qr code generated. It also allows users to register as a customer who can choose through the items to order and checkout. The venue and customer get notified when an order is made or its status has changed.",
     ],
     // desc2:
     //   "It allows users to register as a store who can create products to sell and also allows users to register as a customer who can choose through the products to add to cart and checkout. Customers can leave reviews to the products and the stores. The store and customer get notified when an order is made or its status has changed through email.",
     links: {
-      git: "https://github.com/AjayGhimire1998/with-love-from-home-frontend",
-      live: "https://with-love-from-home.netlify.app/",
+      git: "https://github.com/AjayGhimire1998/qrCodeToSiteDev",
+      live: "https://qrordering.netlify.app/home",
     },
     tools: [
       <div
@@ -61,13 +63,13 @@ export const videoLinks = [
         <Tooltip anchorId="REACT" style={toolTipStyle} />
       </div>,
       <div
-        id="Rails"
-        data-tooltip-content="Rails"
+        id="Sveletekit"
+        data-tooltip-content="Sveletekit"
         data-tooltip-place="bottom"
         key={uuidv4()}
       >
-        <SiRubyonrails size={50} />
-        <Tooltip anchorId="Rails" style={toolTipStyle} />
+        <SiSvelte size={50} />
+        <Tooltip anchorId="Sveletekit" style={toolTipStyle} />
       </div>,
       <div
         id="PostgreSQL"
