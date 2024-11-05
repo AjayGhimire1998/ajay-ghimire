@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.db10574e.css",
-    "main.js": "/static/js/main.5d7fad76.js",
+    "main.js": "/static/js/main.8b55ab90.js",
     "static/js/845.fe94479c.chunk.js": "/static/js/845.fe94479c.chunk.js",
     "static/js/787.caccb356.chunk.js": "/static/js/787.caccb356.chunk.js",
     "static/media/Ajay.png": "/static/media/Ajay.3d218fdd8ff571741ce7.png",
@@ -21,6 +21,7 @@
     "static/media/mates.png": "/static/media/mates.6eb9d5c5eedbbc706a77.png",
     "static/media/jailhouse-rock.mp3": "/static/media/jailhouse-rock.eb51b441a22d8adc7da7.mp3",
     "static/media/hound-dog.mp3": "/static/media/hound-dog.b29e0981f4a1457c31ce.mp3",
+    "static/media/qr.png": "/static/media/qr.6ddec48c569882c7227e.png",
     "static/media/goal.png": "/static/media/goal.28e48a34e1a1e00eac42.png",
     "static/media/java-movie.png": "/static/media/java-movie.02b8d14628efa0353dc0.png",
     "static/media/memebook.png": "/static/media/memebook.77919520605f9b597f31.png",
@@ -46,12 +47,12 @@
     "static/media/hover.mp3": "/static/media/hover.f6990f20ecc0699fc881.mp3",
     "index.html": "/index.html",
     "main.db10574e.css.map": "/static/css/main.db10574e.css.map",
-    "main.5d7fad76.js.map": "/static/js/main.5d7fad76.js.map",
+    "main.8b55ab90.js.map": "/static/js/main.8b55ab90.js.map",
     "845.fe94479c.chunk.js.map": "/static/js/845.fe94479c.chunk.js.map",
     "787.caccb356.chunk.js.map": "/static/js/787.caccb356.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db10574e.css",
-    "static/js/main.5d7fad76.js"
+    "static/js/main.8b55ab90.js"
   ]
 }
